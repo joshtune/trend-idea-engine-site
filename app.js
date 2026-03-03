@@ -1,3 +1,8 @@
+/* --- App State --- */
+const REPORTS_BASE = "reports";
+let reportIndex = [];
+let currentIndex = 0;
+
 /* --- PIN Gate --- */
 const PIN_HASH = "5d1bc01295d811587878e2862b8d9b26be9df1914782493a51ce6a6276c7f42f";
 const SESSION_KEY = "tie_auth";
@@ -45,11 +50,6 @@ if (sessionStorage.getItem(SESSION_KEY) === "1") {
 }
 
 /* --- App --- */
-const REPORTS_BASE = "reports";
-
-let reportIndex = [];
-let currentIndex = 0;
-
 async function loadIndex() {
   try {
     const resp = await fetch(`${REPORTS_BASE}/index.json`);
