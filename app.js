@@ -154,3 +154,10 @@ document.getElementById("next-day").addEventListener("click", () => {
     loadReport(reportIndex[currentIndex]);
   }
 });
+
+document.getElementById("help-toggle").addEventListener("click", () => {
+  const drawer = document.getElementById("help-drawer");
+  const btn = document.getElementById("help-toggle");
+  drawer.classList.toggle("help-drawer-hidden");
+  btn.classList.toggle("active");
+});

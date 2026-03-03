@@ -265,6 +265,76 @@ footer {
   display: none;
 }
 
+/* Help Drawer */
+.help-toggle {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  padding: 0.4rem 0.9rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.help-toggle:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.help-toggle.active {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.help-drawer {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  animation: slideDown 0.2s ease-out;
+}
+
+.help-drawer-hidden {
+  display: none;
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.help-section h3 {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--accent);
+  margin-bottom: 0.75rem;
+}
+
+.help-drawer dl {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.help-drawer dt {
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: var(--text);
+}
+
+.help-drawer dd {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 0.4rem;
+  line-height: 1.5;
+}
+
 @media (max-width: 600px) {
   .ideas-grid {
     grid-template-columns: 1fr;
