@@ -33,6 +33,7 @@
         "viability": "high",
         "time": "1 weekend",
         "cost": "$0-20 (Vercel free tier + domain)",
+        "stack": ["Web app", "Static site"],
         "details": "Straightforward web form + markdown generator. Next.js or SvelteKit + a simple template engine. Fully vibe-codable in a weekend. No external APIs needed for the core product."
       }
     },
@@ -59,6 +60,7 @@
         "viability": "medium",
         "time": "3-4 weeks",
         "cost": "$50-100/mo (Supabase Pro + LLM API costs for evaluation)",
+        "stack": ["Web app", "Database", "Auth", "AI/LLM API", "Background jobs"],
         "details": "Dashboard and test runner are standard web app work (Next.js + Supabase). The hard part is building reliable agent conversation simulation and hallucination detection — needs custom evaluation logic and LLM-as-judge patterns that require manual tuning."
       }
     },
@@ -84,6 +86,7 @@
         "viability": "medium",
         "time": "1-2 weeks",
         "cost": "$5-25/mo (Cloudflare Workers paid plan or VPS for proxy)",
+        "stack": ["Web app", "Edge/CDN workers"],
         "details": "Cloudflare Worker or Express middleware. AI can scaffold the request analysis and rate-limiting logic. The tricky part is building accurate bot fingerprinting heuristics — needs real traffic data and iterative tuning that AI can't fully automate."
       }
     },
@@ -109,6 +112,7 @@
         "viability": "medium",
         "time": "1-2 weeks",
         "cost": "$5 (Chrome Web Store dev fee) + $0 hosting",
+        "stack": ["Browser extension"],
         "details": "Chrome extension with content script intercepting fetch/XHR. AI can generate the extension scaffold and regex pattern matching. Manual work needed for Chrome Web Store compliance, cross-browser testing, and handling edge cases in different code editors."
       }
     },
@@ -134,6 +138,7 @@
         "viability": "high",
         "time": "1 week",
         "cost": "$20-50/mo (SERP API + Vercel + domain)",
+        "stack": ["Web app", "Database", "3rd-party API", "Background jobs"],
         "details": "Next.js dashboard + SERP API (DataForSEO or SerpAPI) + cron jobs for monitoring. Standard CRUD app with scheduled tasks. AI can build the entire thing — scraping, alerting, and content suggestions are all well-understood patterns."
       }
     },
@@ -159,6 +164,7 @@
         "viability": "low",
         "time": "4-6 weeks",
         "cost": "$100-500 (GPU instances for model optimization + testing devices)",
+        "stack": ["GPU/ML infra", "Native SDK", "AI/LLM API"],
         "details": "Requires deep ML expertise — model optimization (quantization, ONNX export), platform-specific SDKs (CoreML, NNAPI), and audio signal processing. AI can help with the wrapper API and docs but the core model packaging and edge deployment needs hands-on ML engineering."
       }
     },
@@ -184,6 +190,7 @@
         "viability": "high",
         "time": "3-5 days",
         "cost": "$0-20 (Vercel free tier + domain)",
+        "stack": ["Web app", "3rd-party API"],
         "details": "Reddit JSON API for data, Next.js dashboard, simple statistical analysis (time-based engagement patterns). Fully AI-buildable — no auth complexity, no real-time features, just data crunching and visualization."
       }
     },
@@ -208,6 +215,7 @@
         "viability": "medium",
         "time": "2-3 weeks",
         "cost": "$30-80/mo (video processing APIs like Replicate or AssemblyAI + storage)",
+        "stack": ["Web app", "Database", "Auth", "File storage", "3rd-party API", "Background jobs"],
         "details": "Next.js frontend + workflow engine. AI can build the pipeline orchestration and UI. The video processing itself relies on third-party APIs (transcription, clipping). Main challenge is handling async video jobs and large file uploads reliably."
       }
     },
@@ -233,6 +241,7 @@
         "viability": "medium",
         "time": "2-3 weeks",
         "cost": "$5 (Chrome Web Store fee) + $0 hosting (runs locally)",
+        "stack": ["Browser extension", "Local storage", "AI/LLM API"],
         "details": "Chrome extension with IndexedDB for local storage and a small embedding model for semantic search. AI can scaffold the extension and content extraction. The hard parts are browser extension performance at scale (indexing thousands of pages) and keeping the local search fast."
       }
     },
@@ -258,6 +267,7 @@
         "viability": "high",
         "time": "1-2 weeks",
         "cost": "$20-40/mo (Supabase + Vercel + domain)",
+        "stack": ["Web app", "Database", "Auth"],
         "details": "Standard web app with user accounts, review submission, and statistical anomaly detection. AI can build the full stack including the review-spike detection algorithm. No exotic dependencies — just time-series analysis on review timestamps."
       }
     },
@@ -283,6 +293,7 @@
         "viability": "high",
         "time": "1 weekend",
         "cost": "$0-15 (Gmail API free tier + Vercel)",
+        "stack": ["Web app", "3rd-party API"],
         "details": "CSV parser + Gmail API + simple scheduling. This is a textbook vibe-coding project — no auth complexity, no real-time features, just send emails on a timer. AI can build the entire thing including timezone handling."
       }
     },
@@ -307,6 +318,7 @@
         "viability": "medium",
         "time": "2-3 weeks",
         "cost": "$30-60/mo (translation APIs + Stripe Connect for payments + hosting)",
+        "stack": ["Web app", "Database", "Auth", "Payments", "3rd-party API"],
         "details": "Landing page builder + translation API (DeepL/Google) + local payment gateway integration. AI can build the platform and translation pipeline. Manual work needed for cultural adaptation, local payment provider setup (Stripe doesn't cover all markets), and SEO per language."
       }
     },
@@ -331,6 +343,7 @@
         "viability": "medium",
         "time": "2-3 weeks",
         "cost": "$0-20 (runs client-side, GitHub API free tier + Vercel)",
+        "stack": ["Web app", "3rd-party API"],
         "details": "Client-side JS with GitHub API for repo fetching + D3.js or vis.js for graph visualization. AI can build the parsing and graph rendering. The challenge is building accurate dependency resolution across different languages and frameworks — each ecosystem has different import patterns."
       }
     },
@@ -355,6 +368,7 @@
         "viability": "high",
         "time": "1-2 weeks",
         "cost": "$20-40/mo (Supabase + Vercel + domain)",
+        "stack": ["Web app", "Database", "AI/LLM API"],
         "details": "Python SDK wrapping LLM API calls with logging middleware + Next.js dashboard for viewing logs and generating reports. Standard web app + pip package. AI can build the entire thing — the SDK is just a decorator/wrapper pattern and the dashboard is CRUD."
       }
     }

@@ -192,6 +192,7 @@ function renderCard(idea, rank) {
         <span class="field-label">AI Buildability</span>
         <span class="badge badge-ai-${(idea.ai_build.viability || "medium").toLowerCase()}">${escapeHtml(idea.ai_build.viability || "medium")}</span>
         ${idea.ai_build.time || idea.ai_build.cost ? `<span class="ai-build-meta">${idea.ai_build.time ? `⏱ ${escapeHtml(idea.ai_build.time)}` : ""}${idea.ai_build.time && idea.ai_build.cost ? " · " : ""}${idea.ai_build.cost ? `💰 ${escapeHtml(idea.ai_build.cost)}` : ""}</span>` : ""}
+        ${idea.ai_build.stack && idea.ai_build.stack.length > 0 ? `<span class="ai-build-stack">${idea.ai_build.stack.map(s => `<span class="badge badge-stack">${escapeHtml(s)}</span>`).join("")}</span>` : ""}
         <span class="ai-build-details">${escapeHtml(idea.ai_build.details)}</span>
       </div>` : ""}
       <div class="badges">
