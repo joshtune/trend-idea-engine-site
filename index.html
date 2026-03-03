@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trend Idea Engine</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="gate" class="gate">
+    <div class="gate-box">
+      <h1>Trend Idea Engine</h1>
+      <p class="subtitle">Enter access code</p>
+      <input type="password" id="pin-input" placeholder="Access code" autofocus>
+      <button id="pin-submit">Enter</button>
+      <p id="pin-error" class="pin-error"></p>
+    </div>
+  </div>
+
+  <div id="app" class="app-hidden">
+    <header>
+      <h1>Trend Idea Engine</h1>
+      <p class="subtitle">Daily side-project ideas powered by trend data</p>
+      <nav id="date-nav">
+        <button id="prev-day" title="Previous day">&larr;</button>
+        <span id="current-date">Loading...</span>
+        <button id="next-day" title="Next day">&rarr;</button>
+      </nav>
+    </header>
+
+    <main>
+      <div id="stats" class="stats-bar"></div>
+      <div id="ideas-grid" class="ideas-grid">
+        <div class="empty-state">
+          <p>No reports yet.</p>
+          <p>Run the scrapers and generate ideas to get started.</p>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>Data scraped daily from HackerNews &amp; Reddit. Ideas generated via Claude.</p>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
