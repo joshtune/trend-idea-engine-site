@@ -156,8 +156,15 @@ document.getElementById("next-day").addEventListener("click", () => {
 });
 
 document.getElementById("help-toggle").addEventListener("click", () => {
-  const drawer = document.getElementById("help-drawer");
-  const btn = document.getElementById("help-toggle");
-  drawer.classList.toggle("help-drawer-hidden");
-  btn.classList.toggle("active");
+  document.getElementById("help-overlay").classList.remove("help-overlay-hidden");
+});
+
+document.getElementById("help-close").addEventListener("click", () => {
+  document.getElementById("help-overlay").classList.add("help-overlay-hidden");
+});
+
+document.getElementById("help-overlay").addEventListener("click", (e) => {
+  if (e.target === e.currentTarget) {
+    document.getElementById("help-overlay").classList.add("help-overlay-hidden");
+  }
 });

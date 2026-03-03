@@ -30,45 +30,54 @@
 
     <main>
       <button id="help-toggle" class="help-toggle">? Field Guide</button>
-      <div id="help-drawer" class="help-drawer help-drawer-hidden">
-        <div class="help-section">
-          <h3>Idea Fields</h3>
-          <dl>
-            <dt>Problem</dt>
-            <dd>The specific pain point this solves. What real people are complaining about in the trend data.</dd>
-            <dt>Solution</dt>
-            <dd>What you'd actually build. The product described in 1-2 sentences.</dd>
-            <dt>Monetization</dt>
-            <dd>How the idea makes money: SaaS (monthly subscription), one-time purchase, freemium (free + paid tier), affiliate (commission from referrals), or marketplace fees (cut of transactions).</dd>
-          </dl>
-        </div>
-        <div class="help-section">
-          <h3>Complexity</h3>
-          <dl>
-            <dt><span class="badge badge-complexity-low">low</span></dt>
-            <dd>&lt; 1 week. Simple script, API wrapper, or content site.</dd>
-            <dt><span class="badge badge-complexity-medium">medium</span></dt>
-            <dd>1-2 weeks. Full web app with auth, payments, basic features.</dd>
-            <dt><span class="badge badge-complexity-high">high</span></dt>
-            <dd>3-4 weeks. Complex integrations, SDKs, multiple moving parts.</dd>
-          </dl>
-        </div>
-        <div class="help-section">
-          <h3>Categories</h3>
-          <dl>
-            <dt><span class="badge badge-category">SaaS</span></dt>
-            <dd>Software as a service &mdash; web app with subscriptions.</dd>
-            <dt><span class="badge badge-category">Dev Tools</span></dt>
-            <dd>Built for developers specifically.</dd>
-            <dt><span class="badge badge-category">AI</span></dt>
-            <dd>Core product is AI-powered.</dd>
-            <dt><span class="badge badge-category">Consumer</span></dt>
-            <dd>Built for everyday people, not businesses.</dd>
-            <dt><span class="badge badge-category">Content</span></dt>
-            <dd>Blog, newsletter, course, or info product.</dd>
-            <dt><span class="badge badge-category">E-commerce</span></dt>
-            <dd>Selling physical or digital goods.</dd>
-          </dl>
+
+      <div id="help-overlay" class="help-overlay help-overlay-hidden">
+        <div class="help-panel">
+          <div class="help-panel-header">
+            <h2>Field Guide</h2>
+            <button id="help-close" class="help-close">&times;</button>
+          </div>
+          <div class="help-panel-body">
+            <div class="help-section">
+              <h3>Idea Fields</h3>
+              <dl>
+                <dt>Problem</dt>
+                <dd>The specific pain point this solves. What real people are complaining about in the trend data.</dd>
+                <dt>Solution</dt>
+                <dd>What you'd actually build. The product described in 1-2 sentences.</dd>
+                <dt>Monetization</dt>
+                <dd>How the idea makes money: SaaS (monthly subscription), one-time purchase, freemium (free + paid tier), affiliate (commission from referrals), or marketplace fees (cut of transactions).</dd>
+              </dl>
+            </div>
+            <div class="help-section">
+              <h3>Complexity</h3>
+              <dl>
+                <dt><span class="badge badge-complexity-low">low</span></dt>
+                <dd>&lt; 1 week. Simple script, API wrapper, or content site.</dd>
+                <dt><span class="badge badge-complexity-medium">medium</span></dt>
+                <dd>1-2 weeks. Full web app with auth, payments, basic features.</dd>
+                <dt><span class="badge badge-complexity-high">high</span></dt>
+                <dd>3-4 weeks. Complex integrations, SDKs, multiple moving parts.</dd>
+              </dl>
+            </div>
+            <div class="help-section">
+              <h3>Categories</h3>
+              <dl>
+                <dt><span class="badge badge-category">SaaS</span></dt>
+                <dd>Software as a service &mdash; web app with subscriptions.</dd>
+                <dt><span class="badge badge-category">Dev Tools</span></dt>
+                <dd>Built for developers specifically.</dd>
+                <dt><span class="badge badge-category">AI</span></dt>
+                <dd>Core product is AI-powered.</dd>
+                <dt><span class="badge badge-category">Consumer</span></dt>
+                <dd>Built for everyday people, not businesses.</dd>
+                <dt><span class="badge badge-category">Content</span></dt>
+                <dd>Blog, newsletter, course, or info product.</dd>
+                <dt><span class="badge badge-category">E-commerce</span></dt>
+                <dd>Selling physical or digital goods.</dd>
+              </dl>
+            </div>
+          </div>
         </div>
       </div>
 

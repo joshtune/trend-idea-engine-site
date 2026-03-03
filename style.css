@@ -265,7 +265,7 @@ footer {
   display: none;
 }
 
-/* Help Drawer */
+/* Help Overlay */
 .help-toggle {
   background: var(--bg-card);
   border: 1px solid var(--border);
@@ -283,30 +283,78 @@ footer {
   border-color: var(--accent);
 }
 
-.help-toggle.active {
-  color: var(--accent);
-  border-color: var(--accent);
+.help-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: flex-end;
+  background: rgba(0, 0, 0, 0.5);
+  animation: fadeIn 0.2s ease-out;
 }
 
-.help-drawer {
+.help-overlay-hidden {
+  display: none !important;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideIn {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}
+
+.help-panel {
+  width: 380px;
+  max-width: 85vw;
+  height: 100%;
   background: var(--bg-card);
-  border: 1px solid var(--border);
-  border-radius: 10px;
+  border-left: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  animation: slideIn 0.25s ease-out;
+}
+
+.help-panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.help-panel-header h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.help-close {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  line-height: 1;
+}
+
+.help-close:hover {
+  color: var(--text);
+  background: var(--bg-hover);
+}
+
+.help-panel-body {
+  padding: 1.25rem 1.5rem;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.help-section {
   margin-bottom: 1.5rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
-  animation: slideDown 0.2s ease-out;
-}
-
-.help-drawer-hidden {
-  display: none;
-}
-
-@keyframes slideDown {
-  from { opacity: 0; transform: translateY(-8px); }
-  to { opacity: 1; transform: translateY(0); }
 }
 
 .help-section h3 {
@@ -317,18 +365,18 @@ footer {
   margin-bottom: 0.75rem;
 }
 
-.help-drawer dl {
+.help-panel dl {
   display: grid;
   gap: 0.5rem;
 }
 
-.help-drawer dt {
+.help-panel dt {
   font-weight: 600;
   font-size: 0.85rem;
   color: var(--text);
 }
 
-.help-drawer dd {
+.help-panel dd {
   font-size: 0.8rem;
   color: var(--text-muted);
   margin-bottom: 0.4rem;
