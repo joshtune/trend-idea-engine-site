@@ -91,6 +91,7 @@ async function loadReport(date) {
         <div class="stat">Reddit posts: <strong>${report.trend_data.reddit_posts || 0}</strong></div>
         ${report.trend_data.github_repos ? `<div class="stat">GitHub repos: <strong>${report.trend_data.github_repos}</strong></div>` : ""}
         ${report.trend_data.google_trends ? `<div class="stat">Google trends: <strong>${report.trend_data.google_trends}</strong></div>` : ""}
+        ${report.trend_data.producthunt_products ? `<div class="stat">PH launches: <strong>${report.trend_data.producthunt_products}</strong></div>` : ""}
       ` : ""}
     `;
 
@@ -115,6 +116,7 @@ const SOURCE_TYPE_MAP = {
   reddit: "Reddit",
   github: "GitHub",
   google_trends: "Trends",
+  producthunt: "PH",
 };
 
 function getSourceTypes(trendSources) {
@@ -138,7 +140,7 @@ function renderCard(idea, rank) {
   const complexityClass = `badge-complexity-${(idea.complexity || "medium").toLowerCase()}`;
   const sourceTypes = getSourceTypes(idea.trend_sources);
   const score = idea._score || computeScore(idea);
-  const maxScore = 44; // 4 types × 10 + 4 sources
+  const maxScore = 55; // 5 types × 10 + 5 sources
   const barPct = Math.min(Math.round((score / maxScore) * 100), 100);
 
   const sourceBadgesHtml = Object.entries(sourceTypes)

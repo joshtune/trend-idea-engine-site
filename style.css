@@ -197,6 +197,11 @@ main {
   color: #64c8ff;
 }
 
+.badge-source-ph {
+  background: rgba(218, 85, 47, 0.15);
+  color: #da552f;
+}
+
 .idea-card h3 {
   font-size: 1.1rem;
   margin-bottom: 0.75rem;
