@@ -13,7 +13,17 @@
       "monetization": "SaaS — $19/mo for 5 subreddits, $49/mo for unlimited. Pay-per-alert tier for low-volume users.",
       "complexity": "medium",
       "trend_sources": ["reddit:1rjjb1l", "reddit:1rj6o74", "reddit:1rjmgb4"],
-      "category": "SaaS"
+      "category": "SaaS",
+      "validation": [
+        "Manually monitor 3 subreddits for 1 week, log how many relevant posts you'd flag — prove the signal exists",
+        "Post in r/SaaS: 'Would you pay $19/mo for a tool that alerts you when someone on Reddit describes the exact problem your product solves?'",
+        "Build a simple script that emails you Reddit matches for your own product — dogfood it for 2 weeks"
+      ],
+      "evidence": [
+        {"title": "How do you get customers from Reddit without getting banned?", "url": "https://reddit.com/r/SaaS/comments/1rjjb1l"},
+        {"title": "I analyzed 23M Reddit posts — r/SideProject gets 661 posts/day", "url": "https://reddit.com/r/SideProject/comments/1rj6o74"},
+        {"title": "Where do you actually do outreach for B2B these days?", "url": "https://reddit.com/r/Entrepreneur/comments/1rjmgb4"}
+      ]
     },
     {
       "title": "ScraperShield",
@@ -22,7 +32,17 @@
       "monetization": "SaaS — free tier for small sites, $29/mo for up to 1M requests, $99/mo for high-traffic sites.",
       "complexity": "medium",
       "trend_sources": ["reddit:1rj19g2", "hackernews:47225130", "hackernews:47232768"],
-      "category": "Dev Tools"
+      "category": "Dev Tools",
+      "validation": [
+        "Analyze your own server logs for AI scraper patterns — document the fingerprints and share findings in a blog post to gauge interest",
+        "Post the analysis in r/webdev and HN — measure engagement and 'I'd pay for this' comments",
+        "Ship a free open-source middleware, then see if people ask for a hosted version"
+      ],
+      "evidence": [
+        {"title": "What can you do against scrapers from AI companies? Anthropic hit us with 10req/s", "url": "https://reddit.com/r/webdev/comments/1rj19g2"},
+        {"title": "Meta's AI smart glasses and data privacy concerns", "url": "https://news.ycombinator.com/item?id=47225130"},
+        {"title": "I'm reluctant to verify my identity or age for any online services", "url": "https://news.ycombinator.com/item?id=47232768"}
+      ]
     },
     {
       "title": "GDPRkit",
@@ -31,7 +51,16 @@
       "monetization": "SaaS — $49/mo starter, $149/mo with automated scanning. One-time audit report option at $299.",
       "complexity": "high",
       "trend_sources": ["reddit:1rj51wm", "hackernews:47232768"],
-      "category": "SaaS"
+      "category": "SaaS",
+      "validation": [
+        "Create a free GDPR compliance checklist PDF and share in r/SaaS — collect emails of people who download it",
+        "DM 10 SaaS founders from the Reddit thread and ask what they'd pay for automated data mapping",
+        "Offer manual GDPR audits as a service ($500 each) to validate demand before building software"
+      ],
+      "evidence": [
+        {"title": "GDPR sounded easier in theory — data mapping alone took longer than anticipated", "url": "https://reddit.com/r/SaaS/comments/1rj51wm"},
+        {"title": "I'm reluctant to verify my identity or age for any online services", "url": "https://news.ycombinator.com/item?id=47232768"}
+      ]
     },
     {
       "title": "LaunchBlitz",
@@ -40,7 +69,17 @@
       "monetization": "One-time purchase — $49 per launch. Premium tier at $99 includes re-submission and analytics.",
       "complexity": "medium",
       "trend_sources": ["reddit:1rh6d0o", "reddit:1rjgn27", "reddit:1rfd80p"],
-      "category": "SaaS"
+      "category": "SaaS",
+      "validation": [
+        "Compile and publish a free list of 50+ directories — track how many people share it and ask for automation",
+        "Offer a done-for-you directory submission service ($50) on r/indiehackers — see if people buy",
+        "Pre-sell the tool with a landing page: 'Pay $49 now, get access when it launches in 2 weeks'"
+      ],
+      "evidence": [
+        {"title": "Does anyone have a list of directories to launch a startup?", "url": "https://reddit.com/r/indiehackers/comments/1rh6d0o"},
+        {"title": "How well has Product Hunt worked for you?", "url": "https://reddit.com/r/SideProject/comments/1rjgn27"},
+        {"title": "4th place in a hackathon changed my business", "url": "https://reddit.com/r/indiehackers/comments/1rfd80p"}
+      ]
     },
     {
       "title": "SimpleOutreach",
@@ -49,7 +88,16 @@
       "monetization": "SaaS — $9/mo for 500 emails, $29/mo for 5,000 emails. One-time $39 lifetime deal as launch strategy.",
       "complexity": "low",
       "trend_sources": ["reddit:1rjorin", "reddit:1rjmgb4"],
-      "category": "SaaS"
+      "category": "SaaS",
+      "validation": [
+        "Build a Google Sheets + Apps Script prototype that schedules Gmail sends from a spreadsheet — share it for free and see adoption",
+        "Post in r/Entrepreneur: 'I built a simple email scheduler — no CRM, no sequences, just timed sends. Would you use it?'",
+        "Search Product Hunt and G2 for 'simple email scheduler' — check if competitors exist and read their reviews for gaps"
+      ],
+      "evidence": [
+        {"title": "Got my first user — built it because Gmail doesn't let you bulk schedule emails", "url": "https://reddit.com/r/Entrepreneur/comments/1rjorin"},
+        {"title": "Where do you actually do outreach for B2B these days?", "url": "https://reddit.com/r/Entrepreneur/comments/1rjmgb4"}
+      ]
     },
     {
       "title": "VisitorReveal",
@@ -58,7 +106,16 @@
       "monetization": "SaaS — $49/mo for 1,000 identifications, $149/mo for 10,000. Usage-based pricing above that.",
       "complexity": "medium",
       "trend_sources": ["reddit:1rjg9on", "reddit:1rj8o8v"],
-      "category": "SaaS"
+      "category": "SaaS",
+      "validation": [
+        "Research existing players (Clearbit Reveal, Leadfeeder, RB2B) — read their negative reviews to find gaps you can exploit",
+        "DM the original poster and 5 commenters from the Reddit thread — ask what they've tried and what's missing",
+        "Build a free Chrome extension that shows company info for the current site visitor via reverse IP — use it as a lead magnet"
+      ],
+      "evidence": [
+        {"title": "Anyone else annoyed that most of your traffic is just anonymous?", "url": "https://reddit.com/r/SaaS/comments/1rjg9on"},
+        {"title": "The invisible comparison happening before every call", "url": "https://reddit.com/r/Entrepreneur/comments/1rj8o8v"}
+      ]
     },
     {
       "title": "OSS SEO Boost",
@@ -67,7 +124,17 @@
       "monetization": "Freemium — free SEO audit, $19/mo for hosted optimized landing page + monitoring, $49/mo for full docs site generation.",
       "complexity": "medium",
       "trend_sources": ["hackernews:47232158", "hackernews:47232224", "reddit:1riyg1v"],
-      "category": "Dev Tools"
+      "category": "Dev Tools",
+      "validation": [
+        "Audit 20 popular OSS projects for SEO issues — publish findings as a blog post on HN and see if maintainers engage",
+        "Offer free SEO audits to 10 OSS maintainers — track how many want the fix automated",
+        "Build a free 'OSS SEO Score' tool that grades a GitHub repo's search visibility — collect emails for the paid version"
+      ],
+      "evidence": [
+        {"title": "I'm losing the SEO battle for my own open source project", "url": "https://news.ycombinator.com/item?id=47232158"},
+        {"title": "Tech publications lost 58% of their Google traffic since 2024", "url": "https://news.ycombinator.com/item?id=47232224"},
+        {"title": "How to rank on Google from here after?", "url": "https://reddit.com/r/indiehackers/comments/1riyg1v"}
+      ]
     },
     {
       "title": "LocalizeQuick",
@@ -76,7 +143,16 @@
       "monetization": "SaaS — $79/mo per language. Revenue share option: 5% of localized revenue instead of flat fee.",
       "complexity": "high",
       "trend_sources": ["reddit:1ri0ux8", "reddit:1rjl2fp"],
-      "category": "SaaS"
+      "category": "SaaS",
+      "validation": [
+        "Offer manual localization as a service ($500/language) to 5 SaaS founders — validate they'll pay before building",
+        "Post in r/SaaS: 'Has anyone localized their SaaS to French/German? What was the hardest part?' — gauge pain level",
+        "Take one small SaaS product and localize it to French yourself — document the process and share results"
+      ],
+      "evidence": [
+        {"title": "The Language Arbitrage Playbook: $65K/month from French market", "url": "https://reddit.com/r/indiehackers/comments/1ri0ux8"},
+        {"title": "What was the hardest part about entering a foreign market?", "url": "https://reddit.com/r/Entrepreneur/comments/1rjl2fp"}
+      ]
     },
     {
       "title": "AIStackPicker",
@@ -85,7 +161,16 @@
       "monetization": "Affiliate revenue — earn 20-30% recurring commissions from AI tool referrals. Add a $29 premium guide with implementation walkthroughs.",
       "complexity": "low",
       "trend_sources": ["reddit:1rioyvj", "hackernews:47230710"],
-      "category": "Content"
+      "category": "Content",
+      "validation": [
+        "Reply to the original Reddit thread with a curated AI stack recommendation — see if people DM you asking for more",
+        "Create a free 'AI Stack Quiz' in Typeform and share in r/Entrepreneur — measure completions and email signups",
+        "Sign up for affiliate programs of 5 popular AI tools — verify commission rates are actually worth it"
+      ],
+      "evidence": [
+        {"title": "Successful entrepreneurs, what's your full AI stack for running your business?", "url": "https://reddit.com/r/Entrepreneur/comments/1rioyvj"},
+        {"title": "Claude's Cycles: Claude Opus 4.6 solves a problem posed by Don Knuth", "url": "https://news.ycombinator.com/item?id=47230710"}
+      ]
     },
     {
       "title": "ReviewBoost",
@@ -94,7 +179,15 @@
       "monetization": "SaaS — free for <1K MAU, $29/mo for 10K MAU, $99/mo for 100K MAU.",
       "complexity": "high",
       "trend_sources": ["reddit:1rjq37g"],
-      "category": "Dev Tools"
+      "category": "Dev Tools",
+      "validation": [
+        "Write a blog post: 'The science of when to show review prompts' with data from the Reddit post — publish on HN and dev.to",
+        "Survey 20 indie app devs: 'When do you trigger your review prompt? Are you happy with your rating?'",
+        "Research existing solutions (Appfigures, Alchemer) — check if they have this feature or if it's a gap"
+      ],
+      "evidence": [
+        {"title": "One timing change added 0.8 stars to my app rating without touching a single feature", "url": "https://reddit.com/r/SideProject/comments/1rjq37g"}
+      ]
     },
     {
       "title": "ContentVerify",
@@ -103,7 +196,16 @@
       "monetization": "SaaS — $39/mo for individuals (browser extension), $199/mo for teams (API + CMS integration), enterprise custom.",
       "complexity": "high",
       "trend_sources": ["hackernews:47231261", "hackernews:47226608"],
-      "category": "AI"
+      "category": "AI",
+      "validation": [
+        "Build a free browser extension that checks if URLs in an article actually exist — ship it and track installs",
+        "Reach out to 5 legal tech companies and 5 publishers — ask how they currently verify AI-generated content",
+        "Run a manual 'content verification audit' for a news outlet as a paid pilot ($500) — prove the workflow"
+      ],
+      "evidence": [
+        {"title": "India's top court angry after junior judge cites fake AI-generated orders", "url": "https://news.ycombinator.com/item?id=47231261"},
+        {"title": "Ars Technica fires reporter after AI controversy involving fabricated quotes", "url": "https://news.ycombinator.com/item?id=47226608"}
+      ]
     },
     {
       "title": "VoiceAgentBench",
@@ -112,7 +214,17 @@
       "monetization": "Open-core — free self-hosted framework, $49/mo for hosted testing with CI integration, $199/mo for team dashboards and analytics.",
       "complexity": "high",
       "trend_sources": ["hackernews:47224295", "hackernews:47232903", "reddit:1rffdfa"],
-      "category": "Dev Tools"
+      "category": "Dev Tools",
+      "validation": [
+        "Build a minimal open-source voice agent test runner and post it on HN — measure GitHub stars and interest",
+        "Join voice AI Discord communities and ask: 'How are you testing your voice agents today?' — document the pain",
+        "DM the Cekura founders (YC F24, launched today) and the sub-500ms voice agent builder — ask what testing gaps they see"
+      ],
+      "evidence": [
+        {"title": "Show HN: I built a sub-500ms latency voice agent from scratch", "url": "https://news.ycombinator.com/item?id=47224295"},
+        {"title": "Launch HN: Cekura (YC F24) — Testing and monitoring for voice and chat AI agents", "url": "https://news.ycombinator.com/item?id=47232903"},
+        {"title": "Live on Product Hunt today — voice agent launch with early usage signals", "url": "https://reddit.com/r/indiehackers/comments/1rffdfa"}
+      ]
     },
     {
       "title": "IndieMarketer",
@@ -121,7 +233,18 @@
       "monetization": "SaaS — $19/mo or $149/year. Lifetime deal at $99 for launch.",
       "complexity": "medium",
       "trend_sources": ["reddit:1rjdmhp", "reddit:1rjoto7", "reddit:1rjdh5l", "reddit:1rjiyca"],
-      "category": "SaaS"
+      "category": "SaaS",
+      "validation": [
+        "Create a free '30-day marketing playbook' PDF for indie hackers — share in r/SideProject and r/indiehackers, track downloads",
+        "Manually create personalized launch plans for 5 indie devs (free) — get feedback on what's useful vs. fluff",
+        "Post in r/SideProject: 'I'll create a free personalized marketing plan for your side project — first 10 replies' — measure demand by response volume"
+      ],
+      "evidence": [
+        {"title": "I'm building 30 apps in 1 year — development is great but I completely suck at marketing", "url": "https://reddit.com/r/SideProject/comments/1rjdmhp"},
+        {"title": "I'm a solo dev who sucks at marketing — spent 6 months building an AI tool", "url": "https://reddit.com/r/SaaS/comments/1rjoto7"},
+        {"title": "Do any solopreneurs have real-world advice on starting a SaaS?", "url": "https://reddit.com/r/SaaS/comments/1rjdh5l"},
+        {"title": "How do you actually get multiple clients? What's working for you?", "url": "https://reddit.com/r/SaaS/comments/1rjiyca"}
+      ]
     }
   ]
 }

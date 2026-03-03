@@ -106,6 +106,21 @@ async function loadReport(date) {
 
 function renderCard(idea) {
   const complexityClass = `badge-complexity-${(idea.complexity || "medium").toLowerCase()}`;
+
+  const validationHtml = idea.validation && idea.validation.length > 0
+    ? `<div class="field">
+        <span class="field-label">Validation Steps</span>
+        <ol class="validation-list">${idea.validation.map(v => `<li>${escapeHtml(v)}</li>`).join("")}</ol>
+      </div>` : "";
+
+  const evidenceHtml = idea.evidence && idea.evidence.length > 0
+    ? `<div class="field">
+        <span class="field-label">Evidence</span>
+        <ul class="evidence-list">${idea.evidence.map(e =>
+          `<li><a href="${escapeHtml(e.url)}" target="_blank" rel="noopener">${escapeHtml(e.title)}</a></li>`
+        ).join("")}</ul>
+      </div>` : "";
+
   return `
     <div class="idea-card">
       <h3>${escapeHtml(idea.title)}</h3>
@@ -121,6 +136,8 @@ function renderCard(idea) {
         <span class="field-label">Monetization</span>
         ${escapeHtml(idea.monetization)}
       </div>
+      ${validationHtml}
+      ${evidenceHtml}
       <div class="badges">
         <span class="badge ${complexityClass}">${escapeHtml(idea.complexity || "medium")}</span>
         <span class="badge badge-category">${escapeHtml(idea.category || "Other")}</span>

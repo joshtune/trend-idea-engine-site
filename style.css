@@ -140,6 +140,37 @@ main {
   margin-bottom: 0.15rem;
 }
 
+.validation-list, .evidence-list {
+  margin: 0.25rem 0 0 1.2rem;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.validation-list li, .evidence-list li {
+  margin-bottom: 0.3rem;
+  line-height: 1.4;
+}
+
+.evidence-list {
+  list-style: none;
+  margin-left: 0;
+}
+
+.evidence-list li::before {
+  content: "\2192 ";
+  color: var(--accent);
+}
+
+.evidence-list a {
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+
+.evidence-list a:hover {
+  text-decoration: underline;
+}
+
 .badges {
   display: flex;
   gap: 0.5rem;
