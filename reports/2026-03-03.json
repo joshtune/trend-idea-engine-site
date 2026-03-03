@@ -1,56 +1,21 @@
 {
   "date": "2026-03-03",
-  "generated_at": "2026-03-03T19:00:00Z",
+  "generated_at": "2026-03-03T22:15:00Z",
   "trend_data": {
     "hackernews_stories": 30,
     "reddit_posts": 50,
     "github_repos": 20,
-    "google_trends": 10
+    "google_trends": 10,
+    "producthunt_products": 20
   },
   "ideas": [
     {
-      "title": "ScrapShield",
-      "problem": "AI companies (Anthropic, OpenAI) are aggressively scraping websites at 10+ req/s, ignoring robots.txt, and neither publishes IP ranges. Site owners have no reliable way to detect and block them.",
-      "solution": "A lightweight reverse-proxy middleware or Cloudflare Worker that fingerprints AI crawler behavior patterns (request cadence, header signatures, known IP ranges) and blocks or rate-limits them while allowing legit bots through.",
-      "monetization": "SaaS subscription — free tier for personal sites, $19/mo for small business, $49/mo for high-traffic sites with analytics dashboard.",
-      "complexity": "medium",
-      "trend_sources": ["reddit:1rj19g2", "hackernews:47225130"],
-      "category": "Dev Tools",
-      "validation": [
-        "Post a 'Would you pay $19/mo to block AI scrapers?' poll in r/webdev",
-        "Build a landing page targeting webmasters frustrated by AI scraping and run $20 of Google Ads",
-        "DM 10 people from the Reddit thread about Anthropic scraping and ask about their current workaround"
-      ],
-      "evidence": [
-        {"title": "What can you realistically do against scrapers from AI companies?", "url": "https://reddit.com/r/webdev/comments/1rj19g2"},
-        {"title": "Meta's AI smart glasses and data privacy concerns", "url": "https://news.ycombinator.com/item?id=47225130"}
-      ]
-    },
-    {
-      "title": "CodeLeakGuard",
-      "problem": "Online code editors like CodePen transmit your code to servers in real-time as you type — including API keys, passwords, and secrets. Developers are unknowingly leaking credentials through their dev tools.",
-      "solution": "A browser extension that monitors outgoing requests from code editors and dev tools, warns when sensitive patterns (API keys, tokens, passwords) are about to be transmitted, and optionally redacts them.",
-      "monetization": "Freemium — free for personal use with basic pattern matching, $9/mo for teams with custom rules, secret rotation alerts, and audit logs.",
-      "complexity": "medium",
-      "trend_sources": ["reddit:1rj1oac", "hackernews:47190782"],
-      "category": "Dev Tools",
-      "validation": [
-        "Post findings about code editor leaks in r/netsec and r/webdev with a waitlist link",
-        "Build an MVP Chrome extension that just detects and logs outgoing requests containing common secret patterns",
-        "Cold DM 10 security-conscious developers from the Reddit thread and ask if they'd install it"
-      ],
-      "evidence": [
-        {"title": "I planted fake API keys in online code editors and monitored where they went", "url": "https://reddit.com/r/webdev/comments/1rj1oac"},
-        {"title": "Disable Your SSH access accidentally with scp", "url": "https://news.ycombinator.com/item?id=47190782"}
-      ]
-    },
-    {
       "title": "SpecPilot",
-      "problem": "Developers using AI coding tools (Cursor, Claude Code, Codex) ship fast but create chaos — spending 2x the time un-shipping 'helpful' extras. Without structured specs, vibe coding produces unmaintainable code.",
+      "problem": "Developers using AI coding tools (Cursor, Claude Code, Codex) ship fast but create chaos — spending 2x the time un-shipping 'helpful' extras. Vibe coding without structured specs produces unmaintainable code that even other AI tools can't fix.",
       "solution": "A CLI/web tool that generates structured mini-specs from natural language feature descriptions. Feed the spec to your AI coding tool for focused, scoped output instead of open-ended generation.",
       "monetization": "SaaS — free for 5 specs/month, $12/mo unlimited with templates and team sharing.",
       "complexity": "low",
-      "trend_sources": ["reddit:1rjtt6d", "reddit:1rjucvg", "hackernews:47234917", "hackernews:47236218"],
+      "trend_sources": ["reddit:1rjtt6d", "reddit:1rjucvg", "reddit:1rjrdmk", "hackernews:47234917", "hackernews:47236218", "producthunt:clean-clode", "github:shareAI-lab/learn-claude-code"],
       "category": "Dev Tools",
       "validation": [
         "Share a spec template in r/SideProject and measure engagement",
@@ -61,12 +26,109 @@
         {"title": "Built my side project with vibe coding, almost shipped chaos, specs saved it", "url": "https://reddit.com/r/SideProject/comments/1rjtt6d"},
         {"title": "WorldMonitor is a vibe coded mess", "url": "https://reddit.com/r/webdev/comments/1rjucvg"},
         {"title": "When AI Writes the Software, Who Verifies It?", "url": "https://news.ycombinator.com/item?id=47234917"},
-        {"title": "You are going to get priced out of the best AI coding tools", "url": "https://news.ycombinator.com/item?id=47236218"}
+        {"title": "You are going to get priced out of the best AI coding tools", "url": "https://news.ycombinator.com/item?id=47236218"},
+        {"title": "Clean Clode — clean Claude Code terminal output", "url": "https://www.producthunt.com/products/clean-clode"}
+      ]
+    },
+    {
+      "title": "AgentBench",
+      "problem": "Companies deploying AI agents (voice bots, chat agents, coding assistants) have no systematic way to test them before shipping or monitor them in production. Agents fail silently — a judge in India cited fake AI-generated court orders, Ars Technica published AI-fabricated quotes.",
+      "solution": "A testing and monitoring platform for AI agents — define test scenarios, run automated conversations, track hallucination rates, latency, and user satisfaction. Get alerts when agent behavior degrades.",
+      "monetization": "SaaS — $29/mo for solo developers (100 test runs/mo), $99/mo for teams with CI/CD integration and production monitoring.",
+      "complexity": "high",
+      "trend_sources": ["hackernews:47232903", "hackernews:47231261", "hackernews:47226608", "github:agentscope-ai/agentscope", "github:alibaba/OpenSandbox", "producthunt:gojiberry", "producthunt:viktor"],
+      "category": "AI",
+      "validation": [
+        "Post a 'How are you testing your AI agents?' survey in r/MachineLearning and HN",
+        "Build a simple agent testing CLI that runs conversation scenarios and share on GitHub",
+        "Reach out to 5 YC companies building AI agents and offer free beta access"
+      ],
+      "evidence": [
+        {"title": "Launch HN: Cekura (YC F24) – Testing and monitoring for voice and chat AI agents", "url": "https://news.ycombinator.com/item?id=47232903"},
+        {"title": "India's top court angry after junior judge cites fake AI-generated orders", "url": "https://news.ycombinator.com/item?id=47231261"},
+        {"title": "Ars Technica fires reporter after AI controversy involving fabricated quotes", "url": "https://news.ycombinator.com/item?id=47226608"},
+        {"title": "GojiberryAI — AI agents turning high-intent leads into booked demos", "url": "https://www.producthunt.com/products/gojiberry"}
+      ]
+    },
+    {
+      "title": "ScrapShield",
+      "problem": "AI companies (Anthropic, OpenAI) are aggressively scraping websites at 10+ req/s, ignoring robots.txt, and neither publishes IP ranges. Site owners have no reliable way to detect and block them. Meanwhile Meta's AI glasses raise privacy concerns about constant data collection.",
+      "solution": "A lightweight reverse-proxy middleware or Cloudflare Worker that fingerprints AI crawler behavior patterns (request cadence, header signatures, known IP ranges) and blocks or rate-limits them while allowing legit bots through.",
+      "monetization": "SaaS subscription — free tier for personal sites, $19/mo for small business, $49/mo for high-traffic sites with analytics dashboard.",
+      "complexity": "medium",
+      "trend_sources": ["reddit:1rj19g2", "hackernews:47225130", "hackernews:47232768", "producthunt:weir-ai"],
+      "category": "Dev Tools",
+      "validation": [
+        "Post a 'Would you pay $19/mo to block AI scrapers?' poll in r/webdev",
+        "Build a landing page targeting webmasters frustrated by AI scraping and run $20 of Google Ads",
+        "DM 10 people from the Reddit thread about Anthropic scraping and ask about their current workaround"
+      ],
+      "evidence": [
+        {"title": "What can you realistically do against scrapers from AI companies?", "url": "https://reddit.com/r/webdev/comments/1rj19g2"},
+        {"title": "Meta's AI smart glasses and data privacy concerns", "url": "https://news.ycombinator.com/item?id=47225130"},
+        {"title": "WEIR AI — Track your identity online to protect it", "url": "https://www.producthunt.com/products/weir-ai"}
+      ]
+    },
+    {
+      "title": "CodeLeakGuard",
+      "problem": "Online code editors like CodePen transmit your code to servers in real-time as you type — including API keys, passwords, and secrets. Developers are unknowingly leaking credentials through their dev tools.",
+      "solution": "A browser extension that monitors outgoing requests from code editors and dev tools, warns when sensitive patterns (API keys, tokens, passwords) are about to be transmitted, and optionally redacts them.",
+      "monetization": "Freemium — free for personal use with basic pattern matching, $9/mo for teams with custom rules, secret rotation alerts, and audit logs.",
+      "complexity": "medium",
+      "trend_sources": ["reddit:1rj1oac", "hackernews:47190782", "github:aquasecurity/trivy"],
+      "category": "Dev Tools",
+      "validation": [
+        "Post findings about code editor leaks in r/netsec and r/webdev with a waitlist link",
+        "Build an MVP Chrome extension that just detects and logs outgoing requests containing common secret patterns",
+        "Cold DM 10 security-conscious developers from the Reddit thread and ask if they'd install it"
+      ],
+      "evidence": [
+        {"title": "I planted fake API keys in online code editors and monitored where they went", "url": "https://reddit.com/r/webdev/comments/1rj1oac"},
+        {"title": "Disable Your SSH access accidentally with scp", "url": "https://news.ycombinator.com/item?id=47190782"},
+        {"title": "Trivy — Find vulnerabilities, misconfigurations, secrets in code", "url": "https://github.com/aquasecurity/trivy"}
+      ]
+    },
+    {
+      "title": "OSS SEO Rescue",
+      "problem": "Open source project maintainers are losing the SEO battle for their own project names. Copycat sites, wrappers, and AI-generated content outrank the original projects on Google — and tech publications have lost over half their Google traffic since 2024.",
+      "solution": "An SEO monitoring and recovery toolkit built specifically for open source projects — tracks keyword rankings for your project name, alerts on competitor pages, and generates optimized content to reclaim search positions.",
+      "monetization": "Freemium — free monitoring for 1 project with weekly reports, $19/mo for real-time alerts, competitor analysis, and SEO content suggestions.",
+      "complexity": "medium",
+      "trend_sources": ["hackernews:47232158", "hackernews:47232224", "reddit:1rjtja0", "producthunt:crawler-sh"],
+      "category": "Dev Tools",
+      "validation": [
+        "Post a 'Is your OSS project losing its own SEO?' thread on HackerNews with a waitlist",
+        "DM 10 OSS maintainers on GitHub who have popular projects and ask about their SEO struggles",
+        "Build a free tool that checks if a GitHub repo ranks #1 for its own name"
+      ],
+      "evidence": [
+        {"title": "I'm losing the SEO battle for my own open source project", "url": "https://news.ycombinator.com/item?id=47232158"},
+        {"title": "Most-read tech publications have lost over half their Google traffic since 2024", "url": "https://news.ycombinator.com/item?id=47232224"},
+        {"title": "Crawler.sh — Free Local AEO & SEO Spider", "url": "https://www.producthunt.com/products/crawler-sh"}
+      ]
+    },
+    {
+      "title": "EdgeWhisper",
+      "problem": "Developers building voice-enabled apps are stuck choosing between expensive cloud APIs with latency (OpenAI Whisper, Deepgram) or clunky self-hosted models that eat GPU resources. Small, fast, on-device speech recognition is still hard to deploy.",
+      "solution": "A packaged, drop-in edge ASR SDK that bundles optimized small speech models with a simple API. Runs locally on-device with sub-200ms latency, no cloud dependency, and supports 20+ languages.",
+      "monetization": "One-time license — $49 for indie devs, $299 for teams, $999 for enterprise with custom model fine-tuning.",
+      "complexity": "high",
+      "trend_sources": ["github:moonshine-ai/moonshine", "producthunt:krisp-accent-conversion", "producthunt:expressive-mode-for-elevenagents", "producthunt:qwen3-5-small"],
+      "category": "AI",
+      "validation": [
+        "Post a 'How are you doing on-device speech recognition?' survey in r/MachineLearning",
+        "Build a demo comparing cloud Whisper vs local moonshine latency and share on HN",
+        "Interview 10 developers building voice features about their current ASR pain points"
+      ],
+      "evidence": [
+        {"title": "Moonshine — Fast and accurate ASR for edge devices", "url": "https://github.com/moonshine-ai/moonshine"},
+        {"title": "Krisp Accent Conversion — Understand accented speech in real time", "url": "https://www.producthunt.com/products/krisp"},
+        {"title": "Qwen3.5 Small — native multimodal with less compute", "url": "https://www.producthunt.com/products/qwen3"}
       ]
     },
     {
       "title": "PostPulse",
-      "problem": "Indie hackers and SaaS founders post product launches randomly on Reddit and get zero engagement. The typical r/SideProject post gets 1 upvote and 0 comments despite 661 posts/day.",
+      "problem": "Indie hackers and SaaS founders post product launches randomly on Reddit and get zero engagement. The typical r/SideProject post gets 1 upvote and 0 comments despite 661 posts/day. Meanwhile getting customers from Reddit without being spammy is a constant struggle.",
       "solution": "A Reddit timing and engagement optimizer that analyzes subreddit activity patterns, tells you the exact best time to post, and scores your title/content for engagement potential before you hit submit.",
       "monetization": "SaaS — $15/mo for scheduling insights across 5 subreddits, $29/mo for unlimited subreddits with title optimization and competitor tracking.",
       "complexity": "medium",
@@ -84,59 +146,21 @@
       ]
     },
     {
-      "title": "VisitorReveal",
-      "problem": "SaaS companies get 150K+ monthly visitors but most are anonymous. They can see page views and behavior but have no idea who is actually browsing — are they buyers, competitors, or tire-kickers?",
-      "solution": "A lightweight analytics snippet that enriches anonymous visitors with company name, industry, and intent signals using reverse IP lookup and behavioral fingerprinting. Surfaces the 'who' behind the 'what'.",
-      "monetization": "SaaS — $49/mo for up to 10K identified visitors, $149/mo for 50K with CRM integrations and Slack alerts.",
-      "complexity": "high",
-      "trend_sources": ["reddit:1rjg9on", "reddit:1rjve7z"],
+      "title": "ClipForge",
+      "problem": "Video AI tools have massive demand (300K+ users on one tool alone) but the workflow is still manual and fragmented. Creators need to manually chain tools together to go from long video to edited short-form clips.",
+      "solution": "A Zapier-style automation platform specifically for video editing workflows — connect transcription, clipping, captioning, resizing, and publishing into automated pipelines triggered by new video uploads.",
+      "monetization": "SaaS — $19/mo for 10 automations, $49/mo unlimited with custom workflows and team access.",
+      "complexity": "medium",
+      "trend_sources": ["producthunt:mosaic-so", "reddit:1rjn51z"],
       "category": "SaaS",
       "validation": [
-        "Post a landing page in r/SaaS targeting founders frustrated with anonymous traffic",
-        "Run a survey in r/Entrepreneur asking 'What would you do if you knew which companies visited your site?'",
-        "Cold outreach to 10 SaaS founders from the Reddit thread and offer a free manual audit of their traffic"
+        "Post a 'What's your video editing workflow?' survey in content creator communities",
+        "Build an MVP that auto-clips highlights from YouTube videos and share in r/SideProject",
+        "DM 10 UGC creators and ask about their biggest video editing bottleneck"
       ],
       "evidence": [
-        {"title": "Anyone else annoyed that most of your traffic is just anonymous?", "url": "https://reddit.com/r/SaaS/comments/1rjg9on"},
-        {"title": "What's your favorite web analytics tool these days?", "url": "https://reddit.com/r/webdev/comments/1rjve7z"}
-      ]
-    },
-    {
-      "title": "OSS SEO Rescue",
-      "problem": "Open source project maintainers are losing the SEO battle for their own project names. Copycat sites, wrappers, and AI-generated content outrank the original projects on Google.",
-      "solution": "An SEO monitoring and recovery toolkit built specifically for open source projects — tracks keyword rankings for your project name, alerts on competitor pages, and generates optimized content to reclaim search positions.",
-      "monetization": "Freemium — free monitoring for 1 project with weekly reports, $19/mo for real-time alerts, competitor analysis, and SEO content suggestions.",
-      "complexity": "medium",
-      "trend_sources": ["hackernews:47232158", "hackernews:47232224", "reddit:1rjtja0"],
-      "category": "Dev Tools",
-      "validation": [
-        "Post a 'Is your OSS project losing its own SEO?' thread on HackerNews with a waitlist",
-        "DM 10 OSS maintainers on GitHub who have popular projects and ask about their SEO struggles",
-        "Build a free tool that checks if a GitHub repo ranks #1 for its own name"
-      ],
-      "evidence": [
-        {"title": "I'm losing the SEO battle for my own open source project", "url": "https://news.ycombinator.com/item?id=47232158"},
-        {"title": "Most-read tech publications have lost over half their Google traffic since 2024", "url": "https://news.ycombinator.com/item?id=47232224"},
-        {"title": "What I actually did in the first 10 days to make Google notice my product", "url": "https://reddit.com/r/indiehackers/comments/1rjtja0"}
-      ]
-    },
-    {
-      "title": "AgentBench",
-      "problem": "Companies deploying AI agents (voice bots, chat agents, coding assistants) have no systematic way to test them before shipping or monitor them in production. Agents fail silently — like the Indian judge citing fake AI-generated court orders.",
-      "solution": "A testing and monitoring platform for AI agents — define test scenarios, run automated conversations, track hallucination rates, latency, and user satisfaction. Get alerts when agent behavior degrades.",
-      "monetization": "SaaS — $29/mo for solo developers (100 test runs/mo), $99/mo for teams with CI/CD integration and production monitoring.",
-      "complexity": "high",
-      "trend_sources": ["hackernews:47232903", "hackernews:47231261", "hackernews:47226608", "github:agentscope-ai/agentscope"],
-      "category": "AI",
-      "validation": [
-        "Post a 'How are you testing your AI agents?' survey in r/MachineLearning and HN",
-        "Build a simple agent testing CLI that runs conversation scenarios and share on GitHub",
-        "Reach out to 5 YC companies building AI agents and offer free beta access"
-      ],
-      "evidence": [
-        {"title": "Cekura (YC F24) – Testing and monitoring for voice and chat AI agents", "url": "https://news.ycombinator.com/item?id=47232903"},
-        {"title": "India's top court angry after junior judge cites fake AI-generated orders", "url": "https://news.ycombinator.com/item?id=47231261"},
-        {"title": "Ars Technica fires reporter after AI controversy involving fabricated quotes", "url": "https://news.ycombinator.com/item?id=47226608"}
+        {"title": "Mosaic — Zapier for Video Editing", "url": "https://www.producthunt.com/products/mosaic-so"},
+        {"title": "I finally crossed 300K+ users on my video AI SaaS", "url": "https://reddit.com/r/SaaS/comments/1rjn51z"}
       ]
     },
     {
@@ -154,7 +178,27 @@
       ],
       "evidence": [
         {"title": "I'm building OCNO — a local-first AI browser tool that turns browsing into a searchable memory layer", "url": "https://reddit.com/r/SideProject/comments/1rjrxtm"},
+        {"title": "ReMe: Memory Management Kit for Agents", "url": "https://github.com/agentscope-ai/ReMe"},
         {"title": "I'm reluctant to verify my identity or age for any online services", "url": "https://news.ycombinator.com/item?id=47232768"}
+      ]
+    },
+    {
+      "title": "ReviewShield",
+      "problem": "Glassdoor scores can jump overnight from a wave of fake positive reviews planted by companies. Employees and job seekers can't trust the ratings, and legitimate negative reviews get buried. Meanwhile AI-generated content is eroding trust everywhere.",
+      "solution": "A trust-weighted employer review platform that detects review manipulation through statistical anomaly detection — flags suspicious review spikes, weights reviews by account age and verification level, and surfaces authentic sentiment.",
+      "monetization": "Freemium — free to read and write reviews. $9/mo for job seekers wanting manipulation alerts. $99/mo for HR teams wanting reputation monitoring.",
+      "complexity": "medium",
+      "trend_sources": ["reddit:1rjv7mf", "hackernews:47226608", "producthunt:lavalier-ai"],
+      "category": "SaaS",
+      "validation": [
+        "Post a 'Have you noticed fake reviews on Glassdoor?' thread in r/cscareerquestions with a waitlist",
+        "Build a simple tool that scrapes a company's Glassdoor timeline and flags suspicious review spikes",
+        "Survey 30 job seekers about how much they trust Glassdoor ratings"
+      ],
+      "evidence": [
+        {"title": "My company's Glassdoor score jumped overnight after suspicious positive reviews", "url": "https://reddit.com/r/SideProject/comments/1rjv7mf"},
+        {"title": "Ars Technica fires reporter after AI controversy involving fabricated quotes", "url": "https://news.ycombinator.com/item?id=47226608"},
+        {"title": "Lavalier AI — Interview intelligence for confident hiring", "url": "https://www.producthunt.com/products/textio"}
       ]
     },
     {
@@ -163,7 +207,7 @@
       "solution": "A dead-simple email scheduler: upload a CSV, write a template with merge fields, pick a send time per timezone, and go. No sequences, no analytics dashboards, no warmup. Just emails that get sent.",
       "monetization": "One-time purchase — $49 for lifetime access. Or $9/mo for a hosted version with higher sending limits.",
       "complexity": "low",
-      "trend_sources": ["reddit:1rjorin", "reddit:1rjmgb4"],
+      "trend_sources": ["reddit:1rjorin", "reddit:1rjmgb4", "producthunt:mailercloud"],
       "category": "SaaS",
       "validation": [
         "Post a 'Would you pay $49 for a dead-simple bulk email scheduler?' poll in r/Entrepreneur",
@@ -172,7 +216,8 @@
       ],
       "evidence": [
         {"title": "Got my first user for something I built because I couldn't be bothered to do it manually", "url": "https://reddit.com/r/Entrepreneur/comments/1rjorin"},
-        {"title": "Where do you actually do outreach for B2B these days?", "url": "https://reddit.com/r/Entrepreneur/comments/1rjmgb4"}
+        {"title": "Where do you actually do outreach for B2B these days?", "url": "https://reddit.com/r/Entrepreneur/comments/1rjmgb4"},
+        {"title": "Mailercloud Email API Platform — 1000+ emails/sec with 99%+ deliverability", "url": "https://www.producthunt.com/products/mailercloud"}
       ]
     },
     {
@@ -194,21 +239,21 @@
       ]
     },
     {
-      "title": "ReviewShield",
-      "problem": "Glassdoor scores can jump overnight from a wave of fake positive reviews planted by companies. Employees and job seekers can't trust the ratings, and legitimate negative reviews get buried.",
-      "solution": "A trust-weighted employer review platform that detects review manipulation through statistical anomaly detection — flags suspicious review spikes, weights reviews by account age and verification level, and surfaces authentic sentiment.",
-      "monetization": "Freemium — free to read and write reviews. $9/mo for job seekers wanting manipulation alerts. $99/mo for HR teams wanting reputation monitoring.",
+      "title": "RepoGraph",
+      "problem": "Developers joining new codebases or reviewing open-source projects waste hours trying to understand code structure and relationships between files. GitNexus got 6K+ stars this week proving massive demand for visual code exploration.",
+      "solution": "A client-side tool that generates interactive knowledge graphs from any GitHub repository — visualize file dependencies, function call chains, and module relationships. Drop in a repo URL and get an explorable map.",
+      "monetization": "Freemium — free for public repos, $15/mo for private repos with saved graphs and team sharing.",
       "complexity": "medium",
-      "trend_sources": ["reddit:1rjv7mf", "hackernews:47226608"],
-      "category": "SaaS",
+      "trend_sources": ["github:sponsors/abhigyanpatwari", "hackernews:47205090", "github:shareAI-lab/learn-claude-code"],
+      "category": "Dev Tools",
       "validation": [
-        "Post a 'Have you noticed fake reviews on Glassdoor?' thread in r/cscareerquestions with a waitlist",
-        "Build a simple tool that scrapes a company's Glassdoor timeline and flags suspicious review spikes",
-        "Survey 30 job seekers about how much they trust Glassdoor ratings"
+        "Build a minimal version for a few popular repos and post as a Show HN",
+        "Share interactive graphs of trending GitHub repos on Twitter and measure interest",
+        "Survey 20 developers about how they onboard to new codebases"
       ],
       "evidence": [
-        {"title": "My company's Glassdoor score jumped overnight after suspicious positive reviews. So I built an alternative.", "url": "https://reddit.com/r/SideProject/comments/1rjv7mf"},
-        {"title": "Ars Technica fires reporter after AI controversy involving fabricated quotes", "url": "https://news.ycombinator.com/item?id=47226608"}
+        {"title": "GitNexus: Zero-Server Code Intelligence Engine — 6K stars this week", "url": "https://github.com/sponsors/abhigyanpatwari"},
+        {"title": "Show HN: Effective Git", "url": "https://news.ycombinator.com/item?id=47205090"}
       ]
     },
     {
@@ -227,24 +272,6 @@
       "evidence": [
         {"title": "Show HN: Open-Source Article 12 Logging Infrastructure for the EU AI Act", "url": "https://news.ycombinator.com/item?id=47230438"},
         {"title": "When AI Writes the Software, Who Verifies It?", "url": "https://news.ycombinator.com/item?id=47234917"}
-      ]
-    },
-    {
-      "title": "RepoGraph",
-      "problem": "Developers joining new codebases or reviewing open-source projects waste hours trying to understand code structure and relationships between files. Reading code linearly doesn't show the big picture.",
-      "solution": "A client-side tool that generates interactive knowledge graphs from any GitHub repository — visualize file dependencies, function call chains, and module relationships. Drop in a repo URL and get an explorable map.",
-      "monetization": "Freemium — free for public repos, $15/mo for private repos with saved graphs and team sharing.",
-      "complexity": "medium",
-      "trend_sources": ["github:sponsors/abhigyanpatwari", "hackernews:47205090", "github:shareAI-lab/learn-claude-code"],
-      "category": "Dev Tools",
-      "validation": [
-        "Build a minimal version for a few popular repos and post as a Show HN",
-        "Share interactive graphs of trending GitHub repos on Twitter and measure interest",
-        "Survey 20 developers about how they onboard to new codebases"
-      ],
-      "evidence": [
-        {"title": "GitNexus: Zero-Server Code Intelligence Engine — client-side knowledge graph for GitHub repos", "url": "https://github.com/sponsors/abhigyanpatwari"},
-        {"title": "Show HN: Effective Git", "url": "https://news.ycombinator.com/item?id=47205090"}
       ]
     }
   ]
