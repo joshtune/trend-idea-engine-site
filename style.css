@@ -119,6 +119,38 @@ main {
   border-color: var(--accent);
 }
 
+.card-details {
+  margin-top: 0.75rem;
+  border-top: 1px solid var(--border);
+  padding-top: 0.5rem;
+}
+
+.card-details summary {
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  padding: 0.3rem 0;
+  list-style: none;
+  user-select: none;
+}
+
+.card-details summary::before {
+  content: "\25B8  ";
+}
+
+.card-details[open] summary::before {
+  content: "\25BE  ";
+}
+
+.card-details summary:hover {
+  color: var(--accent);
+}
+
+.card-details-body {
+  padding-top: 0.5rem;
+}
+
 .card-header {
   display: flex;
   align-items: center;

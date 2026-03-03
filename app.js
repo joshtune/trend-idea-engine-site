@@ -163,6 +163,9 @@ function renderCard(idea, rank) {
         ).join("")}</ul>
       </div>` : "";
 
+  const aiBadge = idea.ai_build
+    ? `<span class="badge badge-ai-${(idea.ai_build.viability || "medium").toLowerCase()}">${escapeHtml(idea.ai_build.viability || "medium")}</span>` : "";
+
   return `
     <div class="idea-card">
       <div class="card-header">
@@ -182,23 +185,28 @@ function renderCard(idea, rank) {
         <span class="field-label">Solution</span>
         ${escapeHtml(idea.solution)}
       </div>
-      <div class="field">
-        <span class="field-label">Monetization</span>
-        ${escapeHtml(idea.monetization)}
-      </div>
-      ${validationHtml}
-      ${evidenceHtml}
-      ${idea.ai_build ? `<div class="ai-build">
-        <span class="field-label">AI Buildability</span>
-        <span class="badge badge-ai-${(idea.ai_build.viability || "medium").toLowerCase()}">${escapeHtml(idea.ai_build.viability || "medium")}</span>
-        ${idea.ai_build.time || idea.ai_build.cost ? `<span class="ai-build-meta">${idea.ai_build.time ? `⏱ ${escapeHtml(idea.ai_build.time)}` : ""}${idea.ai_build.time && idea.ai_build.cost ? " · " : ""}${idea.ai_build.cost ? `💰 ${escapeHtml(idea.ai_build.cost)}` : ""}</span>` : ""}
-        ${idea.ai_build.stack && idea.ai_build.stack.length > 0 ? `<span class="ai-build-stack">${idea.ai_build.stack.map(s => `<span class="badge badge-stack">${escapeHtml(s)}</span>`).join("")}</span>` : ""}
-        <span class="ai-build-details">${escapeHtml(idea.ai_build.details)}</span>
-      </div>` : ""}
       <div class="badges">
         <span class="badge ${complexityClass}">${escapeHtml(idea.complexity || "medium")}</span>
         <span class="badge badge-category">${escapeHtml(idea.category || "Other")}</span>
+        ${aiBadge}
       </div>
+      <details class="card-details">
+        <summary>Details</summary>
+        <div class="card-details-body">
+          <div class="field">
+            <span class="field-label">Monetization</span>
+            ${escapeHtml(idea.monetization)}
+          </div>
+          ${validationHtml}
+          ${evidenceHtml}
+          ${idea.ai_build ? `<div class="ai-build">
+            <span class="field-label">AI Buildability</span>
+            ${idea.ai_build.time || idea.ai_build.cost ? `<span class="ai-build-meta">${idea.ai_build.time ? escapeHtml(idea.ai_build.time) : ""}${idea.ai_build.time && idea.ai_build.cost ? " · " : ""}${idea.ai_build.cost ? escapeHtml(idea.ai_build.cost) : ""}</span>` : ""}
+            ${idea.ai_build.stack && idea.ai_build.stack.length > 0 ? `<span class="ai-build-stack">${idea.ai_build.stack.map(s => `<span class="badge badge-stack">${escapeHtml(s)}</span>`).join("")}</span>` : ""}
+            <span class="ai-build-details">${escapeHtml(idea.ai_build.details)}</span>
+          </div>` : ""}
+        </div>
+      </details>
     </div>
   `;
 }
