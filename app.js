@@ -99,15 +99,53 @@ async function loadReport(date) {
       return;
     }
 
-    grid.innerHTML = ideas.map(renderCard).join("");
+    ideas.forEach(idea => { idea._score = computeScore(idea); });
+    ideas.sort((a, b) => b._score - a._score);
+
+    grid.innerHTML = ideas.map((idea, i) => renderCard(idea, i + 1)).join("");
   } catch {
     stats.innerHTML = "";
     grid.innerHTML = `<div class="empty-state"><p>Could not load report for ${date}.</p></div>`;
   }
 }
 
-function renderCard(idea) {
+/* --- Scoring & Source Helpers --- */
+const SOURCE_TYPE_MAP = {
+  hackernews: "HN",
+  reddit: "Reddit",
+  github: "GitHub",
+  google_trends: "Trends",
+};
+
+function getSourceTypes(trendSources) {
+  const types = {};
+  for (const src of trendSources || []) {
+    const prefix = src.split(":")[0];
+    const label = SOURCE_TYPE_MAP[prefix] || prefix;
+    types[label] = (types[label] || 0) + 1;
+  }
+  return types;
+}
+
+function computeScore(idea) {
+  const types = getSourceTypes(idea.trend_sources);
+  const uniqueTypes = Object.keys(types).length;
+  const totalSources = (idea.trend_sources || []).length;
+  return uniqueTypes * 10 + totalSources;
+}
+
+function renderCard(idea, rank) {
   const complexityClass = `badge-complexity-${(idea.complexity || "medium").toLowerCase()}`;
+  const sourceTypes = getSourceTypes(idea.trend_sources);
+  const score = idea._score || computeScore(idea);
+  const maxScore = 44; // 4 types × 10 + 4 sources
+  const barPct = Math.min(Math.round((score / maxScore) * 100), 100);
+
+  const sourceBadgesHtml = Object.entries(sourceTypes)
+    .map(([label, count]) => {
+      const cls = `badge-source-${label.toLowerCase()}`;
+      return `<span class="badge ${cls}">${escapeHtml(label)}${count > 1 ? ` ×${count}` : ""}</span>`;
+    }).join("");
 
   const validationHtml = idea.validation && idea.validation.length > 0
     ? `<div class="field">
@@ -125,7 +163,15 @@ function renderCard(idea) {
 
   return `
     <div class="idea-card">
-      <h3>${escapeHtml(idea.title)}</h3>
+      <div class="card-header">
+        <span class="idea-rank">#${rank}</span>
+        <h3>${escapeHtml(idea.title)}</h3>
+        <div class="confidence-score">
+          <span class="score-number">${score}</span>
+          <div class="score-bar"><div class="score-bar-fill" style="width:${barPct}%"></div></div>
+        </div>
+      </div>
+      <div class="source-badges">${sourceBadgesHtml}</div>
       <div class="field">
         <span class="field-label">Problem</span>
         ${escapeHtml(idea.problem)}

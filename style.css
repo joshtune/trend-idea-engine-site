@@ -119,6 +119,84 @@ main {
   border-color: var(--accent);
 }
 
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.75rem;
+}
+
+.idea-rank {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  flex-shrink: 0;
+}
+
+.card-header h3 {
+  font-size: 1.1rem;
+  color: var(--text);
+  flex: 1;
+  min-width: 0;
+}
+
+.confidence-score {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  flex-shrink: 0;
+}
+
+.score-number {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--accent);
+  min-width: 1.5rem;
+  text-align: right;
+}
+
+.score-bar {
+  width: 40px;
+  height: 6px;
+  background: var(--border);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.score-bar-fill {
+  height: 100%;
+  background: var(--accent);
+  border-radius: 3px;
+  transition: width 0.3s ease;
+}
+
+.source-badges {
+  display: flex;
+  gap: 0.4rem;
+  margin-bottom: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.badge-source-hn {
+  background: rgba(255, 102, 0, 0.15);
+  color: #ff6600;
+}
+
+.badge-source-reddit {
+  background: rgba(255, 69, 0, 0.15);
+  color: #ff4500;
+}
+
+.badge-source-github {
+  background: rgba(88, 166, 255, 0.15);
+  color: #58a6ff;
+}
+
+.badge-source-trends {
+  background: rgba(100, 200, 255, 0.15);
+  color: #64c8ff;
+}
+
 .idea-card h3 {
   font-size: 1.1rem;
   margin-bottom: 0.75rem;
