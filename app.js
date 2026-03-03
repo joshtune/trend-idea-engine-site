@@ -188,6 +188,12 @@ function renderCard(idea, rank) {
       </div>
       ${validationHtml}
       ${evidenceHtml}
+      ${idea.ai_build ? `<div class="ai-build">
+        <span class="field-label">AI Buildability</span>
+        <span class="badge badge-ai-${(idea.ai_build.viability || "medium").toLowerCase()}">${escapeHtml(idea.ai_build.viability || "medium")}</span>
+        ${idea.ai_build.time || idea.ai_build.cost ? `<span class="ai-build-meta">${idea.ai_build.time ? `⏱ ${escapeHtml(idea.ai_build.time)}` : ""}${idea.ai_build.time && idea.ai_build.cost ? " · " : ""}${idea.ai_build.cost ? `💰 ${escapeHtml(idea.ai_build.cost)}` : ""}</span>` : ""}
+        <span class="ai-build-details">${escapeHtml(idea.ai_build.details)}</span>
+      </div>` : ""}
       <div class="badges">
         <span class="badge ${complexityClass}">${escapeHtml(idea.complexity || "medium")}</span>
         <span class="badge badge-category">${escapeHtml(idea.category || "Other")}</span>

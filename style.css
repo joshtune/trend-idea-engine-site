@@ -202,6 +202,48 @@ main {
   color: #da552f;
 }
 
+.ai-build {
+  margin-top: 0.75rem;
+  padding: 0.6rem 0.75rem;
+  background: rgba(88, 166, 255, 0.05);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 0.85rem;
+}
+
+.ai-build .field-label {
+  display: inline;
+  margin-right: 0.5rem;
+}
+
+.ai-build-meta {
+  font-size: 0.8rem;
+  color: var(--accent);
+  margin-left: 0.5rem;
+}
+
+.ai-build-details {
+  color: var(--text-muted);
+  display: block;
+  margin-top: 0.35rem;
+  line-height: 1.5;
+}
+
+.badge-ai-high {
+  background: rgba(63, 185, 80, 0.15);
+  color: var(--green);
+}
+
+.badge-ai-medium {
+  background: rgba(210, 153, 34, 0.15);
+  color: var(--yellow);
+}
+
+.badge-ai-low {
+  background: rgba(248, 81, 73, 0.15);
+  color: var(--red);
+}
+
 .idea-card h3 {
   font-size: 1.1rem;
   margin-bottom: 0.75rem;

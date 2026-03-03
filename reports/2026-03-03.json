@@ -28,7 +28,13 @@
         {"title": "When AI Writes the Software, Who Verifies It?", "url": "https://news.ycombinator.com/item?id=47234917"},
         {"title": "You are going to get priced out of the best AI coding tools", "url": "https://news.ycombinator.com/item?id=47236218"},
         {"title": "Clean Clode — clean Claude Code terminal output", "url": "https://www.producthunt.com/products/clean-clode"}
-      ]
+      ],
+      "ai_build": {
+        "viability": "high",
+        "time": "1 weekend",
+        "cost": "$0-20 (Vercel free tier + domain)",
+        "details": "Straightforward web form + markdown generator. Next.js or SvelteKit + a simple template engine. Fully vibe-codable in a weekend. No external APIs needed for the core product."
+      }
     },
     {
       "title": "AgentBench",
@@ -48,7 +54,13 @@
         {"title": "India's top court angry after junior judge cites fake AI-generated orders", "url": "https://news.ycombinator.com/item?id=47231261"},
         {"title": "Ars Technica fires reporter after AI controversy involving fabricated quotes", "url": "https://news.ycombinator.com/item?id=47226608"},
         {"title": "GojiberryAI — AI agents turning high-intent leads into booked demos", "url": "https://www.producthunt.com/products/gojiberry"}
-      ]
+      ],
+      "ai_build": {
+        "viability": "medium",
+        "time": "3-4 weeks",
+        "cost": "$50-100/mo (Supabase Pro + LLM API costs for evaluation)",
+        "details": "Dashboard and test runner are standard web app work (Next.js + Supabase). The hard part is building reliable agent conversation simulation and hallucination detection — needs custom evaluation logic and LLM-as-judge patterns that require manual tuning."
+      }
     },
     {
       "title": "ScrapShield",
@@ -67,7 +79,13 @@
         {"title": "What can you realistically do against scrapers from AI companies?", "url": "https://reddit.com/r/webdev/comments/1rj19g2"},
         {"title": "Meta's AI smart glasses and data privacy concerns", "url": "https://news.ycombinator.com/item?id=47225130"},
         {"title": "WEIR AI — Track your identity online to protect it", "url": "https://www.producthunt.com/products/weir-ai"}
-      ]
+      ],
+      "ai_build": {
+        "viability": "medium",
+        "time": "1-2 weeks",
+        "cost": "$5-25/mo (Cloudflare Workers paid plan or VPS for proxy)",
+        "details": "Cloudflare Worker or Express middleware. AI can scaffold the request analysis and rate-limiting logic. The tricky part is building accurate bot fingerprinting heuristics — needs real traffic data and iterative tuning that AI can't fully automate."
+      }
     },
     {
       "title": "CodeLeakGuard",
@@ -86,7 +104,13 @@
         {"title": "I planted fake API keys in online code editors and monitored where they went", "url": "https://reddit.com/r/webdev/comments/1rj1oac"},
         {"title": "Disable Your SSH access accidentally with scp", "url": "https://news.ycombinator.com/item?id=47190782"},
         {"title": "Trivy — Find vulnerabilities, misconfigurations, secrets in code", "url": "https://github.com/aquasecurity/trivy"}
-      ]
+      ],
+      "ai_build": {
+        "viability": "medium",
+        "time": "1-2 weeks",
+        "cost": "$5 (Chrome Web Store dev fee) + $0 hosting",
+        "details": "Chrome extension with content script intercepting fetch/XHR. AI can generate the extension scaffold and regex pattern matching. Manual work needed for Chrome Web Store compliance, cross-browser testing, and handling edge cases in different code editors."
+      }
     },
     {
       "title": "OSS SEO Rescue",
@@ -105,7 +129,13 @@
         {"title": "I'm losing the SEO battle for my own open source project", "url": "https://news.ycombinator.com/item?id=47232158"},
         {"title": "Most-read tech publications have lost over half their Google traffic since 2024", "url": "https://news.ycombinator.com/item?id=47232224"},
         {"title": "Crawler.sh — Free Local AEO & SEO Spider", "url": "https://www.producthunt.com/products/crawler-sh"}
-      ]
+      ],
+      "ai_build": {
+        "viability": "high",
+        "time": "1 week",
+        "cost": "$20-50/mo (SERP API + Vercel + domain)",
+        "details": "Next.js dashboard + SERP API (DataForSEO or SerpAPI) + cron jobs for monitoring. Standard CRUD app with scheduled tasks. AI can build the entire thing — scraping, alerting, and content suggestions are all well-understood patterns."
+      }
     },
     {
       "title": "EdgeWhisper",
@@ -124,7 +154,13 @@
         {"title": "Moonshine — Fast and accurate ASR for edge devices", "url": "https://github.com/moonshine-ai/moonshine"},
         {"title": "Krisp Accent Conversion — Understand accented speech in real time", "url": "https://www.producthunt.com/products/krisp"},
         {"title": "Qwen3.5 Small — native multimodal with less compute", "url": "https://www.producthunt.com/products/qwen3"}
-      ]
+      ],
+      "ai_build": {
+        "viability": "low",
+        "time": "4-6 weeks",
+        "cost": "$100-500 (GPU instances for model optimization + testing devices)",
+        "details": "Requires deep ML expertise — model optimization (quantization, ONNX export), platform-specific SDKs (CoreML, NNAPI), and audio signal processing. AI can help with the wrapper API and docs but the core model packaging and edge deployment needs hands-on ML engineering."
+      }
     },
     {
       "title": "PostPulse",
@@ -143,7 +179,13 @@
         {"title": "I analyzed 23 million Reddit posts. r/SideProject gets 661 posts per day", "url": "https://reddit.com/r/SideProject/comments/1rj6o74"},
         {"title": "How do you get customers from Reddit without getting banned?", "url": "https://reddit.com/r/SaaS/comments/1rjjb1l"},
         {"title": "Does anyone have a list of directories to launch a startup?", "url": "https://reddit.com/r/indiehackers/comments/1rh6d0o"}
-      ]
+      ],
+      "ai_build": {
+        "viability": "high",
+        "time": "3-5 days",
+        "cost": "$0-20 (Vercel free tier + domain)",
+        "details": "Reddit JSON API for data, Next.js dashboard, simple statistical analysis (time-based engagement patterns). Fully AI-buildable — no auth complexity, no real-time features, just data crunching and visualization."
+      }
     },
     {
       "title": "ClipForge",
@@ -161,7 +203,13 @@
       "evidence": [
         {"title": "Mosaic — Zapier for Video Editing", "url": "https://www.producthunt.com/products/mosaic-so"},
         {"title": "I finally crossed 300K+ users on my video AI SaaS", "url": "https://reddit.com/r/SaaS/comments/1rjn51z"}
-      ]
+      ],
+      "ai_build": {
+        "viability": "medium",
+        "time": "2-3 weeks",
+        "cost": "$30-80/mo (video processing APIs like Replicate or AssemblyAI + storage)",
+        "details": "Next.js frontend + workflow engine. AI can build the pipeline orchestration and UI. The video processing itself relies on third-party APIs (transcription, clipping). Main challenge is handling async video jobs and large file uploads reliably."
+      }
     },
     {
       "title": "LocalRecall",
@@ -180,7 +228,13 @@
         {"title": "I'm building OCNO — a local-first AI browser tool that turns browsing into a searchable memory layer", "url": "https://reddit.com/r/SideProject/comments/1rjrxtm"},
         {"title": "ReMe: Memory Management Kit for Agents", "url": "https://github.com/agentscope-ai/ReMe"},
         {"title": "I'm reluctant to verify my identity or age for any online services", "url": "https://news.ycombinator.com/item?id=47232768"}
-      ]
+      ],
+      "ai_build": {
+        "viability": "medium",
+        "time": "2-3 weeks",
+        "cost": "$5 (Chrome Web Store fee) + $0 hosting (runs locally)",
+        "details": "Chrome extension with IndexedDB for local storage and a small embedding model for semantic search. AI can scaffold the extension and content extraction. The hard parts are browser extension performance at scale (indexing thousands of pages) and keeping the local search fast."
+      }
     },
     {
       "title": "ReviewShield",
@@ -199,7 +253,13 @@
         {"title": "My company's Glassdoor score jumped overnight after suspicious positive reviews", "url": "https://reddit.com/r/SideProject/comments/1rjv7mf"},
         {"title": "Ars Technica fires reporter after AI controversy involving fabricated quotes", "url": "https://news.ycombinator.com/item?id=47226608"},
         {"title": "Lavalier AI — Interview intelligence for confident hiring", "url": "https://www.producthunt.com/products/textio"}
-      ]
+      ],
+      "ai_build": {
+        "viability": "high",
+        "time": "1-2 weeks",
+        "cost": "$20-40/mo (Supabase + Vercel + domain)",
+        "details": "Standard web app with user accounts, review submission, and statistical anomaly detection. AI can build the full stack including the review-spike detection algorithm. No exotic dependencies — just time-series analysis on review timestamps."
+      }
     },
     {
       "title": "SimpleSend",
@@ -218,7 +278,13 @@
         {"title": "Got my first user for something I built because I couldn't be bothered to do it manually", "url": "https://reddit.com/r/Entrepreneur/comments/1rjorin"},
         {"title": "Where do you actually do outreach for B2B these days?", "url": "https://reddit.com/r/Entrepreneur/comments/1rjmgb4"},
         {"title": "Mailercloud Email API Platform — 1000+ emails/sec with 99%+ deliverability", "url": "https://www.producthunt.com/products/mailercloud"}
-      ]
+      ],
+      "ai_build": {
+        "viability": "high",
+        "time": "1 weekend",
+        "cost": "$0-15 (Gmail API free tier + Vercel)",
+        "details": "CSV parser + Gmail API + simple scheduling. This is a textbook vibe-coding project — no auth complexity, no real-time features, just send emails on a timer. AI can build the entire thing including timezone handling."
+      }
     },
     {
       "title": "LangBridge",
@@ -236,7 +302,13 @@
       "evidence": [
         {"title": "The Language Arbitrage Playbook: $65K/month from French Market", "url": "https://reddit.com/r/indiehackers/comments/1ri0ux8"},
         {"title": "What was the hardest part about entering a foreign market?", "url": "https://reddit.com/r/Entrepreneur/comments/1rjl2fp"}
-      ]
+      ],
+      "ai_build": {
+        "viability": "medium",
+        "time": "2-3 weeks",
+        "cost": "$30-60/mo (translation APIs + Stripe Connect for payments + hosting)",
+        "details": "Landing page builder + translation API (DeepL/Google) + local payment gateway integration. AI can build the platform and translation pipeline. Manual work needed for cultural adaptation, local payment provider setup (Stripe doesn't cover all markets), and SEO per language."
+      }
     },
     {
       "title": "RepoGraph",
@@ -254,7 +326,13 @@
       "evidence": [
         {"title": "GitNexus: Zero-Server Code Intelligence Engine — 6K stars this week", "url": "https://github.com/sponsors/abhigyanpatwari"},
         {"title": "Show HN: Effective Git", "url": "https://news.ycombinator.com/item?id=47205090"}
-      ]
+      ],
+      "ai_build": {
+        "viability": "medium",
+        "time": "2-3 weeks",
+        "cost": "$0-20 (runs client-side, GitHub API free tier + Vercel)",
+        "details": "Client-side JS with GitHub API for repo fetching + D3.js or vis.js for graph visualization. AI can build the parsing and graph rendering. The challenge is building accurate dependency resolution across different languages and frameworks — each ecosystem has different import patterns."
+      }
     },
     {
       "title": "EU AI Logger",
@@ -272,7 +350,13 @@
       "evidence": [
         {"title": "Show HN: Open-Source Article 12 Logging Infrastructure for the EU AI Act", "url": "https://news.ycombinator.com/item?id=47230438"},
         {"title": "When AI Writes the Software, Who Verifies It?", "url": "https://news.ycombinator.com/item?id=47234917"}
-      ]
+      ],
+      "ai_build": {
+        "viability": "high",
+        "time": "1-2 weeks",
+        "cost": "$20-40/mo (Supabase + Vercel + domain)",
+        "details": "Python SDK wrapping LLM API calls with logging middleware + Next.js dashboard for viewing logs and generating reports. Standard web app + pip package. AI can build the entire thing — the SDK is just a decorator/wrapper pattern and the dashboard is CRUD."
+      }
     }
   ]
 }
