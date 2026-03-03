@@ -89,6 +89,8 @@ async function loadReport(date) {
       ${report.trend_data ? `
         <div class="stat">HN stories: <strong>${report.trend_data.hackernews_stories || 0}</strong></div>
         <div class="stat">Reddit posts: <strong>${report.trend_data.reddit_posts || 0}</strong></div>
+        ${report.trend_data.github_repos ? `<div class="stat">GitHub repos: <strong>${report.trend_data.github_repos}</strong></div>` : ""}
+        ${report.trend_data.google_trends ? `<div class="stat">Google trends: <strong>${report.trend_data.google_trends}</strong></div>` : ""}
       ` : ""}
     `;
 
