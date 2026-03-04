@@ -2,6 +2,9 @@
 const REPORTS_BASE = "reports";
 let reportIndex = [];
 let currentIndex = 0;
+let currentIdeas = [];
+let currentReport = null;
+let activeFilters = { category: new Set(), complexity: new Set(), ai: new Set(), source: new Set() };
 
 /* --- PIN Gate --- */
 const PIN_HASH = "5d1bc01295d811587878e2862b8d9b26be9df1914782493a51ce6a6276c7f42f";
@@ -52,7 +55,7 @@ if (sessionStorage.getItem(SESSION_KEY) === "1") {
 /* --- App --- */
 async function loadIndex() {
   try {
-    const resp = await fetch(`${REPORTS_BASE}/index.json`);
+    const resp = await fetch(`${REPORTS_BASE}/index.json?t=${Date.now()}`);
     if (!resp.ok) throw new Error("No index");
     const data = await resp.json();
     reportIndex = data.reports || [];
@@ -82,29 +85,19 @@ async function loadReport(date) {
     const report = await resp.json();
 
     const ideas = report.ideas || [];
-
-    stats.innerHTML = `
-      <div class="stat">Ideas: <strong>${ideas.length}</strong></div>
-      <div class="stat">Date: <strong>${report.date}</strong></div>
-      ${report.trend_data ? `
-        <div class="stat">HN stories: <strong>${report.trend_data.hackernews_stories || 0}</strong></div>
-        <div class="stat">Reddit posts: <strong>${report.trend_data.reddit_posts || 0}</strong></div>
-        ${report.trend_data.github_repos ? `<div class="stat">GitHub repos: <strong>${report.trend_data.github_repos}</strong></div>` : ""}
-        ${report.trend_data.google_trends ? `<div class="stat">Google trends: <strong>${report.trend_data.google_trends}</strong></div>` : ""}
-        ${report.trend_data.producthunt_products ? `<div class="stat">PH launches: <strong>${report.trend_data.producthunt_products}</strong></div>` : ""}
-      ` : ""}
-    `;
-
-    if (ideas.length === 0) {
-      grid.innerHTML = `<div class="empty-state"><p>No ideas in this report.</p></div>`;
-      return;
-    }
-
     ideas.forEach(idea => { idea._score = computeScore(idea); });
     ideas.sort((a, b) => b._score - a._score);
 
-    grid.innerHTML = ideas.map((idea, i) => renderCard(idea, i + 1)).join("");
+    currentIdeas = ideas;
+    currentReport = report;
+    activeFilters = { category: new Set(), complexity: new Set(), ai: new Set(), source: new Set() };
+
+    renderFilters();
+    renderIdeas();
   } catch {
+    currentIdeas = [];
+    currentReport = null;
+    document.getElementById("filters").innerHTML = "";
     stats.innerHTML = "";
     grid.innerHTML = `<div class="empty-state"><p>Could not load report for ${date}.</p></div>`;
   }
@@ -209,6 +202,107 @@ function renderCard(idea, rank) {
       </details>
     </div>
   `;
+}
+
+/* --- Filters --- */
+const FILTER_GROUPS = [
+  { key: "category", label: "Category", values: ["SaaS", "Dev Tools", "AI", "Consumer", "Content", "E-commerce"] },
+  { key: "complexity", label: "Complexity", values: ["low", "medium", "high"] },
+  { key: "ai", label: "AI Buildability", values: ["high", "medium", "low"] },
+  { key: "source", label: "Source", values: ["HN", "Reddit", "GitHub", "Trends", "PH"] },
+];
+
+function renderFilters() {
+  const container = document.getElementById("filters");
+  if (currentIdeas.length === 0) { container.innerHTML = ""; return; }
+
+  const hasActive = Object.values(activeFilters).some(s => s.size > 0);
+
+  container.innerHTML = FILTER_GROUPS.map(group => {
+    const chips = group.values.map(v => {
+      const isActive = activeFilters[group.key].has(v);
+      return `<button class="filter-chip${isActive ? " active" : ""}" data-group="${group.key}" data-value="${v}">${escapeHtml(v)}</button>`;
+    }).join("");
+    return `<div class="filter-group"><span class="filter-group-label">${group.label}</span>${chips}</div>`;
+  }).join("") + (hasActive ? `<button class="filter-clear" id="filter-clear">Clear all</button>` : "");
+
+  container.querySelectorAll(".filter-chip").forEach(chip => {
+    chip.addEventListener("click", () => {
+      const group = chip.dataset.group;
+      const value = chip.dataset.value;
+      if (activeFilters[group].has(value)) {
+        activeFilters[group].delete(value);
+      } else {
+        activeFilters[group].add(value);
+      }
+      renderFilters();
+      renderIdeas();
+    });
+  });
+
+  const clearBtn = document.getElementById("filter-clear");
+  if (clearBtn) {
+    clearBtn.addEventListener("click", () => {
+      activeFilters = { category: new Set(), complexity: new Set(), ai: new Set(), source: new Set() };
+      renderFilters();
+      renderIdeas();
+    });
+  }
+}
+
+function applyFilters(ideas) {
+  return ideas.filter(idea => {
+    if (activeFilters.category.size > 0 && !activeFilters.category.has(idea.category)) return false;
+    if (activeFilters.complexity.size > 0 && !activeFilters.complexity.has((idea.complexity || "medium").toLowerCase())) return false;
+    if (activeFilters.ai.size > 0) {
+      const viability = idea.ai_build ? (idea.ai_build.viability || "medium").toLowerCase() : "medium";
+      if (!activeFilters.ai.has(viability)) return false;
+    }
+    if (activeFilters.source.size > 0) {
+      const types = Object.keys(getSourceTypes(idea.trend_sources));
+      if (!types.some(t => activeFilters.source.has(t))) return false;
+    }
+    return true;
+  });
+}
+
+function renderStats(filteredCount) {
+  const stats = document.getElementById("stats");
+  const report = currentReport;
+  const total = currentIdeas.length;
+  const hasFilter = Object.values(activeFilters).some(s => s.size > 0);
+  const countLabel = hasFilter ? `${filteredCount} / ${total}` : `${total}`;
+
+  stats.innerHTML = `
+    <div class="stat">Ideas: <strong>${countLabel}</strong></div>
+    <div class="stat">Date: <strong>${report.date}</strong></div>
+    ${report.trend_data ? `
+      <div class="stat">HN stories: <strong>${report.trend_data.hackernews_stories || 0}</strong></div>
+      <div class="stat">Reddit posts: <strong>${report.trend_data.reddit_posts || 0}</strong></div>
+      ${report.trend_data.github_repos ? `<div class="stat">GitHub repos: <strong>${report.trend_data.github_repos}</strong></div>` : ""}
+      ${report.trend_data.google_trends ? `<div class="stat">Google trends: <strong>${report.trend_data.google_trends}</strong></div>` : ""}
+      ${report.trend_data.producthunt_products ? `<div class="stat">PH launches: <strong>${report.trend_data.producthunt_products}</strong></div>` : ""}
+    ` : ""}
+  `;
+}
+
+function renderIdeas() {
+  const grid = document.getElementById("ideas-grid");
+  const filtered = applyFilters(currentIdeas);
+
+  renderStats(filtered.length);
+
+  if (currentIdeas.length === 0) {
+    grid.innerHTML = `<div class="empty-state"><p>No ideas in this report.</p></div>`;
+    return;
+  }
+
+  if (filtered.length === 0) {
+    grid.innerHTML = `<div class="empty-state"><p>No ideas match the current filters.</p></div>`;
+    return;
+  }
+
+  grid.innerHTML = filtered.map((idea, i) => renderCard(idea, i + 1)).join("");
 }
 
 function escapeHtml(str) {

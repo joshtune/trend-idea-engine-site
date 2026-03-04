@@ -1,0 +1,353 @@
+{
+  "date": "2026-03-04",
+  "generated_at": "2026-03-04T18:30:00Z",
+  "trend_data": {
+    "hackernews_stories": 30,
+    "reddit_posts": 0,
+    "github_repos": 25,
+    "google_trends": 10,
+    "producthunt_products": 20
+  },
+  "ideas": [
+    {
+      "title": "AgentGuard",
+      "problem": "As AI agents (Claude Code, Codex, vibe coding tools) write more production code, there's no automated way to verify that AI-generated code is correct, secure, and doesn't introduce regressions. Engineering leaders are losing sleep over code they can't manually review fast enough.",
+      "solution": "A CI/CD plugin that runs AI-generated code through static analysis, property-based testing, and LLM-powered semantic review before it can be merged. Flags logic errors, security issues, and behavioral drift compared to the existing codebase.",
+      "monetization": "SaaS subscription: $29/mo for indie devs (50 PRs), $99/mo for teams (unlimited PRs), $499/mo enterprise with custom rules and compliance reports.",
+      "complexity": "medium",
+      "trend_sources": ["hackernews:47234917", "hackernews:47240736", "hackernews:47243272", "producthunt:enia-code", "producthunt:continue"],
+      "category": "Dev Tools",
+      "validation": [
+        "Post in r/SideProject and r/ExperiencedDevs asking 'How do you review AI-generated PRs?' and see if people describe pain",
+        "Build a landing page targeting 'AI code review' keywords and run $30 of Google Ads",
+        "DM 10 people from the HN 'When AI writes software, who verifies it?' thread asking about their workflow"
+      ],
+      "evidence": [
+        {"title": "When AI writes the software, who verifies it?", "url": "https://news.ycombinator.com/item?id=47234917"},
+        {"title": "My spicy take on vibe coding for PMs", "url": "https://news.ycombinator.com/item?id=47240736"},
+        {"title": "Agentic Engineering Patterns", "url": "https://news.ycombinator.com/item?id=47243272"},
+        {"title": "Enia Code - Proactive AI code refinement", "url": "https://www.producthunt.com/posts/enia-code"},
+        {"title": "Continue Mission Control - Quality control for software factory", "url": "https://www.producthunt.com/posts/continue"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "Core is a GitHub App that listens for PR webhooks, runs static analysis (ESLint/Semgrep), then calls Claude API for semantic review. The hardest part is tuning the LLM prompts to avoid false positives. Next.js dashboard for results.",
+        "time": "2 weeks",
+        "cost": "$50/mo (Vercel + Claude API + domain)",
+        "stack": ["Web app", "Database", "Auth", "AI/LLM API", "GitHub API", "Background jobs"]
+      }
+    },
+    {
+      "title": "AgentTestKit",
+      "problem": "Companies deploying AI chatbots and voice agents have no systematic way to test them before shipping. Cekura (YC F24) just launched proving market demand, but there's room for a lightweight open-core alternative that solo devs and small teams can self-host.",
+      "solution": "An open-source testing framework for AI agents — define conversation scenarios as YAML, run them against your agent, and get a pass/fail report with latency, hallucination detection, and tone scoring. Hosted version adds dashboards and Slack alerts.",
+      "monetization": "Open-core: free self-hosted CLI, $49/mo hosted with dashboards and CI integration, $199/mo for team features (shared test suites, regression tracking).",
+      "complexity": "medium",
+      "trend_sources": ["hackernews:47232903", "hackernews:47243272", "producthunt:dialoglab", "producthunt:viktor", "github:agentscope-ai/agentscope"],
+      "category": "Dev Tools",
+      "validation": [
+        "Post the YAML test spec idea in r/ChatGPT and r/LocalLLaMA, ask 'How do you test your AI agents before deploying?'",
+        "Build a CLI prototype that tests a sample chatbot and share on HN as Show HN",
+        "Cold DM 10 companies from the Cekura Launch HN thread who asked about pricing"
+      ],
+      "evidence": [
+        {"title": "Launch HN: Cekura (YC F24) – Testing and monitoring for voice and chat AI agents", "url": "https://news.ycombinator.com/item?id=47232903"},
+        {"title": "Agentic Engineering Patterns", "url": "https://news.ycombinator.com/item?id=47243272"},
+        {"title": "DialogLab - Testing human-AI group conversations", "url": "https://www.producthunt.com/posts/dialoglab"},
+        {"title": "AgentScope - Build agents you can trust", "url": "https://github.com/agentscope-ai/agentscope"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "CLI in Node/Python that parses YAML test files, sends messages to agent endpoints, and evaluates responses with an LLM judge. Hosted dashboard in Next.js with Supabase. Claude API for hallucination/tone scoring.",
+        "time": "2 weeks",
+        "cost": "$30/mo (Supabase free tier + Claude API + Vercel)",
+        "stack": ["Web app", "Database", "AI/LLM API", "Background jobs"]
+      }
+    },
+    {
+      "title": "AccentClear",
+      "problem": "Remote teams with diverse accents struggle with meeting comprehension. Krisp's Accent Conversion just hit #1 on Product Hunt (354 votes), proving massive demand, but it's enterprise-priced. Freelancers and small teams need an affordable alternative.",
+      "solution": "A lightweight desktop app that runs real-time accent normalization on any audio input — works with Zoom, Meet, Teams, etc. Uses edge ASR (Moonshine-style models) for low latency. Pay-once pricing for indie users.",
+      "monetization": "One-time purchase: $29 for personal, $12/user/mo for teams. Upsell premium voices and custom accent profiles.",
+      "complexity": "high",
+      "trend_sources": ["producthunt:krisp", "producthunt:ghostype-2", "github:moonshine-ai/moonshine"],
+      "category": "Consumer",
+      "validation": [
+        "Survey 20 remote workers on Upwork/Fiverr about accent comprehension struggles",
+        "Post in r/remotework asking 'Would you pay $29 for real-time accent clarity on calls?'",
+        "Build a web demo using Moonshine + TTS that converts a sample audio clip"
+      ],
+      "evidence": [
+        {"title": "Krisp Accent Conversion - #1 on Product Hunt", "url": "https://www.producthunt.com/posts/krisp"},
+        {"title": "GHOSTYPE - AI voice interface that learns your style", "url": "https://www.producthunt.com/posts/ghostype-2"},
+        {"title": "Moonshine - Fast ASR for edge devices", "url": "https://github.com/moonshine-ai/moonshine"}
+      ],
+      "ai_build": {
+        "viability": "medium",
+        "details": "Needs real-time audio pipeline (PortAudio/virtual audio driver), STT model (Moonshine/Whisper), accent transformation, and TTS. Desktop app in Electron or Tauri. The audio latency challenge is the hard part — needs <200ms round-trip.",
+        "time": "3-4 weeks",
+        "cost": "$100 (domain + code signing certificate + hosting for license server)",
+        "stack": ["Desktop app", "AI/LLM API", "Auth"]
+      }
+    },
+    {
+      "title": "MergeIQ",
+      "problem": "Git merge conflicts in AI-heavy workflows are exploding — multiple agents editing the same files creates constant conflicts that traditional line-based merge can't resolve intelligently. Weave (130 pts on HN) proves developers want language-aware merging.",
+      "solution": "A Git merge driver that uses AST parsing and LLM understanding to resolve conflicts semantically. Understands function boundaries, variable renaming, and intent — auto-resolves 80% of conflicts that would require manual intervention.",
+      "monetization": "Freemium: free for public repos and up to 50 merges/mo, $19/mo for unlimited, $79/mo for teams with conflict analytics and custom language support.",
+      "complexity": "medium",
+      "trend_sources": ["hackernews:47241976", "hackernews:47237460", "hackernews:47243272"],
+      "category": "Dev Tools",
+      "validation": [
+        "Comment on the Weave HN thread asking developers what merge conflicts annoy them most",
+        "Build a prototype that handles JS/TS merges and share as a Show HN",
+        "Post in r/programming with a demo showing a conflict auto-resolved vs manual resolution"
+      ],
+      "evidence": [
+        {"title": "Weave – A language aware merge algorithm based on entities", "url": "https://news.ycombinator.com/item?id=47241976"},
+        {"title": "An Interactive Intro to CRDTs", "url": "https://news.ycombinator.com/item?id=47237460"},
+        {"title": "Agentic Engineering Patterns", "url": "https://news.ycombinator.com/item?id=47243272"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "Git custom merge driver (shell script that calls a Node/Python service). Use tree-sitter for AST parsing, Claude API for semantic conflict resolution. Package as a single `npm install -g` or `brew install`. The tricky part is handling edge cases across languages.",
+        "time": "2 weeks",
+        "cost": "$20/mo (Claude API for merge resolution)",
+        "stack": ["CLI tool", "AI/LLM API"]
+      }
+    },
+    {
+      "title": "PromptVault",
+      "problem": "Developers and teams paste sensitive data (API keys, customer info, proprietary code) into AI tools daily. Sequirly (113 votes on PH) validates demand, but it's a Chrome extension — there's no CLI-first solution for developers who use terminal AI tools like Claude Code.",
+      "solution": "A local proxy/CLI wrapper that intercepts prompts to AI tools, scans for secrets/PII using regex + small local model, and blocks or redacts before sending. Works with any AI API endpoint. Logs everything for compliance.",
+      "monetization": "Freemium: free CLI with basic regex scanning, $15/mo pro with ML-based detection and Slack alerts, $99/mo team with audit logs and policy management.",
+      "complexity": "low",
+      "trend_sources": ["producthunt:sequirly-ai-adoption-without-the-risk", "hackernews:47241551", "hackernews:47244291", "github:aquasecurity/trivy"],
+      "category": "Dev Tools",
+      "validation": [
+        "Search GitHub for 'accidentally leaked API key' issues to quantify the problem",
+        "Post in r/devops asking 'Have you ever pasted a secret into ChatGPT/Claude?'",
+        "Build a basic CLI that scans stdin for API key patterns and share on HN"
+      ],
+      "evidence": [
+        {"title": "Sequirly - Prevent data leaks while using AI tools", "url": "https://www.producthunt.com/posts/sequirly-ai-adoption-without-the-risk"},
+        {"title": "Motorola GrapheneOS devices (privacy focus)", "url": "https://news.ycombinator.com/item?id=47241551"},
+        {"title": "TLS Encrypted Client Hello RFC", "url": "https://news.ycombinator.com/item?id=47244291"},
+        {"title": "Trivy - Security scanner for containers and code", "url": "https://github.com/aquasecurity/trivy"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "CLI in Rust or Go that acts as a local proxy. Regex patterns for common secrets (AWS keys, GitHub tokens, etc.), plus a small local model (Phi-3 mini) for PII detection. No external API calls needed for the free tier. Ship as a single binary.",
+        "time": "1 week",
+        "cost": "$10 (domain + landing page hosting)",
+        "stack": ["CLI tool"]
+      }
+    },
+    {
+      "title": "ScrapeForge",
+      "problem": "Developers building AI apps constantly need structured data from websites that don't have APIs. The 'Anything API' on Product Hunt (124 votes) and a web scraping framework getting +8175 stars/week on GitHub show this is a hot, unsolved pain point.",
+      "solution": "A hosted API where you point it at any URL, describe the data you want in natural language, and get back structured JSON. Uses headless browser + LLM extraction. Handles pagination, auth, and anti-bot measures automatically.",
+      "monetization": "Usage-based: 1000 free extractions/mo, $29/mo for 10K, $99/mo for 100K. Enterprise with dedicated proxies at custom pricing.",
+      "complexity": "medium",
+      "trend_sources": ["producthunt:notte", "producthunt:skyvern", "github:D4Vinci/scrapy-like"],
+      "category": "SaaS",
+      "validation": [
+        "Post in r/webdev and r/dataengineering: 'If you could turn any website into an API with one request, what would you scrape?'",
+        "Build a Hono API that takes a URL + prompt and returns JSON, deploy to Cloudflare Workers as a demo",
+        "List on RapidAPI marketplace and track signups for 2 weeks"
+      ],
+      "evidence": [
+        {"title": "Anything API - Any website, we deliver the API", "url": "https://www.producthunt.com/posts/notte"},
+        {"title": "Skyvern MCP - Let Claude automate the web", "url": "https://www.producthunt.com/posts/skyvern"},
+        {"title": "Adaptive Web Scraping framework trending on GitHub", "url": "https://github.com/D4Vinci/Scrapy"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "Cloudflare Workers or Fly.io for the API, Playwright for headless browsing, Claude API for HTML-to-JSON extraction. Rate limiting with Upstash Redis. The main challenge is handling anti-bot measures and keeping costs per extraction low.",
+        "time": "1-2 weeks",
+        "cost": "$40/mo (Fly.io + Claude API + proxy service)",
+        "stack": ["Web app", "AI/LLM API", "Background jobs", "Auth"]
+      }
+    },
+    {
+      "title": "CodeAtlas",
+      "problem": "Developers joining new codebases spend days understanding architecture. GitNexus (client-side code knowledge graph) exploded to +6522 stars this week on GitHub, proving developers desperately want visual codebase understanding. But it's a raw OSS tool with no polish or team features.",
+      "solution": "A VS Code extension and web app that generates an interactive knowledge graph of any codebase — shows module dependencies, data flow, and key abstractions. Chat with it to ask 'How does auth work?' and get a visual walkthrough. Runs locally, no code leaves your machine.",
+      "monetization": "Freemium: free for repos under 10K LOC, $15/mo for unlimited repos, $49/mo for team features (shared annotations, onboarding guides).",
+      "complexity": "medium",
+      "trend_sources": ["github:abhigyanpatwari/GitNexus", "github:ItzCrazyKns/Perplexica", "hackernews:47243272"],
+      "category": "Dev Tools",
+      "validation": [
+        "Post in r/webdev: 'How long does it take you to understand a new codebase? What tools do you use?'",
+        "Fork GitNexus, add a better UI and chat feature, and share as a Show HN",
+        "Survey 15 senior devs on LinkedIn about their biggest pain onboarding new repos"
+      ],
+      "evidence": [
+        {"title": "GitNexus - Zero-Server Code Intelligence Engine (6.5K stars/week)", "url": "https://github.com/abhigyanpatwari/GitNexus"},
+        {"title": "Perplexica - AI-powered answering engine (1K stars/day)", "url": "https://github.com/ItzCrazyKns/Perplexica"},
+        {"title": "Agentic Engineering Patterns", "url": "https://news.ycombinator.com/item?id=47243272"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "VS Code extension in TypeScript, tree-sitter for parsing, D3.js or Cytoscape for graph visualization, local LLM or Claude API for chat. The graph generation is the hard part — need good heuristics for what constitutes a 'meaningful' connection.",
+        "time": "2-3 weeks",
+        "cost": "$15/mo (domain + landing page, local processing means no API costs for free tier)",
+        "stack": ["Web app", "AI/LLM API"]
+      }
+    },
+    {
+      "title": "PanicShield",
+      "problem": "Retail investors panic-sell during geopolitical crises (Iran conflict drove 200K+ Google Trends searches for 'dow jones futures' today). They need real-time context on whether a market drop is noise or signal, but financial news is overwhelming and designed to generate clicks, not clarity.",
+      "solution": "A mobile app / SMS service that sends calm, data-driven alerts during market volatility. Compares current drawdown to historical analogs (Gulf War, 2022 correction), shows recovery timelines, and gives a 'panic score' so investors can decide whether to act or wait.",
+      "monetization": "Subscription: $9/mo for SMS alerts + weekly digest, $29/mo for real-time push + portfolio-specific analysis. Annual discount at $79/year.",
+      "complexity": "medium",
+      "trend_sources": ["google_trends:dow jones futures", "producthunt:supermoney", "github:nautechsystems/nautilus_trader"],
+      "category": "Consumer",
+      "validation": [
+        "Post in r/investing during the current Iran-driven dip: 'Would you pay $9/mo for a service that tells you whether to panic or hold?'",
+        "Build a landing page with a sample 'Panic Report' for today's selloff and run $20 of Twitter ads targeting $SPY followers",
+        "Send a free sample alert to 50 people from a finance Discord and track open/reply rates"
+      ],
+      "evidence": [
+        {"title": "Dow Jones Futures - 200K+ searches amid Iran conflict volatility", "url": "https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-futures-turn-higher-as-iran-war-volatility-continues-234948079.html"},
+        {"title": "SuperMoney - Your money stress, solved by AI", "url": "https://www.producthunt.com/posts/supermoney"},
+        {"title": "NautilusTrader - Algorithmic trading platform", "url": "https://github.com/nautechsystems/nautilus_trader"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "Next.js app with Twilio for SMS, Yahoo Finance API for market data, Claude API to generate the calm analysis. Historical drawdown data from FRED/Yahoo. Cron job checks VIX + S&P every 15 min during market hours.",
+        "time": "1 week",
+        "cost": "$30/mo (Twilio + Vercel + domain)",
+        "stack": ["Web app", "Database", "Auth", "AI/LLM API", "Background jobs"]
+      }
+    },
+    {
+      "title": "WiFiSight",
+      "problem": "Smart buildings need occupancy sensing for HVAC, lighting, and security, but cameras raise privacy concerns and dedicated sensors are expensive. RuView (WiFi-based pose estimation) exploded to +17K stars this week proving WiFi sensing is hitting a tipping point, but there's no turnkey API for building managers.",
+      "solution": "A SaaS platform that turns existing WiFi access points into occupancy sensors. Provides a REST API and dashboard showing real-time room occupancy, traffic patterns, and anomaly detection — no cameras, no new hardware. SDK for smart building integrations.",
+      "monetization": "SaaS: $99/mo per building (up to 10 APs), $299/mo for enterprise with API access and custom integrations. Setup consultation at $500 one-time.",
+      "complexity": "high",
+      "trend_sources": ["github:ruvnet/RuView"],
+      "category": "SaaS",
+      "validation": [
+        "Cold email 20 coworking spaces and ask how they currently measure occupancy and what they pay",
+        "Post in r/homeautomation and r/smartbuildings about WiFi-based occupancy detection and gauge interest",
+        "Build a Raspberry Pi demo using RuView that counts people in a room and share the video on LinkedIn"
+      ],
+      "evidence": [
+        {"title": "RuView: WiFi DensePose - 17K stars this week", "url": "https://github.com/ruvnet/RuView"}
+      ],
+      "ai_build": {
+        "viability": "low",
+        "details": "Requires deep understanding of WiFi CSI (Channel State Information), signal processing, and ML models for pose estimation. The RuView open-source code is a starting point, but turning it into a reliable product requires hardware testing and calibration. Not a typical AI-coding-tool project.",
+        "time": "4+ weeks",
+        "cost": "$200/mo (cloud GPU for model inference + hosting + hardware for testing)",
+        "stack": ["Web app", "Database", "Auth", "GPU/ML infra", "Real-time/WebSockets"]
+      }
+    },
+    {
+      "title": "VibeShip",
+      "problem": "Non-developers (PMs, designers, founders) are using AI to 'vibe code' their ideas, but they can't deploy, host, or maintain what they build. The 'vibe coding for PMs' post (117 pts, 109 comments on HN) shows this is a growing population that needs a 'last mile' solution.",
+      "solution": "A one-click deploy platform specifically for vibe-coded projects. Connect your GitHub repo (or paste a ZIP), and it auto-detects the framework, configures hosting, sets up a domain, adds basic analytics, and provides a 'fix this' button that sends errors back to Claude/ChatGPT with context.",
+      "monetization": "Freemium: 1 free project on a subdomain, $12/mo for custom domain + 3 projects, $39/mo for 10 projects with analytics and error-to-AI pipeline.",
+      "complexity": "medium",
+      "trend_sources": ["hackernews:47240736", "hackernews:47234917", "producthunt:enia-code", "github:shareAI-lab/learn-claude-code"],
+      "category": "SaaS",
+      "validation": [
+        "Reply to the HN vibe coding thread asking 'What happens after you vibe-code something? How do you deploy it?'",
+        "Post in r/nocode: 'I built something with ChatGPT/Claude but can't get it online — anyone else?'",
+        "Build a landing page targeting 'deploy vibe coded app' and 'host AI generated website' keywords"
+      ],
+      "evidence": [
+        {"title": "My spicy take on vibe coding for PMs", "url": "https://news.ycombinator.com/item?id=47240736"},
+        {"title": "When AI writes the software, who verifies it?", "url": "https://news.ycombinator.com/item?id=47234917"},
+        {"title": "Enia Code - Proactive AI code refinement", "url": "https://www.producthunt.com/posts/enia-code"},
+        {"title": "Learn Claude Code - Build a nano agent from 0 to 1", "url": "https://github.com/shareAI-lab/learn-claude-code"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "Wrapper around Fly.io/Railway/Vercel APIs for deployment, Buildpacks for framework detection, simple Next.js dashboard. The 'error-to-AI' feature pipes stack traces + code context into Claude API and returns a suggested fix. Most of this is API orchestration.",
+        "time": "2 weeks",
+        "cost": "$30/mo (hosting APIs + domain + Claude API)",
+        "stack": ["Web app", "Database", "Auth", "AI/LLM API", "Background jobs"]
+      }
+    },
+    {
+      "title": "HireSignal",
+      "problem": "Hiring managers conduct interviews but make gut-feel decisions because reviewing recordings is too time-consuming. Lavalier AI (169 votes on PH) proves demand for interview intelligence, but it's positioned for enterprise. Small startups doing 5-10 interviews/week need a cheaper, simpler tool.",
+      "solution": "Upload an interview recording (or connect Zoom/Meet), get a structured scorecard: communication skills, technical depth, culture signals, and red flags — all with timestamp references. Compare candidates side-by-side with a consistency score.",
+      "monetization": "Usage-based: 5 free analyses/mo, $29/mo for 20 interviews, $79/mo unlimited with team comparisons and ATS integration.",
+      "complexity": "medium",
+      "trend_sources": ["producthunt:textio", "producthunt:deep-personality", "producthunt:krisp"],
+      "category": "SaaS",
+      "validation": [
+        "Post in r/startups: 'How do you evaluate candidates after interviews? Do you re-watch recordings?'",
+        "Offer to analyze 10 interviews for free for founders in a startup Slack community",
+        "Build a simple web form that takes an audio file, transcribes it, and generates a basic scorecard"
+      ],
+      "evidence": [
+        {"title": "Lavalier AI - Interview Intelligence", "url": "https://www.producthunt.com/posts/textio"},
+        {"title": "Deep Personality - Science-backed personality insights", "url": "https://www.producthunt.com/posts/deep-personality"},
+        {"title": "Krisp Accent Conversion - Audio AI demand", "url": "https://www.producthunt.com/posts/krisp"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "Whisper API for transcription, Claude API for structured analysis with a detailed scoring rubric. Next.js frontend, Supabase for storage. File upload via presigned S3 URLs. The hard part is making the scoring rubric genuinely useful vs generic.",
+        "time": "1-2 weeks",
+        "cost": "$40/mo (Whisper API + Claude API + Supabase + S3)",
+        "stack": ["Web app", "Database", "Auth", "AI/LLM API", "File storage", "Background jobs"]
+      }
+    },
+    {
+      "title": "CSVDash",
+      "problem": "Business users have CSV files full of valuable data but no way to quickly visualize or share insights without knowing SQL or BI tools. Upsolve AI (100 votes on PH) validates this exact need, but it's a hosted platform — many users want something they can embed in their own apps or run locally.",
+      "solution": "An open-source CLI and embeddable React component that takes a CSV, auto-detects column types, and generates a shareable dashboard with charts, filters, and natural language queries. One command: `csvdash data.csv` opens a local dashboard.",
+      "monetization": "Open-core: free CLI and local use, $19/mo for cloud hosting with sharing links, $49/mo for team workspaces and API access for embedding.",
+      "complexity": "low",
+      "trend_sources": ["producthunt:upsolve-ai"],
+      "category": "Dev Tools",
+      "validation": [
+        "Share a 'csvdash' prototype on HN as Show HN and measure stars/signups",
+        "Post in r/dataisbeautiful offering to turn anyone's CSV into a dashboard for free",
+        "Search Product Hunt for CSV-related launches to understand the competitive landscape"
+      ],
+      "evidence": [
+        {"title": "Upsolve AI for CSVs - Turn CSVs into share-worthy dashboards", "url": "https://www.producthunt.com/posts/upsolve-ai"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "Node CLI that reads CSV with Papa Parse, infers column types, and spins up a local Vite dev server with Chart.js dashboards. Claude API for natural language column analysis and suggested charts. Very straightforward build.",
+        "time": "1 weekend",
+        "cost": "$10 (domain + npm publish)",
+        "stack": ["CLI tool", "Web app", "AI/LLM API"]
+      }
+    },
+    {
+      "title": "AgentMem",
+      "problem": "AI agents forget everything between sessions — no persistent memory, no learning from past interactions. ReMe (agent memory management, 1.5K stars on GitHub) and the explosion of agent frameworks show developers need a drop-in memory layer that works across any agent framework.",
+      "solution": "A hosted memory API for AI agents. Simple REST endpoints: store a memory, recall relevant memories by context, and forget/update memories. Handles embedding, vector search, and memory consolidation. SDKs for LangChain, CrewAI, Claude Agent SDK, and raw HTTP.",
+      "monetization": "Usage-based: 10K memories free, $19/mo for 100K, $79/mo for 1M with priority search and analytics. Pay per memory stored + per retrieval.",
+      "complexity": "medium",
+      "trend_sources": ["github:agentscope-ai/ReMe", "github:agentscope-ai/agentscope", "github:bytedance/deer-flow", "hackernews:47243272"],
+      "category": "AI",
+      "validation": [
+        "Post in r/LocalLLaMA: 'How do you handle persistent memory for your AI agents?'",
+        "Build a simple API with Hono + pgvector and offer free access to 50 developers for feedback",
+        "Write a blog post comparing memory solutions (ReMe, Mem0, Zep) and share on HN"
+      ],
+      "evidence": [
+        {"title": "ReMe: Memory Management Kit for Agents", "url": "https://github.com/agentscope-ai/ReMe"},
+        {"title": "AgentScope - Build agents you can trust", "url": "https://github.com/agentscope-ai/agentscope"},
+        {"title": "DeerFlow - ByteDance's SuperAgent with memories", "url": "https://github.com/bytedance/deer-flow"},
+        {"title": "Agentic Engineering Patterns", "url": "https://news.ycombinator.com/item?id=47243272"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "Hono API on Cloudflare Workers, Neon Postgres with pgvector for embedding storage, OpenAI embedding API for vectorization. Memory consolidation via background cron that summarizes old memories with Claude. Very API-centric build.",
+        "time": "1-2 weeks",
+        "cost": "$25/mo (Neon + Cloudflare Workers + embedding API)",
+        "stack": ["Web app", "Database", "Auth", "AI/LLM API", "Background jobs"]
+      }
+    }
+  ]
+}
