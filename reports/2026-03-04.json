@@ -1,6 +1,6 @@
 {
   "date": "2026-03-04",
-  "generated_at": "2026-03-04T18:30:00Z",
+  "generated_at": "2026-03-04T19:45:00Z",
   "trend_data": {
     "hackernews_stories": 30,
     "reddit_posts": 0,
@@ -8,6 +8,56 @@
     "google_trends": 10,
     "producthunt_products": 20
   },
+  "recurring_themes": [
+    {
+      "theme": "AI code quality & vibe coding verification",
+      "days_seen": 2,
+      "dates": ["2026-03-04", "2026-03-03"],
+      "past_idea_titles": ["SpecPilot", "AgentGuard", "VibeShip"],
+      "signal_strength": "emerging",
+      "note": "Both days had HN story 'When AI writes software, who verifies it?' (244pts), PH launches for AI code quality tools (Enia Code, Continue, Clean Clode), and Reddit threads about vibe coding producing unmaintainable code. This is the strongest cross-day signal — the problem is growing as AI coding tools go mainstream."
+    },
+    {
+      "theme": "AI agent testing & infrastructure",
+      "days_seen": 2,
+      "dates": ["2026-03-04", "2026-03-03"],
+      "past_idea_titles": ["AgentBench", "AgentTestKit"],
+      "signal_strength": "emerging",
+      "note": "Cekura (YC F24) launch appeared both days. Agent frameworks (AgentScope, OpenSandbox, DeerFlow) trending on GitHub both days. DialogLab and Viktor on PH validate demand for agent tooling. The agent ecosystem is growing faster than the testing infrastructure."
+    },
+    {
+      "theme": "Secret & data leak prevention for AI tools",
+      "days_seen": 2,
+      "dates": ["2026-03-04", "2026-03-03"],
+      "past_idea_titles": ["CodeLeakGuard", "PromptVault"],
+      "signal_strength": "emerging",
+      "note": "Mar 3 had a viral Reddit post about planting fake API keys in code editors. Mar 4 had Sequirly (#16 on PH, 113 votes) specifically for AI data leaks, plus Trivy trending on GitHub and the GrapheneOS/TLS ECH privacy stories on HN. Security + AI is a persistent intersection."
+    },
+    {
+      "theme": "Codebase knowledge graphs & visual understanding",
+      "days_seen": 2,
+      "dates": ["2026-03-04", "2026-03-03"],
+      "past_idea_titles": ["RepoGraph", "CodeAtlas"],
+      "signal_strength": "emerging",
+      "note": "GitNexus has been trending on GitHub both days (+6.5K stars/week). Both reports independently generated ideas for visual codebase exploration tools. Perplexica (AI answer engine, 30K stars) adds to the 'understand things visually' theme."
+    },
+    {
+      "theme": "Edge voice & audio AI",
+      "days_seen": 2,
+      "dates": ["2026-03-04", "2026-03-03"],
+      "past_idea_titles": ["EdgeWhisper", "AccentClear"],
+      "signal_strength": "emerging",
+      "note": "Moonshine (edge ASR) trending on GitHub both days. Krisp Accent Conversion hit #1 on PH (Mar 4) and appeared Mar 3. Qwen3.5 Small (small multimodal models) on PH both days. The push toward on-device, low-latency audio AI is consistent."
+    },
+    {
+      "theme": "AI agent memory & persistence",
+      "days_seen": 2,
+      "dates": ["2026-03-04", "2026-03-03"],
+      "past_idea_titles": ["LocalRecall", "AgentMem"],
+      "signal_strength": "emerging",
+      "note": "ReMe (agent memory kit) on GitHub both days. Mar 3 had a Reddit post about building a local browsing memory layer. Mar 4 had DeerFlow (ByteDance super-agent with memory) and multiple agent frameworks trending. Memory is the missing piece in the agent stack."
+    }
+  ],
   "ideas": [
     {
       "title": "AgentGuard",
@@ -17,6 +67,7 @@
       "complexity": "medium",
       "trend_sources": ["hackernews:47234917", "hackernews:47240736", "hackernews:47243272", "producthunt:enia-code", "producthunt:continue"],
       "category": "Dev Tools",
+      "recurring_theme": "AI code quality & vibe coding verification",
       "validation": [
         "Post in r/SideProject and r/ExperiencedDevs asking 'How do you review AI-generated PRs?' and see if people describe pain",
         "Build a landing page targeting 'AI code review' keywords and run $30 of Google Ads",
@@ -45,6 +96,7 @@
       "complexity": "medium",
       "trend_sources": ["hackernews:47232903", "hackernews:47243272", "producthunt:dialoglab", "producthunt:viktor", "github:agentscope-ai/agentscope"],
       "category": "Dev Tools",
+      "recurring_theme": "AI agent testing & infrastructure",
       "validation": [
         "Post the YAML test spec idea in r/ChatGPT and r/LocalLLaMA, ask 'How do you test your AI agents before deploying?'",
         "Build a CLI prototype that tests a sample chatbot and share on HN as Show HN",
@@ -65,6 +117,61 @@
       }
     },
     {
+      "title": "PromptVault",
+      "problem": "Developers and teams paste sensitive data (API keys, customer info, proprietary code) into AI tools daily. Sequirly (113 votes on PH) validates demand, but it's a Chrome extension — there's no CLI-first solution for developers who use terminal AI tools like Claude Code.",
+      "solution": "A local proxy/CLI wrapper that intercepts prompts to AI tools, scans for secrets/PII using regex + small local model, and blocks or redacts before sending. Works with any AI API endpoint. Logs everything for compliance.",
+      "monetization": "Freemium: free CLI with basic regex scanning, $15/mo pro with ML-based detection and Slack alerts, $99/mo team with audit logs and policy management.",
+      "complexity": "low",
+      "trend_sources": ["producthunt:sequirly-ai-adoption-without-the-risk", "hackernews:47241551", "hackernews:47244291", "github:aquasecurity/trivy"],
+      "category": "Dev Tools",
+      "recurring_theme": "Secret & data leak prevention for AI tools",
+      "validation": [
+        "Search GitHub for 'accidentally leaked API key' issues to quantify the problem",
+        "Post in r/devops asking 'Have you ever pasted a secret into ChatGPT/Claude?'",
+        "Build a basic CLI that scans stdin for API key patterns and share on HN"
+      ],
+      "evidence": [
+        {"title": "Sequirly - Prevent data leaks while using AI tools", "url": "https://www.producthunt.com/posts/sequirly-ai-adoption-without-the-risk"},
+        {"title": "Motorola GrapheneOS devices (privacy focus)", "url": "https://news.ycombinator.com/item?id=47241551"},
+        {"title": "TLS Encrypted Client Hello RFC", "url": "https://news.ycombinator.com/item?id=47244291"},
+        {"title": "Trivy - Security scanner for containers and code", "url": "https://github.com/aquasecurity/trivy"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "CLI in Rust or Go that acts as a local proxy. Regex patterns for common secrets (AWS keys, GitHub tokens, etc.), plus a small local model (Phi-3 mini) for PII detection. No external API calls needed for the free tier. Ship as a single binary.",
+        "time": "1 week",
+        "cost": "$10 (domain + landing page hosting)",
+        "stack": ["CLI tool"]
+      }
+    },
+    {
+      "title": "CodeAtlas",
+      "problem": "Developers joining new codebases spend days understanding architecture. GitNexus (client-side code knowledge graph) exploded to +6522 stars this week on GitHub, proving developers desperately want visual codebase understanding. But it's a raw OSS tool with no polish or team features.",
+      "solution": "A VS Code extension and web app that generates an interactive knowledge graph of any codebase — shows module dependencies, data flow, and key abstractions. Chat with it to ask 'How does auth work?' and get a visual walkthrough. Runs locally, no code leaves your machine.",
+      "monetization": "Freemium: free for repos under 10K LOC, $15/mo for unlimited repos, $49/mo for team features (shared annotations, onboarding guides).",
+      "complexity": "medium",
+      "trend_sources": ["github:abhigyanpatwari/GitNexus", "github:ItzCrazyKns/Perplexica", "hackernews:47243272"],
+      "category": "Dev Tools",
+      "recurring_theme": "Codebase knowledge graphs & visual understanding",
+      "validation": [
+        "Post in r/webdev: 'How long does it take you to understand a new codebase? What tools do you use?'",
+        "Fork GitNexus, add a better UI and chat feature, and share as a Show HN",
+        "Survey 15 senior devs on LinkedIn about their biggest pain onboarding new repos"
+      ],
+      "evidence": [
+        {"title": "GitNexus - Zero-Server Code Intelligence Engine (6.5K stars/week)", "url": "https://github.com/abhigyanpatwari/GitNexus"},
+        {"title": "Perplexica - AI-powered answering engine (1K stars/day)", "url": "https://github.com/ItzCrazyKns/Perplexica"},
+        {"title": "Agentic Engineering Patterns", "url": "https://news.ycombinator.com/item?id=47243272"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "VS Code extension in TypeScript, tree-sitter for parsing, D3.js or Cytoscape for graph visualization, local LLM or Claude API for chat. The graph generation is the hard part — need good heuristics for what constitutes a 'meaningful' connection.",
+        "time": "2-3 weeks",
+        "cost": "$15/mo (domain + landing page, local processing means no API costs for free tier)",
+        "stack": ["Web app", "AI/LLM API"]
+      }
+    },
+    {
       "title": "AccentClear",
       "problem": "Remote teams with diverse accents struggle with meeting comprehension. Krisp's Accent Conversion just hit #1 on Product Hunt (354 votes), proving massive demand, but it's enterprise-priced. Freelancers and small teams need an affordable alternative.",
       "solution": "A lightweight desktop app that runs real-time accent normalization on any audio input — works with Zoom, Meet, Teams, etc. Uses edge ASR (Moonshine-style models) for low latency. Pay-once pricing for indie users.",
@@ -72,6 +179,7 @@
       "complexity": "high",
       "trend_sources": ["producthunt:krisp", "producthunt:ghostype-2", "github:moonshine-ai/moonshine"],
       "category": "Consumer",
+      "recurring_theme": "Edge voice & audio AI",
       "validation": [
         "Survey 20 remote workers on Upwork/Fiverr about accent comprehension struggles",
         "Post in r/remotework asking 'Would you pay $29 for real-time accent clarity on calls?'",
@@ -88,6 +196,34 @@
         "time": "3-4 weeks",
         "cost": "$100 (domain + code signing certificate + hosting for license server)",
         "stack": ["Desktop app", "AI/LLM API", "Auth"]
+      }
+    },
+    {
+      "title": "AgentMem",
+      "problem": "AI agents forget everything between sessions — no persistent memory, no learning from past interactions. ReMe (agent memory management, 1.5K stars on GitHub) and the explosion of agent frameworks show developers need a drop-in memory layer that works across any agent framework.",
+      "solution": "A hosted memory API for AI agents. Simple REST endpoints: store a memory, recall relevant memories by context, and forget/update memories. Handles embedding, vector search, and memory consolidation. SDKs for LangChain, CrewAI, Claude Agent SDK, and raw HTTP.",
+      "monetization": "Usage-based: 10K memories free, $19/mo for 100K, $79/mo for 1M with priority search and analytics. Pay per memory stored + per retrieval.",
+      "complexity": "medium",
+      "trend_sources": ["github:agentscope-ai/ReMe", "github:agentscope-ai/agentscope", "github:bytedance/deer-flow", "hackernews:47243272"],
+      "category": "AI",
+      "recurring_theme": "AI agent memory & persistence",
+      "validation": [
+        "Post in r/LocalLLaMA: 'How do you handle persistent memory for your AI agents?'",
+        "Build a simple API with Hono + pgvector and offer free access to 50 developers for feedback",
+        "Write a blog post comparing memory solutions (ReMe, Mem0, Zep) and share on HN"
+      ],
+      "evidence": [
+        {"title": "ReMe: Memory Management Kit for Agents", "url": "https://github.com/agentscope-ai/ReMe"},
+        {"title": "AgentScope - Build agents you can trust", "url": "https://github.com/agentscope-ai/agentscope"},
+        {"title": "DeerFlow - ByteDance's SuperAgent with memories", "url": "https://github.com/bytedance/deer-flow"},
+        {"title": "Agentic Engineering Patterns", "url": "https://news.ycombinator.com/item?id=47243272"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "Hono API on Cloudflare Workers, Neon Postgres with pgvector for embedding storage, OpenAI embedding API for vectorization. Memory consolidation via background cron that summarizes old memories with Claude. Very API-centric build.",
+        "time": "1-2 weeks",
+        "cost": "$25/mo (Neon + Cloudflare Workers + embedding API)",
+        "stack": ["Web app", "Database", "Auth", "AI/LLM API", "Background jobs"]
       }
     },
     {
@@ -117,30 +253,31 @@
       }
     },
     {
-      "title": "PromptVault",
-      "problem": "Developers and teams paste sensitive data (API keys, customer info, proprietary code) into AI tools daily. Sequirly (113 votes on PH) validates demand, but it's a Chrome extension — there's no CLI-first solution for developers who use terminal AI tools like Claude Code.",
-      "solution": "A local proxy/CLI wrapper that intercepts prompts to AI tools, scans for secrets/PII using regex + small local model, and blocks or redacts before sending. Works with any AI API endpoint. Logs everything for compliance.",
-      "monetization": "Freemium: free CLI with basic regex scanning, $15/mo pro with ML-based detection and Slack alerts, $99/mo team with audit logs and policy management.",
-      "complexity": "low",
-      "trend_sources": ["producthunt:sequirly-ai-adoption-without-the-risk", "hackernews:47241551", "hackernews:47244291", "github:aquasecurity/trivy"],
-      "category": "Dev Tools",
+      "title": "VibeShip",
+      "problem": "Non-developers (PMs, designers, founders) are using AI to 'vibe code' their ideas, but they can't deploy, host, or maintain what they build. The 'vibe coding for PMs' post (117 pts, 109 comments on HN) shows this is a growing population that needs a 'last mile' solution.",
+      "solution": "A one-click deploy platform specifically for vibe-coded projects. Connect your GitHub repo (or paste a ZIP), and it auto-detects the framework, configures hosting, sets up a domain, adds basic analytics, and provides a 'fix this' button that sends errors back to Claude/ChatGPT with context.",
+      "monetization": "Freemium: 1 free project on a subdomain, $12/mo for custom domain + 3 projects, $39/mo for 10 projects with analytics and error-to-AI pipeline.",
+      "complexity": "medium",
+      "trend_sources": ["hackernews:47240736", "hackernews:47234917", "producthunt:enia-code", "github:shareAI-lab/learn-claude-code"],
+      "category": "SaaS",
+      "recurring_theme": "AI code quality & vibe coding verification",
       "validation": [
-        "Search GitHub for 'accidentally leaked API key' issues to quantify the problem",
-        "Post in r/devops asking 'Have you ever pasted a secret into ChatGPT/Claude?'",
-        "Build a basic CLI that scans stdin for API key patterns and share on HN"
+        "Reply to the HN vibe coding thread asking 'What happens after you vibe-code something? How do you deploy it?'",
+        "Post in r/nocode: 'I built something with ChatGPT/Claude but can't get it online — anyone else?'",
+        "Build a landing page targeting 'deploy vibe coded app' and 'host AI generated website' keywords"
       ],
       "evidence": [
-        {"title": "Sequirly - Prevent data leaks while using AI tools", "url": "https://www.producthunt.com/posts/sequirly-ai-adoption-without-the-risk"},
-        {"title": "Motorola GrapheneOS devices (privacy focus)", "url": "https://news.ycombinator.com/item?id=47241551"},
-        {"title": "TLS Encrypted Client Hello RFC", "url": "https://news.ycombinator.com/item?id=47244291"},
-        {"title": "Trivy - Security scanner for containers and code", "url": "https://github.com/aquasecurity/trivy"}
+        {"title": "My spicy take on vibe coding for PMs", "url": "https://news.ycombinator.com/item?id=47240736"},
+        {"title": "When AI writes the software, who verifies it?", "url": "https://news.ycombinator.com/item?id=47234917"},
+        {"title": "Enia Code - Proactive AI code refinement", "url": "https://www.producthunt.com/posts/enia-code"},
+        {"title": "Learn Claude Code - Build a nano agent from 0 to 1", "url": "https://github.com/shareAI-lab/learn-claude-code"}
       ],
       "ai_build": {
         "viability": "high",
-        "details": "CLI in Rust or Go that acts as a local proxy. Regex patterns for common secrets (AWS keys, GitHub tokens, etc.), plus a small local model (Phi-3 mini) for PII detection. No external API calls needed for the free tier. Ship as a single binary.",
-        "time": "1 week",
-        "cost": "$10 (domain + landing page hosting)",
-        "stack": ["CLI tool"]
+        "details": "Wrapper around Fly.io/Railway/Vercel APIs for deployment, Buildpacks for framework detection, simple Next.js dashboard. The 'error-to-AI' feature pipes stack traces + code context into Claude API and returns a suggested fix. Most of this is API orchestration.",
+        "time": "2 weeks",
+        "cost": "$30/mo (hosting APIs + domain + Claude API)",
+        "stack": ["Web app", "Database", "Auth", "AI/LLM API", "Background jobs"]
       }
     },
     {
@@ -170,32 +307,6 @@
       }
     },
     {
-      "title": "CodeAtlas",
-      "problem": "Developers joining new codebases spend days understanding architecture. GitNexus (client-side code knowledge graph) exploded to +6522 stars this week on GitHub, proving developers desperately want visual codebase understanding. But it's a raw OSS tool with no polish or team features.",
-      "solution": "A VS Code extension and web app that generates an interactive knowledge graph of any codebase — shows module dependencies, data flow, and key abstractions. Chat with it to ask 'How does auth work?' and get a visual walkthrough. Runs locally, no code leaves your machine.",
-      "monetization": "Freemium: free for repos under 10K LOC, $15/mo for unlimited repos, $49/mo for team features (shared annotations, onboarding guides).",
-      "complexity": "medium",
-      "trend_sources": ["github:abhigyanpatwari/GitNexus", "github:ItzCrazyKns/Perplexica", "hackernews:47243272"],
-      "category": "Dev Tools",
-      "validation": [
-        "Post in r/webdev: 'How long does it take you to understand a new codebase? What tools do you use?'",
-        "Fork GitNexus, add a better UI and chat feature, and share as a Show HN",
-        "Survey 15 senior devs on LinkedIn about their biggest pain onboarding new repos"
-      ],
-      "evidence": [
-        {"title": "GitNexus - Zero-Server Code Intelligence Engine (6.5K stars/week)", "url": "https://github.com/abhigyanpatwari/GitNexus"},
-        {"title": "Perplexica - AI-powered answering engine (1K stars/day)", "url": "https://github.com/ItzCrazyKns/Perplexica"},
-        {"title": "Agentic Engineering Patterns", "url": "https://news.ycombinator.com/item?id=47243272"}
-      ],
-      "ai_build": {
-        "viability": "high",
-        "details": "VS Code extension in TypeScript, tree-sitter for parsing, D3.js or Cytoscape for graph visualization, local LLM or Claude API for chat. The graph generation is the hard part — need good heuristics for what constitutes a 'meaningful' connection.",
-        "time": "2-3 weeks",
-        "cost": "$15/mo (domain + landing page, local processing means no API costs for free tier)",
-        "stack": ["Web app", "AI/LLM API"]
-      }
-    },
-    {
       "title": "PanicShield",
       "problem": "Retail investors panic-sell during geopolitical crises (Iran conflict drove 200K+ Google Trends searches for 'dow jones futures' today). They need real-time context on whether a market drop is noise or signal, but financial news is overwhelming and designed to generate clicks, not clarity.",
       "solution": "A mobile app / SMS service that sends calm, data-driven alerts during market volatility. Compares current drawdown to historical analogs (Gulf War, 2022 correction), shows recovery timelines, and gives a 'panic score' so investors can decide whether to act or wait.",
@@ -218,57 +329,6 @@
         "details": "Next.js app with Twilio for SMS, Yahoo Finance API for market data, Claude API to generate the calm analysis. Historical drawdown data from FRED/Yahoo. Cron job checks VIX + S&P every 15 min during market hours.",
         "time": "1 week",
         "cost": "$30/mo (Twilio + Vercel + domain)",
-        "stack": ["Web app", "Database", "Auth", "AI/LLM API", "Background jobs"]
-      }
-    },
-    {
-      "title": "WiFiSight",
-      "problem": "Smart buildings need occupancy sensing for HVAC, lighting, and security, but cameras raise privacy concerns and dedicated sensors are expensive. RuView (WiFi-based pose estimation) exploded to +17K stars this week proving WiFi sensing is hitting a tipping point, but there's no turnkey API for building managers.",
-      "solution": "A SaaS platform that turns existing WiFi access points into occupancy sensors. Provides a REST API and dashboard showing real-time room occupancy, traffic patterns, and anomaly detection — no cameras, no new hardware. SDK for smart building integrations.",
-      "monetization": "SaaS: $99/mo per building (up to 10 APs), $299/mo for enterprise with API access and custom integrations. Setup consultation at $500 one-time.",
-      "complexity": "high",
-      "trend_sources": ["github:ruvnet/RuView"],
-      "category": "SaaS",
-      "validation": [
-        "Cold email 20 coworking spaces and ask how they currently measure occupancy and what they pay",
-        "Post in r/homeautomation and r/smartbuildings about WiFi-based occupancy detection and gauge interest",
-        "Build a Raspberry Pi demo using RuView that counts people in a room and share the video on LinkedIn"
-      ],
-      "evidence": [
-        {"title": "RuView: WiFi DensePose - 17K stars this week", "url": "https://github.com/ruvnet/RuView"}
-      ],
-      "ai_build": {
-        "viability": "low",
-        "details": "Requires deep understanding of WiFi CSI (Channel State Information), signal processing, and ML models for pose estimation. The RuView open-source code is a starting point, but turning it into a reliable product requires hardware testing and calibration. Not a typical AI-coding-tool project.",
-        "time": "4+ weeks",
-        "cost": "$200/mo (cloud GPU for model inference + hosting + hardware for testing)",
-        "stack": ["Web app", "Database", "Auth", "GPU/ML infra", "Real-time/WebSockets"]
-      }
-    },
-    {
-      "title": "VibeShip",
-      "problem": "Non-developers (PMs, designers, founders) are using AI to 'vibe code' their ideas, but they can't deploy, host, or maintain what they build. The 'vibe coding for PMs' post (117 pts, 109 comments on HN) shows this is a growing population that needs a 'last mile' solution.",
-      "solution": "A one-click deploy platform specifically for vibe-coded projects. Connect your GitHub repo (or paste a ZIP), and it auto-detects the framework, configures hosting, sets up a domain, adds basic analytics, and provides a 'fix this' button that sends errors back to Claude/ChatGPT with context.",
-      "monetization": "Freemium: 1 free project on a subdomain, $12/mo for custom domain + 3 projects, $39/mo for 10 projects with analytics and error-to-AI pipeline.",
-      "complexity": "medium",
-      "trend_sources": ["hackernews:47240736", "hackernews:47234917", "producthunt:enia-code", "github:shareAI-lab/learn-claude-code"],
-      "category": "SaaS",
-      "validation": [
-        "Reply to the HN vibe coding thread asking 'What happens after you vibe-code something? How do you deploy it?'",
-        "Post in r/nocode: 'I built something with ChatGPT/Claude but can't get it online — anyone else?'",
-        "Build a landing page targeting 'deploy vibe coded app' and 'host AI generated website' keywords"
-      ],
-      "evidence": [
-        {"title": "My spicy take on vibe coding for PMs", "url": "https://news.ycombinator.com/item?id=47240736"},
-        {"title": "When AI writes the software, who verifies it?", "url": "https://news.ycombinator.com/item?id=47234917"},
-        {"title": "Enia Code - Proactive AI code refinement", "url": "https://www.producthunt.com/posts/enia-code"},
-        {"title": "Learn Claude Code - Build a nano agent from 0 to 1", "url": "https://github.com/shareAI-lab/learn-claude-code"}
-      ],
-      "ai_build": {
-        "viability": "high",
-        "details": "Wrapper around Fly.io/Railway/Vercel APIs for deployment, Buildpacks for framework detection, simple Next.js dashboard. The 'error-to-AI' feature pipes stack traces + code context into Claude API and returns a suggested fix. Most of this is API orchestration.",
-        "time": "2 weeks",
-        "cost": "$30/mo (hosting APIs + domain + Claude API)",
         "stack": ["Web app", "Database", "Auth", "AI/LLM API", "Background jobs"]
       }
     },
@@ -323,30 +383,27 @@
       }
     },
     {
-      "title": "AgentMem",
-      "problem": "AI agents forget everything between sessions — no persistent memory, no learning from past interactions. ReMe (agent memory management, 1.5K stars on GitHub) and the explosion of agent frameworks show developers need a drop-in memory layer that works across any agent framework.",
-      "solution": "A hosted memory API for AI agents. Simple REST endpoints: store a memory, recall relevant memories by context, and forget/update memories. Handles embedding, vector search, and memory consolidation. SDKs for LangChain, CrewAI, Claude Agent SDK, and raw HTTP.",
-      "monetization": "Usage-based: 10K memories free, $19/mo for 100K, $79/mo for 1M with priority search and analytics. Pay per memory stored + per retrieval.",
-      "complexity": "medium",
-      "trend_sources": ["github:agentscope-ai/ReMe", "github:agentscope-ai/agentscope", "github:bytedance/deer-flow", "hackernews:47243272"],
-      "category": "AI",
+      "title": "WiFiSight",
+      "problem": "Smart buildings need occupancy sensing for HVAC, lighting, and security, but cameras raise privacy concerns and dedicated sensors are expensive. RuView (WiFi-based pose estimation) exploded to +17K stars this week proving WiFi sensing is hitting a tipping point, but there's no turnkey API for building managers.",
+      "solution": "A SaaS platform that turns existing WiFi access points into occupancy sensors. Provides a REST API and dashboard showing real-time room occupancy, traffic patterns, and anomaly detection — no cameras, no new hardware. SDK for smart building integrations.",
+      "monetization": "SaaS: $99/mo per building (up to 10 APs), $299/mo for enterprise with API access and custom integrations. Setup consultation at $500 one-time.",
+      "complexity": "high",
+      "trend_sources": ["github:ruvnet/RuView"],
+      "category": "SaaS",
       "validation": [
-        "Post in r/LocalLLaMA: 'How do you handle persistent memory for your AI agents?'",
-        "Build a simple API with Hono + pgvector and offer free access to 50 developers for feedback",
-        "Write a blog post comparing memory solutions (ReMe, Mem0, Zep) and share on HN"
+        "Cold email 20 coworking spaces and ask how they currently measure occupancy and what they pay",
+        "Post in r/homeautomation and r/smartbuildings about WiFi-based occupancy detection and gauge interest",
+        "Build a Raspberry Pi demo using RuView that counts people in a room and share the video on LinkedIn"
       ],
       "evidence": [
-        {"title": "ReMe: Memory Management Kit for Agents", "url": "https://github.com/agentscope-ai/ReMe"},
-        {"title": "AgentScope - Build agents you can trust", "url": "https://github.com/agentscope-ai/agentscope"},
-        {"title": "DeerFlow - ByteDance's SuperAgent with memories", "url": "https://github.com/bytedance/deer-flow"},
-        {"title": "Agentic Engineering Patterns", "url": "https://news.ycombinator.com/item?id=47243272"}
+        {"title": "RuView: WiFi DensePose - 17K stars this week", "url": "https://github.com/ruvnet/RuView"}
       ],
       "ai_build": {
-        "viability": "high",
-        "details": "Hono API on Cloudflare Workers, Neon Postgres with pgvector for embedding storage, OpenAI embedding API for vectorization. Memory consolidation via background cron that summarizes old memories with Claude. Very API-centric build.",
-        "time": "1-2 weeks",
-        "cost": "$25/mo (Neon + Cloudflare Workers + embedding API)",
-        "stack": ["Web app", "Database", "Auth", "AI/LLM API", "Background jobs"]
+        "viability": "low",
+        "details": "Requires deep understanding of WiFi CSI (Channel State Information), signal processing, and ML models for pose estimation. The RuView open-source code is a starting point, but turning it into a reliable product requires hardware testing and calibration. Not a typical AI-coding-tool project.",
+        "time": "4+ weeks",
+        "cost": "$200/mo (cloud GPU for model inference + hosting + hardware for testing)",
+        "stack": ["Web app", "Database", "Auth", "GPU/ML infra", "Real-time/WebSockets"]
       }
     }
   ]
