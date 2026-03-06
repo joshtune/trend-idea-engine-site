@@ -1,0 +1,407 @@
+{
+  "date": "2026-03-05",
+  "generated_at": "2026-03-05T18:00:00Z",
+  "trend_data": {
+    "hackernews_stories": 30,
+    "reddit_posts": 0,
+    "github_repos": 22,
+    "google_trends": 10,
+    "producthunt_products": 20
+  },
+  "recurring_themes": [
+    {
+      "theme": "AI code quality & vibe coding verification",
+      "days_seen": 3,
+      "dates": ["2026-03-05", "2026-03-04", "2026-03-03"],
+      "past_idea_titles": ["SpecPilot", "AgentGuard", "VibeShip"],
+      "signal_strength": "moderate",
+      "note": "Enia Code surged from 129 to 347 votes on PH. NOVA and Projekt both tagged 'vibe coding'. 'The L in LLM stands for Lying' (237pts HN) adds to trust concerns. Relicensing with AI-assisted rewrite (147pts HN) shows AI code is creating new legal questions. This theme is accelerating."
+    },
+    {
+      "theme": "AI agent testing, orchestration & infrastructure",
+      "days_seen": 3,
+      "dates": ["2026-03-05", "2026-03-04", "2026-03-03"],
+      "past_idea_titles": ["AgentBench", "AgentTestKit"],
+      "signal_strength": "moderate",
+      "note": "Superset (IDE for AI agents, +2805 stars/week) and ClawOffice (office for agents, 101 votes PH) are new entries. DeerFlow, Ruflo, and agent skills collections still trending on GitHub for 3rd day. Coursekit (course→agents) validates demand for agent tooling beyond developers."
+    },
+    {
+      "theme": "Edge voice & speech AI",
+      "days_seen": 3,
+      "dates": ["2026-03-05", "2026-03-04", "2026-03-03"],
+      "past_idea_titles": ["EdgeWhisper", "AccentClear"],
+      "signal_strength": "moderate",
+      "note": "Biggest upgrade today: Nvidia PersonaPlex 7B running full-duplex speech-to-speech on Apple Silicon (114pts HN). AssemblyAI streaming ASR for voice agents (106 votes PH). Vocova multi-platform transcription (138 votes PH). Moonshine edge ASR still trending (3rd day). On-device speech is crossing from research to product."
+    },
+    {
+      "theme": "Codebase knowledge graphs & visual understanding",
+      "days_seen": 3,
+      "dates": ["2026-03-05", "2026-03-04", "2026-03-03"],
+      "past_idea_titles": ["RepoGraph", "CodeAtlas"],
+      "signal_strength": "moderate",
+      "note": "GitNexus still trending for 3rd week (+6262 stars/week). No new entrants today but sustained interest proves this is durable demand, not a one-day spike."
+    },
+    {
+      "theme": "Secret & data leak prevention for AI tools",
+      "days_seen": 3,
+      "dates": ["2026-03-05", "2026-03-04", "2026-03-03"],
+      "past_idea_titles": ["CodeLeakGuard", "PromptVault"],
+      "signal_strength": "moderate",
+      "note": "Shannon AI pentester (31.4K stars, 3rd day trending) and Trivy security scanner (32.8K stars, 3rd day) continue. Allstate privacy lawsuit over cellphone tracking in Google Trends adds to the privacy zeitgeist. Golf 'Enterprise MCP Control Plane' (98 votes PH) positions security as a concern in the MCP ecosystem."
+    },
+    {
+      "theme": "AI agent memory & persistence",
+      "days_seen": 3,
+      "dates": ["2026-03-05", "2026-03-04", "2026-03-03"],
+      "past_idea_titles": ["LocalRecall", "AgentMem"],
+      "signal_strength": "moderate",
+      "note": "Personal AI Memory (98 votes PH) directly validates this theme — it captures and stores your AI chat history. day1tabs (120 votes PH) tackles a related memory/tab management problem. DeerFlow (with memories) still trending. The gap between 'AI that remembers' and 'AI that forgets' is a clear product opportunity."
+    },
+    {
+      "theme": "Website-to-API / intelligent web scraping",
+      "days_seen": 2,
+      "dates": ["2026-03-05", "2026-03-04"],
+      "past_idea_titles": ["ScrapeForge"],
+      "signal_strength": "emerging",
+      "note": "Anything API EXPLODED from 124 votes to 511 votes (#1 on PH today). This is the fastest-growing signal in our dataset. SEOMachine (Claude Code for SEO content, +379 stars today) is a related scraping/content use case."
+    },
+    {
+      "theme": "Local/edge AI models & on-device inference",
+      "days_seen": 2,
+      "dates": ["2026-03-05", "2026-03-04"],
+      "past_idea_titles": [],
+      "signal_strength": "emerging",
+      "note": "Qwen dominates today: 'Something is afoot in Qwen' (678pts HN), fine-tuning guide (347pts HN), Locally AI + Qwen on iPhone (112 votes PH). Gemini Flash-Lite (284 votes PH). PersonaPlex on Apple Silicon. The shift to running models locally on consumer hardware is accelerating."
+    },
+    {
+      "theme": "MCP (Model Context Protocol) ecosystem",
+      "days_seen": 2,
+      "dates": ["2026-03-05", "2026-03-04"],
+      "past_idea_titles": [],
+      "signal_strength": "emerging",
+      "note": "Microsoft MCP for beginners (14.7K stars GitHub), Golf enterprise MCP control plane (98 votes PH), Xiaohongshu MCP (10.3K stars GitHub). MCP is becoming the standard protocol for AI agent integrations — tooling around it is an emerging opportunity."
+    }
+  ],
+  "ideas": [
+    {
+      "title": "AgentGuard",
+      "problem": "AI coding tools are writing more production code than ever, but nobody trusts it. 'The L in LLM stands for Lying' (237pts HN) captures the mood. Enia Code surging to 347 votes and NOVA (96 votes) prove developers want automated quality checks on AI output.",
+      "solution": "A CI/CD plugin that runs AI-generated PRs through static analysis, property-based testing, and LLM-powered semantic review. Flags logic errors, security issues, and behavioral drift. Ships as a GitHub App with a one-click install.",
+      "monetization": "SaaS: $29/mo indie (50 PRs), $99/mo teams (unlimited), $499/mo enterprise with custom rules.",
+      "complexity": "medium",
+      "trend_sources": ["hackernews:47257394", "hackernews:47257803", "producthunt:enia-code", "producthunt:nova-18", "producthunt:continue"],
+      "category": "Dev Tools",
+      "recurring_theme": "AI code quality & vibe coding verification",
+      "validation": [
+        "Post in r/ExperiencedDevs: 'How do you review AI-generated PRs at scale?'",
+        "Build a GitHub Action that runs Claude on PR diffs and posts review comments — share as open source",
+        "DM 10 people from the 'L in LLM stands for Lying' HN thread"
+      ],
+      "evidence": [
+        {"title": "The L in LLM Stands for Lying (237pts)", "url": "https://news.ycombinator.com/item?id=47257394"},
+        {"title": "Relicensing with AI-Assisted Rewrite (147pts)", "url": "https://news.ycombinator.com/item?id=47257803"},
+        {"title": "Enia Code - Proactive AI code quality (347 votes)", "url": "https://www.producthunt.com/posts/enia-code"},
+        {"title": "NOVA - AI coding beyond suggestions (96 votes)", "url": "https://www.producthunt.com/posts/nova-18"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "GitHub App + webhook listener, ESLint/Semgrep for static analysis, Claude API for semantic review. Next.js dashboard. The hardest part is tuning prompts for low false-positive rates.",
+        "time": "2 weeks",
+        "cost": "$50/mo (Vercel + Claude API + domain)",
+        "stack": ["Web app", "Database", "Auth", "AI/LLM API", "GitHub API", "Background jobs"]
+      }
+    },
+    {
+      "title": "VoiceForge",
+      "problem": "Developers building voice-enabled apps are stuck between expensive cloud APIs and clunky self-hosted models. Nvidia just released PersonaPlex 7B running full-duplex speech-to-speech on Apple Silicon (114pts HN), AssemblyAI launched streaming ASR (106 votes PH), and Moonshine edge ASR has been trending for 3 straight days.",
+      "solution": "A unified voice SDK that abstracts across providers (AssemblyAI, Deepgram, Moonshine, PersonaPlex) with a single API. Auto-selects the best provider based on latency, cost, and device capabilities. Includes a local fallback for offline mode.",
+      "monetization": "Freemium: free for 1000 minutes/mo with one provider, $39/mo for unlimited with multi-provider routing and analytics, $149/mo for teams with custom model hosting.",
+      "complexity": "medium",
+      "trend_sources": ["hackernews:47258801", "producthunt:assemblyai", "producthunt:vocova", "github:moonshine-ai/moonshine"],
+      "category": "Dev Tools",
+      "recurring_theme": "Edge voice & speech AI",
+      "validation": [
+        "Post in r/MachineLearning: 'Which speech API do you use and what's your biggest frustration?'",
+        "Build a comparison demo: cloud Whisper vs local Moonshine vs PersonaPlex latency and share on HN",
+        "DM 10 developers building voice features on Twitter/X and ask about their stack"
+      ],
+      "evidence": [
+        {"title": "Nvidia PersonaPlex 7B on Apple Silicon: Full-Duplex Speech-to-Speech (114pts)", "url": "https://news.ycombinator.com/item?id=47258801"},
+        {"title": "AssemblyAI Universal-3 Pro Streaming (106 votes)", "url": "https://www.producthunt.com/posts/assemblyai"},
+        {"title": "Vocova - Transcribe from 1000+ platforms (138 votes)", "url": "https://www.producthunt.com/posts/vocova"},
+        {"title": "Moonshine - Fast ASR for edge devices (3rd day trending)", "url": "https://github.com/moonshine-ai/moonshine"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "TypeScript SDK wrapping multiple provider APIs with a unified interface. Provider selection logic based on latency benchmarks and cost. npm package + docs site. The hard part is handling real-time audio streaming across different provider protocols.",
+        "time": "2 weeks",
+        "cost": "$30/mo (hosting + API keys for testing)",
+        "stack": ["CLI tool", "Web app", "AI/LLM API"]
+      }
+    },
+    {
+      "title": "ScrapeForge",
+      "problem": "Anything API exploded from 124 to 511 votes in 24 hours — now #1 on Product Hunt. Developers desperately need structured data from websites without APIs. SEOMachine (Claude Code for SEO scraping) got +379 stars today on GitHub. The demand for AI-powered web extraction is the fastest-growing signal in our data.",
+      "solution": "A hosted API: point at any URL, describe the data you want in natural language, get structured JSON back. Handles pagination, JavaScript rendering, and anti-bot measures. Self-hostable option for privacy-conscious users.",
+      "monetization": "Usage-based: 1000 free extractions/mo, $29/mo for 10K, $99/mo for 100K, enterprise with dedicated proxies.",
+      "complexity": "medium",
+      "trend_sources": ["producthunt:notte", "github:TheCraigHewitt/seomachine", "producthunt:skyvern"],
+      "category": "SaaS",
+      "recurring_theme": "Website-to-API / intelligent web scraping",
+      "validation": [
+        "Build a simple API that takes URL + prompt → JSON and post on HN as Show HN",
+        "List on RapidAPI marketplace and track signups for 2 weeks",
+        "Post in r/dataengineering: 'What websites do you wish had APIs?'"
+      ],
+      "evidence": [
+        {"title": "Anything API - #1 on Product Hunt (511 votes, up from 124)", "url": "https://www.producthunt.com/posts/notte"},
+        {"title": "SEOMachine - Claude Code for SEO content (+379 stars today)", "url": "https://github.com/TheCraigHewitt/seomachine"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "Cloudflare Workers or Fly.io API, Playwright for headless browsing, Claude API for HTML→JSON extraction. Rate limiting with Upstash Redis. Self-hosted Docker image for premium tier.",
+        "time": "1-2 weeks",
+        "cost": "$40/mo (Fly.io + Claude API + proxy service)",
+        "stack": ["Web app", "AI/LLM API", "Background jobs", "Auth"]
+      }
+    },
+    {
+      "title": "MCPHub",
+      "problem": "MCP (Model Context Protocol) is becoming the standard for AI agent integrations, but the ecosystem is fragmented. Microsoft released MCP for Beginners (14.7K stars), Golf launched an enterprise MCP control plane (98 votes PH), and Xiaohongshu MCP (10.3K stars) shows region-specific demand. Developers need a registry and quality layer.",
+      "solution": "A curated MCP server registry with one-click install, ratings, compatibility checks, and security audits. Think npm but for MCP servers. Includes a testing sandbox where developers can try MCP servers before installing them.",
+      "monetization": "Freemium: free public registry, $19/mo for premium servers (enterprise integrations), $79/mo for teams with private registry and security scanning.",
+      "complexity": "medium",
+      "trend_sources": ["github:microsoft/mcp-for-beginners", "producthunt:golf", "github:xpzouying/xiaohongshu-mcp", "producthunt:clawoffice"],
+      "category": "Dev Tools",
+      "recurring_theme": "MCP (Model Context Protocol) ecosystem",
+      "validation": [
+        "Scrape existing MCP servers from GitHub and build a searchable directory — share in Claude Code and Cursor communities",
+        "Post in r/LocalLLaMA: 'How do you discover and evaluate MCP servers?'",
+        "Build a 'try before you install' sandbox and share as Show HN"
+      ],
+      "evidence": [
+        {"title": "Microsoft MCP for Beginners (14.7K stars)", "url": "https://github.com/microsoft/mcp-for-beginners"},
+        {"title": "Golf - Enterprise MCP Control Plane (98 votes)", "url": "https://www.producthunt.com/posts/golf"},
+        {"title": "Xiaohongshu MCP (10.3K stars)", "url": "https://github.com/xpzouying/xiaohongshu-mcp"},
+        {"title": "ClawOffice - Office for AI agents (101 votes)", "url": "https://www.producthunt.com/posts/clawoffice"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "Next.js directory site + GitHub API for scraping MCP repos. Automated testing via sandboxed Docker containers. Search with Algolia or Meilisearch. The hard part is building reliable compatibility testing across different MCP clients.",
+        "time": "2 weeks",
+        "cost": "$30/mo (Vercel + search + domain)",
+        "stack": ["Web app", "Database", "Auth", "Background jobs"]
+      }
+    },
+    {
+      "title": "AgentMem",
+      "problem": "Personal AI Memory just launched on Product Hunt (98 votes) — literally a product that captures your AI chat history. This is 3 days running: LocalRecall (Mar 3), AgentMem concept (Mar 4), and now a real product validating the need. AI agents forget everything between sessions and there's no standard memory layer.",
+      "solution": "A hosted memory API for AI agents. Simple REST endpoints: store, recall, forget, consolidate. Handles embedding, vector search, and memory summarization. SDKs for every major agent framework.",
+      "monetization": "Usage-based: 10K memories free, $19/mo for 100K, $79/mo for 1M with priority retrieval and analytics.",
+      "complexity": "medium",
+      "trend_sources": ["producthunt:personal-ai-memory", "producthunt:day1tabs", "github:bytedance/deer-flow", "github:agentscope-ai/ReMe"],
+      "category": "AI",
+      "recurring_theme": "AI agent memory & persistence",
+      "validation": [
+        "Build a simple API with Hono + pgvector, offer free access to 50 agent developers",
+        "Post in Claude Code and Cursor communities: 'Would you pay for persistent memory for your AI agents?'",
+        "Write a blog comparing Personal AI Memory, ReMe, Mem0, and Zep — share on HN"
+      ],
+      "evidence": [
+        {"title": "Personal AI Memory - Captures AI chat history (98 votes PH)", "url": "https://www.producthunt.com/posts/personal-ai-memory"},
+        {"title": "day1tabs - Tabs close at midnight (120 votes PH)", "url": "https://www.producthunt.com/posts/day1tabs"},
+        {"title": "DeerFlow - SuperAgent with memories (3rd day trending)", "url": "https://github.com/bytedance/deer-flow"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "Hono API on Cloudflare Workers, Neon Postgres with pgvector, OpenAI embedding API. Memory consolidation cron with Claude. Very API-centric, straightforward to build.",
+        "time": "1-2 weeks",
+        "cost": "$25/mo (Neon + Cloudflare Workers + embedding API)",
+        "stack": ["Web app", "Database", "Auth", "AI/LLM API", "Background jobs"]
+      }
+    },
+    {
+      "title": "CodeAtlas",
+      "problem": "GitNexus has been trending on GitHub for 3 straight weeks (+6262 stars/week) — the most durable signal in our dataset for codebase visualization. But it's a raw OSS tool with no polish, no team features, and no monetization.",
+      "solution": "A polished VS Code extension and web app that generates interactive knowledge graphs from any codebase. Chat with it to ask 'How does auth work?' and get a visual walkthrough. Runs locally, no code leaves your machine.",
+      "monetization": "Freemium: free for repos under 10K LOC, $15/mo unlimited, $49/mo for team features (shared annotations, onboarding guides).",
+      "complexity": "medium",
+      "trend_sources": ["github:abhigyanpatwari/GitNexus", "github:shareAI-lab/learn-claude-code"],
+      "category": "Dev Tools",
+      "recurring_theme": "Codebase knowledge graphs & visual understanding",
+      "validation": [
+        "Fork GitNexus, add a polished UI and chat feature, share as Show HN",
+        "Survey 20 senior devs: 'How long does it take you to understand a new codebase?'",
+        "Build a VS Code extension MVP and list on the marketplace"
+      ],
+      "evidence": [
+        {"title": "GitNexus - Code Intelligence Engine (3rd week trending, +6262/week)", "url": "https://github.com/abhigyanpatwari/GitNexus"},
+        {"title": "Learn Claude Code - Build agents from scratch (21.5K stars)", "url": "https://github.com/shareAI-lab/learn-claude-code"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "VS Code extension in TypeScript, tree-sitter for parsing, D3.js for graph visualization, Claude API for chat. The graph heuristics are the hard part.",
+        "time": "2-3 weeks",
+        "cost": "$15/mo (domain + landing page)",
+        "stack": ["Web app", "AI/LLM API"]
+      }
+    },
+    {
+      "title": "QwenKit",
+      "problem": "Qwen is having a moment: 'Something is afoot in the land of Qwen' hit 678pts on HN, the fine-tuning guide got 347pts, and 'Locally AI + Qwen' launched on PH (112 votes). Developers want to run Qwen models locally but the setup is still fragmented across MLX, llama.cpp, and vLLM.",
+      "solution": "A one-command toolkit to download, quantize, fine-tune, and serve Qwen models locally on Mac/Linux. Includes benchmarks, GGUF conversion, and a simple API server. Think 'Homebrew for Qwen models'.",
+      "monetization": "Open-core: free CLI for local use, $29/mo for cloud fine-tuning service, $99/mo for team model registry and deployment.",
+      "complexity": "medium",
+      "trend_sources": ["hackernews:47249343", "hackernews:47246296", "producthunt:locally-ai-for-mac", "producthunt:gemini-6"],
+      "category": "AI",
+      "recurring_theme": "Local/edge AI models & on-device inference",
+      "validation": [
+        "Build a CLI that downloads and serves Qwen3.5 in one command, share on HN",
+        "Post in r/LocalLLaMA: 'What's your biggest friction running Qwen locally?'",
+        "Write a benchmark comparison of Qwen3.5 across MLX/llama.cpp/vLLM and share on Twitter"
+      ],
+      "evidence": [
+        {"title": "Something is afoot in the land of Qwen (678pts)", "url": "https://news.ycombinator.com/item?id=47249343"},
+        {"title": "Qwen3.5 Fine-Tuning Guide (347pts)", "url": "https://news.ycombinator.com/item?id=47246296"},
+        {"title": "Locally AI + Qwen - Run Qwen on iPhone (112 votes)", "url": "https://www.producthunt.com/posts/locally-ai-for-mac"},
+        {"title": "Gemini 3.1 Flash-Lite (284 votes)", "url": "https://www.producthunt.com/posts/gemini-6"}
+      ],
+      "ai_build": {
+        "viability": "medium",
+        "details": "Python CLI wrapping Hugging Face, MLX, and llama.cpp. Needs model conversion scripts, quantization pipeline, and a simple FastAPI server. AI can scaffold the CLI but model optimization requires ML knowledge.",
+        "time": "2 weeks",
+        "cost": "$20 (domain + PyPI publish)",
+        "stack": ["CLI tool", "GPU/ML infra", "AI/LLM API"]
+      }
+    },
+    {
+      "title": "PromptVault",
+      "problem": "Shannon AI pentester (31.4K stars, 3rd day trending) shows AI security attacks are becoming autonomous. Trivy keeps trending. Allstate's privacy lawsuit over cellphone tracking hit Google Trends. Meanwhile Golf launched an 'Enterprise MCP Control Plane' for AI security. The overlap of AI tools + data leakage is a persistent, growing concern.",
+      "solution": "A local CLI proxy that intercepts prompts to AI tools, scans for secrets/PII, and blocks or redacts before sending. Works with Claude Code, Cursor, ChatGPT, any API endpoint. Audit log for compliance.",
+      "monetization": "Freemium: free CLI with regex scanning, $15/mo pro with ML detection and Slack alerts, $99/mo team with audit logs.",
+      "complexity": "low",
+      "trend_sources": ["github:KeygraphHQ/shannon", "github:aquasecurity/trivy", "google_trends:allstate insurance", "producthunt:golf"],
+      "category": "Dev Tools",
+      "recurring_theme": "Secret & data leak prevention for AI tools",
+      "validation": [
+        "Build a CLI that scans stdin for API key patterns, share on HN",
+        "Post in r/devops: 'Have you ever accidentally pasted secrets into AI tools?'",
+        "DM 10 security engineers about their AI data leakage concerns"
+      ],
+      "evidence": [
+        {"title": "Shannon AI pentester (31.4K stars, 3 days trending)", "url": "https://github.com/KeygraphHQ/shannon"},
+        {"title": "Trivy security scanner (32.8K stars, 3 days trending)", "url": "https://github.com/aquasecurity/trivy"},
+        {"title": "Allstate privacy lawsuit over cellphone tracking", "url": "https://finance.yahoo.com/news/allstate-must-face-privacy-lawsuit-160730284.html"},
+        {"title": "Golf - Enterprise MCP Control Plane (98 votes)", "url": "https://www.producthunt.com/posts/golf"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "CLI in Rust or Go as a local proxy. Regex patterns for common secrets, small local model for PII. Ships as a single binary, no cloud dependency.",
+        "time": "1 week",
+        "cost": "$10 (domain + landing page)",
+        "stack": ["CLI tool"]
+      }
+    },
+    {
+      "title": "FlightPlan",
+      "problem": "agile.flights launched on PH today (109 votes, 23 comments) with the tagline 'Agile died in a JIRA board — replace sprints with flights.' Combined with the growing agent-driven development trend (Superset IDE for agents, ClawOffice), traditional project management tools are mismatched for AI-assisted workflows where a solo dev with agents can ship in hours, not sprints.",
+      "solution": "A lightweight project tracker designed for solo devs and small teams using AI coding tools. Instead of sprints, organize work as 'flights' — short, focused sessions with clear objectives. Integrates with GitHub and Claude Code to auto-log what was built, track AI-assisted vs manual work, and estimate remaining complexity.",
+      "monetization": "Freemium: free for 1 project, $12/mo for unlimited projects with AI integration, $39/mo for teams with analytics.",
+      "complexity": "medium",
+      "trend_sources": ["producthunt:agile-flights", "producthunt:clawoffice", "github:superset-sh/superset"],
+      "category": "SaaS",
+      "validation": [
+        "Post in r/SideProject: 'How do you track progress when building with AI tools?'",
+        "Build a simple GitHub-integrated task board that auto-logs commits and share as Show HN",
+        "Survey 20 indie hackers about their project management setup"
+      ],
+      "evidence": [
+        {"title": "agile.flights - Replace sprints with flights (109 votes)", "url": "https://www.producthunt.com/posts/agile-flights"},
+        {"title": "ClawOffice - Office for AI agents (101 votes)", "url": "https://www.producthunt.com/posts/clawoffice"},
+        {"title": "Superset - IDE for AI Agents Era (+2805 stars/week)", "url": "https://github.com/superset-sh/superset"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "Next.js + Supabase. GitHub API for commit/PR tracking, Claude API for complexity estimation and auto-summaries. The core is a simple CRUD app with GitHub webhooks.",
+        "time": "1-2 weeks",
+        "cost": "$20/mo (Supabase + Vercel + domain)",
+        "stack": ["Web app", "Database", "Auth", "AI/LLM API", "GitHub API"]
+      }
+    },
+    {
+      "title": "LicenseBot",
+      "problem": "Two HN front-page stories today about AI and licensing: 'Relicensing with AI-Assisted Rewrite' (147pts) and 'No right to relicense this project' (190pts). As AI rewrites codebases, the legal questions around licensing, attribution, and copyright are exploding. Developers and companies have no tooling to navigate this.",
+      "solution": "A CLI tool that scans a codebase, identifies all license obligations (dependencies, copied snippets, AI-generated sections), and generates a compliance report. Flags risky AI-rewritten code that may violate original licenses. Integrates into CI to block non-compliant merges.",
+      "monetization": "Freemium: free for open source projects, $29/mo for private repos, $149/mo for enterprise with legal report exports.",
+      "complexity": "medium",
+      "trend_sources": ["hackernews:47257803", "hackernews:47259177"],
+      "category": "Dev Tools",
+      "validation": [
+        "Comment on both HN threads asking developers how they handle license compliance when using AI to rewrite code",
+        "Build a basic CLI that scans package.json/requirements.txt for license conflicts and share on GitHub",
+        "Interview 5 open source maintainers about their AI relicensing concerns"
+      ],
+      "evidence": [
+        {"title": "Relicensing with AI-Assisted Rewrite (147pts)", "url": "https://news.ycombinator.com/item?id=47257803"},
+        {"title": "No right to relicense this project (190pts)", "url": "https://news.ycombinator.com/item?id=47259177"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "Node/Python CLI using SPDX license database, dependency tree parsing (npm, pip, cargo), and Claude API for analyzing AI-generated code sections. GitHub Action for CI integration. The legal heuristics need careful research.",
+        "time": "2 weeks",
+        "cost": "$20/mo (Claude API for analysis)",
+        "stack": ["CLI tool", "AI/LLM API"]
+      }
+    },
+    {
+      "title": "GWorkCLI",
+      "problem": "Google just released Google Workspace CLI (622pts, 208 comments on HN) — clearly there's massive demand for programmatic access to Google tools. But the official CLI is just the beginning. Power users and developers want automation, scripting, and AI integration with their Google Workspace data.",
+      "solution": "An AI-powered wrapper around Google Workspace APIs that lets you manage Gmail, Drive, Calendar, and Docs from the terminal with natural language. 'Find all invoices from last quarter' or 'Schedule a meeting with everyone who emailed me about Project X'.",
+      "monetization": "One-time: $39 for the CLI tool. Optional $15/mo for AI-powered features (natural language queries, smart automation).",
+      "complexity": "medium",
+      "trend_sources": ["hackernews:47255881"],
+      "category": "Dev Tools",
+      "validation": [
+        "Comment on the Google Workspace CLI HN thread: 'What Google Workspace workflows would you automate?'",
+        "Build a prototype that searches Gmail via natural language and share as Show HN",
+        "Post in r/productivity: 'If you could automate one thing in Google Workspace, what would it be?'"
+      ],
+      "evidence": [
+        {"title": "Google Workspace CLI (622pts, 208 comments)", "url": "https://news.ycombinator.com/item?id=47255881"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "Python/Node CLI wrapping Google Workspace APIs (Gmail, Drive, Calendar). Claude API for natural language → API call translation. OAuth2 for auth. The main challenge is handling the breadth of Google APIs and edge cases.",
+        "time": "1-2 weeks",
+        "cost": "$15/mo (Claude API)",
+        "stack": ["CLI tool", "AI/LLM API", "Auth"]
+      }
+    },
+    {
+      "title": "CourseAgent",
+      "problem": "Coursekit (105 votes PH) lets you turn courses into AI agents. This validates that course creators want to package their expertise as interactive AI experiences instead of static videos. But Coursekit is the platform — there's an opportunity for the template/toolkit layer that works with any LLM.",
+      "solution": "An open-source framework for turning any knowledge base (course content, docs, SOPs) into a conversational AI tutor. Upload PDFs/videos, it generates a RAG pipeline with quizzes, progress tracking, and Socratic dialogue. Embeddable widget for any website.",
+      "monetization": "Open-core: free self-hosted, $29/mo for managed hosting with analytics, $99/mo for white-label with custom branding.",
+      "complexity": "medium",
+      "trend_sources": ["producthunt:coursekit", "producthunt:gemini-6", "github:anthropics/prompt-eng-interactive-tutorial"],
+      "category": "SaaS",
+      "validation": [
+        "Post in course creator communities: 'Would you convert your course to an AI chatbot if it took 10 minutes?'",
+        "Build a demo that turns Anthropic's prompt engineering tutorial into a chatbot and share on Twitter",
+        "DM 10 Udemy/Teachable instructors asking about their student engagement challenges"
+      ],
+      "evidence": [
+        {"title": "Coursekit - Turn your course into AI agents (105 votes)", "url": "https://www.producthunt.com/posts/coursekit"},
+        {"title": "Anthropic Prompt Engineering Tutorial (32.5K stars, trending)", "url": "https://github.com/anthropics/prompt-eng-interactive-tutorial"},
+        {"title": "Gemini 3.1 Flash-Lite - cheap inference for high-volume (284 votes)", "url": "https://www.producthunt.com/posts/gemini-6"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "Next.js app, PDF/video processing pipeline (extract text, chunk, embed), pgvector for RAG, Claude API for Socratic dialogue. Embeddable as an iframe/web component. Standard RAG app with a pedagogical prompt layer.",
+        "time": "2 weeks",
+        "cost": "$35/mo (Supabase + Claude API + Vercel)",
+        "stack": ["Web app", "Database", "Auth", "AI/LLM API", "File storage"]
+      }
+    }
+  ]
+}
