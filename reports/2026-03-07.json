@@ -1,0 +1,413 @@
+{
+  "date": "2026-03-07",
+  "generated_at": "2026-03-07T17:00:00Z",
+  "trend_data": {
+    "hackernews_stories": 30,
+    "reddit_posts": 0,
+    "github_repos": 24,
+    "google_trends": 10,
+    "producthunt_products": 20
+  },
+  "recurring_themes": [
+    {
+      "theme": "AI code quality & vibe coding verification",
+      "days_seen": 4,
+      "dates": ["2026-03-07", "2026-03-05", "2026-03-04", "2026-03-03"],
+      "past_idea_titles": ["SpecPilot", "AgentGuard", "VibeShip"],
+      "signal_strength": "strong",
+      "note": "'LLMs work best when user defines acceptance criteria first' (242pts HN) reframes the problem from 'AI is wrong' to 'users need better specs'. 'I'm 60 years old, Claude Code re-ignited a passion' (489pts, 355 comments) shows vibe coding expanding beyond developers. Vet 'keep your coding agents honest' (111 votes PH) and Context Gateway (209 votes PH) are new products directly addressing quality. This is the most durable theme in our dataset."
+    },
+    {
+      "theme": "AI agent orchestration & infrastructure",
+      "days_seen": 4,
+      "dates": ["2026-03-07", "2026-03-05", "2026-03-04", "2026-03-03"],
+      "past_idea_titles": ["AgentBench", "AgentTestKit"],
+      "signal_strength": "strong",
+      "note": "Explosion of agent frameworks today: openai/skills (+947 stars), 'complete AI agency' repo (+1468 stars), Qwen-Agent (+586 stars), CyberStrikeAI (+416 stars). DeerFlow, ruflo, superset, agentscope all still trending weekly. 21st Agents SDK (89 votes PH) and TestSprite 2.1 (123 votes PH) on Product Hunt. The agent infrastructure race is accelerating."
+    },
+    {
+      "theme": "Codebase knowledge graphs & visual understanding",
+      "days_seen": 4,
+      "dates": ["2026-03-07", "2026-03-05", "2026-03-04", "2026-03-03"],
+      "past_idea_titles": ["RepoGraph", "CodeAtlas"],
+      "signal_strength": "strong",
+      "note": "GitNexus still trending 4th week running (+4419 stars/week). learn-claude-code (22.9K stars, +3167/week) continues. FasterGH (95 votes PH) for fast GitHub browsing adds a related signal. This is the most persistent single-project signal in our data."
+    },
+    {
+      "theme": "AI security testing & data leak prevention",
+      "days_seen": 4,
+      "dates": ["2026-03-07", "2026-03-05", "2026-03-04", "2026-03-03"],
+      "past_idea_titles": ["CodeLeakGuard", "PromptVault", "ScrapShield"],
+      "signal_strength": "strong",
+      "note": "Evolved today from 'leak prevention' to 'AI-powered security testing'. CyberStrikeAI (AI-native security platform, +416 stars today) is a breakout. 'Hardening Firefox with Anthropic's Red Team' (572pts HN) proves major companies are investing in AI security. Codex Security (89 votes PH) by OpenAI validates the market. The security theme is expanding from defensive to offensive."
+    },
+    {
+      "theme": "AI agent memory & persistence",
+      "days_seen": 4,
+      "dates": ["2026-03-07", "2026-03-05", "2026-03-04", "2026-03-03"],
+      "past_idea_titles": ["LocalRecall", "AgentMem"],
+      "signal_strength": "strong",
+      "note": "DeerFlow (with memories) still trending 4th day (+3480/week). hermes-agent 'the agent that grows with you' (+964/week) implies learning/memory. Every new agent framework needs a memory layer but none ship one. The gap is widening as agent adoption accelerates."
+    },
+    {
+      "theme": "Website-to-API / intelligent web scraping",
+      "days_seen": 3,
+      "dates": ["2026-03-07", "2026-03-05", "2026-03-04"],
+      "past_idea_titles": ["ScrapeForge"],
+      "signal_strength": "moderate",
+      "note": "D4Vinci scraping framework exploded to +7173 stars/week (25.2K total). SEOMachine still trending (+378 stars today). These tools keep growing because every AI app needs data and most websites don't have APIs."
+    },
+    {
+      "theme": "MCP (Model Context Protocol) ecosystem",
+      "days_seen": 3,
+      "dates": ["2026-03-07", "2026-03-05", "2026-03-04"],
+      "past_idea_titles": ["MCPHub"],
+      "signal_strength": "moderate",
+      "note": "Xiaohongshu MCP still trending (+1114/week). microsoft/hve-core (Copilot skills/prompts/agents, +217 today) is Microsoft investing in the ecosystem. MCP is becoming the de facto standard for AI tool integration."
+    },
+    {
+      "theme": "Local/edge AI models & on-device inference",
+      "days_seen": 3,
+      "dates": ["2026-03-07", "2026-03-05", "2026-03-04"],
+      "past_idea_titles": ["QwenKit"],
+      "signal_strength": "moderate",
+      "note": "Sarvam 105B (first competitive Indian open source LLM, 59pts HN) and 'A tool that removes censorship from open-weight LLMs' (173pts HN) show growing demand for customizable local models. Qwen-Agent still trending. The open-weight model ecosystem is maturing."
+    },
+    {
+      "theme": "Claude Code ecosystem & tooling",
+      "days_seen": 2,
+      "dates": ["2026-03-07", "2026-03-05"],
+      "past_idea_titles": [],
+      "signal_strength": "emerging",
+      "note": "New theme. Context Gateway 'Make Claude Code faster and cheaper' (209 votes PH). 21st Agents SDK 'add Claude Code AI agent to your app' (89 votes PH). learn-claude-code (22.9K stars). webnovel-writer (built on Claude Code, +291 today). seomachine (Claude Code workspace, +378 today). ruflo (agent orchestration for Claude, +4170/week). Claude Code is spawning its own ecosystem of plugins, optimizers, and specialized workspaces."
+    }
+  ],
+  "ideas": [
+    {
+      "title": "AgentGuard",
+      "problem": "AI coding tools are writing more production code than ever but trust is the bottleneck. 'LLMs work best when user defines acceptance criteria first' (242pts HN) shows the community converging on specs-first approaches. Vet launched on PH (111 votes) specifically to 'keep coding agents honest'. Context Gateway (209 votes) optimizes Claude Code usage. This theme has been strong for 4 consecutive days.",
+      "solution": "A CI/CD plugin that runs AI-generated PRs through static analysis, property-based testing, and LLM-powered semantic review. Flags logic errors, security issues, and behavioral drift. Ships as a GitHub App with one-click install. Includes a 'spec mode' that generates acceptance criteria before the AI writes code.",
+      "monetization": "SaaS: $29/mo indie (50 PRs), $99/mo teams (unlimited), $499/mo enterprise with custom rules and compliance reports.",
+      "complexity": "medium",
+      "trend_sources": ["hackernews:47283337", "hackernews:47282777", "producthunt:imbue-7", "producthunt:context-gateway"],
+      "category": "Dev Tools",
+      "recurring_theme": "AI code quality & vibe coding verification",
+      "validation": [
+        "Post in r/ExperiencedDevs: 'How do you review AI-generated PRs at scale?'",
+        "Build a GitHub Action that runs Claude on PR diffs and posts review comments -- share as open source",
+        "Comment on the 'LLMs work best when user defines acceptance criteria' HN thread with a prototype"
+      ],
+      "evidence": [
+        {"title": "LLMs work best when the user defines their acceptance criteria first (242pts)", "url": "https://news.ycombinator.com/item?id=47283337"},
+        {"title": "I'm 60 years old. Claude Code has re-ignited a passion (489pts)", "url": "https://news.ycombinator.com/item?id=47282777"},
+        {"title": "Vet - Keep your coding agents honest (111 votes PH)", "url": "https://www.producthunt.com/posts/imbue-7"},
+        {"title": "Context Gateway - Make Claude Code faster and cheaper (209 votes PH)", "url": "https://www.producthunt.com/posts/context-gateway"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "GitHub App + webhook listener, ESLint/Semgrep for static analysis, Claude API for semantic review. Next.js dashboard. The hardest part is tuning prompts for low false-positive rates. The new 'spec mode' is a prompt template that generates acceptance criteria from a feature description.",
+        "time": "2 weeks",
+        "cost": "$50/mo (Vercel + Claude API + domain)",
+        "stack": ["Web app", "Database", "Auth", "AI/LLM API", "GitHub API", "Background jobs"]
+      }
+    },
+    {
+      "title": "CodeAtlas",
+      "problem": "GitNexus has been trending on GitHub for 4 straight weeks (+4419 stars/week this week, 10.6K total). This is the single most persistent project signal in our entire dataset. Developers desperately want visual codebase understanding, but GitNexus is a raw OSS tool with no polish, no team features, and no monetization.",
+      "solution": "A polished VS Code extension and web app that generates interactive knowledge graphs from any codebase. Chat with it to ask 'How does auth work?' and get a visual walkthrough. Runs locally, no code leaves your machine. Integrates with Claude Code to provide context during AI-assisted development.",
+      "monetization": "Freemium: free for repos under 10K LOC, $15/mo unlimited, $49/mo for team features (shared annotations, onboarding guides).",
+      "complexity": "medium",
+      "trend_sources": ["github:abhigyanpatwari/GitNexus", "github:shareAI-lab/learn-claude-code", "producthunt:fastergh"],
+      "category": "Dev Tools",
+      "recurring_theme": "Codebase knowledge graphs & visual understanding",
+      "validation": [
+        "Fork GitNexus, add a polished UI and chat feature, share as Show HN",
+        "Survey 20 senior devs: 'How long does it take you to understand a new codebase?'",
+        "Build a VS Code extension MVP and list on the marketplace"
+      ],
+      "evidence": [
+        {"title": "GitNexus - Code Intelligence Engine (4th week trending, +4419/week)", "url": "https://github.com/abhigyanpatwari/GitNexus"},
+        {"title": "Learn Claude Code - Build agents from scratch (22.9K stars, +3167/week)", "url": "https://github.com/shareAI-lab/learn-claude-code"},
+        {"title": "FasterGH - Fast GitHub browsing (95 votes PH)", "url": "https://www.producthunt.com/posts/fastergh"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "VS Code extension in TypeScript, tree-sitter for parsing, D3.js for graph visualization, Claude API for chat. The graph heuristics are the hard part but GitNexus provides a reference implementation.",
+        "time": "2-3 weeks",
+        "cost": "$15/mo (domain + landing page)",
+        "stack": ["Web app", "AI/LLM API"]
+      }
+    },
+    {
+      "title": "AgentOrch",
+      "problem": "The agent framework explosion is creating chaos: openai/skills (+947 today), ruflo (+4170/week), deer-flow (+3480/week), agentscope (+1120/week), hermes-agent (+964/week), and a 'complete AI agency' repo (+1468 today). Every company is building their own agent stack but there's no unified way to orchestrate agents across frameworks. TestSprite 2.1 (123 votes PH) proves testing agents is also unsolved.",
+      "solution": "A lightweight orchestration layer that lets you define multi-agent workflows in YAML, mix agents from different frameworks (LangChain, CrewAI, Claude Agent SDK), and monitor them in a unified dashboard. Includes built-in testing: define conversation scenarios and get pass/fail reports with latency and hallucination scoring.",
+      "monetization": "Open-core: free CLI for local orchestration, $49/mo hosted with dashboards and CI integration, $199/mo for team features with production monitoring.",
+      "complexity": "medium",
+      "trend_sources": ["github:openai/skills", "github:ruvnet/ruflo", "github:bytedance/deer-flow", "github:agentscope-ai/agentscope", "producthunt:testsprite"],
+      "category": "Dev Tools",
+      "recurring_theme": "AI agent orchestration & infrastructure",
+      "validation": [
+        "Build a CLI that orchestrates 2-3 agents from different frameworks and share as Show HN",
+        "Post in r/LocalLLaMA: 'How do you coordinate multiple AI agents in a single workflow?'",
+        "Cold DM 10 developers starring agent framework repos on GitHub"
+      ],
+      "evidence": [
+        {"title": "OpenAI Skills Catalog for Codex (+947 stars today)", "url": "https://github.com/openai/skills"},
+        {"title": "Ruflo - Agent orchestration for Claude (+4170 stars/week)", "url": "https://github.com/ruvnet/ruflo"},
+        {"title": "DeerFlow - ByteDance SuperAgent (+3480 stars/week)", "url": "https://github.com/bytedance/deer-flow"},
+        {"title": "TestSprite 2.1 - Agentic testing (123 votes PH)", "url": "https://www.producthunt.com/posts/testsprite"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "Python/Node CLI with YAML config parser, adapter pattern for different agent frameworks, WebSocket dashboard for monitoring. Claude API for hallucination scoring in test mode. The main challenge is building reliable adapters across rapidly-changing agent SDKs.",
+        "time": "2-3 weeks",
+        "cost": "$30/mo (Supabase + Vercel + Claude API)",
+        "stack": ["Web app", "Database", "Auth", "AI/LLM API", "Background jobs", "Real-time/WebSockets"]
+      }
+    },
+    {
+      "title": "SecurityPilot",
+      "problem": "AI-powered security testing is having a breakout day. CyberStrikeAI (AI-native security platform integrating 100+ tools, +416 stars today) just appeared on GitHub trending. 'Hardening Firefox with Anthropic's Red Team' (572pts, 156 comments HN) shows major companies using AI for security. Codex Security (89 votes PH) is OpenAI entering the space. The theme has evolved from 'prevent leaks' to 'use AI offensively for security testing'.",
+      "solution": "An AI-powered security scanner for indie devs and small teams. Point it at your deployed app or repo, and it runs OWASP Top 10 checks, dependency audits, and LLM-powered attack simulations. Generates a prioritized fix list with one-click remediation PRs. Priced for solo devs, not enterprises.",
+      "monetization": "Freemium: free for 1 scan/week on public repos, $19/mo for unlimited scans with remediation PRs, $79/mo for teams with scheduled scans and Slack alerts.",
+      "complexity": "medium",
+      "trend_sources": ["github:Ed1s0nZ/CyberStrikeAI", "hackernews:47273854", "producthunt:codex-security"],
+      "category": "Dev Tools",
+      "recurring_theme": "AI security testing & data leak prevention",
+      "validation": [
+        "Build a free scanner that checks a URL for OWASP Top 10 issues and share as Show HN",
+        "Comment on the 'Hardening Firefox with Anthropic's Red Team' HN thread asking what tools small teams use",
+        "Post in r/netsec: 'What security scanning tools do you use for side projects?'"
+      ],
+      "evidence": [
+        {"title": "CyberStrikeAI - AI-native security testing platform (+416 stars today)", "url": "https://github.com/Ed1s0nZ/CyberStrikeAI"},
+        {"title": "Hardening Firefox with Anthropic's Red Team (572pts, 156 comments)", "url": "https://news.ycombinator.com/item?id=47273854"},
+        {"title": "Codex Security - Application security agent (89 votes PH)", "url": "https://www.producthunt.com/posts/codex-security"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "Node/Python CLI wrapping existing tools (OWASP ZAP, npm audit, Semgrep) with Claude API for intelligent attack simulation and fix generation. GitHub App for automated PRs. The security testing logic is well-understood; the AI layer adds prioritization and remediation.",
+        "time": "2 weeks",
+        "cost": "$40/mo (Vercel + Claude API + domain)",
+        "stack": ["Web app", "Database", "Auth", "AI/LLM API", "GitHub API", "Background jobs"]
+      }
+    },
+    {
+      "title": "AgentMem",
+      "problem": "AI agents forget everything between sessions. DeerFlow ('SuperAgent with memories') is still trending 4th day (+3480/week). hermes-agent ('the agent that grows with you', +964/week) implies learning. Every new agent framework shipping this week needs a memory layer but none include one. The gap between agent capabilities and agent memory is widening as adoption accelerates.",
+      "solution": "A hosted memory API for AI agents. Simple REST endpoints: store, recall, forget, consolidate. Handles embedding, vector search, and memory summarization. SDKs for every major agent framework (LangChain, CrewAI, Claude Agent SDK, OpenAI Codex).",
+      "monetization": "Usage-based: 10K memories free, $19/mo for 100K, $79/mo for 1M with priority retrieval and analytics.",
+      "complexity": "medium",
+      "trend_sources": ["github:bytedance/deer-flow", "github:NousResearch/hermes-agent", "github:agentscope-ai/agentscope"],
+      "category": "AI",
+      "recurring_theme": "AI agent memory & persistence",
+      "validation": [
+        "Build a simple API with Hono + pgvector, offer free access to 50 agent developers",
+        "Post in Claude Code and Cursor communities: 'Would you pay for persistent memory for your AI agents?'",
+        "Write a blog comparing memory solutions (Mem0, Zep, custom pgvector) and share on HN"
+      ],
+      "evidence": [
+        {"title": "DeerFlow - SuperAgent with memories (4th day trending, +3480/week)", "url": "https://github.com/bytedance/deer-flow"},
+        {"title": "Hermes Agent - The agent that grows with you (+964/week)", "url": "https://github.com/NousResearch/hermes-agent"},
+        {"title": "AgentScope - Build trustworthy agents (+1120/week)", "url": "https://github.com/agentscope-ai/agentscope"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "Hono API on Cloudflare Workers, Neon Postgres with pgvector, OpenAI embedding API. Memory consolidation cron with Claude. Very API-centric, straightforward to build.",
+        "time": "1-2 weeks",
+        "cost": "$25/mo (Neon + Cloudflare Workers + embedding API)",
+        "stack": ["Web app", "Database", "Auth", "AI/LLM API", "Background jobs"]
+      }
+    },
+    {
+      "title": "ScrapeForge",
+      "problem": "The web scraping demand is intensifying. D4Vinci's scraping framework exploded to +7173 stars/week (25.2K total). SEOMachine (Claude Code for SEO scraping) is still trending (+378 today). Every AI application needs structured data from websites that don't have APIs, and the existing tools are either too complex or too expensive.",
+      "solution": "A hosted API: point at any URL, describe the data you want in natural language, get structured JSON back. Handles pagination, JavaScript rendering, and anti-bot measures. Self-hostable Docker image for privacy-conscious users.",
+      "monetization": "Usage-based: 1000 free extractions/mo, $29/mo for 10K, $99/mo for 100K, enterprise with dedicated proxies.",
+      "complexity": "medium",
+      "trend_sources": ["github:D4Vinci/scrapy-framework", "github:TheCraigHewitt/seomachine"],
+      "category": "SaaS",
+      "recurring_theme": "Website-to-API / intelligent web scraping",
+      "validation": [
+        "Build a simple API that takes URL + prompt and returns JSON, post on HN as Show HN",
+        "List on RapidAPI marketplace and track signups for 2 weeks",
+        "Post in r/dataengineering: 'What websites do you wish had APIs?'"
+      ],
+      "evidence": [
+        {"title": "Adaptive Web Scraping framework (+7173 stars/week, 25.2K total)", "url": "https://github.com/D4Vinci"},
+        {"title": "SEOMachine - Claude Code for SEO content (+378 stars today)", "url": "https://github.com/TheCraigHewitt/seomachine"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "Cloudflare Workers or Fly.io API, Playwright for headless browsing, Claude API for HTML-to-JSON extraction. Rate limiting with Upstash Redis. Self-hosted Docker image for premium tier.",
+        "time": "1-2 weeks",
+        "cost": "$40/mo (Fly.io + Claude API + proxy service)",
+        "stack": ["Web app", "AI/LLM API", "Background jobs", "Auth"]
+      }
+    },
+    {
+      "title": "MCPHub",
+      "problem": "MCP is becoming the de facto standard for AI agent integrations but the ecosystem is fragmented. Xiaohongshu MCP is still trending (+1114/week). Microsoft released hve-core with Copilot skills/prompts/agents (+217 today). Every week new MCP servers appear on GitHub but there's no registry, no quality layer, and no way to discover them.",
+      "solution": "A curated MCP server registry with one-click install, ratings, compatibility checks, and security audits. Think npm but for MCP servers. Includes a testing sandbox where developers can try MCP servers before installing them.",
+      "monetization": "Freemium: free public registry, $19/mo for premium servers (enterprise integrations), $79/mo for teams with private registry and security scanning.",
+      "complexity": "medium",
+      "trend_sources": ["github:xpzouying/xiaohongshu-mcp", "github:microsoft/hve-core"],
+      "category": "Dev Tools",
+      "recurring_theme": "MCP (Model Context Protocol) ecosystem",
+      "validation": [
+        "Scrape existing MCP servers from GitHub and build a searchable directory -- share in Claude Code and Cursor communities",
+        "Post in r/LocalLLaMA: 'How do you discover and evaluate MCP servers?'",
+        "Build a 'try before you install' sandbox and share as Show HN"
+      ],
+      "evidence": [
+        {"title": "Xiaohongshu MCP (+1114 stars/week, 10.6K total)", "url": "https://github.com/xpzouying/xiaohongshu-mcp"},
+        {"title": "Microsoft HVE Core - Copilot skills, prompts, agents (+217 today)", "url": "https://github.com/microsoft/hve-core"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "Next.js directory site + GitHub API for scraping MCP repos. Automated testing via sandboxed Docker containers. Search with Meilisearch. The hard part is building reliable compatibility testing across different MCP clients.",
+        "time": "2 weeks",
+        "cost": "$30/mo (Vercel + search + domain)",
+        "stack": ["Web app", "Database", "Auth", "Background jobs"]
+      }
+    },
+    {
+      "title": "ClaudeForge",
+      "problem": "Claude Code is spawning its own ecosystem. Today alone: Context Gateway 'make Claude Code faster and cheaper' (209 votes PH), 21st Agents SDK 'add Claude Code agent to your app' (89 votes PH), learn-claude-code (22.9K stars, +3167/week), webnovel-writer (built on Claude Code, +291 today), seomachine (Claude Code workspace, +378 today), ruflo (agent orchestration for Claude, +4170/week). There's no marketplace for Claude Code plugins, skills, and templates.",
+      "solution": "A marketplace and CLI tool for Claude Code extensions. Browse and install custom slash commands, CLAUDE.md templates, MCP server configs, and workflow automations. One command: `claudeforge install seo-writer`. Includes a 'share your setup' community where power users publish their configurations.",
+      "monetization": "Freemium: free registry with community plugins, $15/mo for premium plugins (enterprise templates, specialized workflows), $49/mo for teams with shared configurations.",
+      "complexity": "low",
+      "trend_sources": ["producthunt:context-gateway", "producthunt:21st-agents-sdk", "github:shareAI-lab/learn-claude-code", "github:lingfengQAQ/webnovel-writer", "github:TheCraigHewitt/seomachine", "github:ruvnet/ruflo"],
+      "category": "Dev Tools",
+      "recurring_theme": "Claude Code ecosystem & tooling",
+      "validation": [
+        "Create a GitHub repo with 20 curated CLAUDE.md templates and slash commands, share in Claude Code communities",
+        "Post in r/ClaudeAI: 'What's your Claude Code setup? Share your CLAUDE.md and custom commands'",
+        "Build a simple CLI that installs slash commands from a registry and share as Show HN"
+      ],
+      "evidence": [
+        {"title": "Context Gateway - Make Claude Code faster and cheaper (209 votes PH)", "url": "https://www.producthunt.com/posts/context-gateway"},
+        {"title": "21st Agents SDK - Add Claude Code AI agent to your app (89 votes PH)", "url": "https://www.producthunt.com/posts/21st-dev-the-npm-for-design-engineers"},
+        {"title": "Learn Claude Code - Build agents from scratch (22.9K stars)", "url": "https://github.com/shareAI-lab/learn-claude-code"},
+        {"title": "webnovel-writer - Claude Code for long-form writing (+291 today)", "url": "https://github.com/lingfengQAQ/webnovel-writer"},
+        {"title": "SEOMachine - Claude Code for SEO content (+378 today)", "url": "https://github.com/TheCraigHewitt/seomachine"},
+        {"title": "Ruflo - Agent orchestration for Claude (+4170/week)", "url": "https://github.com/ruvnet/ruflo"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "Node CLI that manages a local config directory (~/.claudeforge), pulls from a GitHub-based registry. Next.js marketplace site for browsing. The core is file management (copy CLAUDE.md templates, slash commands, MCP configs to the right directories). Very straightforward.",
+        "time": "1 week",
+        "cost": "$15/mo (Vercel + domain)",
+        "stack": ["CLI tool", "Web app", "Database"]
+      }
+    },
+    {
+      "title": "DownturnKit",
+      "problem": "'Tech employment now significantly worse than 2008 or 2020 recessions' hit 904pts with 600 comments on HN -- the highest-scoring story today. Palus Finance (YC W26) launched for 'better yields on idle cash for startups' (52pts HN). MacBook Neo trending on Google Trends under 'cheap laptop'. Laid-off developers need tools to quickly monetize their skills as indie hackers, not more job boards.",
+      "solution": "A curated toolkit and 30-day playbook for laid-off developers to launch a revenue-generating side project. Includes validated idea templates (from trend data like this report), step-by-step build guides optimized for AI coding tools, and pre-configured deployment stacks. Ships as a Notion template + CLI scaffold.",
+      "monetization": "One-time purchase: $49 for the full kit. $19/mo for weekly updated idea briefs with trend data. $99 for 1-on-1 launch review.",
+      "complexity": "low",
+      "trend_sources": ["hackernews:47278426", "hackernews:47278980", "google_trends:cheap laptop"],
+      "category": "Consumer",
+      "validation": [
+        "Comment on the tech employment HN thread: 'Would a structured 30-day playbook for launching a side project be valuable?'",
+        "Post in r/cscareerquestions: 'Laid off? Here are 10 validated side project ideas you can build this month' with a waitlist",
+        "Create a free sample playbook for one idea and track downloads"
+      ],
+      "evidence": [
+        {"title": "Tech employment now significantly worse than 2008 or 2020 recessions (904pts, 600 comments)", "url": "https://news.ycombinator.com/item?id=47278426"},
+        {"title": "Palus Finance (YC W26) - Better yields on idle cash for startups (52pts)", "url": "https://news.ycombinator.com/item?id=47278980"},
+        {"title": "MacBook Neo trending under 'cheap laptop' on Google Trends", "url": "https://www.apple.com/macbook-neo/"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "Notion template + markdown content + a simple CLI scaffold (cookiecutter/create-app style). No backend needed for MVP. The value is in the curation and playbook content, not the tech.",
+        "time": "1 weekend",
+        "cost": "$10 (Gumroad + domain)",
+        "stack": ["Static site"]
+      }
+    },
+    {
+      "title": "WriterForge",
+      "problem": "Claude Code is being repurposed for non-code creative work. webnovel-writer (long-form novel writing system built on Claude Code, +291 stars today) solves 'forgetting' and 'hallucination' in 2M+ character serialized fiction. SEOMachine (Claude Code for SEO blog content, +378 today) does the same for marketing content. These tools prove Claude Code's agent loop is valuable beyond coding, but each is a one-off project.",
+      "solution": "A framework for building specialized Claude Code writing workspaces. Templates for fiction, SEO content, technical docs, and newsletters. Each template includes custom slash commands, memory management, style guides, and output validation. Install with one command.",
+      "monetization": "Freemium: 3 free templates, $29/mo for all templates with premium features (multi-chapter memory, SEO scoring, tone analysis), $79/mo for teams with shared style guides.",
+      "complexity": "low",
+      "trend_sources": ["github:lingfengQAQ/webnovel-writer", "github:TheCraigHewitt/seomachine", "hackernews:47282777"],
+      "category": "Content",
+      "validation": [
+        "Create a free Claude Code fiction writing template and share in writing communities",
+        "Post in r/writing: 'I built an AI writing workspace that remembers your characters across 50+ chapters'",
+        "DM 10 content creators asking about their AI writing workflow pain points"
+      ],
+      "evidence": [
+        {"title": "webnovel-writer - Claude Code for 2M+ character serialized fiction (+291 today)", "url": "https://github.com/lingfengQAQ/webnovel-writer"},
+        {"title": "SEOMachine - Claude Code for SEO content (+378 today)", "url": "https://github.com/TheCraigHewitt/seomachine"},
+        {"title": "I'm 60 years old. Claude Code has re-ignited a passion (489pts)", "url": "https://news.ycombinator.com/item?id=47282777"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "Collection of CLAUDE.md files, slash commands, and prompt templates packaged as installable configs. CLI tool to manage templates. Optional Next.js dashboard for progress tracking. The core value is prompt engineering and workflow design, not code.",
+        "time": "1 week",
+        "cost": "$15/mo (domain + landing page)",
+        "stack": ["CLI tool", "Static site"]
+      }
+    },
+    {
+      "title": "VibeShip",
+      "problem": "'I'm 60 years old. Claude Code has re-ignited a passion' (489pts, 355 comments HN) proves that vibe coding is expanding far beyond professional developers. Non-traditional builders are creating apps with AI but have no idea how to deploy, host, or maintain them. CoChat (266 votes PH) and Cockpit (95 votes PH) validate demand for simpler deployment interfaces.",
+      "solution": "A one-click deploy platform for vibe-coded projects. Paste a GitHub repo URL or upload a ZIP, it auto-detects the framework, configures hosting, sets up a domain, and adds a 'fix this' button that sends errors back to Claude Code with context. Designed for people who can build with AI but don't know DevOps.",
+      "monetization": "Freemium: 1 free project on subdomain, $12/mo for custom domain + 3 projects, $39/mo for 10 projects with analytics and error-to-AI pipeline.",
+      "complexity": "medium",
+      "trend_sources": ["hackernews:47282777", "producthunt:cochat", "producthunt:cockpit-3", "github:shareAI-lab/learn-claude-code"],
+      "category": "SaaS",
+      "recurring_theme": "AI code quality & vibe coding verification",
+      "validation": [
+        "Reply to the '60 years old, Claude Code' HN thread asking 'What happens after you build something? How do you get it online?'",
+        "Post in r/nocode: 'I built something with Claude Code but can't deploy it -- anyone else?'",
+        "Build a landing page targeting 'deploy vibe coded app' keywords"
+      ],
+      "evidence": [
+        {"title": "I'm 60 years old. Claude Code has re-ignited a passion (489pts, 355 comments)", "url": "https://news.ycombinator.com/item?id=47282777"},
+        {"title": "CoChat - Collaborative AI for teams (266 votes PH)", "url": "https://www.producthunt.com/posts/cochat"},
+        {"title": "Cockpit - VPS as desktop-like interface (95 votes PH)", "url": "https://www.producthunt.com/posts/cockpit-3"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "Wrapper around Fly.io/Railway APIs for deployment, Buildpacks for framework detection, simple Next.js dashboard. The 'error-to-AI' feature pipes stack traces into Claude API and returns a fix. Mostly API orchestration.",
+        "time": "2 weeks",
+        "cost": "$30/mo (hosting APIs + domain + Claude API)",
+        "stack": ["Web app", "Database", "Auth", "AI/LLM API", "Background jobs"]
+      }
+    },
+    {
+      "title": "OpenWeight",
+      "problem": "Sarvam 105B launched as 'the first competitive Indian open source LLM' (59pts HN). OBLITERATUS, 'a tool that removes censorship from open-weight LLMs', hit 173pts on HN with 78 comments. inclusionAI/AReaL (RL for LLM reasoning, +238 today) is making local model training accessible. The open-weight model ecosystem is maturing but discovering, comparing, and deploying these models is still fragmented.",
+      "solution": "A comparison and deployment platform for open-weight LLMs. Side-by-side benchmarks on your own prompts, one-click deployment to your own infrastructure (Mac, Linux, cloud GPU), and a community leaderboard. Focused on non-English and uncensored models that aren't on mainstream platforms.",
+      "monetization": "Freemium: free comparisons and local deployment guides, $29/mo for automated deployment and monitoring, $99/mo for fine-tuning pipeline and team model registry.",
+      "complexity": "medium",
+      "trend_sources": ["hackernews:47285422", "hackernews:47275291", "github:inclusionAI/AReaL", "github:QwenLM/Qwen-Agent"],
+      "category": "AI",
+      "recurring_theme": "Local/edge AI models & on-device inference",
+      "validation": [
+        "Build a web tool that lets you compare 5 open-weight models on custom prompts and share on HN",
+        "Post in r/LocalLLaMA: 'What's your process for choosing between open-weight models?'",
+        "Create a 'non-English LLM leaderboard' and share with international AI communities"
+      ],
+      "evidence": [
+        {"title": "Sarvam 105B - First competitive Indian open source LLM (59pts)", "url": "https://news.ycombinator.com/item?id=47285422"},
+        {"title": "OBLITERATUS - Remove censorship from open-weight LLMs (173pts, 78 comments)", "url": "https://news.ycombinator.com/item?id=47275291"},
+        {"title": "AReaL - RL for LLM Reasoning (+238 today)", "url": "https://github.com/inclusionAI/AReaL"},
+        {"title": "Qwen-Agent framework (+586 today)", "url": "https://github.com/QwenLM/Qwen-Agent"}
+      ],
+      "ai_build": {
+        "viability": "medium",
+        "details": "Next.js comparison dashboard, llama.cpp/MLX for local inference, simple API for running benchmarks. The deployment automation needs scripts for different platforms (Mac MLX, Linux CUDA, cloud). AI can build the web UI and orchestration but model optimization requires ML knowledge.",
+        "time": "2-3 weeks",
+        "cost": "$50/mo (cloud GPU for benchmarks + hosting)",
+        "stack": ["Web app", "Database", "Auth", "GPU/ML infra", "CLI tool"]
+      }
+    }
+  ]
+}
