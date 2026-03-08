@@ -1,0 +1,420 @@
+{
+  "date": "2026-03-08",
+  "generated_at": "2026-03-08T18:00:00Z",
+  "trend_data": {
+    "hackernews_stories": 30,
+    "reddit_posts": 48,
+    "github_repos": 22,
+    "google_trends": 10,
+    "producthunt_products": 0
+  },
+  "recurring_themes": [
+    {
+      "theme": "AI code quality & vibe coding verification",
+      "days_seen": 5,
+      "dates": ["2026-03-08", "2026-03-07", "2026-03-05", "2026-03-04", "2026-03-03"],
+      "past_idea_titles": ["SpecPilot", "AgentGuard", "VibeShip"],
+      "signal_strength": "strong",
+      "note": "SWE-CI paper evaluating agent codebase maintenance (52pts HN) shifts the question from 'can AI write code?' to 'can AI maintain code?'. LLM Writing Tropes (209pts, 86 comments) catalogs AI output patterns for systematic detection. 'I'm Not Consulting an LLM' (41pts) and r/webdev's 'Ban AI posts' (282 upvotes) show growing fatigue with AI-generated code. Graphic designers vibe-coding at agencies (45 upvotes r/webdev) shows the problem expanding beyond developers. The most durable theme in our dataset — 5 consecutive days."
+    },
+    {
+      "theme": "AI agent orchestration & infrastructure",
+      "days_seen": 5,
+      "dates": ["2026-03-08", "2026-03-07", "2026-03-05", "2026-03-04", "2026-03-03"],
+      "past_idea_titles": ["AgentBench", "AgentTestKit", "AgentOrch"],
+      "signal_strength": "strong",
+      "note": "OpenClaw exploded to 278K stars (+4777/day) — now the dominant agent framework. openai/skills (+948/day), deer-flow (+3013/week), superset (+3193/week), OpenSandbox (+4972/week), CodebuffAI (+1127/week) all trending. Karpathy's autoresearch (123pts HN) shows agents doing autonomous research on single GPUs. The agent infrastructure race is accelerating with a clear front-runner emerging."
+    },
+    {
+      "theme": "Codebase knowledge graphs & visual understanding",
+      "days_seen": 5,
+      "dates": ["2026-03-08", "2026-03-07", "2026-03-05", "2026-03-04", "2026-03-03"],
+      "past_idea_titles": ["RepoGraph", "CodeAtlas"],
+      "signal_strength": "strong",
+      "note": "GitNexus still trending 5th week (+4096 stars/week, now 10.9K total). Sem — 'semantic version control with entity-level diffs' — appeared on HN today (17pts), adding a new angle: not just visualizing code but tracking semantic changes over time. The most persistent single-project signal in our dataset."
+    },
+    {
+      "theme": "AI security testing & data leak prevention",
+      "days_seen": 5,
+      "dates": ["2026-03-08", "2026-03-07", "2026-03-05", "2026-03-04", "2026-03-03"],
+      "past_idea_titles": ["CodeLeakGuard", "PromptVault", "ScrapShield", "SecurityPilot"],
+      "signal_strength": "strong",
+      "note": "CyberStrikeAI still trending (+417/day). New dimension today: Claude's crawler hit 12M requests in 15 days to a single site (96 upvotes r/webdev), ignoring robots.txt. Meta also ignoring robots.txt at 700K requests. The security theme now has two facets: using AI for offensive security testing AND defending against AI systems themselves."
+    },
+    {
+      "theme": "AI agent memory & persistence",
+      "days_seen": 5,
+      "dates": ["2026-03-08", "2026-03-07", "2026-03-05", "2026-03-04", "2026-03-03"],
+      "past_idea_titles": ["LocalRecall", "AgentMem"],
+      "signal_strength": "strong",
+      "note": "deer-flow (+3013/week) still trending with memory features. airi ('AI companion that grows with you', 30.9K stars, +11353/week) is a massive new validation — a consumer AI product built entirely around persistent memory and growth. The gap between agent capabilities and agent memory keeps widening."
+    },
+    {
+      "theme": "Website-to-API / intelligent web scraping",
+      "days_seen": 4,
+      "dates": ["2026-03-08", "2026-03-07", "2026-03-05", "2026-03-04"],
+      "past_idea_titles": ["ScrapeForge"],
+      "signal_strength": "strong",
+      "note": "D4Vinci scraping framework still massive at +6757 stars/week (25.7K total). The Claude/Meta crawler controversy (12M+ requests to a single site) proves scraping demand is insatiable on both sides — AI companies scraping everything, and developers needing to scrape for their AI apps. Upgraded from moderate to strong."
+    },
+    {
+      "theme": "Local/edge AI models & on-device inference",
+      "days_seen": 4,
+      "dates": ["2026-03-08", "2026-03-07", "2026-03-05", "2026-03-04"],
+      "past_idea_titles": ["QwenKit", "OpenWeight"],
+      "signal_strength": "strong",
+      "note": "'How to run Qwen 3.5 locally' (190pts, 54 comments HN) is a direct continuation. notebooklm-py (3.5K stars, +190/day) shows demand for local alternatives to cloud AI services. Cloud VM benchmarks 2026 (251pts, 113 comments HN) sparks cost comparisons. The trend toward running AI locally on consumer hardware is now strong."
+    },
+    {
+      "theme": "MCP (Model Context Protocol) ecosystem",
+      "days_seen": 4,
+      "dates": ["2026-03-08", "2026-03-07", "2026-03-05", "2026-03-04"],
+      "past_idea_titles": ["MCPHub"],
+      "signal_strength": "strong",
+      "note": "Evolving from protocol-specific into a broader 'skills ecosystem' theme. openai/skills (13K stars, +948/day) and claude-skills (2.7K, +598/week) are skills catalogs that build on MCP patterns. The registry/marketplace need is now validated by two competing ecosystems (Anthropic and OpenAI)."
+    },
+    {
+      "theme": "Claude Code ecosystem & tooling",
+      "days_seen": 3,
+      "dates": ["2026-03-08", "2026-03-07", "2026-03-05"],
+      "past_idea_titles": ["ClaudeForge"],
+      "signal_strength": "moderate",
+      "note": "learn-claude-code (23.5K stars, +953/day) still growing fast. claude-skills (2.7K, +598/week) is a production-ready skills catalog with 169 skills. superset 'IDE for Claude Code & Codex' (+3193/week). openai/skills (+948/day) validates the concept for Codex. The skills/plugin ecosystem around AI coding tools is becoming a platform play."
+    },
+    {
+      "theme": "Files-as-interface for AI agents",
+      "days_seen": 1,
+      "dates": ["2026-03-08"],
+      "past_idea_titles": [],
+      "signal_strength": "emerging",
+      "note": "New theme. 'Files are the interface humans and agents interact with' (229pts, 122 comments HN) argues that filesystems — not APIs or UIs — are how humans and agents should collaborate. Connects to Claude Code's CLAUDE.md approach, OpenClaw's file-based workflows, and the pixel-art agent interface (67 upvotes r/SideProject) that gamifies file-based agent interaction."
+    }
+  ],
+  "ideas": [
+    {
+      "title": "AgentGuard",
+      "problem": "AI coding tools are writing more production code than ever, but the verification gap is widening. SWE-CI (52pts HN) introduces a benchmark for whether agents can maintain codebases — not just write code, but handle CI failures, merge conflicts, and regressions. LLM Writing Tropes (209pts, 86 comments HN) catalogs detectable AI output patterns. Meanwhile graphic designers at agencies are vibe-coding production tools with zero code review (45 upvotes r/webdev). This theme has been strong for 5 consecutive days.",
+      "solution": "A CI/CD plugin that runs AI-generated PRs through static analysis, property-based testing, and LLM-powered semantic review. New this iteration: a 'maintenance mode' that monitors AI-generated code for drift over time — catches when agent edits break existing CI, introduce tropes, or conflict with project conventions. Ships as a GitHub App with one-click install.",
+      "monetization": "SaaS: $29/mo indie (50 PRs), $99/mo teams (unlimited), $499/mo enterprise with custom rules and compliance reports.",
+      "complexity": "medium",
+      "trend_sources": ["hackernews:47295537", "hackernews:47291513", "hackernews:47295670", "reddit:1rnmv3j", "reddit:1rnun1i"],
+      "category": "Dev Tools",
+      "recurring_theme": "AI code quality & vibe coding verification",
+      "validation": [
+        "Post in r/ExperiencedDevs: 'How do you review AI-generated PRs at scale? What catches do you wish were automated?'",
+        "Build a GitHub Action that detects LLM writing tropes in PR diffs and posts review comments — share as open source",
+        "Comment on the SWE-CI HN thread with a prototype that scores AI agents on codebase maintenance tasks"
+      ],
+      "evidence": [
+        {"title": "SWE-CI: Evaluating Agent Capabilities in Maintaining Codebases via CI (52pts)", "url": "https://news.ycombinator.com/item?id=47295537"},
+        {"title": "LLM Writing Tropes — cataloging detectable AI output patterns (209pts, 86 comments)", "url": "https://news.ycombinator.com/item?id=47291513"},
+        {"title": "I'm Not Consulting an LLM — growing AI code skepticism (41pts)", "url": "https://news.ycombinator.com/item?id=47295670"},
+        {"title": "Vibe-coding at agency — graphic designers taking over web dev (45 upvotes)", "url": "https://reddit.com/r/webdev/comments/1rnmv3j"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "GitHub App + webhook listener, ESLint/Semgrep for static analysis, Claude API for semantic review and trope detection. The LLM Writing Tropes dataset provides a ready-made detection rubric. Next.js dashboard for results. Maintenance mode adds a cron that re-runs checks on changed files.",
+        "time": "2 weeks",
+        "cost": "$50/mo (Vercel + Claude API + domain)",
+        "stack": ["Web app", "Database", "Auth", "AI/LLM API", "GitHub API", "Background jobs"]
+      }
+    },
+    {
+      "title": "FileAgent",
+      "problem": "'Files are the interface humans and agents interact with' (229pts, 122 comments HN) describes a paradigm shift: instead of building complex UIs for AI tools, the filesystem IS the interface. Claude Code already works this way (CLAUDE.md, project directories), and OpenClaw (278K stars, +4777/day) validates the approach at massive scale. But there's no framework that makes file-based agent workflows easy to set up and composable.",
+      "solution": "A lightweight framework that turns any directory into an agent workspace. Drop a config file, define file-based triggers (new file in /inbox → process → output to /done), and compose multi-agent pipelines using filesystem conventions. Think Make/Makefile but for AI agent workflows. Includes built-in watchers, logging, and a terminal dashboard.",
+      "monetization": "Open-core: free CLI for local use, $19/mo for cloud sync and team workspaces, $79/mo for enterprise with audit trails and access control.",
+      "complexity": "medium",
+      "trend_sources": ["hackernews:47286408", "github:openclaw", "github:shareAI-lab/learn-claude-code", "reddit:1rnbni9"],
+      "category": "Dev Tools",
+      "validation": [
+        "Reply to the 'Files are the interface' HN thread with a prototype CLI and gauge interest",
+        "Build a simple file-watcher that triggers Claude API on new files in a directory and share as Show HN",
+        "Post in r/SideProject: 'I made a tool that turns any folder into an AI agent workspace'"
+      ],
+      "evidence": [
+        {"title": "Files are the interface humans and agents interact with (229pts, 122 comments)", "url": "https://news.ycombinator.com/item?id=47286408"},
+        {"title": "OpenClaw — personal AI assistant, any OS, any platform (278K stars, +4777/day)", "url": "https://github.com/openclaw/openclaw"},
+        {"title": "Learn Claude Code — build agents from scratch (23.5K stars, +953/day)", "url": "https://github.com/shareAI-lab/learn-claude-code"},
+        {"title": "Pixel-art interface for AI agents — gamified file-based agent interaction (67 upvotes)", "url": "https://reddit.com/r/SideProject/comments/1rnbni9"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "Node/Go CLI with filesystem watchers (chokidar/fsnotify), YAML config for workflow definitions, Claude API for the agent processing. Terminal dashboard with blessed/ink. The core is event-driven file processing — a well-understood pattern. The innovation is in the convention-over-configuration design for agent workflows.",
+        "time": "1-2 weeks",
+        "cost": "$15/mo (Claude API + domain)",
+        "stack": ["CLI tool", "AI/LLM API", "Web app"]
+      }
+    },
+    {
+      "title": "AgentOrch",
+      "problem": "The agent framework war has a front-runner — OpenClaw at 278K stars (+4777/day) — but the ecosystem around it is chaotic. openai/skills (+948/day), deer-flow (+3013/week), superset (+3193/week), OpenSandbox (+4972/week), and CodebuffAI (+1127/week) are all trending simultaneously. Developers are drowning in competing frameworks with no way to orchestrate agents across them or compare their performance.",
+      "solution": "A lightweight orchestration layer that lets you define multi-agent workflows in YAML, mix agents from different frameworks (OpenClaw, Claude Agent SDK, Codex, LangChain), and monitor them in a unified dashboard. New angle: includes a benchmarking mode inspired by SWE-CI that tests agents on real codebase maintenance tasks and ranks them.",
+      "monetization": "Open-core: free CLI for local orchestration, $49/mo hosted with dashboards and CI integration, $199/mo for teams with production monitoring and framework comparison analytics.",
+      "complexity": "medium",
+      "trend_sources": ["github:openclaw", "github:openai/skills", "github:bytedance/deer-flow", "github:superset-sh/superset", "github:alibaba/OpenSandbox", "hackernews:47295537"],
+      "category": "Dev Tools",
+      "recurring_theme": "AI agent orchestration & infrastructure",
+      "validation": [
+        "Build a CLI that orchestrates 2-3 agents from different frameworks on a sample task and share as Show HN",
+        "Post in r/LocalLLaMA: 'How do you coordinate multiple AI agents across different frameworks?'",
+        "Cold DM 10 developers starring OpenClaw and deer-flow repos on GitHub and ask about their multi-agent workflow"
+      ],
+      "evidence": [
+        {"title": "OpenClaw — personal AI assistant (278K stars, +4777/day)", "url": "https://github.com/openclaw/openclaw"},
+        {"title": "OpenAI Skills Catalog for Codex (13K stars, +948/day)", "url": "https://github.com/openai/skills"},
+        {"title": "DeerFlow — ByteDance SuperAgent (25.8K stars, +3013/week)", "url": "https://github.com/bytedance/deer-flow"},
+        {"title": "Superset — IDE for AI Agents Era (5.7K stars, +3193/week)", "url": "https://github.com/superset-sh/superset"},
+        {"title": "SWE-CI: Evaluating Agent Capabilities (52pts HN)", "url": "https://news.ycombinator.com/item?id=47295537"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "Python/Node CLI with YAML config parser, adapter pattern for different agent frameworks, WebSocket dashboard for monitoring. Claude API for evaluation scoring. The SWE-CI paper provides a reference benchmark. Main challenge is building reliable adapters across rapidly-changing agent SDKs.",
+        "time": "2-3 weeks",
+        "cost": "$30/mo (Supabase + Vercel + Claude API)",
+        "stack": ["Web app", "Database", "Auth", "AI/LLM API", "Background jobs", "Real-time/WebSockets"]
+      }
+    },
+    {
+      "title": "CodeAtlas",
+      "problem": "GitNexus has been trending for 5 straight weeks (+4096 stars/week, now 10.9K total) — the most durable single-project signal in our dataset. Today, Sem launched on HN (17pts) proposing 'semantic version control with entity-level diffs on top of Git', adding a new dimension: not just visualizing code architecture but tracking how it changes semantically over time. Developers desperately need visual codebase understanding, especially as AI agents modify code in ways that are hard to review.",
+      "solution": "A VS Code extension and web app that generates interactive knowledge graphs from any codebase, with a new 'semantic timeline' feature that shows how entities (functions, types, modules) evolve across commits. Chat with it to ask 'How has the auth module changed this month?' and get a visual diff walkthrough. Runs locally, no code leaves your machine.",
+      "monetization": "Freemium: free for repos under 10K LOC, $15/mo unlimited, $49/mo for team features (shared annotations, onboarding guides, semantic change alerts).",
+      "complexity": "medium",
+      "trend_sources": ["github:abhigyanpatwari/GitNexus", "hackernews:47294924", "github:shareAI-lab/learn-claude-code"],
+      "category": "Dev Tools",
+      "recurring_theme": "Codebase knowledge graphs & visual understanding",
+      "validation": [
+        "Fork GitNexus, add a semantic timeline and chat feature, share as Show HN",
+        "Reply to the Sem HN thread: 'What if entity-level diffs had a visual explorer?'",
+        "Survey 20 senior devs: 'How long does it take you to understand a new codebase? How do you track AI-generated changes?'"
+      ],
+      "evidence": [
+        {"title": "GitNexus — Code Intelligence Engine (5th week trending, +4096/week, 10.9K total)", "url": "https://github.com/abhigyanpatwari/GitNexus"},
+        {"title": "Sem — Semantic version control with entity-level diffs on top of Git (17pts)", "url": "https://news.ycombinator.com/item?id=47294924"},
+        {"title": "Learn Claude Code — build agents from scratch (23.5K stars)", "url": "https://github.com/shareAI-lab/learn-claude-code"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "VS Code extension in TypeScript, tree-sitter for parsing, D3.js for graph visualization, Claude API for chat. The semantic timeline uses git log + tree-sitter diffs to track entity-level changes across commits. GitNexus provides a reference implementation for the graph layer.",
+        "time": "2-3 weeks",
+        "cost": "$15/mo (domain + landing page)",
+        "stack": ["Web app", "AI/LLM API"]
+      }
+    },
+    {
+      "title": "AgentOps",
+      "problem": "'The real AI gold rush isn't in building. It's in babysitting.' (230 upvotes, 123 comments r/Entrepreneur) captures a fundamental shift: building AI tools now takes hours, not months. The value has moved to operating, monitoring, and maintaining them. A funded startup shut down because Claude Code could replicate its product. Meanwhile 'killed my main feature at 50 users — best decision I made' (9 upvotes r/SaaS) and 'sold my SaaS for $6M' (418 upvotes r/SaaS) show that lean, well-operated products win.",
+      "solution": "An operations dashboard for indie hackers running AI-powered products. Monitors your AI agent's outputs for quality drift, tracks costs per interaction, alerts when error rates spike, and provides a 'fix it' workflow that sends issues to Claude Code with context. Think Datadog but purpose-built for solo devs running AI products, priced at 1/100th the cost.",
+      "monetization": "Freemium: free for 1 product with basic monitoring, $19/mo for 3 products with AI quality scoring, $59/mo for unlimited with cost optimization and alerting.",
+      "complexity": "medium",
+      "trend_sources": ["reddit:1rnfgee", "reddit:1rnaefi", "reddit:1rnuo5s", "hackernews:47291123", "github:openclaw"],
+      "category": "SaaS",
+      "validation": [
+        "Reply to the 'AI gold rush is in babysitting' thread: 'What does your AI agent monitoring setup look like?'",
+        "Post in r/SideProject: 'How do you monitor your AI-powered products? I'm building a lightweight ops dashboard'",
+        "Offer free monitoring for 20 indie AI products and collect feedback for 2 weeks"
+      ],
+      "evidence": [
+        {"title": "The real AI gold rush isn't in building — it's in babysitting (230 upvotes, 123 comments)", "url": "https://reddit.com/r/Entrepreneur/comments/1rnfgee"},
+        {"title": "Sold my SaaS for $6M — customer concentration and founder dependency mattered most (418 upvotes)", "url": "https://reddit.com/r/SaaS/comments/1rnaefi"},
+        {"title": "Killed my main feature at 50 users — best decision I made (9 upvotes)", "url": "https://reddit.com/r/SaaS/comments/1rnuo5s"},
+        {"title": "Autoresearch: Agents researching automatically on single GPUs (123pts HN)", "url": "https://news.ycombinator.com/item?id=47291123"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "Next.js dashboard + Supabase for data storage. SDK (npm/pip) that wraps AI API calls with logging and quality scoring. Claude API for automated quality evaluation of agent outputs. Simple webhook-based alerting to Slack/email. The core is just structured logging + a dashboard.",
+        "time": "2 weeks",
+        "cost": "$30/mo (Supabase + Vercel + Claude API)",
+        "stack": ["Web app", "Database", "Auth", "AI/LLM API", "Background jobs"]
+      }
+    },
+    {
+      "title": "SecurityPilot",
+      "problem": "AI security has split into two battlefronts. Offensive: CyberStrikeAI (AI-native security platform with 100+ tools, +417 stars/day) is still trending. Defensive: Claude's crawler sent 12M requests to a single site in 15 days (96 upvotes r/webdev), Meta is also ignoring robots.txt at 700K requests. Small developers are exposed on both sides — their apps need security testing, AND they need protection from AI company crawlers.",
+      "solution": "An AI-powered security scanner for indie devs and small teams. Point it at your deployed app or repo, and it runs OWASP Top 10 checks, dependency audits, and AI-powered attack simulations. New feature: a crawler defense module that generates optimized robots.txt, rate-limit configs, and anti-bot rules specifically targeting known AI crawlers (Anthropic, Meta, OpenAI).",
+      "monetization": "Freemium: free for 1 scan/week on public repos, $19/mo for unlimited scans with remediation PRs, $79/mo for teams with scheduled scans and crawler defense.",
+      "complexity": "medium",
+      "trend_sources": ["github:Ed1s0nZ/CyberStrikeAI", "reddit:1rnn36q", "hackernews:47289311"],
+      "category": "Dev Tools",
+      "recurring_theme": "AI security testing & data leak prevention",
+      "validation": [
+        "Build a free tool that generates an AI-crawler-optimized robots.txt and share in r/webdev",
+        "Reply to the 'Claude 12M requests' thread with a crawler defense script",
+        "Post in r/netsec: 'What security scanning tools do you use for side projects?'"
+      ],
+      "evidence": [
+        {"title": "CyberStrikeAI — AI-native security testing platform (+417 stars/day)", "url": "https://github.com/Ed1s0nZ/CyberStrikeAI"},
+        {"title": "Claude's crawler sent 12M requests in 15 days, ignoring robots.txt (96 upvotes)", "url": "https://reddit.com/r/webdev/comments/1rnn36q"},
+        {"title": "A decade of Docker containers — container security concerns (310pts, 208 comments)", "url": "https://news.ycombinator.com/item?id=47289311"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "Node/Python CLI wrapping existing tools (OWASP ZAP, npm audit, Semgrep) with Claude API for intelligent attack simulation. Crawler defense module generates nginx/Cloudflare configs based on known AI crawler IP ranges and User-Agent strings. GitHub App for automated PRs.",
+        "time": "2 weeks",
+        "cost": "$40/mo (Vercel + Claude API + domain)",
+        "stack": ["Web app", "Database", "Auth", "AI/LLM API", "GitHub API", "Background jobs"]
+      }
+    },
+    {
+      "title": "AgentMem",
+      "problem": "AI agents forget everything between sessions. deer-flow (with memories, +3013/week) is still trending. airi ('AI companion that grows with you', 30.9K stars, +11353/week) just became a massive validation — a consumer product built entirely around the idea that AI should remember and learn. Every agent framework needs memory, but no standalone memory layer has won the market. The gap widens as agent adoption accelerates.",
+      "solution": "A hosted memory API for AI agents. Simple REST endpoints: store, recall, forget, consolidate. Handles embedding, vector search, and memory summarization. SDKs for every major agent framework (OpenClaw, Claude Agent SDK, LangChain, CrewAI). New feature: 'personality persistence' inspired by airi — maintain consistent agent behavior across sessions.",
+      "monetization": "Usage-based: 10K memories free, $19/mo for 100K, $79/mo for 1M with priority retrieval, analytics, and personality persistence.",
+      "complexity": "medium",
+      "trend_sources": ["github:bytedance/deer-flow", "github:moeru-ai/airi", "github:openclaw"],
+      "category": "AI",
+      "recurring_theme": "AI agent memory & persistence",
+      "validation": [
+        "Build a simple API with Hono + pgvector, offer free access to 50 agent developers",
+        "Post in Claude Code and OpenClaw communities: 'Would you pay for persistent memory for your AI agents?'",
+        "Write a blog comparing memory solutions and share on HN — include the airi growth story as a case study"
+      ],
+      "evidence": [
+        {"title": "DeerFlow — SuperAgent with memories (5th day trending, +3013/week)", "url": "https://github.com/bytedance/deer-flow"},
+        {"title": "airi — AI companion that grows with you (30.9K stars, +11353/week)", "url": "https://github.com/moeru-ai/airi"},
+        {"title": "OpenClaw — every agent framework needs memory (278K stars, +4777/day)", "url": "https://github.com/openclaw/openclaw"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "Hono API on Cloudflare Workers, Neon Postgres with pgvector, OpenAI embedding API. Memory consolidation cron with Claude. Personality persistence stores agent behavioral preferences as weighted embeddings. Very API-centric, straightforward to build.",
+        "time": "1-2 weeks",
+        "cost": "$25/mo (Neon + Cloudflare Workers + embedding API)",
+        "stack": ["Web app", "Database", "Auth", "AI/LLM API", "Background jobs"]
+      }
+    },
+    {
+      "title": "ScrapeForge",
+      "problem": "The web scraping theme is now strong at 4 consecutive days. D4Vinci's scraping framework still massive at +6757 stars/week (25.7K total). The Claude/Meta crawler controversy (12M+ requests) proves that structured data extraction from websites is the foundational bottleneck for every AI application. Both AI companies and indie developers are desperately scraping — but developers need an affordable, legal, API-first approach.",
+      "solution": "A hosted API: point at any URL, describe the data you want in natural language, get structured JSON back. Handles pagination, JavaScript rendering, and anti-bot measures. Self-hostable Docker image for privacy-conscious users. New angle: a 'respectful mode' that follows robots.txt and rate-limits — differentiated from the aggressive crawling that AI companies use.",
+      "monetization": "Usage-based: 1000 free extractions/mo, $29/mo for 10K, $99/mo for 100K, enterprise with dedicated proxies.",
+      "complexity": "medium",
+      "trend_sources": ["github:D4Vinci/scrapy-framework", "reddit:1rnn36q", "reddit:1rnq7fr"],
+      "category": "SaaS",
+      "recurring_theme": "Website-to-API / intelligent web scraping",
+      "validation": [
+        "Build a simple API that takes URL + prompt and returns JSON, post on HN as Show HN",
+        "List on RapidAPI marketplace and track signups for 2 weeks",
+        "Post in r/dataengineering: 'What websites do you wish had APIs?'"
+      ],
+      "evidence": [
+        {"title": "Adaptive Web Scraping framework (+6757 stars/week, 25.7K total)", "url": "https://github.com/D4Vinci/Scrapy"},
+        {"title": "Claude 12M requests to a single site — the scraping arms race (96 upvotes)", "url": "https://reddit.com/r/webdev/comments/1rnn36q"},
+        {"title": "Automated blog/SEO setup running for 3 months — scraping-powered content (8 upvotes)", "url": "https://reddit.com/r/SideProject/comments/1rnq7fr"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "Cloudflare Workers or Fly.io API, Playwright for headless browsing, Claude API for HTML-to-JSON extraction. Rate limiting with Upstash Redis. Self-hosted Docker image for premium tier. 'Respectful mode' adds robots.txt parsing and configurable rate limits.",
+        "time": "1-2 weeks",
+        "cost": "$40/mo (Fly.io + Claude API + proxy service)",
+        "stack": ["Web app", "AI/LLM API", "Background jobs", "Auth"]
+      }
+    },
+    {
+      "title": "SkillForge",
+      "problem": "The AI coding tool skills/plugin ecosystem is exploding on TWO competing fronts: openai/skills (13K stars, +948/day) for Codex and claude-skills (2.7K, +598/week) for Claude Code. superset (IDE for running both, +3193/week) proves developers want cross-platform. But there's no unified marketplace to discover, compare, and install skills across tools. Each ecosystem reinvents the wheel.",
+      "solution": "A cross-platform marketplace and CLI tool for AI coding tool plugins. Browse and install skills, slash commands, CLAUDE.md templates, and workflow automations that work across Claude Code, Codex, and OpenClaw. One command: `skillforge install seo-writer --target claude-code`. Includes compatibility testing and a community rating system.",
+      "monetization": "Freemium: free registry with community plugins, $15/mo for premium plugins (enterprise templates, specialized workflows), $49/mo for teams with shared configurations and compatibility guarantees.",
+      "complexity": "low",
+      "trend_sources": ["github:openai/skills", "github:alirezarezvani/claude-skills", "github:superset-sh/superset", "github:shareAI-lab/learn-claude-code"],
+      "category": "Dev Tools",
+      "recurring_theme": "Claude Code ecosystem & tooling",
+      "validation": [
+        "Create a GitHub repo with 30 curated skills that work across Claude Code and Codex, share in both communities",
+        "Post in r/ClaudeAI and r/OpenAI: 'What's your AI coding tool setup? Share your favorite skills/plugins'",
+        "Build a simple CLI that installs skills from a registry with cross-platform support and share as Show HN"
+      ],
+      "evidence": [
+        {"title": "OpenAI Skills Catalog for Codex (13K stars, +948/day)", "url": "https://github.com/openai/skills"},
+        {"title": "claude-skills — 169 production-ready skills for Claude Code (2.7K stars, +598/week)", "url": "https://github.com/alirezarezvani/claude-skills"},
+        {"title": "Superset — IDE for Claude Code & Codex era (5.7K stars, +3193/week)", "url": "https://github.com/superset-sh/superset"},
+        {"title": "Learn Claude Code — build agents from scratch (23.5K stars, +953/day)", "url": "https://github.com/shareAI-lab/learn-claude-code"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "Node CLI that manages a local config directory, pulls from a GitHub-based registry. Adapter layer translates between Claude Code and Codex skill formats. Next.js marketplace site for browsing. The core is file management and format translation — very straightforward.",
+        "time": "1 week",
+        "cost": "$15/mo (Vercel + domain)",
+        "stack": ["CLI tool", "Web app", "Database"]
+      }
+    },
+    {
+      "title": "AutoResearchKit",
+      "problem": "Karpathy's autoresearch (123pts, 33 comments HN) shows agents conducting research on single-GPU setups automatically. MiroFish, a 'swarm intelligence engine for predicting anything' (6.2K stars, +399/day), applies collective intelligence to research. The academic research workflow — hypothesis, experiment, analysis, write-up — is ripe for agent automation, but existing tools are either enterprise-priced or require GPU clusters.",
+      "solution": "An open-source toolkit for running automated research experiments on consumer hardware. Define a research question, configure your local model and data sources, and the agent runs experiments, analyzes results, and generates a structured report. Inspired by Karpathy's autoresearch but generalized beyond ML — works for market research, literature reviews, competitive analysis.",
+      "monetization": "Open-core: free CLI for local use, $29/mo for cloud-augmented research (access to larger models and more data sources), $99/mo for teams with shared research libraries and collaboration.",
+      "complexity": "medium",
+      "trend_sources": ["hackernews:47291123", "github:666ghj/MiroFish", "github:karpathy/autoresearch"],
+      "category": "AI",
+      "validation": [
+        "Reply to the autoresearch HN thread: 'What if this worked for market research, not just ML experiments?'",
+        "Build a CLI that takes a research question and generates a structured report using web search + local model, share as Show HN",
+        "Post in r/MachineLearning: 'How do you automate your research workflow?'"
+      ],
+      "evidence": [
+        {"title": "Autoresearch: Agents researching on single-GPU nanochat training (123pts, 33 comments)", "url": "https://news.ycombinator.com/item?id=47291123"},
+        {"title": "MiroFish — Swarm Intelligence Engine for predicting anything (6.2K stars, +399/day)", "url": "https://github.com/666ghj/MiroFish"},
+        {"title": "Karpathy's autoresearch repository", "url": "https://github.com/karpathy/autoresearch"}
+      ],
+      "ai_build": {
+        "viability": "medium",
+        "details": "Python CLI wrapping local LLM inference (llama.cpp/MLX), web search APIs, and structured output generation. The research loop (hypothesis → search → analyze → report) is a prompt chain. Cloud augmentation uses Claude API for synthesis. The hard part is making the research loop reliable enough to produce useful outputs.",
+        "time": "2 weeks",
+        "cost": "$20/mo (search APIs + optional Claude API)",
+        "stack": ["CLI tool", "AI/LLM API", "GPU/ML infra"]
+      }
+    },
+    {
+      "title": "CloudPick",
+      "problem": "Cloud VM benchmarks 2026 (251pts, 113 comments HN) is the highest-scoring technical post today, proving developers are actively comparing cloud infrastructure costs and performance. 'A decade of Docker containers' (310pts, 208 comments) adds context — the container ecosystem is mature but choosing the right infrastructure is harder than ever. Indie devs running AI products (per the AgentOps theme) need to optimize costs.",
+      "solution": "A real-time cloud infrastructure comparison tool. Enter your workload profile (CPU, memory, GPU needs, region) and get a ranked list of cloud providers with actual benchmark data, not marketing claims. Includes AI workload-specific benchmarks (inference latency, model loading time) and a cost calculator that projects monthly costs based on your traffic patterns.",
+      "monetization": "Freemium: free comparisons with basic benchmarks, $19/mo for AI-specific benchmarks and cost projections, $49/mo for teams with migration guides and continuous monitoring.",
+      "complexity": "medium",
+      "trend_sources": ["hackernews:47293119", "hackernews:47289311", "hackernews:47292522"],
+      "category": "Dev Tools",
+      "validation": [
+        "Reply to the cloud VM benchmarks HN thread: 'Would a tool that auto-recommends the cheapest provider for your workload be useful?'",
+        "Build a free comparison page for AI inference costs across 5 providers and share on HN",
+        "Post in r/selfhosted: 'What's your cloud cost optimization strategy for AI workloads?'"
+      ],
+      "evidence": [
+        {"title": "Cloud VM benchmarks 2026 — performance vs price comparison (251pts, 113 comments)", "url": "https://news.ycombinator.com/item?id=47293119"},
+        {"title": "A decade of Docker containers — infrastructure maturity (310pts, 208 comments)", "url": "https://news.ycombinator.com/item?id=47289311"},
+        {"title": "How to run Qwen 3.5 locally — running models on consumer hardware (190pts, 54 comments)", "url": "https://news.ycombinator.com/item?id=47292522"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "Next.js comparison dashboard with a curated benchmark database (scraped from public benchmarks + community submissions). Cost calculator with provider API integrations (AWS, GCP, Azure pricing APIs). Claude API for natural language workload description → provider recommendation. The data curation is the hard part, not the code.",
+        "time": "1-2 weeks",
+        "cost": "$20/mo (Vercel + domain + database)",
+        "stack": ["Web app", "Database", "AI/LLM API"]
+      }
+    },
+    {
+      "title": "MeetingBurn",
+      "problem": "A web developer built a real-time meeting cost ticker and it hit 71 upvotes on r/webdev — engineers resonate with quantifying meeting waste. Meanwhile 'took a two-week vacation and nothing broke' (22 upvotes, 35 comments r/Entrepreneur) and the duplicate post (119 upvotes, 50 comments) reveal a deeper anxiety: founders questioning whether their time is well-spent. The overlap between 'meetings are expensive' and 'am I even needed?' is a sharp pain point for engineering leaders.",
+      "solution": "A meeting analytics tool that goes beyond cost ticking. Connects to your calendar, scores each meeting on ROI (decisions made vs time spent), identifies redundant recurring meetings, and generates a weekly 'time audit' showing where your engineering team's hours actually go. Includes a 'meeting-free blocks' optimizer that protects deep work time.",
+      "monetization": "Freemium: free for individual time audit, $15/mo for team analytics, $49/mo for enterprise with calendar integration and meeting optimization recommendations.",
+      "complexity": "low",
+      "trend_sources": ["reddit:1rndqbp", "reddit:1rmw58w", "reddit:1rm9so0"],
+      "category": "SaaS",
+      "validation": [
+        "Reply to the meeting cost ticker thread: 'Would you pay for a tool that identifies your most wasteful meetings?'",
+        "Build a free Google Calendar analyzer that shows time-in-meetings vs deep-work and share in r/webdev",
+        "Post in r/ExperiencedDevs: 'How do you protect your team from meeting overload?'"
+      ],
+      "evidence": [
+        {"title": "Real-time meeting cost ticker — 'classic engineer move' (71 upvotes)", "url": "https://reddit.com/r/webdev/comments/1rndqbp"},
+        {"title": "Took a two-week vacation. Nothing broke. That was terrifying. (22 upvotes, 35 comments)", "url": "https://reddit.com/r/Entrepreneur/comments/1rmw58w"},
+        {"title": "Took a 10-day vacation and nothing broke. That scared me more. (119 upvotes, 50 comments)", "url": "https://reddit.com/r/Entrepreneur/comments/1rm9so0"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "Google Calendar API integration, simple scoring heuristics (attendees × duration × frequency), Claude API for meeting purpose classification from calendar event descriptions. Next.js dashboard with Supabase. Very straightforward CRUD app with a calendar integration.",
+        "time": "1 week",
+        "cost": "$15/mo (Vercel + Supabase + domain)",
+        "stack": ["Web app", "Database", "Auth", "AI/LLM API"]
+      }
+    }
+  ]
+}
