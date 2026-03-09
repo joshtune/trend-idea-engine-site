@@ -1,0 +1,464 @@
+{
+  "date": "2026-03-09",
+  "generated_at": "2026-03-09T18:00:00Z",
+  "trend_data": {
+    "hackernews_stories": 30,
+    "reddit_posts": 0,
+    "github_repos": 18,
+    "google_trends": 10,
+    "producthunt_products": 20
+  },
+  "recurring_themes": [
+    {
+      "theme": "AI code quality & vibe coding verification",
+      "days_seen": 7,
+      "dates": ["2026-03-09", "2026-03-08", "2026-03-07", "2026-03-05", "2026-03-04", "2026-03-03"],
+      "past_idea_titles": ["SpecPilot", "AgentGuard", "VibeShip"],
+      "signal_strength": "strong",
+      "note": "The longest-running theme in our dataset hits 7 consecutive days. Today's strongest signal: 'We should revisit literate programming in the agent era' (246pts, 154 comments HN) reframes the problem -- agents need better documentation conventions, not just code review. Pulldog 'keep code reviews organized' (210 votes PH) validates the review tooling space. The theme is evolving from 'verify AI code' toward 'structure how humans and agents co-author code.'"
+    },
+    {
+      "theme": "AI agent orchestration & infrastructure",
+      "days_seen": 7,
+      "dates": ["2026-03-09", "2026-03-08", "2026-03-07", "2026-03-05", "2026-03-04", "2026-03-03"],
+      "past_idea_titles": ["AgentBench", "AgentTestKit", "AgentOrch"],
+      "signal_strength": "strong",
+      "note": "OpenClaw reaches 287K stars (+9123/day) -- the most-starred AI project this cycle. The 'complete AI agency' repo exploded at +4297/day (15.5K stars). Alibaba's page-agent 'control web interfaces with natural language' (+715/day) and hermes-agent (+358/day) add new framework entrants. Hannah & Co 'AI coworkers for marketing' (87 votes PH) shows agent orchestration moving beyond dev tools into business workflows."
+    },
+    {
+      "theme": "Codebase knowledge graphs & visual understanding",
+      "days_seen": 7,
+      "dates": ["2026-03-09", "2026-03-08", "2026-03-07", "2026-03-05", "2026-03-04", "2026-03-03"],
+      "past_idea_titles": ["RepoGraph", "CodeAtlas"],
+      "signal_strength": "strong",
+      "note": "The 'literate programming in the agent era' post (246pts, 154 comments HN) directly connects code documentation with visual understanding -- the argument is that agent-era code needs to be structured for both human and AI comprehension. learn-claude-code still growing (24.3K stars, +3901/week). Pulldog (210 votes PH) validates the adjacent code review space."
+    },
+    {
+      "theme": "AI security testing & agent sandboxing",
+      "days_seen": 7,
+      "dates": ["2026-03-09", "2026-03-08", "2026-03-07", "2026-03-05", "2026-03-04", "2026-03-03"],
+      "past_idea_titles": ["CodeLeakGuard", "PromptVault", "ScrapShield", "SecurityPilot"],
+      "signal_strength": "strong",
+      "note": "BIGGEST signal today: Agent Safehouse 'macOS-native sandboxing for local agents' hit 607pts with 149 comments on HN -- the #1 story. OpenSandbox by Alibaba (+3959/week) provides enterprise-grade sandboxing. The OSINT dashboard (252pts, 104 comments HN) and worldmonitor (34.4K stars, +14741/week) show demand for security/intelligence tooling. The theme has evolved from 'prevent leaks' to 'sandbox the agents themselves.'"
+    },
+    {
+      "theme": "AI agent memory & persistence",
+      "days_seen": 7,
+      "dates": ["2026-03-09", "2026-03-08", "2026-03-07", "2026-03-05", "2026-03-04", "2026-03-03"],
+      "past_idea_titles": ["LocalRecall", "AgentMem"],
+      "signal_strength": "strong",
+      "note": "airi 'AI companion that grows with you' continues massive growth (31.6K stars, +11456/week). hermes-agent 'the agent that grows with you' (+358/day) uses the same 'grows with you' framing. The phrasing convergence is telling -- the market is defining agent memory as 'growth over time', not just 'recall'. This remains the widest gap in the agent stack."
+    },
+    {
+      "theme": "Website-to-API / intelligent web scraping",
+      "days_seen": 6,
+      "dates": ["2026-03-09", "2026-03-08", "2026-03-07", "2026-03-05", "2026-03-04", "2026-03-03"],
+      "past_idea_titles": ["ScrapeForge"],
+      "signal_strength": "strong",
+      "note": "SCRAPR 'Turn any website into an API' (105 votes PH) is a direct product launch in this space. Alibaba's page-agent 'control web interfaces with natural language' (2.1K stars, +715/day) approaches web data extraction from the agent side. The demand is structural -- every AI application needs structured web data."
+    },
+    {
+      "theme": "Local/edge AI models & on-device inference",
+      "days_seen": 6,
+      "dates": ["2026-03-09", "2026-03-08", "2026-03-07", "2026-03-05", "2026-03-04", "2026-03-03"],
+      "past_idea_titles": ["QwenKit", "OpenWeight"],
+      "signal_strength": "strong",
+      "note": "Phi-4-reasoning-vision 'open-weight 15B multimodal model for thinking and GUI agents' (87 votes PH) is Microsoft entering open-weight multimodal. Karpathy's nanochat 'the best ChatGPT that $100 can buy' (45.2K stars, +332/day) continues growing. notebooklm-py (+457/day) shows demand for local/programmatic access to AI services. The local-first AI movement is now strong for 6 days."
+    },
+    {
+      "theme": "MCP / Skills ecosystem",
+      "days_seen": 6,
+      "dates": ["2026-03-09", "2026-03-08", "2026-03-07", "2026-03-05", "2026-03-04", "2026-03-03"],
+      "past_idea_titles": ["MCPHub", "SkillForge"],
+      "signal_strength": "strong",
+      "note": "Claude Marketplace is #1 on Product Hunt today with 483 votes -- the strongest single-day signal for this theme. claude-skills (2.9K stars, +228/day) continues growing. Flowripple 'trigger workflows from your SaaS' (90 votes PH) and the 'complete AI agency' repo (15.5K stars, +4297/day) add infrastructure signals. The marketplace layer for AI tools is clearly a validated need."
+    },
+    {
+      "theme": "Claude Code ecosystem & tooling",
+      "days_seen": 5,
+      "dates": ["2026-03-09", "2026-03-08", "2026-03-07", "2026-03-05", "2026-03-04"],
+      "past_idea_titles": ["ClaudeForge"],
+      "signal_strength": "strong",
+      "note": "Claude Marketplace #1 on PH (483 votes) is the strongest Claude Code ecosystem signal yet -- Anthropic is officially building the marketplace layer. claude-skills (2.9K, +228/day), learn-claude-code (24.3K, +3901/week), and CodebuffAI 'generate code from terminal' (4.1K, +1169/week) continue trending. The ecosystem is becoming a platform."
+    },
+    {
+      "theme": "Files-as-interface for AI agents",
+      "days_seen": 3,
+      "dates": ["2026-03-09", "2026-03-08", "2026-03-07"],
+      "past_idea_titles": ["FileAgent"],
+      "signal_strength": "moderate",
+      "note": "'We should revisit literate programming in the agent era' (246pts, 154 comments HN) is the strongest direct signal for this theme -- the argument is that code files should be structured documents that serve both humans and agents. Vibe Marketplace 'sell what you ship' (278 votes PH) implies file-centric output. This paradigm is gaining traction."
+    },
+    {
+      "theme": "AI-powered fintech & investment tooling",
+      "days_seen": 2,
+      "dates": ["2026-03-09", "2026-03-08"],
+      "past_idea_titles": ["InvoiceFlow"],
+      "signal_strength": "emerging",
+      "note": "Roundtable 'Launch your investment fund in days' (210 votes, 62 comments PH) and Kita 'Turn documents into signals for lenders' (76 votes PH) both launched today. Google Trends is dominated by energy stock queries (XOM, OXY, Chevron) driven by geopolitical events. Yesterday's Copperlane (#2 PH, 303 votes) and GetBeel (95 votes) showed AI invoice automation. The fintech AI theme is broadening from invoices to investment and lending."
+    },
+    {
+      "theme": "AI design quality for vibe-coded apps",
+      "days_seen": 2,
+      "dates": ["2026-03-09", "2026-03-08"],
+      "past_idea_titles": ["DesignPilot"],
+      "signal_strength": "emerging",
+      "note": "impeccable 'design language that makes your AI harness better at design' surged to 2.5K stars (+1291/day) -- one of the fastest daily growth rates in today's data. GetMimic 'generate viral mockups' (235 votes PH), BrandingStudio.ai (108 votes PH), and cutefolio (91 votes PH) all launched today. The gap between AI-generated code and professional design is a clear product opportunity."
+    }
+  ],
+  "ideas": [
+    {
+      "title": "AgentSafe",
+      "problem": "Agent Safehouse hit 607pts with 149 comments on HN today -- the #1 story -- proving massive demand for sandboxing AI agents that have local system access. Alibaba's OpenSandbox (+3959 stars/week) provides server-side sandboxing. But there's no cross-platform, developer-friendly sandboxing layer that works with every agent framework. Agents are getting filesystem, network, and shell access, and the security model is 'trust the LLM.' This is the evolution of our 7-day AI security theme.",
+      "solution": "A cross-platform sandboxing SDK for AI agents. Wrap any agent (Claude Code, OpenClaw, Codex) in a security container that enforces filesystem boundaries, network allowlists, and command restrictions. Includes a permissions manifest (like Android permissions) that agents must declare. Dashboard shows real-time agent activity with one-click revocation. Works on macOS, Linux, and Windows.",
+      "monetization": "Open-core: free CLI for local sandboxing, $29/mo for team dashboards with audit logs and policy management, $149/mo for enterprise with SSO, compliance reports, and custom policy engines.",
+      "complexity": "medium",
+      "trend_sources": ["hackernews:47301085", "github:alibaba/OpenSandbox", "hackernews:47300102", "github:koala73/worldmonitor"],
+      "category": "Dev Tools",
+      "recurring_theme": "AI security testing & agent sandboxing",
+      "validation": [
+        "Reply to the Agent Safehouse HN thread: 'What permissions would you want in an agent sandbox manifest?'",
+        "Build a simple CLI wrapper that restricts an agent's filesystem access and share as Show HN",
+        "Post in r/ClaudeAI and r/LocalLLaMA: 'How do you limit what your AI agents can access on your system?'"
+      ],
+      "evidence": [
+        {"title": "Agent Safehouse -- macOS-native sandboxing for local agents (#1 HN, 607pts, 149 comments)", "url": "https://news.ycombinator.com/item?id=47301085"},
+        {"title": "OpenSandbox -- General-purpose sandbox platform for AI applications (+3959/week)", "url": "https://github.com/alibaba/OpenSandbox"},
+        {"title": "Real-time OSINT dashboard pulling 15 live global feeds (252pts, 104 comments)", "url": "https://news.ycombinator.com/item?id=47300102"},
+        {"title": "WorldMonitor -- AI-powered global intelligence dashboard (34.4K stars, +14741/week)", "url": "https://github.com/koala73/worldmonitor"}
+      ],
+      "ai_build": {
+        "viability": "medium",
+        "details": "Node/Rust CLI using OS-level sandboxing primitives (macOS sandbox-exec, Linux seccomp/namespaces, Windows AppContainers). Permissions manifest in YAML. Dashboard in Next.js with WebSocket for real-time activity. The OS-level sandboxing is well-documented but platform-specific -- the hard part is a unified abstraction layer. Agent Safehouse provides a macOS reference implementation.",
+        "time": "2-3 weeks",
+        "cost": "$25/mo (Vercel + domain + Supabase)",
+        "stack": ["CLI tool", "Web app", "Database", "Auth", "Real-time/WebSockets"]
+      }
+    },
+    {
+      "title": "SkillForge",
+      "problem": "Claude Marketplace hit #1 on Product Hunt today with 483 votes -- the strongest single-day marketplace signal in our dataset. claude-skills (2.9K stars, +228/day) offers 169 production-ready skills. The 'complete AI agency' repo (15.5K stars, +4297/day) packages specialized agents. But each ecosystem (Claude, Codex, OpenClaw) has its own plugin format. There's no cross-platform marketplace to discover, compare, and install AI coding tool skills. This theme has been strong for 6 consecutive days.",
+      "solution": "A cross-platform skills marketplace and CLI. Browse and install slash commands, CLAUDE.md templates, workflow automations, and agent configs that work across Claude Code, Codex, and OpenClaw. One command: `skillforge install code-reviewer --target claude-code`. Community ratings, compatibility badges, and one-click conversion between formats.",
+      "monetization": "Freemium: free registry with community plugins, $15/mo for premium skills (enterprise templates, specialized workflows), $49/mo for teams with shared configurations and compatibility guarantees.",
+      "complexity": "low",
+      "trend_sources": ["producthunt:claude-marketplace", "github:alirezarezvani/claude-skills", "github:msitarzewski/ai-agency", "producthunt:flowripple-2"],
+      "category": "Dev Tools",
+      "recurring_theme": "MCP / Skills ecosystem",
+      "validation": [
+        "Create a GitHub repo with 30 curated skills that work across Claude Code and Codex, share in both communities",
+        "Reply to the Claude Marketplace PH launch asking what cross-platform skill features are missing",
+        "Build a simple CLI that installs skills from a registry and share as Show HN"
+      ],
+      "evidence": [
+        {"title": "Claude Marketplace -- Helping companies get the AI tools they need (#1 PH, 483 votes)", "url": "https://www.producthunt.com/posts/claude-marketplace"},
+        {"title": "claude-skills -- 169 production-ready skills for Claude Code (2.9K stars, +228/day)", "url": "https://github.com/alirezarezvani/claude-skills"},
+        {"title": "Complete AI agency -- specialized agents (15.5K stars, +4297/day)", "url": "https://github.com/msitarzewski/ai-agency"},
+        {"title": "Flowripple -- Easily trigger workflows from your SaaS (90 votes PH)", "url": "https://www.producthunt.com/posts/flowripple-2"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "Node CLI that manages a local config directory, pulls from a GitHub-based registry. Adapter layer translates between Claude Code and Codex skill formats. Next.js marketplace site for browsing. The core is file management and format translation -- very straightforward. The Claude Marketplace's 483-vote traction proves market timing.",
+        "time": "1 week",
+        "cost": "$15/mo (Vercel + domain)",
+        "stack": ["CLI tool", "Web app", "Database"]
+      }
+    },
+    {
+      "title": "AgentGuard",
+      "problem": "'We should revisit literate programming in the agent era' (246pts, 154 comments HN) argues that agent-generated code needs documentation conventions designed for both human and AI readers. Pulldog 'keep code reviews organized' (210 votes PH) validates the review tooling space. learn-claude-code (24.3K stars, +3901/week) shows developers studying how agents write code. This is the longest-running theme in our dataset at 7 consecutive days, and it's evolving from 'verify AI code' toward 'structure how humans and agents co-author code.'",
+      "solution": "A CI/CD plugin that enforces literate programming standards on AI-generated PRs. Checks that functions have intent documentation (not just docstrings -- why was this written, what tradeoffs were considered), that AI-generated sections are marked with provenance metadata, and that code follows project-specific conventions defined in CLAUDE.md or similar config. Ships as a GitHub App with a 'literate mode' that generates documentation alongside code changes.",
+      "monetization": "SaaS: $29/mo indie (50 PRs), $99/mo teams (unlimited), $499/mo enterprise with custom rules and compliance reports.",
+      "complexity": "medium",
+      "trend_sources": ["hackernews:47300747", "producthunt:pulldog", "github:shareAI-lab/learn-claude-code"],
+      "category": "Dev Tools",
+      "recurring_theme": "AI code quality & vibe coding verification",
+      "validation": [
+        "Reply to the 'literate programming in the agent era' HN thread with a prototype that generates intent docs for AI PRs",
+        "Build a GitHub Action that checks PRs for AI provenance markers and intent documentation",
+        "Post in r/ExperiencedDevs: 'How do you document AI-generated code? Do you track which parts the agent wrote?'"
+      ],
+      "evidence": [
+        {"title": "We should revisit literate programming in the agent era (246pts, 154 comments)", "url": "https://news.ycombinator.com/item?id=47300747"},
+        {"title": "Pulldog -- Keep your code reviews organized (210 votes PH)", "url": "https://www.producthunt.com/posts/pulldog"},
+        {"title": "Learn Claude Code -- Build agents from scratch (24.3K stars, +3901/week)", "url": "https://github.com/shareAI-lab/learn-claude-code"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "GitHub App + webhook listener, Claude API for semantic analysis of PR intent and documentation quality. Literate mode wraps code changes with markdown explanation blocks. Next.js dashboard for results. ESLint plugin for inline annotation checking. The literate programming angle is a novel differentiator vs existing AI code review tools.",
+        "time": "2 weeks",
+        "cost": "$50/mo (Vercel + Claude API + domain)",
+        "stack": ["Web app", "Database", "Auth", "AI/LLM API", "GitHub API", "Background jobs"]
+      }
+    },
+    {
+      "title": "AgentOrch",
+      "problem": "The agent framework war is consolidating around mega-projects but the orchestration gap is widening. OpenClaw hit 287K stars (+9123/day). The 'complete AI agency' repo exploded at +4297/day (15.5K stars) offering specialized agents for every business function. Alibaba's page-agent 'control web interfaces with natural language' (+715/day) adds browser automation agents. hermes-agent (+358/day) adds reasoning agents. Hannah & Co 'AI coworkers for marketing' (87 votes PH) shows non-dev demand. But there's still no unified way to compose agents from different frameworks into workflows.",
+      "solution": "A lightweight orchestration layer that defines multi-agent workflows in YAML, mixes agents from different frameworks (OpenClaw, Claude Agent SDK, Codex, page-agent), and monitors them in a unified dashboard. New: 'team mode' inspired by the AI agency pattern -- define agent roles (researcher, writer, reviewer) and let them collaborate on tasks with human checkpoints.",
+      "monetization": "Open-core: free CLI for local orchestration, $49/mo hosted with dashboards and CI integration, $199/mo for teams with production monitoring, team mode, and framework comparison analytics.",
+      "complexity": "medium",
+      "trend_sources": ["github:openclaw", "github:msitarzewski/ai-agency", "github:alibaba/page-agent", "github:NousResearch/hermes-agent", "producthunt:hannah-co"],
+      "category": "Dev Tools",
+      "recurring_theme": "AI agent orchestration & infrastructure",
+      "validation": [
+        "Build a CLI that orchestrates 3 agents from different frameworks (Claude, OpenClaw, page-agent) on a research task and share as Show HN",
+        "Post in r/LocalLLaMA: 'How do you coordinate multiple AI agents with different specialties?'",
+        "Cold DM 10 developers starring the 'complete AI agency' repo and ask about their multi-agent workflow"
+      ],
+      "evidence": [
+        {"title": "OpenClaw -- personal AI assistant (287K stars, +9123/day)", "url": "https://github.com/openclaw/openclaw"},
+        {"title": "Complete AI agency -- specialized agents for every business function (15.5K stars, +4297/day)", "url": "https://github.com/msitarzewski/ai-agency"},
+        {"title": "page-agent -- Control web interfaces with natural language (2.1K stars, +715/day)", "url": "https://github.com/alibaba/page-agent"},
+        {"title": "Hannah & Co -- AI coworkers for marketing (87 votes PH)", "url": "https://www.producthunt.com/posts/hannah-co"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "Python/Node CLI with YAML config parser, adapter pattern for different agent frameworks, WebSocket dashboard for monitoring. 'Team mode' uses Claude API for orchestration decisions and inter-agent message routing. The 'complete AI agency' repo provides a reference for role-based agent design.",
+        "time": "2-3 weeks",
+        "cost": "$30/mo (Supabase + Vercel + Claude API)",
+        "stack": ["Web app", "Database", "Auth", "AI/LLM API", "Background jobs", "Real-time/WebSockets"]
+      }
+    },
+    {
+      "title": "CodeAtlas",
+      "problem": "The 'literate programming in the agent era' post (246pts, 154 comments HN) argues that code should be structured as living documents that serve both humans and agents. learn-claude-code (24.3K stars, +3901/week) continues its 7th week of growth -- developers are studying how agents understand code. Pulldog (210 votes PH) validates code review tooling. This theme has been strong for 7 consecutive days, making it the most durable signal in our dataset.",
+      "solution": "A VS Code extension and web app that generates interactive knowledge graphs from any codebase, with a new 'literate view' that shows code as structured documents: intent, implementation, and AI interaction history. Chat with it: 'How has the auth module changed since the agent refactored it?' Runs locally, no code leaves your machine.",
+      "monetization": "Freemium: free for repos under 10K LOC, $15/mo unlimited, $49/mo for team features (shared annotations, onboarding guides, literate view).",
+      "complexity": "medium",
+      "trend_sources": ["hackernews:47300747", "github:shareAI-lab/learn-claude-code", "producthunt:pulldog"],
+      "category": "Dev Tools",
+      "recurring_theme": "Codebase knowledge graphs & visual understanding",
+      "validation": [
+        "Reply to the 'literate programming in the agent era' HN thread with a prototype literate code viewer",
+        "Fork an existing code graph tool, add literate view and chat, share as Show HN",
+        "Survey 20 senior devs: 'How do you track which parts of your codebase were AI-generated vs hand-written?'"
+      ],
+      "evidence": [
+        {"title": "We should revisit literate programming in the agent era (246pts, 154 comments)", "url": "https://news.ycombinator.com/item?id=47300747"},
+        {"title": "Learn Claude Code -- Build agents from scratch (24.3K stars, +3901/week)", "url": "https://github.com/shareAI-lab/learn-claude-code"},
+        {"title": "Pulldog -- Keep your code reviews organized (210 votes PH)", "url": "https://www.producthunt.com/posts/pulldog"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "VS Code extension in TypeScript, tree-sitter for parsing, D3.js for graph visualization, Claude API for chat and literate document generation. The 'literate view' renders code blocks interspersed with AI-generated intent explanations. Git blame integration tracks human vs agent authorship.",
+        "time": "2-3 weeks",
+        "cost": "$15/mo (domain + landing page)",
+        "stack": ["Web app", "AI/LLM API"]
+      }
+    },
+    {
+      "title": "AgentMem",
+      "problem": "The 'grows with you' pattern is converging across multiple projects: airi (31.6K stars, +11456/week) and hermes-agent (2.5K stars, +358/day) both use this exact framing. The market is defining agent memory not as simple key-value recall but as personality growth over time -- an agent that gets better at understanding your preferences, coding style, and project context. This theme has been strong for 7 consecutive days.",
+      "solution": "A hosted memory API for AI agents with a new 'growth engine.' Beyond simple store/recall, it tracks behavioral patterns and preferences, builds a persistent personality profile, and provides 'context priming' -- a compressed summary an agent can load at session start to act like it remembers you. SDKs for every major agent framework.",
+      "monetization": "Usage-based: 10K memories free, $19/mo for 100K with growth engine, $79/mo for 1M with priority retrieval, analytics, and multi-agent shared memory.",
+      "complexity": "medium",
+      "trend_sources": ["github:moeru-ai/airi", "github:NousResearch/hermes-agent", "github:openclaw"],
+      "category": "AI",
+      "recurring_theme": "AI agent memory & persistence",
+      "validation": [
+        "Build a simple API with Hono + pgvector that generates 'context primers' from past interactions, offer free access to 50 agent developers",
+        "Post in Claude Code and OpenClaw communities: 'Would you pay for an agent that remembers your coding preferences across sessions?'",
+        "Write a blog post about the 'grows with you' pattern and share on HN"
+      ],
+      "evidence": [
+        {"title": "airi -- AI companion that grows with you (31.6K stars, +11456/week)", "url": "https://github.com/moeru-ai/airi"},
+        {"title": "hermes-agent -- The agent that grows with you (2.5K stars, +358/day)", "url": "https://github.com/NousResearch/hermes-agent"},
+        {"title": "OpenClaw -- personal AI assistant (287K stars, +9123/day)", "url": "https://github.com/openclaw/openclaw"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "Hono API on Cloudflare Workers, Neon Postgres with pgvector, OpenAI embedding API. The 'growth engine' uses Claude API to periodically analyze interaction patterns and generate compressed personality profiles. Context primer is a summarized prompt prefix. Very API-centric, straightforward to build.",
+        "time": "1-2 weeks",
+        "cost": "$25/mo (Neon + Cloudflare Workers + embedding API)",
+        "stack": ["Web app", "Database", "Auth", "AI/LLM API", "Background jobs"]
+      }
+    },
+    {
+      "title": "ScrapeForge",
+      "problem": "SCRAPR 'Turn any website into an API' launched on PH today (105 votes), directly validating this space for the 6th consecutive day. Alibaba's page-agent 'control web interfaces with natural language' (2.1K stars, +715/day) approaches the same problem from the agent side -- using AI to interact with web UIs programmatically. The demand is structural: every AI application needs structured data from websites that don't have APIs.",
+      "solution": "A hosted API: point at any URL, describe the data you want in natural language, get structured JSON back. Handles pagination, JavaScript rendering, and anti-bot measures. New: 'agent mode' that uses page-agent-style browser automation for complex multi-step extractions (login, navigate, extract). Self-hostable Docker image for privacy.",
+      "monetization": "Usage-based: 1000 free extractions/mo, $29/mo for 10K, $99/mo for 100K with agent mode, enterprise with dedicated proxies.",
+      "complexity": "medium",
+      "trend_sources": ["producthunt:scrapr-universal-web-scraping-api", "github:alibaba/page-agent"],
+      "category": "SaaS",
+      "recurring_theme": "Website-to-API / intelligent web scraping",
+      "validation": [
+        "Build a simple API that takes URL + prompt and returns JSON, post on HN as Show HN",
+        "Reply to the SCRAPR PH launch asking what extraction features are missing",
+        "Post in r/dataengineering: 'What websites do you wish had APIs? What data do you need from them?'"
+      ],
+      "evidence": [
+        {"title": "SCRAPR -- Turn any website into an API (105 votes PH)", "url": "https://www.producthunt.com/posts/scrapr-universal-web-scraping-api"},
+        {"title": "page-agent -- Control web interfaces with natural language (2.1K stars, +715/day)", "url": "https://github.com/alibaba/page-agent"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "Cloudflare Workers or Fly.io API, Playwright for headless browsing, Claude API for HTML-to-JSON extraction. 'Agent mode' wraps page-agent for complex multi-step extractions. Rate limiting with Upstash Redis. Self-hosted Docker image for premium tier.",
+        "time": "1-2 weeks",
+        "cost": "$40/mo (Fly.io + Claude API + proxy service)",
+        "stack": ["Web app", "AI/LLM API", "Background jobs", "Auth"]
+      }
+    },
+    {
+      "title": "DesignPilot",
+      "problem": "impeccable 'design language that makes your AI harness better at design' surged to 2.5K stars at +1291/day -- one of the fastest daily growth rates in today's data. GetMimic 'generate viral social mockups' (235 votes PH), BrandingStudio.ai (108 votes PH), and cutefolio (91 votes PH) all launched today. AI can generate code but the designs look generic -- developers need design-quality outputs without hiring designers. This is the 2nd consecutive day with strong design signals.",
+      "solution": "A design system generator for AI-built apps. Describe your app in one sentence, get a complete design system: color palette, typography, component library, Tailwind config, and shadcn theme. Ships as a CLI that outputs ready-to-use design tokens. Integrates with impeccable's design language so AI coding tools generate better-looking UI from the start.",
+      "monetization": "Freemium: free for 1 project with basic palette, $19/mo for unlimited projects with full design system generation, $49/mo for teams with brand consistency checks.",
+      "complexity": "low",
+      "trend_sources": ["github:pbakaus/impeccable", "producthunt:getmimic", "producthunt:brandingstudio-ai", "producthunt:cutefolio"],
+      "category": "Dev Tools",
+      "recurring_theme": "AI design quality for vibe-coded apps",
+      "validation": [
+        "Build a CLI that generates a Tailwind config + color palette from a one-line app description and share as Show HN",
+        "Post in r/webdev: 'My AI-built app looks generic -- how do you get good design from vibe coding?'",
+        "Create 10 design systems for popular app categories and share as a free resource"
+      ],
+      "evidence": [
+        {"title": "impeccable -- Design language for better AI-generated design (2.5K stars, +1291/day)", "url": "https://github.com/pbakaus/impeccable"},
+        {"title": "GetMimic -- Generate viral social & chat mockups in seconds (235 votes PH)", "url": "https://www.producthunt.com/posts/getmimic"},
+        {"title": "BrandingStudio.ai -- Agency-quality branding in 60 minutes (108 votes PH)", "url": "https://www.producthunt.com/posts/brandingstudio-ai"},
+        {"title": "cutefolio -- Build portfolios that actually look cute (91 votes PH)", "url": "https://www.producthunt.com/posts/cutefolio"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "Node CLI that takes an app description, uses Claude API to generate design tokens (colors, typography, spacing), outputs Tailwind config and shadcn theme. Integrates impeccable's design language spec as the system prompt for consistent, professional output. Very straightforward -- prompt engineering + file generation.",
+        "time": "1 week",
+        "cost": "$15/mo (Claude API + domain)",
+        "stack": ["CLI tool", "AI/LLM API", "Web app"]
+      }
+    },
+    {
+      "title": "FileAgent",
+      "problem": "'We should revisit literate programming in the agent era' (246pts, 154 comments HN) directly argues that files -- not chat -- should be the primary interface between humans and agents. Vibe Marketplace 'sell what you ship' (278 votes PH) implies file-centric product delivery. Agent Safehouse (607pts HN) sandboxes agents at the filesystem level. This is the 3rd consecutive day for the files-as-interface theme, moving from emerging to moderate.",
+      "solution": "A lightweight framework that turns any directory into an agent workspace. Drop a config file, define file-based triggers (new file in /inbox -> process -> output to /done), and compose multi-agent pipelines using filesystem conventions. Think Make/Makefile but for AI agent workflows. New: 'literate mode' that requires agents to write documentation alongside code in the same file.",
+      "monetization": "Open-core: free CLI for local use, $19/mo for cloud sync and team workspaces, $79/mo for enterprise with audit trails and access control.",
+      "complexity": "medium",
+      "trend_sources": ["hackernews:47300747", "producthunt:gretabyquestera", "hackernews:47301085"],
+      "category": "Dev Tools",
+      "recurring_theme": "Files-as-interface for AI agents",
+      "validation": [
+        "Reply to the 'literate programming in the agent era' HN thread with a prototype file-based agent workflow",
+        "Build a simple file-watcher that triggers Claude API on new files in a directory and share as Show HN",
+        "Post in r/SideProject: 'I made a tool that turns any folder into an AI agent workspace'"
+      ],
+      "evidence": [
+        {"title": "We should revisit literate programming in the agent era (246pts, 154 comments)", "url": "https://news.ycombinator.com/item?id=47300747"},
+        {"title": "Vibe Marketplace -- Sell what you ship, instantly (278 votes PH)", "url": "https://www.producthunt.com/posts/gretabyquestera"},
+        {"title": "Agent Safehouse -- macOS-native sandboxing for local agents (607pts, 149 comments)", "url": "https://news.ycombinator.com/item?id=47301085"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "Node/Go CLI with filesystem watchers (chokidar/fsnotify), YAML config for workflow definitions, Claude API for agent processing. 'Literate mode' enforces that output files include markdown documentation blocks. Terminal dashboard with blessed/ink. The core is event-driven file processing -- a well-understood pattern.",
+        "time": "1-2 weeks",
+        "cost": "$15/mo (Claude API + domain)",
+        "stack": ["CLI tool", "AI/LLM API", "Web app"]
+      }
+    },
+    {
+      "title": "FundKit",
+      "problem": "Roundtable 'Launch your investment fund in days, not months' hit 210 votes with 62 comments on PH today -- the highest comment count of any PH launch. Kita 'Turn documents into signals for lenders' (76 votes PH) tackles AI document processing for finance. Google Trends is dominated by energy stock queries (XOM +35%, OXY, Chevron) driven by geopolitical tensions. Yesterday's Copperlane (303 votes) and GetBeel (95 votes) showed AI invoice automation. The AI fintech theme is broadening from invoicing to investment and lending.",
+      "solution": "An AI-powered toolkit for indie fund managers and angel investors. Upload deal documents (term sheets, pitch decks, financials), get instant analysis: key terms extraction, risk flags, comparable deal benchmarking, and a structured summary for LPs. Includes a portfolio dashboard tracking investments, mark-to-market estimates, and LP reporting templates.",
+      "monetization": "Freemium: free for 5 deals, $49/mo for unlimited deal analysis with portfolio tracking, $199/mo for fund management with LP reporting and compliance templates.",
+      "complexity": "medium",
+      "trend_sources": ["producthunt:joinroundtable", "producthunt:kita", "google_trends:xom stock", "google_trends:oxy stock"],
+      "category": "SaaS",
+      "recurring_theme": "AI-powered fintech & investment tooling",
+      "validation": [
+        "Reply to the Roundtable PH launch asking what's hardest about managing a small fund",
+        "Post in r/venturecapital: 'How do you analyze deal documents? Would AI extraction save you time?'",
+        "Build a simple tool that extracts key terms from a term sheet PDF using Claude's vision and share in angel investor communities"
+      ],
+      "evidence": [
+        {"title": "Roundtable -- Launch your investment fund in days (210 votes, 62 comments PH)", "url": "https://www.producthunt.com/posts/joinroundtable"},
+        {"title": "Kita -- Turn documents into signals for lenders (76 votes PH)", "url": "https://www.producthunt.com/posts/kita"},
+        {"title": "XOM stock trending -- Exxon Mobil +35% volume signal", "url": "https://www.marketbeat.com/instant-alerts/filing-exxon-mobil-corporation-xom-shares-sold-by-russell-investments-group-ltd-2026-03-09/"},
+        {"title": "Warren Buffett's oil bet genius -- OXY stock analysis", "url": "https://finance.yahoo.com/news/warren-buffett-oil-bet-looks-192001426.html"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "Next.js dashboard + Supabase. Claude API with vision for PDF document extraction (term sheets, pitch decks). Portfolio tracking with simple financial calculations. LP report generation as PDF exports. The core is structured data extraction from financial documents -- Claude's vision capabilities handle this well.",
+        "time": "2 weeks",
+        "cost": "$35/mo (Supabase + Claude API + Vercel)",
+        "stack": ["Web app", "Database", "Auth", "AI/LLM API", "File storage", "Background jobs"]
+      }
+    },
+    {
+      "title": "FeedForge",
+      "problem": "'The death of social media is the renaissance of RSS' (161pts, 98 comments HN) captures a growing sentiment: as social media platforms degrade, power users are returning to RSS and email. 'I love email' (34pts HN) reinforces this. But RSS readers haven't evolved -- they're still 2010-era chronological feeds with no intelligence. The gap between 'RSS is back' and 'RSS tools are still terrible' is a clear product opportunity.",
+      "solution": "An AI-powered RSS reader that goes beyond chronological feeds. Auto-categorizes articles by topic, generates daily digests with summaries, identifies trending themes across your feeds, and surfaces 'hidden gems' (high-quality articles from low-traffic sources). Personal curation algorithm that learns your reading patterns. Runs as a web app with email digest option.",
+      "monetization": "Freemium: free for 20 feeds with basic AI features, $9/mo for unlimited feeds with daily AI digests, $29/mo for teams with shared feeds and trend analysis.",
+      "complexity": "medium",
+      "trend_sources": ["hackernews:47304886", "hackernews:47264662"],
+      "category": "Consumer",
+      "validation": [
+        "Reply to the 'RSS renaissance' HN thread: 'Would you switch RSS readers for AI-powered curation?'",
+        "Build a simple web app that takes an OPML file and generates a daily AI digest, share as Show HN",
+        "Post in r/rss: 'What features would make you pay for an RSS reader in 2026?'"
+      ],
+      "evidence": [
+        {"title": "The death of social media is the renaissance of RSS (161pts, 98 comments)", "url": "https://news.ycombinator.com/item?id=47304886"},
+        {"title": "I love email (34pts)", "url": "https://news.ycombinator.com/item?id=47264662"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "Next.js web app with RSS parsing (feedparser), Supabase for feed storage and user preferences, Claude API for article summarization and categorization. Email digest via Resend. Personal curation uses simple embeddings + user feedback loop. The RSS parsing and AI summarization are both well-understood patterns.",
+        "time": "1-2 weeks",
+        "cost": "$25/mo (Supabase + Claude API + Resend + domain)",
+        "stack": ["Web app", "Database", "Auth", "AI/LLM API", "Background jobs"]
+      }
+    },
+    {
+      "title": "OSINTLite",
+      "problem": "A real-time OSINT dashboard pulling 15 live global feeds hit 252pts with 104 comments on HN today. worldmonitor 'AI-powered global intelligence dashboard' is one of the fastest-growing repos this week (34.4K stars, +14741/week). The geopolitical landscape is volatile (Iran tensions driving oil stocks, energy sector Google Trends). Individuals and small businesses need intelligence monitoring without enterprise OSINT budgets.",
+      "solution": "A personal intelligence dashboard that monitors news feeds, social media, and market signals for topics you care about. Set up alerts ('notify me about supply chain disruptions in Asia' or 'track all AI regulation news') and get AI-summarized briefings. One-page dashboard with severity scoring and trend visualization.",
+      "monetization": "Freemium: free for 3 topics with daily digest, $15/mo for unlimited topics with real-time alerts, $49/mo for teams with shared dashboards and API access.",
+      "complexity": "medium",
+      "trend_sources": ["hackernews:47300102", "github:koala73/worldmonitor", "google_trends:lindsey graham", "google_trends:chevron stock"],
+      "category": "SaaS",
+      "validation": [
+        "Reply to the OSINT dashboard HN thread: 'Would a simplified, personal version of this be valuable?'",
+        "Build a simple dashboard that monitors 5 RSS feeds for a topic and sends email alerts, share as Show HN",
+        "Post in r/OSINT: 'What tools do freelancers and small teams use for open-source intelligence monitoring?'"
+      ],
+      "evidence": [
+        {"title": "Real-time OSINT dashboard pulling 15 live global feeds (252pts, 104 comments)", "url": "https://news.ycombinator.com/item?id=47300102"},
+        {"title": "WorldMonitor -- AI-powered global intelligence dashboard (34.4K stars, +14741/week)", "url": "https://github.com/koala73/worldmonitor"},
+        {"title": "Lindsey Graham's Quest to Sell Trump on Striking Iran -- geopolitical volatility", "url": "https://www.wsj.com/politics/policy/lindsey-graham-trump-iran-fa5f54f0"},
+        {"title": "Chevron, Exxon stock movers -- energy market driven by geopolitics", "url": "https://seekingalpha.com/news/4562152-biggest-stock-movers-monday-airline-stocks-and-more"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "Next.js dashboard with RSS/API feeds (NewsAPI, Reddit JSON, Twitter/X API). Claude API for summarization, severity scoring, and trend detection. Supabase for user preferences and alert history. Email/push notifications via Resend. The worldmonitor repo provides a reference architecture.",
+        "time": "2 weeks",
+        "cost": "$30/mo (Supabase + Claude API + NewsAPI + Vercel)",
+        "stack": ["Web app", "Database", "Auth", "AI/LLM API", "Background jobs"]
+      }
+    },
+    {
+      "title": "SentimentScope",
+      "problem": "Two Chinese-language sentiment/prediction repos are trending massively on GitHub today: MiroFish 'swarm intelligence engine for predicting anything' (8.5K stars, +2222/day) and BettaFish 'multi-agent sentiment analysis assistant' (37K stars, +509/day). Combined, they have 45K+ stars and growing. The market is demanding tools that aggregate collective intelligence to make predictions -- but both projects are China-focused and require technical setup. There's a gap for a polished, English-language product.",
+      "solution": "A SaaS tool that aggregates sentiment signals from multiple sources (Reddit, Twitter/X, HN, news) on any topic and generates prediction dashboards. Enter a query ('will Bitcoin hit $100K?', 'is Nvidia overvalued?', 'is remote work declining?') and get a sentiment breakdown with source attribution, trend direction, and confidence scoring.",
+      "monetization": "Freemium: free for 3 queries/day with basic sentiment, $19/mo for unlimited queries with prediction scoring and alerts, $79/mo for teams with API access and custom dashboards.",
+      "complexity": "medium",
+      "trend_sources": ["github:666ghj/MiroFish", "github:666ghj/BettaFish", "google_trends:xom stock", "google_trends:oxy stock"],
+      "category": "SaaS",
+      "validation": [
+        "Build a simple tool that aggregates Reddit sentiment on a stock ticker and share as Show HN",
+        "Post in r/wallstreetbets: 'I built a tool that tracks social media sentiment on any stock -- want to try it?'",
+        "Create a free 'market sentiment report' for a trending stock and share on Twitter/X"
+      ],
+      "evidence": [
+        {"title": "MiroFish -- Swarm intelligence engine for predicting anything (8.5K stars, +2222/day)", "url": "https://github.com/666ghj/MiroFish"},
+        {"title": "BettaFish -- Multi-agent sentiment analysis assistant (37K stars, +509/day)", "url": "https://github.com/666ghj/BettaFish"},
+        {"title": "XOM stock trending -- energy sector volatility", "url": "https://www.marketbeat.com/instant-alerts/filing-exxon-mobil-corporation-xom-shares-sold-by-russell-investments-group-ltd-2026-03-09/"},
+        {"title": "OXY stock -- Warren Buffett oil bet analysis", "url": "https://finance.yahoo.com/news/warren-buffett-oil-bet-looks-192001426.html"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "Next.js dashboard, Supabase for query history and cached results. Reddit JSON API + Twitter/X API + NewsAPI for source data. Claude API for sentiment analysis, summarization, and prediction confidence scoring. The sentiment analysis logic is straightforward prompt engineering; the value is in source aggregation and UI polish.",
+        "time": "2 weeks",
+        "cost": "$35/mo (Supabase + Claude API + social APIs + Vercel)",
+        "stack": ["Web app", "Database", "Auth", "AI/LLM API", "Background jobs"]
+      }
+    }
+  ]
+}
