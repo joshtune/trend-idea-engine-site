@@ -1,0 +1,427 @@
+{
+  "date": "2026-03-10",
+  "generated_at": "2026-03-10T02:45:00Z",
+  "trend_data": {
+    "hackernews_stories": 30,
+    "reddit_posts": 50,
+    "github_repos": 18,
+    "google_trends": 10,
+    "producthunt_products": 0
+  },
+  "recurring_themes": [
+    {
+      "theme": "AI code quality & vibe coding verification",
+      "days_seen": 8,
+      "dates": ["2026-03-10", "2026-03-09", "2026-03-08", "2026-03-07", "2026-03-05", "2026-03-04", "2026-03-03"],
+      "past_idea_titles": ["SpecPilot", "AgentGuard", "VibeShip"],
+      "signal_strength": "strong",
+      "note": "Now 8 consecutive days. 'Is legal the same as legitimate: AI reimplementation and copyleft' (362pts, 381 comments HN) raises the new angle of licensing AI-generated code. DenchClaw 'Local CRM on OpenClaw' (93pts, 87 comments HN) shows agent-built apps proliferating — increasing the need for code verification. The theme is evolving from 'verify code' to 'verify licensing of AI code.'"
+    },
+    {
+      "theme": "AI agent orchestration & infrastructure",
+      "days_seen": 8,
+      "dates": ["2026-03-10", "2026-03-09", "2026-03-08", "2026-03-07", "2026-03-05", "2026-03-04", "2026-03-03"],
+      "past_idea_titles": ["AgentBench", "AgentTestKit", "AgentOrch"],
+      "signal_strength": "strong",
+      "note": "OpenClaw hits 291K stars (+9164/day). 'Complete AI agency' repo (19.6K stars, +4415/day) continues explosive growth. Terminal Use (YC W26) 'Vercel for filesystem-based agents' launches (88pts, 57 comments HN). Alibaba page-agent 'control web interfaces with natural language' (+465/day). The agent platform layer is consolidating around deployment and orchestration."
+    },
+    {
+      "theme": "AI security & agent sandboxing",
+      "days_seen": 8,
+      "dates": ["2026-03-10", "2026-03-09", "2026-03-08", "2026-03-07", "2026-03-05", "2026-03-04", "2026-03-03"],
+      "past_idea_titles": ["CodeLeakGuard", "PromptVault", "ScrapShield", "SecurityPilot"],
+      "signal_strength": "strong",
+      "note": "AI copyleft/licensing story (362pts, 381 comments HN) is today's #1 discussion — code provenance and legal compliance is the new security frontier. OpenSandbox (+3262/week) continues. worldmonitor (34.8K stars, +12583/week) for global intelligence. The theme has expanded from 'sandbox agents' to 'ensure legal compliance of agent outputs.'"
+    },
+    {
+      "theme": "AI agent memory & persistence",
+      "days_seen": 8,
+      "dates": ["2026-03-10", "2026-03-09", "2026-03-08", "2026-03-07", "2026-03-05", "2026-03-04", "2026-03-03"],
+      "past_idea_titles": ["LocalRecall", "AgentMem"],
+      "signal_strength": "strong",
+      "note": "airi (31.8K stars, +10661/week) and hermes-agent both use 'grows with you' framing. Karpathy's nanochat (45.5K stars) shows demand for personal AI. DenchClaw 'local CRM on OpenClaw' implies agents need persistent state for business apps. Memory is the missing layer every agent framework needs."
+    },
+    {
+      "theme": "Codebase knowledge graphs & visual understanding",
+      "days_seen": 8,
+      "dates": ["2026-03-10", "2026-03-09", "2026-03-08", "2026-03-07", "2026-03-05", "2026-03-04", "2026-03-03"],
+      "past_idea_titles": ["RepoGraph", "CodeAtlas"],
+      "signal_strength": "strong",
+      "note": "learn-claude-code still growing (24.5K stars, +4177/week). The AI copyleft discussion (362pts HN) raises questions about tracking code provenance across repos. CodebuffAI (+1154/week) adds terminal-based code generation. Understanding and attributing code origin is becoming critical."
+    },
+    {
+      "theme": "MCP / Skills ecosystem",
+      "days_seen": 7,
+      "dates": ["2026-03-10", "2026-03-09", "2026-03-08", "2026-03-07", "2026-03-05", "2026-03-04", "2026-03-03"],
+      "past_idea_titles": ["MCPHub", "SkillForge", "ClaudeForge"],
+      "signal_strength": "strong",
+      "note": "claude-skills (3.4K stars, +259/day) still growing. 'Complete AI agency' repo (19.6K stars, +4415/day) packages specialized agents as installable units. notebooklm-py (+457/day) shows demand for programmatic API wrappers around AI services. The skills/plugin ecosystem is now established across multiple platforms."
+    },
+    {
+      "theme": "Website-to-API / intelligent web scraping",
+      "days_seen": 7,
+      "dates": ["2026-03-10", "2026-03-09", "2026-03-08", "2026-03-07", "2026-03-05", "2026-03-04", "2026-03-03"],
+      "past_idea_titles": ["ScrapeForge"],
+      "signal_strength": "strong",
+      "note": "Alibaba page-agent (2.6K stars, +465/day) approaches web interaction from the agent side. The Reddit 'government data is locked in prehistoric interfaces' post (31pts) validates the specific niche of wrapping public data. Every AI app needs structured web data."
+    },
+    {
+      "theme": "Local/edge AI models",
+      "days_seen": 7,
+      "dates": ["2026-03-10", "2026-03-09", "2026-03-08", "2026-03-07", "2026-03-05", "2026-03-04", "2026-03-03"],
+      "past_idea_titles": ["QwenKit", "OpenWeight"],
+      "signal_strength": "strong",
+      "note": "Karpathy nanochat 'best ChatGPT for $100' (45.5K stars, +355/day). notebooklm-py (4.2K stars, +457/day) for local programmatic access. JSLinux now x86_64 in browser (257pts HN) shows compute moving to edge. The local-first AI movement continues strong."
+    },
+    {
+      "theme": "AI design language & constraints",
+      "days_seen": 1,
+      "dates": ["2026-03-10"],
+      "past_idea_titles": [],
+      "signal_strength": "emerging",
+      "note": "NEW — Impeccable 'design language that makes AI harness better at design' exploded at +1288 stars/day (3K stars). This is a new angle: instead of verifying AI code, constrain AI design output with formal design languages. Adjacent to the code quality theme but focused on visual/UX output."
+    },
+    {
+      "theme": "Swarm intelligence & collective AI",
+      "days_seen": 1,
+      "dates": ["2026-03-10"],
+      "past_idea_titles": [],
+      "signal_strength": "emerging",
+      "note": "NEW — MiroFish 'swarm intelligence engine, predicting anything' gained +2294 stars/day (11.2K total). BettaFish from same author (37.4K stars, +514/day) for multi-agent sentiment analysis. This is a different approach to multi-agent — swarm coordination rather than orchestration."
+    },
+    {
+      "theme": "Chat-based SMB automation",
+      "days_seen": 1,
+      "dates": ["2026-03-10"],
+      "past_idea_titles": [],
+      "signal_strength": "emerging",
+      "note": "NEW — Reddit post about WhatsApp bot that turns receipt photos into spreadsheet entries (17pts, 19 comments). Combined with 'cash timing problems for small businesses' (7pts, 16 comments r/Entrepreneur). SMBs want automation through chat interfaces they already use."
+    }
+  ],
+  "ideas": [
+    {
+      "title": "CopyleftShield",
+      "problem": "AI coding tools generate code that may unknowingly reproduce copylefted or licensed code, exposing developers and companies to legal liability. The 362-point HN discussion on AI reimplementation and copyleft erosion (381 comments) shows this is a top-of-mind concern with no existing tooling to address it.",
+      "solution": "A CLI/CI tool that scans AI-generated code for potential license violations by comparing against a fingerprint database of popular open-source libraries. Flags code that closely matches GPL/AGPL-licensed repos and suggests compliant alternatives or proper attribution.",
+      "monetization": "Freemium: free for personal repos (up to 5 scans/day), $19/mo for teams with CI integration and full database access, $99/mo for enterprise with custom policy rules and audit reports.",
+      "complexity": "medium",
+      "trend_sources": ["hackernews:47310160", "github:alirezarezvani/claude-skills", "github:shareAI-lab/learn-claude-code"],
+      "category": "Dev Tools",
+      "validation": [
+        "Post in r/programming: 'How do you check if AI-generated code violates open source licenses?'",
+        "Build a prototype that scans a repo against top 1000 GPL repos and share as Show HN",
+        "Survey 20 CTOs/engineering leads about their AI code compliance concerns"
+      ],
+      "evidence": [
+        {"title": "Is legal the same as legitimate: AI reimplementation and copyleft (362pts, 381 comments)", "url": "https://news.ycombinator.com/item?id=47310160"},
+        {"title": "claude-skills — 169 production-ready skills (3.4K stars)", "url": "https://github.com/alirezarezvani/claude-skills"},
+        {"title": "learn-claude-code — build agents from scratch (24.5K stars)", "url": "https://github.com/shareAI-lab/learn-claude-code"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "Core is text similarity/fingerprinting against a license database. Use tree-sitter for AST parsing, compare function signatures and patterns. Existing tools like licensee and scancode provide base data. Main challenge is building a comprehensive fingerprint database.",
+        "time": "2 weeks",
+        "cost": "$20/mo",
+        "stack": ["CLI tool", "Database", "CI integration"]
+      }
+    },
+    {
+      "title": "GovDataWrap",
+      "problem": "Government databases (USPTO, court dockets, SEC filings, census data) contain enormously valuable free data but are locked behind interfaces from the 1990s. A Reddit post about a friend making 'a lot of money by creating a cleaner search box for USPTO filings' (31pts) directly validates this as a profitable niche.",
+      "solution": "A platform that wraps government databases with modern search, filtering, and API access. Start with one database (e.g., USPTO patent search), build a clean UI with AI-powered natural language queries, and offer structured API access for developers.",
+      "monetization": "Freemium: free basic search, $29/mo for advanced filters and API access, $99/mo for enterprise with bulk exports and monitoring alerts.",
+      "complexity": "medium",
+      "trend_sources": ["reddit:1roz1cx"],
+      "category": "SaaS",
+      "validation": [
+        "Build a simple USPTO search with better UX than the official site and share as Show HN",
+        "Post in r/startups: 'Which government database do you wish had a better interface?'",
+        "Cold email 10 patent attorneys asking about their search workflow pain points"
+      ],
+      "evidence": [
+        {"title": "Most profitable micro-SaaS is just a better Patent Office search (31pts, r/SaaS)", "url": "https://reddit.com/r/SaaS/comments/1roz1cx"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "Scrape or use official APIs for government data, index with Elasticsearch or Typesense, build a modern web UI. AI layer for natural language queries. Main challenge is data ingestion and keeping it fresh.",
+        "time": "2-3 weeks",
+        "cost": "$30-50/mo",
+        "stack": ["Web app", "Database", "AI/LLM API", "Background jobs"]
+      }
+    },
+    {
+      "title": "ReceiptFlow",
+      "problem": "Small businesses have workers buying materials on-site who hand in paper receipts for manual logging — boring, error-prone, and creates accounting backlogs. A Reddit post about building a WhatsApp receipt bot got 17 upvotes and 19 comments with strong validation.",
+      "solution": "A WhatsApp/Telegram bot that accepts receipt photos, extracts vendor/amount/date/category using vision AI, and logs entries to Google Sheets, QuickBooks, or Xero. Workers can check balances and recent expenses via chat.",
+      "monetization": "Freemium: free for 50 receipts/month, $15/mo for unlimited receipts + accounting software integration, $49/mo for teams with approval workflows and expense policies.",
+      "complexity": "low",
+      "trend_sources": ["reddit:1rp5iht", "reddit:1rpcnmv"],
+      "category": "SaaS",
+      "validation": [
+        "Build a Telegram bot MVP that OCRs receipts to Google Sheets and test with 5 small contractors",
+        "Post in r/smallbusiness: 'How do you handle receipt tracking for your field workers?'",
+        "DM 10 contractors from the Reddit thread about their current workflow"
+      ],
+      "evidence": [
+        {"title": "I built a WhatsApp bot that turns receipt photos into spreadsheet entries (17pts, 19 comments)", "url": "https://reddit.com/r/SideProject/comments/1rp5iht"},
+        {"title": "Cash timing problems for small businesses (7pts, 16 comments)", "url": "https://reddit.com/r/Entrepreneur/comments/1rpcnmv"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "Use WhatsApp Business API or Telegram Bot API. Vision AI (Claude/GPT-4V) for receipt OCR. Google Sheets API for output. Simple stateless bot architecture. Main challenge is WhatsApp Business API approval process.",
+        "time": "1 weekend",
+        "cost": "$10-25/mo",
+        "stack": ["Web app", "AI/LLM API", "Background jobs"]
+      }
+    },
+    {
+      "title": "LocalizeShip",
+      "problem": "Indie developers miss massive download growth by only publishing apps in English. A Reddit post showed a 340% increase in downloads after localizing to 6 languages using AI — but the process is still manual and tedious, involving App Store metadata, screenshots, and in-app strings.",
+      "solution": "A tool that takes your app's strings file, App Store metadata, and screenshot text, then generates localized versions for target markets using AI. Handles the full workflow: translation, cultural adaptation, keyword research per locale, and formatted output ready for App Store Connect.",
+      "monetization": "Freemium: free for 1 language, $19/mo for up to 10 languages with keyword optimization, $49/mo for enterprise with custom glossaries and A/B testing.",
+      "complexity": "low",
+      "trend_sources": ["reddit:1rp0wxk"],
+      "category": "Dev Tools",
+      "validation": [
+        "Build a free web tool that localizes App Store metadata for 3 languages and share in r/iOSProgramming",
+        "Post the results comparison (before/after downloads) as a case study in r/SideProject",
+        "DM 10 indie app developers on Twitter and offer free localization for their apps"
+      ],
+      "evidence": [
+        {"title": "I localised my app into 6 languages & Downloads went up by 340% (26pts, 21 comments)", "url": "https://reddit.com/r/SideProject/comments/1rp0wxk"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "Core is LLM-powered translation with locale-specific keyword research. Parse strings files (iOS .strings, Android XML), translate with cultural context, generate App Store metadata. Simple web app with file upload.",
+        "time": "1 week",
+        "cost": "$15/mo",
+        "stack": ["Web app", "AI/LLM API"]
+      }
+    },
+    {
+      "title": "AgentDeploy",
+      "problem": "AI coding agents can build apps but deploying them is still manual and fragile. Terminal Use (YC W26) launched today as 'Vercel for filesystem-based agents' (88pts, 57 comments HN), validating that agent deployment is an unsolved problem. Developers need a way to go from agent-built code to production without DevOps knowledge.",
+      "solution": "A deployment platform specifically designed for agent-generated projects. Auto-detects framework (Next.js, SvelteKit, etc.), provisions infrastructure, sets up CI/CD, and provides a preview URL — all from a single CLI command or agent action.",
+      "monetization": "Freemium: free for 3 projects with shared infrastructure, $19/mo for custom domains and production deploys, $49/mo for teams with staging environments.",
+      "complexity": "high",
+      "trend_sources": ["hackernews:47311657", "github:CodebuffAI/codebuff"],
+      "category": "Dev Tools",
+      "validation": [
+        "Build a CLI that deploys a Next.js app to Fly.io with zero config and share as Show HN",
+        "Post in r/ClaudeAI: 'What's your deploy workflow after Claude builds your app?'",
+        "Survey 20 vibe coders about their biggest post-build pain points"
+      ],
+      "evidence": [
+        {"title": "Launch HN: Terminal Use (YC W26) – Vercel for filesystem-based agents (88pts, 57 comments)", "url": "https://news.ycombinator.com/item?id=47311657"},
+        {"title": "CodebuffAI — Generate code from terminal (4.1K stars, +1154/week)", "url": "https://github.com/CodebuffAI/codebuff"}
+      ],
+      "ai_build": {
+        "viability": "medium",
+        "details": "Wrapper around cloud providers (Fly.io, Railway, Vercel). Framework detection, Dockerfile generation, CI/CD pipeline setup. Complex infrastructure but well-understood patterns. Main challenge is reliability across diverse project types.",
+        "time": "3-4 weeks",
+        "cost": "$50-100/mo",
+        "stack": ["CLI tool", "Web app", "Database", "Background jobs"]
+      }
+    },
+    {
+      "title": "DesignSpec",
+      "problem": "AI tools generate functional but visually inconsistent UIs — mismatched spacing, wrong color usage, broken component patterns. Impeccable ('design language that makes AI better at design') exploded to 3K stars at +1288/day, proving developers need formal design constraints for AI output.",
+      "solution": "A design system validator that checks AI-generated frontend code against your design tokens and component library. Works as a CI check or IDE plugin — flags spacing violations, color mismatches, and component misuse before code is merged.",
+      "monetization": "Freemium: free for open source projects, $19/mo for teams with custom design systems, $49/mo for enterprise with Figma sync and auto-fix suggestions.",
+      "complexity": "medium",
+      "trend_sources": ["github:pbakaus/impeccable", "hackernews:47311657"],
+      "category": "Dev Tools",
+      "validation": [
+        "Build a GitHub Action that checks Tailwind classes against a design token file and share as Show HN",
+        "Post in r/webdev: 'How do you enforce design consistency when AI generates your UI?'",
+        "Create a free VS Code extension that highlights design token violations"
+      ],
+      "evidence": [
+        {"title": "Impeccable — design language for AI harnesses (3K stars, +1288/day)", "url": "https://github.com/pbakaus/impeccable"},
+        {"title": "Terminal Use — Vercel for filesystem-based agents (88pts, 57 comments)", "url": "https://news.ycombinator.com/item?id=47311657"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "Parse design tokens (JSON/CSS variables), AST-parse frontend code, compare against rules. Similar architecture to a linter. Tailwind/CSS-in-JS focus first. Main challenge is defining the rule language.",
+        "time": "2 weeks",
+        "cost": "$15/mo",
+        "stack": ["CLI tool", "Web app", "CI integration"]
+      }
+    },
+    {
+      "title": "SwarmSense",
+      "problem": "Traditional analytics give you dashboards of what happened. MiroFish ('swarm intelligence engine, predicting anything') gained +2294 stars/day showing demand for predictive collective intelligence. Businesses need forward-looking signals, not backward-looking charts.",
+      "solution": "A prediction platform that aggregates sentiment and signals from multiple sources (social media, news, market data) using swarm intelligence algorithms to generate probabilistic forecasts. Start with a specific vertical like crypto sentiment or product launch predictions.",
+      "monetization": "Freemium: free for 3 prediction topics, $29/mo for unlimited topics with custom sources, $99/mo for enterprise with API access and custom models.",
+      "complexity": "medium",
+      "trend_sources": ["github:666ghj/MiroFish", "github:666ghj/BettaFish", "github:koala73/worldmonitor"],
+      "category": "SaaS",
+      "validation": [
+        "Build a Twitter sentiment predictor for crypto prices and track accuracy for 2 weeks",
+        "Post results as 'I built a swarm intelligence tool that predicted X' on r/SideProject",
+        "Create a free dashboard tracking sentiment on 10 popular tech stocks"
+      ],
+      "evidence": [
+        {"title": "MiroFish — swarm intelligence engine (11.2K stars, +2294/day)", "url": "https://github.com/666ghj/MiroFish"},
+        {"title": "BettaFish — multi-agent sentiment analysis (37.4K stars, +514/day)", "url": "https://github.com/666ghj/BettaFish"},
+        {"title": "worldmonitor — real-time global intelligence dashboard (34.8K stars, +12583/week)", "url": "https://github.com/koala73/worldmonitor"}
+      ],
+      "ai_build": {
+        "viability": "medium",
+        "details": "Aggregate data from social APIs, run through multi-agent sentiment analysis, apply swarm coordination for ensemble predictions. Complex but MiroFish provides an open-source foundation to build on.",
+        "time": "2-3 weeks",
+        "cost": "$40-60/mo",
+        "stack": ["Web app", "Database", "AI/LLM API", "Background jobs", "Real-time/WebSockets"]
+      }
+    },
+    {
+      "title": "AgentCRM",
+      "problem": "DenchClaw ('Local CRM on Top of OpenClaw') launched as Show HN today (93pts, 87 comments), proving that people want CRM functionality built natively on AI agent platforms rather than retrofitted into legacy tools. Current CRMs (Salesforce, HubSpot) are bloated and AI is an afterthought.",
+      "solution": "A lightweight CRM that is agent-native: conversations with leads happen through an AI agent that logs interactions, updates deal stages, and surfaces insights automatically. The CRM doesn't just store data — it actively works your pipeline.",
+      "monetization": "Freemium: free for up to 100 contacts, $25/mo for 1000 contacts with email integration, $79/mo for teams with multi-agent pipelines.",
+      "complexity": "medium",
+      "trend_sources": ["hackernews:47309953", "github:sponsors/openclaw"],
+      "category": "SaaS",
+      "validation": [
+        "Build a simple contact tracker with AI-powered note summarization and share in r/SaaS",
+        "DM 10 solo founders from the HN thread about their CRM frustrations",
+        "Create a landing page 'CRM that works for you, not the other way around' and run $50 in ads"
+      ],
+      "evidence": [
+        {"title": "Show HN: DenchClaw – Local CRM on Top of OpenClaw (93pts, 87 comments)", "url": "https://news.ycombinator.com/item?id=47309953"},
+        {"title": "OpenClaw — personal AI assistant (291K stars, +9164/day)", "url": "https://github.com/sponsors/openclaw"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "Build on OpenClaw or similar agent framework. Contact management, deal pipeline, email integration via Gmail API. AI agent handles data entry and follow-up suggestions. Main challenge is email deliverability.",
+        "time": "2 weeks",
+        "cost": "$25/mo",
+        "stack": ["Web app", "Database", "Auth", "AI/LLM API"]
+      }
+    },
+    {
+      "title": "CloudBurn",
+      "problem": "Companies routinely get surprise cloud bills — a Reddit post about someone getting a $15K S3 bill from a DDoS attack got 217 upvotes. Oracle's data center debt story (240pts, 126 comments HN) highlights infrastructure cost anxiety. A founder built an AWS cost agent in 7 days with only 7 days of runway left (22pts, 85 comments).",
+      "solution": "An AI agent that connects to your AWS/GCP/Azure account, continuously monitors for waste and anomalies, explains findings in plain English, and executes cost optimizations with your approval. Think 'financial advisor for your cloud bill.'",
+      "monetization": "Savings-based: free to connect, take 10% of identified savings for the first year (minimum $29/mo). Enterprise tier at $199/mo for custom policies.",
+      "complexity": "medium",
+      "trend_sources": ["hackernews:47315128", "reddit:1rlmhhd"],
+      "category": "SaaS",
+      "validation": [
+        "Build a read-only AWS cost analyzer that flags the top 5 wastes and share as Show HN",
+        "Post in r/aws: 'What's the biggest surprise on your last cloud bill?'",
+        "Offer free cloud audits to 10 startups and track savings identified"
+      ],
+      "evidence": [
+        {"title": "Oracle is building yesterday's data centers with tomorrow's debt (240pts, 126 comments)", "url": "https://news.ycombinator.com/item?id=47315128"},
+        {"title": "7 days of runway: built AWS cost optimization agent (22pts, 85 comments)", "url": "https://reddit.com/r/indiehackers/comments/1rlmhhd"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "Use AWS Cost Explorer API, analyze with LLM, generate optimization recommendations. Read-only first, then add execution with approval. Well-defined APIs. Main challenge is covering all AWS services.",
+        "time": "2 weeks",
+        "cost": "$20/mo",
+        "stack": ["Web app", "Database", "Auth", "AI/LLM API", "Background jobs"]
+      }
+    },
+    {
+      "title": "PagePilot",
+      "problem": "Testing web apps, filling forms, and automating browser workflows still requires writing Selenium/Playwright scripts. Alibaba's page-agent ('control web interfaces with natural language') gained +465 stars/day, and the broader GUI agent trend is accelerating with RuView (33K stars) and OpenSandbox (7.2K stars).",
+      "solution": "A browser extension and CLI tool that lets you control any web page with natural language commands. 'Fill out this form with test data', 'Click through the checkout flow', 'Extract all product prices from this page'. Combines vision AI with DOM interaction.",
+      "monetization": "Freemium: free for 50 commands/day, $19/mo for unlimited with workflow recording, $49/mo for teams with CI integration for automated testing.",
+      "complexity": "medium",
+      "trend_sources": ["github:alibaba/page-agent", "github:alibaba/OpenSandbox", "github:ruvnet/RuView"],
+      "category": "Dev Tools",
+      "validation": [
+        "Build a Chrome extension that fills forms from natural language and share in r/webdev",
+        "Record a demo video of testing a checkout flow with voice commands and post on Twitter",
+        "Compare speed/accuracy against Playwright for 10 common test scenarios"
+      ],
+      "evidence": [
+        {"title": "Alibaba page-agent — control web interfaces with natural language (2.6K stars, +465/day)", "url": "https://github.com/alibaba/page-agent"},
+        {"title": "OpenSandbox — sandbox platform for AI apps (7.2K stars, +3262/week)", "url": "https://github.com/alibaba/OpenSandbox"},
+        {"title": "RuView — WiFi DensePose (33.3K stars, +12632/week)", "url": "https://github.com/ruvnet/RuView"}
+      ],
+      "ai_build": {
+        "viability": "medium",
+        "details": "Chrome extension with content script for DOM access, vision AI for element identification, natural language command parser. Can leverage page-agent as a foundation. Main challenge is reliability across diverse sites.",
+        "time": "2-3 weeks",
+        "cost": "$25/mo",
+        "stack": ["Web app", "AI/LLM API"]
+      }
+    },
+    {
+      "title": "NoteAPI",
+      "problem": "Google NotebookLM is powerful but has no API — you can't programmatically create notebooks, add sources, or generate audio overviews. notebooklm-py (4.2K stars, +457/day) built an unofficial API proving massive demand. Researchers and content creators need to automate NotebookLM workflows.",
+      "solution": "A hosted API service that wraps NotebookLM functionality with a clean REST API. Create notebooks, add sources (PDFs, URLs, text), generate summaries and audio overviews programmatically. Plus a CLI for quick access and integrations with Zapier/Make.",
+      "monetization": "Usage-based: free tier (10 API calls/day), $19/mo for 500 calls, $49/mo for 5000 calls with priority processing.",
+      "complexity": "medium",
+      "trend_sources": ["github:teng-lin/notebooklm-py"],
+      "category": "Dev Tools",
+      "validation": [
+        "Build a CLI that creates NotebookLM notebooks from a folder of PDFs and share in r/NotebookLM",
+        "Post 'I automated my podcast research with NotebookLM API' as a blog post",
+        "Survey 20 content creators about their NotebookLM workflow and pain points"
+      ],
+      "evidence": [
+        {"title": "notebooklm-py — unofficial Python API for NotebookLM (4.2K stars, +457/day)", "url": "https://github.com/teng-lin/notebooklm-py"}
+      ],
+      "ai_build": {
+        "viability": "medium",
+        "details": "Reverse-engineer or wrap the NotebookLM web interface, expose as REST API. Browser automation with Playwright for the backend. Main risk is Google breaking the unofficial access.",
+        "time": "2 weeks",
+        "cost": "$30/mo",
+        "stack": ["Web app", "Database", "Auth", "Background jobs"]
+      }
+    },
+    {
+      "title": "SaaSPostmortem",
+      "problem": "Solo founders keep making the same mistakes — spending $134K on contractors, $48K on marketing experiments, and shutting down after 3 years at break-even. A Reddit post detailing exact financials of a failed SaaS (114pts, 25 comments) and another about SaaS being unrealistic (103pts, 193 comments) show the market craves honest, structured failure analysis.",
+      "solution": "A structured post-mortem platform where founders submit their startup metrics (revenue, costs, timeline, decisions) and get an AI-generated analysis comparing against a database of similar startups. Identifies where they diverged from successful patterns and what they could change.",
+      "monetization": "Freemium: free basic analysis, $29/mo for detailed comparisons with anonymized benchmark data, $99/mo for ongoing monitoring with alerts ('your burn rate is 2x the median for your stage').",
+      "complexity": "low",
+      "trend_sources": ["reddit:1rpa3d7", "reddit:1rox2un"],
+      "category": "SaaS",
+      "validation": [
+        "Create a free Google Form that collects SaaS metrics and generates a comparison report",
+        "Post in r/SaaS: 'I analyzed 50 failed SaaS postmortems — here are the patterns'",
+        "Build a simple calculator: 'Will your SaaS break even?' based on median data"
+      ],
+      "evidence": [
+        {"title": "Shut down my SaaS after 3 years — honest accounting (114pts, 25 comments)", "url": "https://reddit.com/r/SaaS/comments/1rpa3d7"},
+        {"title": "No one here will probably make a living from a SaaS (103pts, 193 comments)", "url": "https://reddit.com/r/SaaS/comments/1rox2un"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "Web form for input, LLM for analysis, simple database for benchmark storage. Scrape existing postmortems (IndieHackers, Reddit) for training data. Very simple architecture.",
+        "time": "1 weekend",
+        "cost": "$10/mo",
+        "stack": ["Web app", "Database", "AI/LLM API"]
+      }
+    },
+    {
+      "title": "CommitCraft",
+      "problem": "Developers write terrible git commit messages — 'fix bug', 'update', 'asdfgh' — making codebases unreadable. A Reddit post about this got 148 upvotes and 303 comments in r/webdev, showing widespread frustration. AI coding tools make this worse by generating even more commits without meaningful messages.",
+      "solution": "A git hook and CI tool that analyzes diffs and generates or enforces high-quality commit messages following conventional commits. Rejects vague messages, suggests improvements, and can auto-generate messages from the diff context.",
+      "monetization": "Freemium: free git hook for personal use, $9/mo for teams with CI enforcement and custom rules, $29/mo for enterprise with analytics and compliance reports.",
+      "complexity": "low",
+      "trend_sources": ["reddit:1roytth"],
+      "category": "Dev Tools",
+      "validation": [
+        "Build a git pre-commit hook that uses AI to improve commit messages and share as Show HN",
+        "Post in r/webdev: 'I built a tool that fixes terrible commit messages with AI'",
+        "Track before/after commit message quality for 10 open source repos"
+      ],
+      "evidence": [
+        {"title": "Why do developers write such terrible git commit messages? (148pts, 303 comments)", "url": "https://reddit.com/r/webdev/comments/1roytth"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "Git hook that reads the diff, sends to LLM, generates/validates commit message. Very simple architecture. Main challenge is speed — hook needs to complete in seconds.",
+        "time": "1 weekend",
+        "cost": "$5/mo",
+        "stack": ["CLI tool", "AI/LLM API"]
+      }
+    }
+  ]
+}
