@@ -1,0 +1,445 @@
+{
+  "date": "2026-03-13",
+  "generated_at": "2026-03-13T14:00:00.000Z",
+  "trend_data": {
+    "hackernews_stories": 30,
+    "reddit_posts": 50,
+    "github_repos": 24,
+    "google_trends": 10,
+    "producthunt_products": 0
+  },
+  "recurring_themes": [
+    {
+      "theme": "AI agent orchestration & scheduling",
+      "days_seen": 9,
+      "dates": ["2026-03-13", "2026-03-11", "2026-03-10", "2026-03-09", "2026-03-08", "2026-03-07", "2026-03-05", "2026-03-04", "2026-03-03"],
+      "past_idea_titles": ["AgentCron", "AgentBench", "AgentTestKit", "AgentOrch", "AgentDeploy"],
+      "signal_strength": "strong",
+      "note": "Strongest infrastructure signal continues. Today: OneCLI 'Vault for AI Agents in Rust' (119pts, 38 comments HN), Understudy 'teach a desktop agent by demonstrating a task once' (81pts, 24 comments), and OpenClaw ESP32 agents. obra skills framework at 79.9K stars (+1706/day), msitarzewski 'complete AI agency' at 34.8K stars (+4168/day), deer-flow at 29.8K stars (+5125/week). InsForge 'backend built for agentic development' (+263/day). The agent infrastructure layer is consolidating fast."
+    },
+    {
+      "theme": "AI agent memory & persistence",
+      "days_seen": 9,
+      "dates": ["2026-03-13", "2026-03-11", "2026-03-10", "2026-03-09", "2026-03-08", "2026-03-07", "2026-03-05", "2026-03-04", "2026-03-03"],
+      "past_idea_titles": ["LocalRecall", "AgentMem"],
+      "signal_strength": "strong",
+      "note": "Hindsight 'Agent Memory That Learns' (3K stars, +217/day) is a new dedicated memory project trending today. hermes-agent (6.1K stars, +1264/day) and airi companion (33K stars, +6582/week) both continue growing. Memory remains the widest gap in the agent stack with no winner yet."
+    },
+    {
+      "theme": "AI code quality & vibe coding verification",
+      "days_seen": 9,
+      "dates": ["2026-03-13", "2026-03-11", "2026-03-10", "2026-03-09", "2026-03-08", "2026-03-07", "2026-03-05", "2026-03-04", "2026-03-03"],
+      "past_idea_titles": ["SpecPilot", "AgentGuard", "VibeShip", "CommitCraft"],
+      "signal_strength": "strong",
+      "note": "'Shall I implement it? No' (670pts, 246 comments HN) and 'Are LLM merge rates not getting better?' (112pts, 110 comments) directly question AI code quality. Axe 'A 12MB binary that replaces your AI framework' (138pts, 93 comments) shows frustration with framework bloat. The r/Entrepreneur 'vibe-coded app needs a backup plan' post (57pts, 52 comments) highlights production risks. The tension between shipping fast with AI and maintaining quality persists."
+    },
+    {
+      "theme": "MCP / Skills ecosystem & marketplace",
+      "days_seen": 9,
+      "dates": ["2026-03-13", "2026-03-11", "2026-03-10", "2026-03-09", "2026-03-08", "2026-03-07", "2026-03-05", "2026-03-04", "2026-03-03"],
+      "past_idea_titles": ["MCPHub", "SkillForge", "ClaudeForge"],
+      "signal_strength": "strong",
+      "note": "claude-skills at 4.5K stars (+1970/week), obra skills framework at 79.9K stars, claude-plugins-official (10.2K stars, +150/day). Anthropic now has an official plugin directory — the ecosystem is maturing. Cross-platform skill curation remains the gap."
+    },
+    {
+      "theme": "AI security testing & agent red teaming",
+      "days_seen": 9,
+      "dates": ["2026-03-13", "2026-03-11", "2026-03-10", "2026-03-09", "2026-03-08", "2026-03-07", "2026-03-05", "2026-03-04", "2026-03-03"],
+      "past_idea_titles": ["CodeLeakGuard", "PromptVault", "SecurityPilot", "AgentSafe", "AgentPen"],
+      "signal_strength": "strong",
+      "note": "RAG document poisoning article (54pts, 18 comments HN) and AI facial recognition wrongful arrest (325pts, 175 comments HN) show AI security failures from both the technical and societal angles. promptfoo (13.7K stars, +2034/week) for AI red teaming continues trending. The security theme is now about real-world consequences of deploying AI without proper testing."
+    },
+    {
+      "theme": "Local/edge AI models & on-device inference",
+      "days_seen": 9,
+      "dates": ["2026-03-13", "2026-03-11", "2026-03-10", "2026-03-09", "2026-03-08", "2026-03-07", "2026-03-05", "2026-03-04", "2026-03-03"],
+      "past_idea_titles": ["QwenKit", "OpenWeight", "BitRunner"],
+      "signal_strength": "strong",
+      "note": "Microsoft BitNet (32.3K stars, +2149/day) for 1-bit LLM inference continues massive growth. 'Big data on the cheapest MacBook' via DuckDB (298pts, 249 comments HN) reinforces the local-first computing movement. LiteRT (Google's on-device ML framework, 1.6K stars) adds edge AI signal. Chrome on ARM64 Linux (60pts) shows computing expanding to more device types."
+    },
+    {
+      "theme": "Website-to-API / intelligent web scraping",
+      "days_seen": 9,
+      "dates": ["2026-03-13", "2026-03-11", "2026-03-10", "2026-03-09", "2026-03-08", "2026-03-07", "2026-03-05", "2026-03-04", "2026-03-03"],
+      "past_idea_titles": ["ScrapeForge"],
+      "signal_strength": "strong",
+      "note": "alibaba page-agent 'control web interfaces with natural language' at 5.9K stars (+1205/day) continues explosive growth. OpenRAG 'comprehensive RAG platform' (1.5K stars, +322/day) demonstrates the downstream demand — every RAG system needs web data. This is permanent infrastructure demand."
+    },
+    {
+      "theme": "Swarm intelligence & collective AI",
+      "days_seen": 4,
+      "dates": ["2026-03-13", "2026-03-11", "2026-03-10", "2026-03-09"],
+      "past_idea_titles": ["SwarmSense", "SwarmSight"],
+      "signal_strength": "moderate",
+      "note": "MiroFish (19.1K stars, +1857/day) continues accelerating. BettaFish (38.3K stars, +2284/week). ai-hedge-fund (48.5K stars, +2347/week) for AI investment. The swarm intelligence paradigm is solidifying as distinct from single-agent orchestration."
+    },
+    {
+      "theme": "SaaS distribution & organic growth challenges",
+      "days_seen": 3,
+      "dates": ["2026-03-13", "2026-03-11", "2026-03-10"],
+      "past_idea_titles": ["LLMRank", "PagePilot"],
+      "signal_strength": "moderate",
+      "note": "NEW CLUSTER: 'Side project with paying users, zero organic growth' (19pts, 18 comments), 'I created my micro-saas but how do i market it?' (8pts, 21 comments), '$100 Reddit ads, zero conversions' (36pts, 87 comments), 'How do your buyers actually find you?' (13pts, 5 comments). Multiple Reddit posts in a single day about founder inability to get organic traffic. Combined with the 17-year-old's greeting card site hitting 100K visitors — distribution is the #1 gap for indie SaaS founders."
+    },
+    {
+      "theme": "AI SEO / LLM visibility",
+      "days_seen": 3,
+      "dates": ["2026-03-13", "2026-03-11", "2026-03-10"],
+      "past_idea_titles": ["LLMRank"],
+      "signal_strength": "moderate",
+      "note": "seomachine (2.6K stars, +1288/week) for Claude Code SEO content still trending. The hockey puck site getting Google's featured result and the greeting card maker hitting 100K visitors via SEO both demonstrate that SEO still works — the question is shifting to 'how do you rank in both Google and AI chatbots?'"
+    },
+    {
+      "theme": "SaaS churn & retention automation",
+      "days_seen": 3,
+      "dates": ["2026-03-13", "2026-03-11", "2026-03-10"],
+      "past_idea_titles": ["ChurnGuard"],
+      "signal_strength": "moderate",
+      "note": "'Should a new SaaS start charging immediately?' (5pts, 26 comments) and 'My SaaS had zero conversions at $9/mo, raised to $29 and people started paying' (97pts, 106 comments) show pricing/retention anxiety. Cancel flow automation beta (r/indiehackers, 10pts, 51 comments) from 2 days ago still active. Churn is the dominant SaaS concern."
+    }
+  ],
+  "ideas": [
+    {
+      "title": "AgentVault",
+      "problem": "AI agents need secure credential management but currently receive API keys, database passwords, and OAuth tokens directly in prompts or environment variables. OneCLI 'Vault for AI Agents in Rust' (119pts, 38 comments HN) proves this is a real pain point. As agents get more autonomous (running overnight, accessing production systems), the security risk of exposed credentials grows exponentially.",
+      "solution": "A credential vault purpose-built for AI agents. Agents request scoped, time-limited tokens instead of raw secrets. Audit log tracks every credential access per agent session. Integrates as an MCP server so any agent framework can use it. Admin dashboard shows which agents accessed which secrets and when.",
+      "monetization": "SaaS: Free for 5 secrets, $19/mo for 50 with audit logs, $49/mo for teams with role-based access and compliance reports.",
+      "complexity": "medium",
+      "trend_sources": ["hackernews:47353558", "github:sponsors/obra", "github:sponsors/msitarzewski"],
+      "category": "Dev Tools",
+      "distribution": [
+        "Show HN — OneCLI thread audience is the exact target market",
+        "Post in Claude Code and Codex communities asking 'How do you manage secrets for your AI agents?'",
+        "Cold DM developers from the OneCLI HN thread about their current secret management workflow"
+      ],
+      "evidence": [
+        {"title": "Show HN: OneCLI – Vault for AI Agents in Rust (119pts, 38 comments)", "url": "https://news.ycombinator.com/item?id=47353558"},
+        {"title": "obra: Agentic skills framework (79.9K stars, +1706/day)", "url": "https://github.com/sponsors/obra"},
+        {"title": "Complete AI agency at your fingertips (34.8K stars, +4168/day)", "url": "https://github.com/sponsors/msitarzewski"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "Rust or Go service with encrypted secret storage (age/sops), MCP server interface for agent access, time-scoped token generation. Admin dashboard in SvelteKit. Key challenge is making the MCP integration seamless across different agent frameworks.",
+        "time": "2 weeks",
+        "cost": "$20-30/mo (hosting + DB)",
+        "stack": ["Web app", "Database", "Auth", "Background jobs"]
+      }
+    },
+    {
+      "title": "HindsightDB",
+      "problem": "AI agents forget everything between sessions. Hindsight 'Agent Memory That Learns' just appeared on GitHub trending (3K stars, +217/day), hermes-agent (6.1K stars, +1264/day) and airi (33K stars) both use 'grows with you' framing. But no standalone memory API has won the market. Every developer building agents reinvents memory storage from scratch — semantic search, episodic recall, personality persistence.",
+      "solution": "A hosted memory-as-a-service API with three memory types: semantic (facts), episodic (past interactions), and procedural (learned workflows). Simple REST API: remember(), recall(), forget(). Includes a 'growth engine' that builds persistent personality profiles from interaction patterns. SDKs for Python and TypeScript, MCP server for agent frameworks.",
+      "monetization": "Usage-based: 10K memories free, $19/mo for 100K with growth engine, $79/mo for 1M with priority retrieval and multi-agent shared memory.",
+      "complexity": "medium",
+      "trend_sources": ["github:vectorize-io/hindsight", "github:NousResearch/hermes-agent", "github:moeru-ai/airi", "github:bytedance/deer-flow"],
+      "category": "AI",
+      "distribution": [
+        "Post in Claude Code, Codex, and OpenClaw communities: 'Would you pay for agent memory that persists across sessions?'",
+        "Build an open-source memory SDK and integrate with one popular framework as a demo, share as Show HN",
+        "Write a blog post comparing Hindsight, Mem0, Zep, and custom pgvector approaches — share on HN"
+      ],
+      "evidence": [
+        {"title": "Hindsight: Agent Memory That Learns (3K stars, +217/day)", "url": "https://github.com/vectorize-io/hindsight"},
+        {"title": "hermes-agent: The agent that grows with you (6.1K stars, +1264/day)", "url": "https://github.com/NousResearch/hermes-agent"},
+        {"title": "airi: Self-hosted AI companion (33K stars, +6582/week)", "url": "https://github.com/moeru-ai/airi"},
+        {"title": "deer-flow: SuperAgent with memories (29.8K stars, +5125/week)", "url": "https://github.com/bytedance/deer-flow"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "Hono API on Cloudflare Workers, Neon Postgres with pgvector, OpenAI embedding API. Growth engine uses Claude API to periodically analyze interaction patterns and generate compressed personality profiles. MCP server adapter for agent framework integration.",
+        "time": "2 weeks",
+        "cost": "$25-50/mo (vector DB + embeddings API + hosting)",
+        "stack": ["Web app", "Database", "Auth", "AI/LLM API", "Background jobs"]
+      }
+    },
+    {
+      "title": "GrowthPilot",
+      "problem": "The #1 pain for indie SaaS founders is not building — it's distribution. Today's Reddit data shows an unprecedented cluster: 'Side project with paying users, zero organic growth' (19pts), 'I created my micro-saas but how do i market it?' (8pts, 21 comments), '$100 Reddit ads, zero conversions' (36pts, 87 comments), 'How do your buyers actually find you?' (13pts). Meanwhile a 17-year-old's greeting card maker hit 100K visitors via SEO alone (289pts, 202 comments). The gap between 'can build' and 'can distribute' is the biggest problem in indie SaaS.",
+      "solution": "An AI-powered distribution advisor for SaaS founders. Input your product, target audience, and current metrics. Get a prioritized channel playbook: which subreddits to post in, which keywords to target, which communities to engage, specific cold outreach scripts. Updates weekly based on what's working. Think 'marketing co-pilot for technical founders'.",
+      "monetization": "SaaS: $29/mo for 1 product with weekly playbook updates, $79/mo for 3 products with A/B testing recommendations, $199/mo for agencies.",
+      "complexity": "medium",
+      "trend_sources": ["reddit:1rruocq", "reddit:1rs31uv", "reddit:1rqubg9", "reddit:1rrywyk", "reddit:1rr0ln1"],
+      "category": "SaaS",
+      "distribution": [
+        "Reply to every Reddit thread about 'zero organic growth' and 'how do I market' with a free audit offer",
+        "Post in r/SaaS: 'I analyzed 50 SaaS distribution strategies — here's what actually works' with a waitlist CTA",
+        "Cold DM 20 founders from today's Reddit threads about their distribution challenges"
+      ],
+      "evidence": [
+        {"title": "Side project with paying users, zero organic growth (19pts, 18 comments)", "url": "https://reddit.com/r/SideProject/comments/1rruocq"},
+        {"title": "I created my micro-saas but how do I market it? (8pts, 21 comments)", "url": "https://reddit.com/r/SaaS/comments/1rs31uv"},
+        {"title": "$100 Reddit ads, zero conversions (36pts, 87 comments)", "url": "https://reddit.com/r/indiehackers/comments/1rqubg9"},
+        {"title": "How do your buyers actually find you? (13pts, 5 comments)", "url": "https://reddit.com/r/SaaS/comments/1rrywyk"},
+        {"title": "Greeting card maker hit 100K visitors via SEO (289pts, 202 comments)", "url": "https://reddit.com/r/webdev/comments/1rr0ln1"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "Web app with onboarding flow, Claude API for generating personalized distribution playbooks based on product category and target audience. Supabase for user data and playbook history. Weekly cron for updated recommendations. The value is in the prompt engineering and channel database, not complex code.",
+        "time": "1-2 weeks",
+        "cost": "$30-50/mo (LLM API + hosting + DB)",
+        "stack": ["Web app", "Database", "Auth", "AI/LLM API", "Background jobs"]
+      }
+    },
+    {
+      "title": "RAGShield",
+      "problem": "RAG (Retrieval-Augmented Generation) systems are being deployed in production but are vulnerable to document poisoning attacks. 'Document poisoning in RAG systems: How attackers corrupt AI's sources' (54pts, 18 comments HN) directly describes this threat. Combined with the AI facial recognition wrongful arrest story (325pts, 175 comments), trust in AI systems is eroding. promptfoo (13.7K stars) for AI red teaming validates the testing tools market.",
+      "solution": "A security scanning layer that sits between your document ingestion pipeline and your RAG vector store. Detects poisoned documents (prompt injections hidden in PDFs, adversarial text patterns, hallucination-inducing content) before they enter your knowledge base. Includes a monitoring dashboard that tracks document integrity scores over time.",
+      "monetization": "SaaS: Free for 100 documents/month, $29/mo for 10K documents with monitoring, $99/mo for enterprise with custom rules and compliance reports.",
+      "complexity": "medium",
+      "trend_sources": ["hackernews:47350407", "hackernews:47356968", "github:promptfoo/promptfoo"],
+      "category": "SaaS",
+      "distribution": [
+        "Post in the RAG document poisoning HN thread with a free scanning tool",
+        "Share in r/MachineLearning and r/LangChain: 'How do you prevent document poisoning in your RAG pipeline?'",
+        "Build a free open-source document scanner and submit as Show HN"
+      ],
+      "evidence": [
+        {"title": "Document poisoning in RAG systems: How attackers corrupt AI's sources (54pts, 18 comments)", "url": "https://news.ycombinator.com/item?id=47350407"},
+        {"title": "Innocent woman jailed after AI facial recognition error (325pts, 175 comments)", "url": "https://news.ycombinator.com/item?id=47356968"},
+        {"title": "promptfoo: AI red teaming and pentesting (13.7K stars, +2034/week)", "url": "https://github.com/promptfoo/promptfoo"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "Python SDK that scans documents before RAG ingestion. Uses pattern matching for known prompt injection vectors, LLM-based analysis for adversarial content detection, and integrity scoring. API server for hosted version. Main challenge is building a comprehensive attack pattern database.",
+        "time": "2 weeks",
+        "cost": "$40-60/mo (LLM API + hosting)",
+        "stack": ["Web app", "Database", "Auth", "AI/LLM API", "Background jobs"]
+      }
+    },
+    {
+      "title": "InventoryLite",
+      "problem": "Small craft and e-commerce businesses are drowning in spreadsheet-based inventory management. A Reddit post asking for inventory management for craft supply businesses (5pts, r/SaaS) describes the exact problem: hundreds of items with color/size variations, constant overselling, Excel nightmares. The angel investor increasing investment in an inventory SaaS startup (8pts, 37 comments r/Entrepreneur) validates market demand. Existing solutions are either too expensive or too complex for small businesses.",
+      "solution": "A lightweight inventory management tool designed for small product businesses with complex variations. Handles color/size/material matrices, low-stock alerts, multi-channel sync (Etsy, Shopify, manual), and a mobile-friendly interface for warehouse scanning. AI auto-categorizes products from photos.",
+      "monetization": "SaaS: Free for 50 products, $15/mo for 500, $39/mo for unlimited with multi-channel sync and AI categorization.",
+      "complexity": "medium",
+      "trend_sources": ["reddit:1rs3yob", "reddit:1rrf6ci"],
+      "category": "SaaS",
+      "distribution": [
+        "Reply to the craft supply inventory Reddit post with a free beta offer",
+        "Post in r/Etsy, r/craftbusiness, and r/smallbusiness: 'How do you track inventory with product variations?'",
+        "Run $30 of Google Ads targeting 'craft supply inventory management' and 'Etsy inventory tool'"
+      ],
+      "evidence": [
+        {"title": "Inventory management for small craft supply business (5pts, r/SaaS)", "url": "https://reddit.com/r/SaaS/comments/1rs3yob"},
+        {"title": "Angel investor increasing investment in inventory SAAS startup (8pts, 37 comments)", "url": "https://reddit.com/r/Entrepreneur/comments/1rrf6ci"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "SvelteKit/Next.js web app with Supabase. Product variation matrix UI, barcode/QR scanning via mobile camera. Shopify/Etsy API integrations. Claude vision API for product photo categorization. Straightforward CRUD app with good UX as the differentiator.",
+        "time": "2-3 weeks",
+        "cost": "$20-30/mo (Supabase + hosting)",
+        "stack": ["Web app", "Database", "Auth", "AI/LLM API", "Payments"]
+      }
+    },
+    {
+      "title": "ChurnGuard",
+      "problem": "SaaS founders lose customers silently and their cancel flows collect useless feedback. 'My SaaS had zero conversions at $9/mo, raised to $29 and people started paying' (97pts, 106 comments) and 'Should a new SaaS start charging immediately or wait?' (5pts, 26 comments) show pricing is trial-and-error. Cancel flow automation looking for beta testers (10pts, 51 comments) proves builders want better tools. This is the 3rd consecutive day with strong churn/retention signals.",
+      "solution": "AI-powered cancel flow that replaces checkbox forms with a real conversation. When a user clicks 'cancel', an AI chat extracts honest reasons, offers targeted retention actions (discounts, feature unlocks, pause plans), and aggregates patterns across your user base. Embeddable JS widget that works with Stripe.",
+      "monetization": "SaaS: Free for <100 MAU, $19/mo for 1K MAU, $49/mo for 10K MAU with retention analytics.",
+      "complexity": "medium",
+      "trend_sources": ["reddit:1rr7b4t", "reddit:1rrzx7l", "reddit:1roc2mx", "reddit:1rrsc5e"],
+      "category": "SaaS",
+      "distribution": [
+        "Reply to the '$9 vs $29 pricing' thread offering free churn analysis",
+        "Post in r/SaaS: 'I analyzed 500 cancel reasons — here's why checkbox forms don't work' with a waitlist CTA",
+        "Cold DM 15 SaaS founders from today's Reddit threads about their cancel flow"
+      ],
+      "evidence": [
+        {"title": "Zero conversions at $9, raised to $29 and people started paying (97pts, 106 comments)", "url": "https://reddit.com/r/Entrepreneur/comments/1rr7b4t"},
+        {"title": "Should a new SaaS start charging immediately? (5pts, 26 comments)", "url": "https://reddit.com/r/SaaS/comments/1rrzx7l"},
+        {"title": "Cancel flow automation — looking for beta testers (10pts, 51 comments)", "url": "https://reddit.com/r/indiehackers/comments/1roc2mx"},
+        {"title": "Automation infra costing more than design tool subscription (30pts, 26 comments)", "url": "https://reddit.com/r/SaaS/comments/1rrsc5e"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "Embeddable JS widget + Stripe webhook integration. AI conversation via Claude Haiku for cost efficiency. Dashboard for churn analytics in SvelteKit. Main challenges: Stripe integration for subscription state and real-time AI chat in a lightweight widget.",
+        "time": "2-3 weeks",
+        "cost": "$20-40/mo (LLM API + hosting)",
+        "stack": ["Web app", "Database", "Auth", "AI/LLM API", "Payments"]
+      }
+    },
+    {
+      "title": "TaskTeach",
+      "problem": "Understudy 'teach a desktop agent by demonstrating a task once' (81pts, 24 comments HN) proves demand for learning-by-demonstration AI. Non-technical users want to automate repetitive tasks but can't write code or use Zapier-style tools. alibaba page-agent (5.9K stars) approaches the same problem from the developer side. The gap is a product for business users who want to say 'watch me do this, then do it for me every day'.",
+      "solution": "A desktop app that records user actions (clicks, keystrokes, form fills), learns the workflow pattern, and replays it autonomously. Uses vision AI to handle dynamic UIs — if a button moves, the agent finds it by appearance not coordinates. Schedule recordings to run daily. Aimed at ops teams, not developers.",
+      "monetization": "SaaS: Free for 3 recordings, $19/mo for unlimited with scheduling, $49/mo for teams with shared automations.",
+      "complexity": "medium",
+      "trend_sources": ["hackernews:47353957", "github:alibaba/page-agent", "reddit:1rs3tjt"],
+      "category": "SaaS",
+      "distribution": [
+        "Post in r/Entrepreneur: 'What repetitive computer tasks do you wish you could automate without coding?'",
+        "Build a demo video of automating a common workflow (e.g., data entry from email to spreadsheet) and share on LinkedIn",
+        "Target the 'small businesses ignoring leads' audience from the r/Entrepreneur thread"
+      ],
+      "evidence": [
+        {"title": "Show HN: Understudy – Teach a desktop agent by demonstrating a task once (81pts, 24 comments)", "url": "https://news.ycombinator.com/item?id=47353957"},
+        {"title": "alibaba page-agent: Control web interfaces with natural language (5.9K stars, +1205/day)", "url": "https://github.com/alibaba/page-agent"},
+        {"title": "Most small businesses need to stop ignoring leads they already have (7pts, 9 comments)", "url": "https://reddit.com/r/Entrepreneur/comments/1rs3tjt"}
+      ],
+      "ai_build": {
+        "viability": "medium",
+        "details": "Electron/Tauri desktop app with screen recording, vision AI for element detection, action replay engine. Scheduling via system cron. Main challenges: reliable cross-platform screen recording and vision-based element matching across dynamic UIs.",
+        "time": "3-4 weeks",
+        "cost": "$30-50/mo (LLM API for vision + distribution)",
+        "stack": ["Web app", "Database", "Auth", "AI/LLM API", "Background jobs"]
+      }
+    },
+    {
+      "title": "LLMRank",
+      "problem": "Founders are optimizing for Google SEO but LLMs are becoming a primary discovery channel. The hockey puck site getting Google's featured result proves traditional SEO still works, but the greeting card maker hitting 100K visitors shows scale is possible. seomachine (2.6K stars) for AI-powered SEO content continues trending. The question is shifting from 'rank on Google' to 'rank on Google AND appear in ChatGPT/Claude answers'.",
+      "solution": "Monitor how major LLMs (ChatGPT, Claude, Gemini) describe your product when users ask 'what's the best X'. Track mentions over time, get actionable recommendations to improve LLM visibility (structured data, authoritative content, Wikipedia presence). Weekly reports comparing your AI visibility vs competitors.",
+      "monetization": "SaaS: $29/mo for 1 product, $79/mo for 5 products, $199/mo for agencies with white-label reports.",
+      "complexity": "medium",
+      "trend_sources": ["reddit:1rs2wel", "reddit:1rr0ln1", "github:TheCraigHewitt/seomachine"],
+      "category": "SaaS",
+      "distribution": [
+        "Ask 20 founders in r/SaaS: 'Have you checked what ChatGPT says about your product?'",
+        "Build a free 'LLM visibility check' tool and share on Product Hunt",
+        "Post in r/SEO: 'Google SEO vs AI chatbot visibility — which matters more in 2026?'"
+      ],
+      "evidence": [
+        {"title": "Hockey puck site got Google featured result (10pts, r/SideProject)", "url": "https://reddit.com/r/SideProject/comments/1rs2wel"},
+        {"title": "Greeting card maker hit 100K monthly visitors via SEO (289pts, 202 comments)", "url": "https://reddit.com/r/webdev/comments/1rr0ln1"},
+        {"title": "seomachine: Claude Code workspace for SEO content (2.6K stars, +1288/week)", "url": "https://github.com/TheCraigHewitt/seomachine"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "Web app that periodically queries LLM APIs with product-related prompts and parses responses for mentions. Dashboard in SvelteKit/Next.js. Main challenge is prompt engineering for consistent, comparable results across models. Cron for weekly monitoring.",
+        "time": "1-2 weeks",
+        "cost": "$50-100/mo (LLM API costs for monitoring queries)",
+        "stack": ["Web app", "Database", "Auth", "AI/LLM API", "Background jobs"]
+      }
+    },
+    {
+      "title": "BitRunner",
+      "problem": "Microsoft BitNet (32.3K stars, +2149/day) makes 1-bit LLM inference on CPU practical. 'Big data on the cheapest MacBook' (298pts, 249 comments HN) shows developers want to do more with consumer hardware. Google LiteRT (1.6K stars) adds edge ML. But setting up, managing, and comparing local models across different frameworks (BitNet, llama.cpp, MLX) is still fragmented and painful.",
+      "solution": "One-click local model manager for Mac/Linux. Install, run, and benchmark BitNet, Qwen, Llama, and other open models through a unified interface. Unified API endpoint so your code doesn't change when you swap models. Resource monitoring, side-by-side comparisons. Desktop app with CLI.",
+      "monetization": "Freemium: Free for 3 models, $12/mo Pro with team sharing, model fine-tuning presets, and priority model updates.",
+      "complexity": "medium",
+      "trend_sources": ["github:microsoft/BitNet", "hackernews:47349277", "github:google-ai-edge/LiteRT", "hackernews:47294271"],
+      "category": "Dev Tools",
+      "distribution": [
+        "Post in the 'Big data on cheapest MacBook' HN thread about local model management pain points",
+        "Build a CLI-only version and open-source it on GitHub, track stars",
+        "Post in r/LocalLLaMA: 'One command to install and compare BitNet vs Llama vs Qwen on your Mac'"
+      ],
+      "evidence": [
+        {"title": "Microsoft BitNet: 1-bit LLM inference framework (32.3K stars, +2149/day)", "url": "https://github.com/microsoft/BitNet"},
+        {"title": "Big data on the cheapest MacBook via DuckDB (298pts, 249 comments)", "url": "https://news.ycombinator.com/item?id=47349277"},
+        {"title": "Google LiteRT: On-device ML framework (1.6K stars)", "url": "https://github.com/google-ai-edge/LiteRT"},
+        {"title": "Forcing Flash Attention onto a TPU (35pts, 8 comments)", "url": "https://news.ycombinator.com/item?id=47294271"}
+      ],
+      "ai_build": {
+        "viability": "medium",
+        "details": "Electron/Tauri desktop app wrapping model runtimes (llama.cpp, BitNet, MLX). Unified API server for model inference. Resource monitoring via system APIs. Main challenge: cross-model runtime abstraction and handling different quantization formats.",
+        "time": "3-4 weeks",
+        "cost": "$15/mo (distribution, update server)",
+        "stack": ["Web app", "Database"]
+      }
+    },
+    {
+      "title": "SwarmPredict",
+      "problem": "MiroFish 'swarm intelligence engine for predicting anything' (19.1K stars, +1857/day) and BettaFish 'multi-agent sentiment analysis' (38.3K stars) continue explosive growth. ai-hedge-fund (48.5K stars, +2347/week) shows AI-powered investment analysis demand. US private credit defaults hitting record 9.2% (229pts, 333 comments HN) signals market anxiety that drives demand for prediction tools. But both MiroFish/BettaFish are China-focused — there's a gap for an English-language, polished SaaS product.",
+      "solution": "A prediction platform powered by multi-agent swarm intelligence. Enter a query ('Will Bitcoin hit $100K this quarter?', 'Is the private credit market about to crash?') and swarm agents aggregate signals from social media, news, market data to produce confidence-weighted predictions with source attribution and reasoning chains.",
+      "monetization": "Freemium: Free for public predictions, $29/mo for custom private predictions, $99/mo for API access and custom data sources.",
+      "complexity": "high",
+      "trend_sources": ["github:666ghj/MiroFish", "github:666ghj/BettaFish", "github:virattt/ai-hedge-fund", "hackernews:47349806"],
+      "category": "AI",
+      "distribution": [
+        "Build a free predictions page tracking 10 public market predictions, share accuracy results in r/algotrading",
+        "Post in r/wallstreetbets: 'I built a swarm intelligence tool that tracks social media sentiment on stocks'",
+        "Create a Telegram bot for quick prediction queries and share in crypto/finance communities"
+      ],
+      "evidence": [
+        {"title": "MiroFish: Swarm Intelligence Engine (19.1K stars, +1857/day)", "url": "https://github.com/666ghj/MiroFish"},
+        {"title": "BettaFish: Multi-Agent Sentiment Analysis (38.3K stars, +2284/week)", "url": "https://github.com/666ghj/BettaFish"},
+        {"title": "ai-hedge-fund: AI Hedge Fund Team (48.5K stars, +2347/week)", "url": "https://github.com/virattt/ai-hedge-fund"},
+        {"title": "US private credit defaults hit record 9.2% (229pts, 333 comments)", "url": "https://news.ycombinator.com/item?id=47349806"}
+      ],
+      "ai_build": {
+        "viability": "medium",
+        "details": "Multi-agent system using MiroFish-style swarm coordination. Each agent specializes in a data source (social media, news, markets). Aggregation layer combines signals. Web dashboard in Next.js, Supabase for data. Main challenge: calibration and accuracy measurement.",
+        "time": "3-4 weeks",
+        "cost": "$80-150/mo (multiple LLM APIs + data source APIs)",
+        "stack": ["Web app", "Database", "Auth", "AI/LLM API", "Background jobs", "Real-time/WebSockets"]
+      }
+    },
+    {
+      "title": "FeedbackSwap",
+      "problem": "The creation of new software products is booming with AI, but getting feedback is harder than building. 'Who needs feedback on their product?' (19pts, 41 comments r/SideProject) directly proposes a karma-based review exchange. 'Anyone want honest feedback on their project today?' (18pts, 49 comments r/indiehackers) and 'Show me your startup website and I'll give you actionable feedback' (42pts, 211 comments) show the demand pattern: builders have products but no one to test them.",
+      "solution": "A feedback exchange platform where builders earn karma by reviewing others' products, then spend karma to get reviews of their own. Structured review templates (UX, landing page, onboarding, pricing). AI summarizes feedback themes across reviewers. Gamified with streaks and badges. Free to use, pay to skip the karma queue.",
+      "monetization": "Freemium: Free with karma system, $19/mo to skip queue (instant 5 reviews), $49/mo for weekly scheduled reviews with video recordings.",
+      "complexity": "low",
+      "trend_sources": ["reddit:1rrp75e", "reddit:1rrncz2", "reddit:1rr3voy", "reddit:1rs273j"],
+      "category": "SaaS",
+      "distribution": [
+        "Reply to all 3 'feedback' Reddit threads today with a beta invite",
+        "Post in r/SideProject: 'I built a feedback exchange where you review 3 products and get 3 reviews back'",
+        "Partner with indie hacker communities (IH, WIP, Pioneer) for cross-promotion"
+      ],
+      "evidence": [
+        {"title": "Who needs feedback on their product? Karma-based idea (19pts, 41 comments)", "url": "https://reddit.com/r/SideProject/comments/1rrp75e"},
+        {"title": "Anyone want honest feedback? (18pts, 49 comments)", "url": "https://reddit.com/r/indiehackers/comments/1rrncz2"},
+        {"title": "Show me your startup website and I'll give feedback (42pts, 211 comments)", "url": "https://reddit.com/r/indiehackers/comments/1rr3voy"},
+        {"title": "FeedbackQueue generated 414 signups in 3 weeks (10pts, 47 comments)", "url": "https://reddit.com/r/SaaS/comments/1rs273j"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "SvelteKit/Next.js web app with Supabase. Karma system, product listing, structured review forms. AI summary using Claude API to aggregate feedback themes. Very standard web app — the value is in community and UX.",
+        "time": "1 week",
+        "cost": "$15-20/mo (Supabase + hosting)",
+        "stack": ["Web app", "Database", "Auth", "AI/LLM API"]
+      }
+    },
+    {
+      "title": "ComplianceKit",
+      "problem": "'ISO 27001 is about getting your shit together' (18pts, 19 comments r/SaaS) describes a 70-person company struggling with compliance. 'Vibe-coded app needs a backup plan' (57pts, 52 comments r/Entrepreneur) warns about platform risk. Both signal that SaaS companies reaching enterprise scale need compliance tooling but existing solutions are enterprise-priced. The Malus 'Clean Room as a Service' launch (997pts, 388 comments HN) shows security infrastructure has massive demand.",
+      "solution": "A self-serve compliance toolkit for small SaaS teams (10-100 people). Generates ISO 27001 documentation from your existing setup, auto-discovers risks from your GitHub repos and cloud infrastructure, tracks remediation tasks, and produces audit-ready reports. Think 'Notion meets security compliance'.",
+      "monetization": "SaaS: $49/mo for startups (<50 people) with auto-generated docs, $149/mo for growth with cloud infrastructure scanning, $499/mo for enterprise with auditor portal.",
+      "complexity": "medium",
+      "trend_sources": ["reddit:1rs1rpl", "reddit:1rrjciw", "hackernews:47350424"],
+      "category": "SaaS",
+      "distribution": [
+        "Reply to the ISO 27001 Reddit thread offering a free compliance gap analysis",
+        "Post in r/SaaS: 'I automated 80% of ISO 27001 documentation for our startup — here's how'",
+        "Target enterprise-selling SaaS founders who keep losing deals to compliance requirements"
+      ],
+      "evidence": [
+        {"title": "ISO 27001 is about getting your shit together (18pts, 19 comments)", "url": "https://reddit.com/r/SaaS/comments/1rs1rpl"},
+        {"title": "Vibe-coded app needs a backup plan (57pts, 52 comments)", "url": "https://reddit.com/r/Entrepreneur/comments/1rrjciw"},
+        {"title": "Malus – Clean Room as a Service (997pts, 388 comments)", "url": "https://news.ycombinator.com/item?id=47350424"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "Web app with document templates, risk assessment forms, and task tracking. Claude API for auto-generating policy documents from questionnaire answers. GitHub API for repo security scanning. The complexity is in the compliance knowledge, not the code.",
+        "time": "2-3 weeks",
+        "cost": "$30-50/mo (LLM API + hosting + DB)",
+        "stack": ["Web app", "Database", "Auth", "AI/LLM API", "Background jobs"]
+      }
+    },
+    {
+      "title": "MorphConvert",
+      "problem": "A developer built Morpholder — a macOS utility that converts files just by renaming them in Finder (41pts, 20 comments r/SideProject). This hit a nerve because file conversion is a constant friction: opening converter apps, uploading, waiting, downloading. The existing tools (CloudConvert, Zamzar) are web-based and clunky for power users who want inline, instant conversion.",
+      "solution": "A lightweight cross-platform file conversion tool that works as a system service. Drag files to a menu bar dropzone or use CLI: 'convert photo.heic photo.jpg'. Supports image, video, audio, document, and code format conversions. All processing happens locally — no files leave your machine. Plugin system for custom converters.",
+      "monetization": "One-time purchase: $19 personal, $49 team license (5 seats). Free tier with basic conversions (image formats), paid unlocks video/audio/document conversions.",
+      "complexity": "low",
+      "trend_sources": ["reddit:1rrpddr"],
+      "category": "Consumer",
+      "distribution": [
+        "Share in r/SideProject: 'I built a file converter that works by just renaming files — no upload needed'",
+        "Post on Product Hunt targeting the 'utility app' category",
+        "List on Setapp marketplace for recurring revenue"
+      ],
+      "evidence": [
+        {"title": "File converter that works by renaming files in Finder (41pts, 20 comments)", "url": "https://reddit.com/r/SideProject/comments/1rrpddr"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "Tauri desktop app wrapping FFmpeg (video/audio), ImageMagick (images), and Pandoc (documents). File system watcher for drag-and-drop. Menu bar UI with SwiftUI/GTK. The converters are well-established CLI tools — the value is in the UX wrapper.",
+        "time": "1 week",
+        "cost": "$10 (domain + code signing certificate)",
+        "stack": ["Static site"]
+      }
+    }
+  ]
+}

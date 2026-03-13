@@ -1,0 +1,413 @@
+{
+  "date": "2026-03-11",
+  "generated_at": "2026-03-11T14:35:00.000Z",
+  "trend_data": {
+    "hackernews_stories": 30,
+    "reddit_posts": 49,
+    "github_repos": 20,
+    "google_trends": 10,
+    "producthunt_products": 0
+  },
+  "recurring_themes": [
+    {
+      "theme": "AI code quality & vibe coding verification",
+      "days_seen": 8,
+      "dates": ["2026-03-11", "2026-03-10", "2026-03-09", "2026-03-08", "2026-03-07", "2026-03-05", "2026-03-04", "2026-03-03"],
+      "past_idea_titles": ["SpecPilot", "AgentGuard", "VibeShip", "CommitCraft"],
+      "signal_strength": "strong",
+      "note": "Today: Debian's non-decision on AI contributions (353pts, 266 comments) plus Claude Code review pricing discussion ($15-25/PR, 66pts) show the tension between AI-generated code quality and cost. The conversation is shifting from 'can AI write code' to 'who governs AI code and at what cost'."
+    },
+    {
+      "theme": "Autonomous agent orchestration & scheduling",
+      "days_seen": 8,
+      "dates": ["2026-03-11", "2026-03-10", "2026-03-09", "2026-03-08", "2026-03-07", "2026-03-05", "2026-03-04", "2026-03-03"],
+      "past_idea_titles": ["AgentBench", "AgentTestKit", "AgentOrch", "AgentDeploy"],
+      "signal_strength": "strong",
+      "note": "STRONGEST signal today: geohot's '69 agents' post (512pts, 360 comments) and 'Agents that run while I sleep' (375pts, 425 comments) are the two highest-engagement HN stories. Combined with 'Levels of Agentic Engineering' (230pts), deer-flow (29K stars), and msitarzewski AI agency (28K stars, +6205/day). The demand has shifted from 'build agents' to 'schedule, monitor, and orchestrate agents autonomously'."
+    },
+    {
+      "theme": "AI agent memory & persistence",
+      "days_seen": 8,
+      "dates": ["2026-03-11", "2026-03-10", "2026-03-09", "2026-03-08", "2026-03-07", "2026-03-05", "2026-03-04", "2026-03-03"],
+      "past_idea_titles": ["LocalRecall", "AgentMem"],
+      "signal_strength": "strong",
+      "note": "hermes-agent 'grows with you' continues trending (+1204 stars/day, 4.7K total). airi companion at 32.5K stars (+10249/week). Memory is the missing standard layer across all agent frameworks."
+    },
+    {
+      "theme": "Website-to-API / intelligent web scraping",
+      "days_seen": 8,
+      "dates": ["2026-03-11", "2026-03-10", "2026-03-09", "2026-03-08", "2026-03-07", "2026-03-05", "2026-03-04", "2026-03-03"],
+      "past_idea_titles": ["ScrapeForge"],
+      "signal_strength": "strong",
+      "note": "MAJOR new signal: Cloudflare crawl endpoint (378pts, 148 comments) — Cloudflare entering the crawling space validates enormous demand. Combined with alibaba page-agent (+1206 stars/day) for browser-based extraction. Infrastructure demand is permanent and growing."
+    },
+    {
+      "theme": "MCP / Skills ecosystem & marketplace",
+      "days_seen": 8,
+      "dates": ["2026-03-11", "2026-03-10", "2026-03-09", "2026-03-08", "2026-03-07", "2026-03-05", "2026-03-04"],
+      "past_idea_titles": ["MCPHub", "SkillForge", "ClaudeForge"],
+      "signal_strength": "strong",
+      "note": "claude-skills (4.2K stars, +1561/week) and obra skills framework (77.5K stars, +1477/day) both trending. Two parallel ecosystems maturing simultaneously. Cross-platform skills curation remains wide-open opportunity."
+    },
+    {
+      "theme": "Local/edge AI models & on-device inference",
+      "days_seen": 8,
+      "dates": ["2026-03-11", "2026-03-10", "2026-03-09", "2026-03-08", "2026-03-07", "2026-03-05", "2026-03-04", "2026-03-03"],
+      "past_idea_titles": ["QwenKit", "OpenWeight", "BitRunner"],
+      "signal_strength": "strong",
+      "note": "Microsoft BitNet 100B 1-bit model for local CPUs (107pts, 62 comments) is a breakthrough signal — 100B params running on CPU only. RunAnywhere YC W26 for Apple Silicon inference (228pts, 134 comments). Qwen-Agent framework (15.4K stars, +1835/week). Edge AI becoming practical at scale."
+    },
+    {
+      "theme": "AI security testing & agent red teaming",
+      "days_seen": 8,
+      "dates": ["2026-03-11", "2026-03-10", "2026-03-09", "2026-03-08", "2026-03-07", "2026-03-05", "2026-03-04", "2026-03-03"],
+      "past_idea_titles": ["CodeLeakGuard", "PromptVault", "SecurityPilot", "AgentSafe"],
+      "signal_strength": "strong",
+      "note": "'AI Agent Hacks McKinsey' (45pts, 17 comments) demonstrates real-world agent exploitation. promptfoo (12.3K stars, +728/day) for AI red teaming/pentesting. DOGE data breach whistleblower (98pts) reinforces data security concerns."
+    },
+    {
+      "theme": "Swarm intelligence & collective AI",
+      "days_seen": 3,
+      "dates": ["2026-03-11", "2026-03-10", "2026-03-09"],
+      "past_idea_titles": ["SwarmSense"],
+      "signal_strength": "moderate",
+      "note": "MiroFish day 3 (16.2K stars, +2909/day) and BettaFish (38K stars, +1886/week) both continue growing. Swarm coordination as distinct paradigm from task-delegation orchestration."
+    },
+    {
+      "theme": "AI design quality for vibe-coded apps",
+      "days_seen": 4,
+      "dates": ["2026-03-11", "2026-03-10", "2026-03-09", "2026-03-08"],
+      "past_idea_titles": ["DesignPilot", "DesignSpec"],
+      "signal_strength": "moderate",
+      "note": "Reddit: 'I'm a designer with a decade of experience and I genuinely don't know what to do next' (20pts, 33 comments) — the AI displacement anxiety is growing. Design quality gap remains real."
+    },
+    {
+      "theme": "AI SEO / LLM visibility",
+      "days_seen": 2,
+      "dates": ["2026-03-11", "2026-03-10"],
+      "past_idea_titles": ["PagePilot"],
+      "signal_strength": "emerging",
+      "note": "NEW SIGNAL: Reddit post 'I got Gemini and ChatGPT to know my startup in 48 hours' (57pts, 25 comments) + seomachine (2.5K stars, +1521/week for Claude Code SEO). New category: optimize for AI chatbot discovery, not just Google."
+    },
+    {
+      "theme": "SaaS churn & retention automation",
+      "days_seen": 2,
+      "dates": ["2026-03-11", "2026-03-10"],
+      "past_idea_titles": [],
+      "signal_strength": "emerging",
+      "note": "NEW: Three strong Reddit signals in one day — '$180K ARR lost to competitor' (334pts, 112 comments), '94% churn rate fix' (13pts), 'Cancel flow automation beta' (9pts, 41 comments). Churn is clearly top-of-mind for indie SaaS founders."
+    }
+  ],
+  "ideas": [
+    {
+      "title": "AgentCron",
+      "problem": "Developers want agents running overnight but have no way to schedule, monitor, retry, or track costs across multiple autonomous agent runs. The 'agents while I sleep' pattern is emerging but there's no tooling for it.",
+      "solution": "A dashboard and scheduler for autonomous AI agents. Define agent tasks with cron-like schedules, set cost limits, get Slack/email alerts on completion or failure, view run logs and token usage. Works with Claude Code, Codex, and OpenClaw.",
+      "monetization": "SaaS subscription: Free for 5 scheduled runs/month, $19/mo for 50, $49/mo for unlimited with team features.",
+      "complexity": "medium",
+      "trend_sources": ["hackernews:47332074", "hackernews:47327559", "hackernews:47320600", "github:bytedance/deer-flow", "github:sponsors/msitarzewski"],
+      "category": "Dev Tools",
+      "validation": [
+        "Post in the HN 'agents while I sleep' thread asking what scheduling tool people use",
+        "Build a landing page targeting 'autonomous agent monitoring' and share in r/SideProject",
+        "DM 10 developers from the HN thread about their current agent scheduling workflow"
+      ],
+      "evidence": [
+        {"title": "geohot: Running 69 agents — create value for others", "url": "https://news.ycombinator.com/item?id=47332074"},
+        {"title": "Agents that run while I sleep (375pts, 425 comments)", "url": "https://news.ycombinator.com/item?id=47327559"},
+        {"title": "Levels of Agentic Engineering (230pts, 105 comments)", "url": "https://news.ycombinator.com/item?id=47320614"},
+        {"title": "deer-flow: SuperAgent harness (29K stars)", "url": "https://github.com/bytedance/deer-flow"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "SvelteKit/Next.js dashboard, cron scheduler in Node.js, agent process management via child processes or Docker. Key challenge is abstracting across different agent CLIs (claude, codex, openclaw) to capture output and costs uniformly.",
+        "time": "2-3 weeks",
+        "cost": "$20-40/mo (hosting + DB)",
+        "stack": ["Web app", "Database", "Auth", "Background jobs", "Real-time/WebSockets"]
+      }
+    },
+    {
+      "title": "CrawlKit",
+      "problem": "Cloudflare just launched a crawl endpoint, but developers still need to stitch together multiple crawling approaches (Cloudflare, direct fetch, headless browser, proxy rotation) depending on the target site. There's no unified SDK.",
+      "solution": "A single SDK that auto-selects the best crawling method per target URL. Tries Cloudflare crawl first, falls back to direct fetch, then headless browser. Returns clean structured data. Pay-per-crawl pricing.",
+      "monetization": "Usage-based: 1,000 free crawls/month, then $0.001-0.01 per crawl depending on method. $29/mo flat for indie plan.",
+      "complexity": "medium",
+      "trend_sources": ["hackernews:47329557", "github:alibaba/page-agent"],
+      "category": "Dev Tools",
+      "validation": [
+        "Post a 'What crawling tool do you use?' poll in r/webdev",
+        "Build the SDK with just Cloudflare + direct fetch support and open-source it on GitHub",
+        "Cold DM 10 people from the Cloudflare HN thread asking about their crawling stack"
+      ],
+      "evidence": [
+        {"title": "Cloudflare crawl endpoint (378pts, 148 comments)", "url": "https://news.ycombinator.com/item?id=47329557"},
+        {"title": "alibaba page-agent: Natural language web control (4.4K stars, +1206/day)", "url": "https://github.com/alibaba/page-agent"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "Node.js/Python SDK wrapping multiple crawling backends. The SDK itself is straightforward; the value is in smart routing logic and fallback chains. Monetization via proxy to hosted infrastructure.",
+        "time": "1-2 weeks",
+        "cost": "$10-30/mo (proxy + hosting)",
+        "stack": ["Web app", "Background jobs", "Static site"]
+      }
+    },
+    {
+      "title": "LLMRank",
+      "problem": "Founders are optimizing for Google SEO but LLMs are becoming a primary discovery channel. When someone asks ChatGPT or Claude 'what's the best X', your product needs to appear — and there's no tool to monitor or improve this.",
+      "solution": "Monitor how major LLMs (ChatGPT, Claude, Gemini) describe your product. Track mentions over time, get actionable recommendations to improve LLM visibility (structured data, authoritative backlinks, Wikipedia presence). Weekly reports.",
+      "monetization": "SaaS: $29/mo for 1 product, $79/mo for 5 products, $199/mo for agencies.",
+      "complexity": "medium",
+      "trend_sources": ["reddit:1rqmcqg", "github:TheCraigHewitt/seomachine"],
+      "category": "SaaS",
+      "validation": [
+        "Ask 20 founders in r/SaaS if they've checked what ChatGPT says about their product",
+        "Build a free 'LLM visibility check' tool and share on Product Hunt",
+        "Run a survey: 'How important is AI chatbot discovery vs Google for your SaaS?'"
+      ],
+      "evidence": [
+        {"title": "I got Gemini and ChatGPT to know my startup in 48 hours (57pts, 25 comments)", "url": "https://reddit.com/r/SideProject/comments/1rqmcqg"},
+        {"title": "seomachine: Claude Code workspace for SEO content (2.5K stars)", "url": "https://github.com/TheCraigHewitt/seomachine"},
+        {"title": "QuitGPT campaign — Claude surges to #1 App Store (1107pts)", "url": "https://reddit.com/r/Entrepreneur/comments/1rpowo2"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "Web app that periodically queries LLM APIs with product-related prompts and parses responses. Main challenge is prompt engineering to get consistent, comparable results across models. Dashboard in SvelteKit/Next.js.",
+        "time": "1-2 weeks",
+        "cost": "$50-100/mo (LLM API costs for monitoring queries)",
+        "stack": ["Web app", "Database", "Auth", "AI/LLM API", "Background jobs"]
+      }
+    },
+    {
+      "title": "ChurnGuard",
+      "problem": "Indie SaaS founders lose 85-94% of signups within 30 days and their cancel flows collect useless feedback. Exit surveys get gamed, 'Other' is the top reason, and cold follow-up emails have terrible response rates.",
+      "solution": "AI-powered cancel flow that has a real conversation with churning users instead of a checkbox form. Extracts honest reasons, offers targeted retention actions (discounts, feature unlocks, pause plans), and aggregates patterns across your user base.",
+      "monetization": "SaaS: Free for < 100 MAU, $19/mo for 1K MAU, $49/mo for 10K MAU.",
+      "complexity": "medium",
+      "trend_sources": ["reddit:1rq5xqn", "reddit:1rqu3fs", "reddit:1roc2mx"],
+      "category": "SaaS",
+      "validation": [
+        "Reply to the '$180K ARR lost' thread asking if they'd pay for intelligent cancel flows",
+        "Build a Stripe-integrated cancel flow widget and offer free beta access to 10 SaaS founders",
+        "Post 'What does your cancel flow look like?' in r/SaaS and track responses"
+      ],
+      "evidence": [
+        {"title": "We lost $180K ARR to a competitor in one month (334pts, 112 comments)", "url": "https://reddit.com/r/SaaS/comments/1rq5xqn"},
+        {"title": "94% churn rate in month 1 — here's what fixed it (13pts)", "url": "https://reddit.com/r/SaaS/comments/1rqu3fs"},
+        {"title": "Cancel flow automation — looking for beta testers (9pts, 41 comments)", "url": "https://reddit.com/r/indiehackers/comments/1roc2mx"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "Embeddable widget (JS snippet) + Stripe webhook integration. AI conversation via Claude Haiku for cost efficiency. Dashboard for churn analytics. Main challenge: Stripe integration and real-time AI chat in a lightweight widget.",
+        "time": "2-3 weeks",
+        "cost": "$20-40/mo (LLM API + hosting)",
+        "stack": ["Web app", "Database", "Auth", "AI/LLM API", "Payments"]
+      }
+    },
+    {
+      "title": "BitRunner",
+      "problem": "Microsoft released BitNet (100B params on CPU), RunAnywhere targets Apple Silicon, but developers still struggle to set up, manage, and compare local models. Each framework has different install steps, configs, and APIs.",
+      "solution": "One-click local model manager for Mac. Install, run, and benchmark BitNet, Qwen, Llama, and other open models. Unified API endpoint, side-by-side comparison, resource monitoring. Desktop app with CLI.",
+      "monetization": "Freemium: Free for 3 models, $12/mo Pro with team sharing, model fine-tuning presets, and priority model updates.",
+      "complexity": "medium",
+      "trend_sources": ["hackernews:47334694", "hackernews:47326101", "github:QwenLM/Qwen-Agent"],
+      "category": "Dev Tools",
+      "validation": [
+        "Post in the BitNet HN thread asking what people use to manage local models",
+        "Build a CLI-only version and open-source it, track GitHub stars",
+        "Survey 20 developers: 'How many local models do you run and what's your biggest pain?'"
+      ],
+      "evidence": [
+        {"title": "Microsoft BitNet: 100B Param 1-Bit model for local CPUs (107pts, 62 comments)", "url": "https://news.ycombinator.com/item?id=47334694"},
+        {"title": "RunAnywhere (YC W26): Faster AI Inference on Apple Silicon (228pts, 134 comments)", "url": "https://news.ycombinator.com/item?id=47326101"},
+        {"title": "Qwen-Agent framework (15.4K stars, +1835/week)", "url": "https://github.com/QwenLM/Qwen-Agent"}
+      ],
+      "ai_build": {
+        "viability": "medium",
+        "details": "Electron/Tauri desktop app wrapping model runtimes. Needs to handle multiple ML frameworks (llama.cpp, BitNet runtime, etc.). Resource monitoring via system APIs. Main challenge: cross-model runtime abstraction.",
+        "time": "3-4 weeks",
+        "cost": "$15/mo (distribution, update server)",
+        "stack": ["Web app", "Database"]
+      }
+    },
+    {
+      "title": "AgentPen",
+      "problem": "AI agents are being deployed in production (McKinsey, enterprises) but they're vulnerable to prompt injection, data exfiltration, and privilege escalation. Security teams lack automated tools to red-team their own AI systems.",
+      "solution": "Automated AI red teaming SaaS. Point it at your agent's API endpoint, it runs a suite of attack vectors (prompt injection, jailbreaks, data leaks, privilege escalation) and generates a security report with severity ratings and fix recommendations.",
+      "monetization": "SaaS: $49/mo for 10 scans/month, $199/mo for continuous monitoring, enterprise custom pricing.",
+      "complexity": "medium",
+      "trend_sources": ["hackernews:47333627", "github:promptfoo/promptfoo"],
+      "category": "SaaS",
+      "validation": [
+        "Post 'How do you security test your AI agents?' in r/MachineLearning",
+        "Build a free single-scan tool and share on HN as a Show HN",
+        "Reach out to 10 companies using AI agents (from job postings) and offer free security audits"
+      ],
+      "evidence": [
+        {"title": "AI Agent Hacks McKinsey (45pts, 17 comments)", "url": "https://news.ycombinator.com/item?id=47333627"},
+        {"title": "promptfoo: AI red teaming and pentesting (12.3K stars, +728/day)", "url": "https://github.com/promptfoo/promptfoo"},
+        {"title": "DOGE data breach whistleblower (98pts)", "url": "https://news.ycombinator.com/item?id=47335572"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "Web app with attack vector library. Each scan runs a series of API calls with adversarial prompts. Uses LLM to evaluate responses for information leakage. Main challenge: building a comprehensive attack vector library.",
+        "time": "2-3 weeks",
+        "cost": "$50-100/mo (LLM API for attack generation + hosting)",
+        "stack": ["Web app", "Database", "Auth", "AI/LLM API", "Background jobs", "Payments"]
+      }
+    },
+    {
+      "title": "SkillForge",
+      "problem": "The agent skills ecosystem is fragmenting across Claude Code, Codex, and OpenClaw. Developers building skills have to publish to multiple registries. Users can't discover skills across platforms or compare quality.",
+      "solution": "Cross-platform skills marketplace. Publish once, distribute to all agent platforms. Quality ratings, install counts, compatibility badges. Revenue sharing for skill creators.",
+      "monetization": "Marketplace fees: 15% commission on paid skills. Free tier for open-source skills. $29/mo publisher pro with analytics and priority listing.",
+      "complexity": "medium",
+      "trend_sources": ["github:alirezarezvani/claude-skills", "github:sponsors/obra"],
+      "category": "Dev Tools",
+      "validation": [
+        "Survey 20 skill creators on GitHub about their distribution pain points",
+        "Build a directory-only MVP (no commerce) and list the top 100 skills from all platforms",
+        "Post 'Where do you discover agent skills?' in relevant Discord communities"
+      ],
+      "evidence": [
+        {"title": "claude-skills: 180+ production-ready skills (4.2K stars, +1561/week)", "url": "https://github.com/alirezarezvani/claude-skills"},
+        {"title": "obra: Agentic skills framework (77.5K stars, +1477/day)", "url": "https://github.com/sponsors/obra"},
+        {"title": "notebooklm-py: Unofficial API as Claude Code skill (4.9K stars, +2068/week)", "url": "https://github.com/teng-lin/notebooklm-py"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "Web marketplace with skill parsing, compatibility checking, and one-click install. The hardest part is building adapters for each platform's skill format. Start with Claude Code + Codex.",
+        "time": "2-3 weeks",
+        "cost": "$20-40/mo (hosting + CDN for skill packages)",
+        "stack": ["Web app", "Database", "Auth", "Payments"]
+      }
+    },
+    {
+      "title": "PagePilot",
+      "problem": "Business users want to automate web workflows (fill forms, extract data, click through sequences) but browser automation tools like Playwright require coding. Natural language browser control is possible but no one has packaged it for non-developers.",
+      "solution": "Browser extension + dashboard where non-technical users describe web automations in plain English. Records the automation, lets users replay it on schedule, handles dynamic content. Aimed at ops teams, not developers.",
+      "monetization": "SaaS: Free for 5 automations, $19/mo for 50, $49/mo for unlimited with team sharing.",
+      "complexity": "medium",
+      "trend_sources": ["github:alibaba/page-agent", "reddit:1rqqg0t"],
+      "category": "SaaS",
+      "validation": [
+        "Post in r/Entrepreneur asking 'What repetitive web tasks do you wish you could automate?'",
+        "Build a Chrome extension demo that automates one common workflow (e.g., LinkedIn connection requests) and share a video",
+        "Target the 'manual local prospecting' crowd from today's Reddit thread"
+      ],
+      "evidence": [
+        {"title": "alibaba page-agent: Control web interfaces with natural language (4.4K stars, +1206/day)", "url": "https://github.com/alibaba/page-agent"},
+        {"title": "Browser game arguing with corporate AI bots using consumer laws (105pts, 17 comments)", "url": "https://reddit.com/r/webdev/comments/1rqqg0t"},
+        {"title": "Manual local prospecting is more common than I thought (8pts)", "url": "https://reddit.com/r/Entrepreneur/comments/1rq5yof"}
+      ],
+      "ai_build": {
+        "viability": "medium",
+        "details": "Chrome extension with Playwright-like recording + LLM for natural language → action translation. Backend for scheduling and replay. Main challenges: reliable element selection across dynamic sites, handling auth/captchas.",
+        "time": "3-4 weeks",
+        "cost": "$30-60/mo (LLM API + cloud browser infra)",
+        "stack": ["Web app", "Database", "Auth", "AI/LLM API", "Background jobs", "Payments"]
+      }
+    },
+    {
+      "title": "SwarmSight",
+      "problem": "Individual AI model predictions are noisy and unreliable. Swarm intelligence can aggregate diverse signals (social media sentiment, market data, expert opinions) into more accurate collective predictions, but there's no accessible platform for this.",
+      "solution": "Prediction platform powered by multi-agent swarm intelligence. Users submit questions (market moves, election outcomes, tech trends), swarm agents aggregate signals from diverse sources, and produce confidence-weighted predictions with reasoning.",
+      "monetization": "SaaS: Free for public predictions, $29/mo for custom private predictions, $99/mo for API access.",
+      "complexity": "high",
+      "trend_sources": ["github:666ghj/MiroFish", "github:666ghj/BettaFish"],
+      "category": "AI",
+      "validation": [
+        "Set up a free predictions page making 10 public predictions and track accuracy over 2 weeks",
+        "Post 'Would you pay for AI-powered market predictions?' in r/algotrading",
+        "Build a Telegram bot that answers prediction queries and track engagement"
+      ],
+      "evidence": [
+        {"title": "MiroFish: Swarm Intelligence Engine, Predicting Anything (16.2K stars, +2909/day)", "url": "https://github.com/666ghj/MiroFish"},
+        {"title": "BettaFish: Multi-Agent Sentiment Analysis (38K stars, +1886/week)", "url": "https://github.com/666ghj/BettaFish"},
+        {"title": "ai-hedge-fund: AI Hedge Fund Team (48K stars)", "url": "https://github.com/virattt/ai-hedge-fund"}
+      ],
+      "ai_build": {
+        "viability": "medium",
+        "details": "Multi-agent system using MiroFish-style swarm coordination. Each agent specializes in a data source (social media, news, markets). Aggregation layer combines signals. Main challenge: calibration and accuracy measurement.",
+        "time": "3-4 weeks",
+        "cost": "$80-150/mo (multiple LLM APIs + data source APIs)",
+        "stack": ["Web app", "Database", "Auth", "AI/LLM API", "Background jobs", "Real-time/WebSockets"]
+      }
+    },
+    {
+      "title": "GDPRKit",
+      "problem": "Indie developers ship apps that are technically illegal in Europe without knowing it. GDPR requires account deletion, data export, consent management, and cookie compliance — and most MVPs have none of these.",
+      "solution": "Drop-in compliance module. One npm package that adds: real account deletion (not soft-delete), data export endpoint, consent management UI, cookie banner, and data processing audit log. Framework-agnostic with React/Svelte/Vue components.",
+      "monetization": "Open core: Free for personal projects, $19/mo for commercial use with audit logs, $49/mo with compliance dashboard and automated DPIA.",
+      "complexity": "medium",
+      "trend_sources": ["reddit:1rquocc", "hackernews:47324087"],
+      "category": "Dev Tools",
+      "validation": [
+        "Reply to the 'my app was illegal in Europe' thread with a landing page",
+        "Build the npm package with just account deletion + data export and post on r/webdev",
+        "Survey 20 indie developers: 'How confident are you that your app is GDPR compliant?'"
+      ],
+      "evidence": [
+        {"title": "I didn't know my app was illegal in Europe — 6 missing features (11pts)", "url": "https://reddit.com/r/SaaS/comments/1rquocc"},
+        {"title": "Debian decides not to decide on AI-generated contributions (353pts, 266 comments)", "url": "https://news.ycombinator.com/item?id=47324087"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "npm package with framework adapters. Server-side handlers for deletion/export, client-side consent UI. Supabase/Prisma integration for common ORMs. Straightforward to build, the value is in completeness and legal accuracy.",
+        "time": "1-2 weeks",
+        "cost": "$10/mo (docs site + npm publishing)",
+        "stack": ["Web app", "Database"]
+      }
+    },
+    {
+      "title": "AgentMem",
+      "problem": "Every agent framework needs memory but none ship it as a standard layer. Agents can't remember users across sessions, learn from past interactions, or build cumulative knowledge. Each developer reinvents memory storage from scratch.",
+      "solution": "Pluggable memory layer that works across agent frameworks. Semantic memory (facts about users), episodic memory (past interactions), procedural memory (learned workflows). Simple API: remember(), recall(), forget(). SDKs for Python and TypeScript.",
+      "monetization": "Usage-based: Free for 1K memories, $9/mo for 100K, $49/mo for unlimited with vector search and analytics.",
+      "complexity": "medium",
+      "trend_sources": ["github:NousResearch/hermes-agent", "github:moeru-ai/airi", "github:bytedance/deer-flow"],
+      "category": "AI",
+      "validation": [
+        "Post 'How do you handle agent memory?' in Claude Code and Codex community forums",
+        "Build an open-source memory SDK and integrate with one popular framework as a demo",
+        "Track how many agent repos on GitHub have custom memory implementations"
+      ],
+      "evidence": [
+        {"title": "hermes-agent: The agent that grows with you (4.7K stars, +1204/day)", "url": "https://github.com/NousResearch/hermes-agent"},
+        {"title": "airi: Self-hosted AI companion (32.5K stars, +10249/week)", "url": "https://github.com/moeru-ai/airi"},
+        {"title": "deer-flow: SuperAgent with memories (29K stars, +4339/week)", "url": "https://github.com/bytedance/deer-flow"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "TypeScript/Python SDK backed by vector DB (pgvector or Pinecone). Memory categorization via embeddings. API server for hosted option. Main challenge: making memory retrieval fast and contextually relevant.",
+        "time": "2-3 weeks",
+        "cost": "$20-50/mo (vector DB hosting + embeddings API)",
+        "stack": ["Web app", "Database", "AI/LLM API"]
+      }
+    },
+    {
+      "title": "VoiceShip",
+      "problem": "Open-source TTS models (fish-speech, TADA) are excellent but deploying them requires GPU infra, model management, and API wrapping. Indie developers want great voice synthesis with simple API access and predictable pricing.",
+      "solution": "Hosted TTS API wrapping the best open-source voice models. Simple REST API with voice selection, speed control, SSML support. Self-hostable option for teams that want to run on their own GPUs.",
+      "monetization": "Usage-based: 10K characters free/month, $0.01 per 1K characters after. $49/mo flat for high-volume.",
+      "complexity": "high",
+      "trend_sources": ["hackernews:47332054", "github:fishaudio/fish-speech"],
+      "category": "Dev Tools",
+      "validation": [
+        "Post 'What TTS API do you use and what do you pay?' in r/webdev",
+        "Build a free demo page where people can try different voices and track interest",
+        "Compare pricing of ElevenLabs, Play.ht, and propose 50% cheaper alternative"
+      ],
+      "evidence": [
+        {"title": "TADA: Fast Speech Generation via Text-Acoustic Synchronization (73pts, 19 comments)", "url": "https://news.ycombinator.com/item?id=47332054"},
+        {"title": "fish-speech: SOTA Open Source TTS (25.6K stars, +277/day)", "url": "https://github.com/fishaudio/fish-speech"}
+      ],
+      "ai_build": {
+        "viability": "medium",
+        "details": "GPU-backed API server wrapping open-source TTS models. FastAPI/Express backend, queue system for async generation. Main challenge: GPU infrastructure costs and latency optimization.",
+        "time": "2-3 weeks",
+        "cost": "$100-300/mo (GPU hosting)",
+        "stack": ["Web app", "Database", "Auth", "GPU/ML infra", "Background jobs", "Payments"]
+      }
+    }
+  ]
+}
