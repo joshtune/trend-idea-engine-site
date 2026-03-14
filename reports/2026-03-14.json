@@ -1,0 +1,408 @@
+{
+  "date": "2026-03-14",
+  "generated_at": "2026-03-14T17:00:00Z",
+  "trend_data": {
+    "hackernews_stories": 30,
+    "reddit_posts": 50,
+    "github_repos": 20,
+    "google_trends": 10,
+    "producthunt_products": 20
+  },
+  "recurring_themes": [
+    {
+      "theme": "AI agent orchestration & infrastructure",
+      "days_seen": 7,
+      "dates": ["2026-03-14", "2026-03-13", "2026-03-11", "2026-03-10", "2026-03-09", "2026-03-08", "2026-03-07"],
+      "past_idea_titles": ["AgentOrch", "AgentCron", "AgentDeploy", "AgentSafe"],
+      "signal_strength": "strong",
+      "note": "Every day brings new agent orchestration tools. Today: deer-flow by ByteDance (30.4K stars), InsForge agent backend (3.9K stars, +766/day), Spine Swarm YC launch (98pts HN), obra skills framework (82.5K stars). The infrastructure layer for agents is consolidating."
+    },
+    {
+      "theme": "AI code quality & vibe coding verification",
+      "days_seen": 7,
+      "dates": ["2026-03-14", "2026-03-13", "2026-03-11", "2026-03-10", "2026-03-09", "2026-03-08", "2026-03-07"],
+      "past_idea_titles": ["AgentGuard", "DesignSpec", "VibeAudit", "CommitCraft"],
+      "signal_strength": "strong",
+      "note": "Developer burnout from AI pressure hit a peak today: 'Anyone else done?' (761pts, 385 comments r/webdev). Combined with 'vibe-coded app needs a backup plan' (80pts r/Entrepreneur) and 'If SaaS becomes just vibe coding, whats the point?' — the quality gap in AI-generated code is a persistent pain."
+    },
+    {
+      "theme": "AI agent memory & context management",
+      "days_seen": 7,
+      "dates": ["2026-03-14", "2026-03-13", "2026-03-11", "2026-03-10", "2026-03-09", "2026-03-08", "2026-03-07"],
+      "past_idea_titles": ["AgentMem", "ContextPack"],
+      "signal_strength": "strong",
+      "note": "1M context GA for Claude (750pts HN) unlocks new use cases. OpenViking context database (9.5K stars, +2191/day) and Context Gateway (79pts HN) both trending. Memory and context remain the bottleneck for useful agents."
+    },
+    {
+      "theme": "AI security testing & agent safety",
+      "days_seen": 7,
+      "dates": ["2026-03-14", "2026-03-13", "2026-03-11", "2026-03-10", "2026-03-09", "2026-03-08", "2026-03-07"],
+      "past_idea_titles": ["PromptVault", "AgentSafe", "SecurityPilot", "RAGShield", "KeySentry"],
+      "signal_strength": "strong",
+      "note": "39 Algolia admin keys exposed across open source docs (131pts HN). promptfoo AI red teaming (15.6K stars, +3846/week). API key leaks and agent security remain unsolved problems."
+    },
+    {
+      "theme": "MCP / Skills ecosystem & Claude Code marketplace",
+      "days_seen": 7,
+      "dates": ["2026-03-14", "2026-03-13", "2026-03-11", "2026-03-10", "2026-03-09", "2026-03-08", "2026-03-07"],
+      "past_idea_titles": ["ClaudeForge", "MCPHub"],
+      "signal_strength": "strong",
+      "note": "claude-plugins-official (11K stars) trending. GStack 'Use Garry Tan's Claude Code setup' (373 votes PH). obra skills framework (82.5K stars). The plugin/skill ecosystem is exploding and curated distribution is the gap."
+    },
+    {
+      "theme": "Local/edge AI models & on-device inference",
+      "days_seen": 7,
+      "dates": ["2026-03-14", "2026-03-13", "2026-03-11", "2026-03-10", "2026-03-09", "2026-03-08", "2026-03-07"],
+      "past_idea_titles": ["BitRunner", "LocalBench", "QwenKit"],
+      "signal_strength": "strong",
+      "note": "'Can I run AI locally?' was #1 on HN today (1228pts, 303 comments). BitNet (34.5K stars), heretic censorship removal (13.2K stars, +1283/day). Running models locally is mainstream demand now."
+    },
+    {
+      "theme": "Website-to-API / AI browser automation",
+      "days_seen": 7,
+      "dates": ["2026-03-14", "2026-03-13", "2026-03-11", "2026-03-10", "2026-03-09", "2026-03-08", "2026-03-07"],
+      "past_idea_titles": ["ScrapeForge", "CrawlKit"],
+      "signal_strength": "strong",
+      "note": "Lightpanda headless browser (16.2K stars, +2093/day) is the fastest-growing repo today. Perplexity Computer Skills (441 votes PH #1) shows mainstream demand for AI controlling browsers."
+    },
+    {
+      "theme": "Developer burnout from AI-augmented work",
+      "days_seen": 2,
+      "dates": ["2026-03-14", "2026-03-13"],
+      "past_idea_titles": [],
+      "signal_strength": "emerging",
+      "note": "'Anyone else done?' (761pts, 385 comments) is the biggest r/webdev post this week. 'Coding after coders' NYT piece (126pts HN). AI is increasing output but also increasing cognitive load — tools that manage this tension have a market."
+    },
+    {
+      "theme": "Agent backend infrastructure",
+      "days_seen": 2,
+      "dates": ["2026-03-14", "2026-03-11"],
+      "past_idea_titles": ["AgentForge"],
+      "signal_strength": "emerging",
+      "note": "InsForge (3.9K stars, +766/day) trending on GitHub and Reddit. Multiple posts about agents needing unified backends (auth, DB, storage). This is becoming a distinct category from general agent orchestration."
+    },
+    {
+      "theme": "SaaS pricing & free tier optimization",
+      "days_seen": 2,
+      "dates": ["2026-03-14", "2026-03-13"],
+      "past_idea_titles": ["NoFreeTier"],
+      "signal_strength": "emerging",
+      "note": "'Killed our free tier and revenue didn't skip a beat' (59pts, 19 comments r/SaaS). Free users consumed 40% server costs, converted at 0.3%. Data-driven pricing decisions are underserved."
+    }
+  ],
+  "ideas": [
+    {
+      "title": "BurnoutGuard",
+      "problem": "Developer burnout from AI-augmented work is peaking. 'Anyone else done?' hit 761pts with 385 comments on r/webdev — developers report being 'cognitively burnt to the crisp' as AI tools 10x output expectations. Managers can't see the problem until people quit.",
+      "solution": "A Slack/Teams integration that monitors developer behavior signals (commit patterns, review latency, after-hours activity, message sentiment) and surfaces burnout risk scores to engineering managers. Includes anonymous pulse surveys and evidence-based workload rebalancing suggestions.",
+      "monetization": "SaaS subscription per seat ($5/dev/mo). Enterprise tier with org-wide analytics.",
+      "complexity": "medium",
+      "trend_sources": ["reddit:1rsb7oj", "hackernews:47348733", "reddit:1rtbzl4", "reddit:1rt415b"],
+      "category": "SaaS",
+      "distribution": [
+        "Post in r/webdev — the 'Anyone else done?' thread has 385 comments from people who would pay for this",
+        "Target engineering managers on LinkedIn with the 761-upvote screenshot as proof of problem",
+        "Show HN — devs on HN are the exact audience burning out from AI pressure"
+      ],
+      "evidence": [
+        {"title": "Anyone else done? (761pts, 385 comments r/webdev)", "url": "https://reddit.com/r/webdev/comments/1rsb7oj"},
+        {"title": "Coding after coders: The end of programming as we know it? (126pts HN)", "url": "https://news.ycombinator.com/item?id=47348733"},
+        {"title": "Our best engineer quit because we couldn't match a big tech offer (19pts r/SaaS)", "url": "https://reddit.com/r/SaaS/comments/1rtbzl4"},
+        {"title": "If SaaS becomes just vibe coding, then what's the point? (19pts r/SaaS)", "url": "https://reddit.com/r/SaaS/comments/1rt415b"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "SvelteKit dashboard + Slack/Teams API integration + sentiment analysis. The hard part is calibrating burnout signals, but even simple metrics (commit frequency variance, late-night commits) are valuable.",
+        "time": "2-3 weeks",
+        "cost": "$20/mo hosting + Slack API (free tier) + domain ($12/yr)",
+        "stack": ["Web app", "Database", "Auth", "API integrations", "Background jobs"]
+      }
+    },
+    {
+      "title": "ContextVault",
+      "problem": "1M context is now GA for Claude (750pts HN) but agents still waste tokens loading irrelevant files. Context Gateway (79pts, 48 comments HN) and OpenViking (9.5K stars, +2191/day) both solve context management — proving this is a real bottleneck.",
+      "solution": "A project-aware context store that indexes your codebase and serves compressed, relevant context to AI agents per-task. Works as a CLI or VS Code extension with Claude Code, Cursor, and Codex.",
+      "monetization": "Freemium SaaS: free for repos under 10K files, $19/mo for teams.",
+      "complexity": "medium",
+      "trend_sources": ["hackernews:47367129", "hackernews:47367526", "github:volcengine/OpenViking"],
+      "category": "Dev Tools",
+      "distribution": [
+        "Show HN — the Context Gateway post got 79pts and 48 comments, exact audience",
+        "Post as Claude Code plugin — claude-plugins-official (11K stars) is the distribution channel",
+        "r/LocalLLaMA and r/ClaudeAI — communities actively discussing context management"
+      ],
+      "evidence": [
+        {"title": "1M context is now GA for Opus 4.6 and Sonnet 4.6 (750pts, 291 comments)", "url": "https://news.ycombinator.com/item?id=47367129"},
+        {"title": "Context Gateway – Compress agent context before it hits the LLM (79pts, 48 comments)", "url": "https://news.ycombinator.com/item?id=47367526"},
+        {"title": "OpenViking: context database for AI agents (9.5K stars, +2191/day)", "url": "https://github.com/volcengine/OpenViking"}
+      ],
+      "ai_build": {
+        "viability": "medium",
+        "details": "Requires AST parsing, file relationship mapping, and embedding-based relevance scoring. Can start with simpler heuristics (recently changed files, imports graph) and add embeddings later.",
+        "time": "2-3 weeks",
+        "cost": "$10/mo hosting + embedding API costs ($5-20/mo depending on repo size)",
+        "stack": ["CLI tool", "Web app", "Database", "AI/LLM API"]
+      }
+    },
+    {
+      "title": "AgentBackend",
+      "problem": "AI agents generate app code but the backend (auth, DB, storage, deployments) is fragmented. InsForge (3.9K stars, +766/day) is blowing up on GitHub and Reddit with multiple posts validating this exact pain point.",
+      "solution": "A managed backend exposing agent-friendly primitives. Instead of REST endpoints designed for humans, expose high-level operations (create_user, store_file, query_data) that LLM agents can reason about. One SDK for auth, database, storage, and functions.",
+      "monetization": "Usage-based SaaS: free tier for hobby projects, $29/mo pro, enterprise custom.",
+      "complexity": "high",
+      "trend_sources": ["github:InsForge/InsForge", "reddit:1rtaljl", "reddit:1rtcdoh", "reddit:1rte0e9", "producthunt:agent-37"],
+      "category": "Dev Tools",
+      "distribution": [
+        "Post in r/SideProject and r/webdev — multiple InsForge posts already proving demand",
+        "Show HN — agent infrastructure is consistently top of HN",
+        "List on Product Hunt — Agent 37 (233 votes) shows the audience is there"
+      ],
+      "evidence": [
+        {"title": "InsForge: backend for agentic development (3.9K stars, +766/day)", "url": "https://github.com/InsForge/InsForge"},
+        {"title": "I built an open-source backend for AI coding agents (57pts r/SideProject)", "url": "https://reddit.com/r/SideProject/comments/1rtaljl"},
+        {"title": "Agent 37 — Your own OpenClaw instance for $3.99/mo (233 votes PH)", "url": "https://www.producthunt.com/products/agent-37"},
+        {"title": "An open-source backend for AI coding agents (21pts r/webdev)", "url": "https://reddit.com/r/webdev/comments/1rte0e9"}
+      ],
+      "ai_build": {
+        "viability": "medium",
+        "details": "Supabase handles auth + database + storage. The agent-friendly API layer is the novel part — translating high-level agent intents into database operations. Needs careful SDK design.",
+        "time": "3-4 weeks",
+        "cost": "$25/mo Supabase Pro + $15/mo hosting",
+        "stack": ["Web app", "Database", "Auth", "File storage", "API"]
+      }
+    },
+    {
+      "title": "CanIRunIt",
+      "problem": "'Can I run AI locally?' was the #1 story on HN today (1228pts, 303 comments). Developers want to run local models but have no idea what their hardware can handle. BitNet (34.5K stars) and heretic (13.2K stars, +1283/day) are making local inference more practical.",
+      "solution": "A desktop benchmarking tool that scans your hardware (GPU VRAM, RAM, CPU cores), runs standardized micro-benchmarks, and maps which models you can run at what speed. Shows tokens/sec estimates for popular models with download links.",
+      "monetization": "Free open-source tool + premium model optimization guides ($29 one-time).",
+      "complexity": "medium",
+      "trend_sources": ["hackernews:47363754", "github:microsoft/BitNet", "github:p-e-w/heretic"],
+      "category": "Dev Tools",
+      "distribution": [
+        "Show HN — the 'Can I run AI locally?' post got 1228pts, exact audience for this tool",
+        "r/LocalLLaMA — the subreddit dedicated to local model running",
+        "Post on the canirun.ai HN thread as a complementary tool"
+      ],
+      "evidence": [
+        {"title": "Can I run AI locally? (1228pts, 303 comments — #1 on HN)", "url": "https://news.ycombinator.com/item?id=47363754"},
+        {"title": "BitNet: Official 1-bit LLM inference framework (34.5K stars)", "url": "https://github.com/microsoft/BitNet"},
+        {"title": "heretic: Fully automatic censorship removal for LLMs (13.2K stars, +1283/day)", "url": "https://github.com/p-e-w/heretic"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "Desktop app (Electron or Tauri) that reads hardware specs via system APIs and runs llama.cpp benchmarks. The hardware detection and model compatibility database are the core value.",
+        "time": "1-2 weeks",
+        "cost": "$12/yr domain + free hosting (static site with desktop download)",
+        "stack": ["Desktop app", "Static site"]
+      }
+    },
+    {
+      "title": "PlatformEject",
+      "problem": "Builders are locked into vibe-coding platforms with no exit strategy. 'Friendly reminder that your vibe-coded app needs a backup plan' (80pts, 63 comments r/Entrepreneur) struck a nerve. One founder had 300 users on Emergent and realized they couldn't self-host if the platform changed.",
+      "solution": "A CLI that exports apps from vibe-coding platforms (Lovable, Bolt, Emergent), normalizes the code, sets up a GitHub repo with CI/CD, and deploys to your own infrastructure. One command: eject my-app --to vercel.",
+      "monetization": "One-time purchase ($49) or pay-per-export ($9/export).",
+      "complexity": "medium",
+      "trend_sources": ["reddit:1rrjciw", "reddit:1rt415b", "hackernews:47348733"],
+      "category": "Dev Tools",
+      "distribution": [
+        "Reply in the original r/Entrepreneur thread (80pts, 63 comments of worried builders)",
+        "r/SideProject — builders using vibe-coding platforms daily",
+        "Product Hunt — platform-independence tools resonate with indie hackers"
+      ],
+      "evidence": [
+        {"title": "Friendly reminder that your vibe-coded app needs a backup plan (80pts, 63 comments)", "url": "https://reddit.com/r/Entrepreneur/comments/1rrjciw"},
+        {"title": "If SaaS becomes just vibe coding, then what's the point? (19pts r/SaaS)", "url": "https://reddit.com/r/SaaS/comments/1rt415b"},
+        {"title": "Coding after coders (126pts, 157 comments HN)", "url": "https://news.ycombinator.com/item?id=47348733"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "CLI tool that reverse-engineers platform output. Start with one platform (Lovable or Bolt), expand. The export logic varies per platform but the deployment normalization is reusable.",
+        "time": "1-2 weeks",
+        "cost": "$12/yr domain + free hosting",
+        "stack": ["CLI tool", "Static site"]
+      }
+    },
+    {
+      "title": "AgentCanvas",
+      "problem": "Agent orchestration is code-only. Spine Swarm 'AI agents that collaborate on a visual canvas' (YC S23, 98pts HN) validates the concept. deer-flow by ByteDance (30.4K stars) shows enterprise-grade agent workflows are complex enough to need visual tools.",
+      "solution": "A visual workflow builder where you drag agent nodes, connect them with data flows, and define contracts between them. Export as Python/TypeScript code or run directly. Built-in monitoring shows which agent is working on what.",
+      "monetization": "Freemium: free for 3 agents, $29/mo pro with unlimited agents and monitoring.",
+      "complexity": "high",
+      "trend_sources": ["hackernews:47364116", "github:bytedance/deer-flow", "github:obra", "producthunt:openmolt"],
+      "category": "Dev Tools",
+      "distribution": [
+        "Show HN — Spine Swarm got 98pts proving demand for visual agent orchestration",
+        "Product Hunt — OpenMolt (111 votes) and Agent 37 (233 votes) show the agent tooling audience",
+        "r/MachineLearning and r/LocalLLaMA — technical audience building multi-agent systems"
+      ],
+      "evidence": [
+        {"title": "Spine Swarm (YC S23) – AI agents that collaborate on a visual canvas (98pts, 67 comments)", "url": "https://news.ycombinator.com/item?id=47364116"},
+        {"title": "deer-flow: SuperAgent by ByteDance (30.4K stars, +5236/week)", "url": "https://github.com/bytedance/deer-flow"},
+        {"title": "obra: agentic skills framework (82.5K stars, +2106/day)", "url": "https://github.com/obra"},
+        {"title": "OpenMolt — Let your code create and manage AI Agents (111 votes PH)", "url": "https://www.producthunt.com/products/openmolt"}
+      ],
+      "ai_build": {
+        "viability": "medium",
+        "details": "SvelteKit frontend with drag-and-drop canvas (SvelteFlow or similar). Backend orchestrates agent execution. The visual builder is straightforward; the agent execution engine is the complexity.",
+        "time": "3-4 weeks",
+        "cost": "$25/mo hosting + LLM API costs",
+        "stack": ["Web app", "Database", "Auth", "AI/LLM API", "Real-time/WebSockets"]
+      }
+    },
+    {
+      "title": "PluginMarket",
+      "problem": "Claude Code's plugin ecosystem is exploding — claude-plugins-official (11K stars), GStack 'Use Garry Tan's Claude Code setup' (373 votes PH). But discovery is fragmented across GitHub repos with no search, ratings, or one-click install.",
+      "solution": "A marketplace for Claude Code plugins, CLAUDE.md templates, and agent configurations. Browse by category, see ratings and installs, one-command install. Includes starter kits that bundle plugins for specific workflows.",
+      "monetization": "Free listings + premium featured slots for plugin authors ($9/mo). Sponsored starter kits.",
+      "complexity": "medium",
+      "trend_sources": ["github:anthropics/claude-plugins-official", "producthunt:gstack", "github:obra"],
+      "category": "Dev Tools",
+      "distribution": [
+        "Post as a Claude Code plugin itself — eat your own dog food",
+        "Show HN — plugin marketplaces always get traction on HN",
+        "r/ClaudeAI — the community actively sharing Claude Code configurations"
+      ],
+      "evidence": [
+        {"title": "claude-plugins-official: Anthropic-managed plugin directory (11K stars)", "url": "https://github.com/anthropics/claude-plugins-official"},
+        {"title": "GStack — Use Garry Tan's exact Claude Code setup (373 votes, 27 comments PH)", "url": "https://www.producthunt.com/products/gstack"},
+        {"title": "obra: agentic skills framework (82.5K stars)", "url": "https://github.com/obra"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "Static site with search + CLI tool for install. Scrape plugin repos for metadata, generate a searchable index. The CLI wraps git clone + config merging.",
+        "time": "1-2 weeks",
+        "cost": "$12/yr domain + free hosting (static site + GitHub API)",
+        "stack": ["Static site", "CLI tool"]
+      }
+    },
+    {
+      "title": "HeadlessForge",
+      "problem": "AI agents need browser access for scraping, form-filling, and automation. Lightpanda (16.2K stars, +2093/day) is the fastest-growing repo today. Perplexity Computer Skills (441 votes, #1 PH) shows mainstream demand for AI-controlled browsers.",
+      "solution": "A managed headless browser API designed for AI agents. One API call to open a page, extract structured data, fill forms, or take screenshots. Returns clean JSON, not raw HTML. Built on Lightpanda for speed.",
+      "monetization": "Usage-based API: 1000 free pages/mo, then $0.01 per page. $49/mo pro with priority.",
+      "complexity": "medium",
+      "trend_sources": ["github:lightpanda-io/browser", "producthunt:perplexity-computer-skills", "hackernews:47372672"],
+      "category": "Dev Tools",
+      "distribution": [
+        "Show HN — headless browser tools consistently do well (Lightpanda has 16K stars)",
+        "Product Hunt — Perplexity Computer Skills got 441 votes as #1 today",
+        "Post in agent framework communities (OpenClaw, Claude Code, LangChain discords)"
+      ],
+      "evidence": [
+        {"title": "Lightpanda: headless browser for AI and automation (16.2K stars, +2093/day)", "url": "https://github.com/lightpanda-io/browser"},
+        {"title": "Perplexity Computer Skills (441 votes, #1 PH)", "url": "https://www.producthunt.com/products/perplexity-ai"},
+        {"title": "Optimizing Content for Agents (45pts, 18 comments HN)", "url": "https://news.ycombinator.com/item?id=47372672"}
+      ],
+      "ai_build": {
+        "viability": "medium",
+        "details": "Wraps Lightpanda or Playwright with a structured extraction layer. The API design is the value. Needs proxy infrastructure for scale.",
+        "time": "2-3 weeks",
+        "cost": "$50/mo servers + proxy costs",
+        "stack": ["API", "Background jobs", "Database"]
+      }
+    },
+    {
+      "title": "FreeTierKiller",
+      "problem": "'Killed our free tier and revenue didn't skip a beat' (59pts, 19 comments r/SaaS). Free users consumed 40% of server costs but converted at 0.3%. SaaS founders make pricing decisions blindly without data on true free tier cost.",
+      "solution": "Connect Stripe + your analytics. Get a report: free tier true cost (support tickets + server costs + opportunity cost), conversion rates by tier, revenue simulation for removing or restructuring your free tier. Benchmarked against anonymized data from 1000+ SaaS.",
+      "monetization": "SaaS: $29/mo. One-time audit report option ($99).",
+      "complexity": "medium",
+      "trend_sources": ["reddit:1rstaz2", "reddit:1rt2bhq", "reddit:1rtcuje"],
+      "category": "SaaS",
+      "distribution": [
+        "Reply in the r/SaaS 'killed our free tier' thread — 19 comments from founders facing this exact decision",
+        "r/indiehackers — bootstrapped founders obsess over pricing",
+        "Cold DM SaaS founders who post on r/SaaS about pricing struggles"
+      ],
+      "evidence": [
+        {"title": "Killed our free tier and revenue didn't skip a beat (59pts, 19 comments r/SaaS)", "url": "https://reddit.com/r/SaaS/comments/1rstaz2"},
+        {"title": "How did you get your first 10 customers? (23pts, 45 comments r/SaaS)", "url": "https://reddit.com/r/SaaS/comments/1rt2bhq"},
+        {"title": "Bootstrapped to $12K MRR with zero funding (21pts r/SaaS)", "url": "https://reddit.com/r/SaaS/comments/1rtcuje"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "Stripe API integration + analytics dashboard. The Stripe API gives you everything needed (subscriptions, churn, MRR by plan). The simulation engine is the differentiator.",
+        "time": "2 weeks",
+        "cost": "$20/mo hosting + Stripe API (free) + domain",
+        "stack": ["Web app", "Database", "Auth", "Payments", "API integrations"]
+      }
+    },
+    {
+      "title": "DocRoast",
+      "problem": "'How I got 500+ people to roast their github repos' (41pts r/webdev) went viral. Traditional code review is expensive and dry. AI can deliver honest, entertaining analysis at scale with real actionable feedback.",
+      "solution": "Paste a GitHub repo URL, get a brutally honest but actionable roast: code quality score, architecture decisions, security holes, performance bottlenecks, README quality, dependency health. Shareable scorecard with a roast score out of 100.",
+      "monetization": "Freemium: 3 free roasts, then $9/mo unlimited. Team plan $29/mo with private reports.",
+      "complexity": "low",
+      "trend_sources": ["reddit:1rsyxpp", "reddit:1rsb7oj", "reddit:1rsm83p"],
+      "category": "Dev Tools",
+      "distribution": [
+        "Post in r/webdev and r/SideProject — the original roast post got 500+ users organically",
+        "Show HN — code quality tools always get engagement",
+        "GitHub Actions marketplace — offer as a CI check that roasts your PR"
+      ],
+      "evidence": [
+        {"title": "how I got 500+ people to roast their github repos (41pts, 53 comments r/webdev)", "url": "https://reddit.com/r/webdev/comments/1rsyxpp"},
+        {"title": "Anyone else done? AI burnout thread (761pts r/webdev)", "url": "https://reddit.com/r/webdev/comments/1rsb7oj"},
+        {"title": "Is Claude Code actually solving most coding problems? (170pts r/webdev)", "url": "https://reddit.com/r/webdev/comments/1rsm83p"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "Web app that clones repos via GitHub API, runs analysis with Claude/GPT, generates shareable report pages. Very straightforward — the roast personality and scoring system are the product.",
+        "time": "1 weekend",
+        "cost": "$10/mo hosting + LLM API costs ($0.10-0.50 per roast)",
+        "stack": ["Web app", "AI/LLM API"]
+      }
+    },
+    {
+      "title": "AlertSherpa",
+      "problem": "On-call engineers waste hours diagnosing alerts. Struct 'AI agent that root-causes engineering alerts' (165 votes PH) proves demand. Engineers need an AI co-pilot that traces alerts to root causes across logs, metrics, and recent deploys.",
+      "solution": "Connects to your monitoring stack (Datadog, PagerDuty, Grafana). When an alert fires, an AI agent investigates: checks recent deploys, correlates metrics, reads relevant logs, produces a structured incident report with root cause and fix suggestions.",
+      "monetization": "SaaS: $49/mo per team, $199/mo enterprise with custom integrations.",
+      "complexity": "high",
+      "trend_sources": ["producthunt:struct-2", "hackernews:47364116"],
+      "category": "SaaS",
+      "distribution": [
+        "Product Hunt — Struct got 165 votes proving the audience",
+        "r/devops and r/sre — on-call engineers actively looking for relief",
+        "DevOps conferences and Slack communities"
+      ],
+      "evidence": [
+        {"title": "Struct — AI agent that root-causes engineering alerts (165 votes PH)", "url": "https://www.producthunt.com/products/struct-2"},
+        {"title": "Spine Swarm — AI agents that collaborate (98pts HN)", "url": "https://news.ycombinator.com/item?id=47364116"}
+      ],
+      "ai_build": {
+        "viability": "medium",
+        "details": "API integrations with monitoring tools + LLM-powered analysis chain. Start with one integration (PagerDuty or Datadog) and expand.",
+        "time": "3-4 weeks",
+        "cost": "$50/mo hosting + LLM API costs",
+        "stack": ["Web app", "Database", "Auth", "AI/LLM API", "API integrations", "Background jobs"]
+      }
+    },
+    {
+      "title": "StoryKeep",
+      "problem": "Tellus 'Grandpa's stories, preserved for his grandkids' (120 votes PH) proves emotional demand. Fish-speech TTS (27K stars) makes high-quality voice cloning accessible. Families want to preserve stories before it's too late.",
+      "solution": "Record conversations with elderly family members. AI transcribes, organizes into chapters, clones their voice, and produces a narrated audiobook. Optional printed book with QR codes linking to audio.",
+      "monetization": "Per-book purchase ($49 digital, $99 printed + audiobook). Gift card option for holidays.",
+      "complexity": "medium",
+      "trend_sources": ["producthunt:tellus-3", "github:fishaudio/fish-speech"],
+      "category": "Consumer",
+      "distribution": [
+        "Facebook/Instagram ads targeting 30-50 year olds — the generation with aging parents",
+        "Product Hunt — Tellus got 120 votes, emotional products do well on PH",
+        "Gift guide SEO — 'unique gifts for grandparents' is high-intent holiday search traffic"
+      ],
+      "evidence": [
+        {"title": "Tellus — Grandpa's stories, preserved for his grandkids (120 votes PH)", "url": "https://www.producthunt.com/products/tellus-3"},
+        {"title": "fish-speech: SOTA Open Source TTS (27K stars, +559/day)", "url": "https://github.com/fishaudio/fish-speech"}
+      ],
+      "ai_build": {
+        "viability": "high",
+        "details": "Web app for recording/uploading + Whisper transcription + GPT story organization + fish-speech voice cloning. Print-on-demand for physical books.",
+        "time": "2-3 weeks",
+        "cost": "$30/mo hosting + voice API + print-on-demand per order",
+        "stack": ["Web app", "Database", "Auth", "AI/LLM API", "File storage", "Payments"]
+      }
+    }
+  ]
+}
